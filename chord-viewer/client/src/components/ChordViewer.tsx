@@ -14,6 +14,16 @@ import {
   InputAdornment,
   useTheme,
   useMediaQuery,
+  Autocomplete,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Divider,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from '@mui/material';
 import {
   PlayArrow,
@@ -23,6 +33,7 @@ import {
   Search,
   Close,
   Menu,
+  ExpandMore as ExpandMoreIcon,
 } from '@mui/icons-material';
 import { ChordFile, parseChordFile } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
@@ -35,6 +46,8 @@ interface ChordViewerState {
   scrollSpeed: number;
   searchQuery: string;
   searchOpen: boolean;
+  searchHistory: string[];
+  drawerOpen: boolean;
 }
 
 export default function ChordViewer() {
@@ -49,10 +62,28 @@ export default function ChordViewer() {
     scrollSpeed: 1,
     searchQuery: '',
     searchOpen: false,
+    searchHistory: [],
+    drawerOpen: false,
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
   const scrollIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Carregar histórico do localStorage ao montar o componente
+  useEffect(() => {
+    const savedHistory = localStorage.getItem('chordSearchHistory');
+    if (savedHistory) {
+      setState((prev) => ({
+        ...prev,
+        searchHistory: JSON.parse(savedHistory),
+      }));
+    }
+  }, []);
+
+  // Salvar histórico no localStorage sempre que mudar
+  useEffect(() => {
+    localStorage.setItem('chordSearchHistory', JSON.stringify(state.searchHistory));
+  }, [state.searchHistory]);
 
   // Carregar arquivos .chords recursivamente
   useEffect(() => {
@@ -68,6 +99,9 @@ export default function ChordViewer() {
           files.push(parsed);
         }
         
+        // Ordenar os arquivos por título em ordem alfabética
+        files.sort((a, b) => a.title.localeCompare(b.title));
+
         setState(prev => ({
           ...prev,
           files,
@@ -128,11 +162,11 @@ export default function ChordViewer() {
     }));
   };
 
-  // Toggle search
-  const toggleSearch = () => {
+  // Toggle drawer
+  const toggleDrawer = () => {
     setState((prev) => ({
       ...prev,
-      searchOpen: !prev.searchOpen,
+      drawerOpen: !prev.drawerOpen,
     }));
   };
 
@@ -186,6 +220,15 @@ export default function ChordViewer() {
           justifyContent: 'space-between',
           px: { xs: 1, sm: 2 }
         }}>
+          <IconButton 
+            onClick={toggleDrawer}
+            sx={{ 
+              color: 'white',
+              mr: 1
+            }}
+          >
+            <Menu />
+          </IconButton>
           <Typography variant={isMobile ? "h6" : "h5"} sx={{ 
             fontWeight: 'bold',
             flexGrow: 1,
@@ -194,86 +237,138 @@ export default function ChordViewer() {
             🎸 Cifras
           </Typography>
           
-          {/* Campo de busca colapsável */}
-          <Collapse in={state.searchOpen} orientation="horizontal">
-            <TextField
-              size="small"
-              placeholder="Buscar música..."
-              value={state.searchQuery}
-              onChange={(e) =>
-                setState((prev) => ({
-                  ...prev,
-                  searchQuery: e.target.value,
-                }))
-              }
-              sx={{ 
-                width: isMobile ? '200px' : '300px',
-                backgroundColor: 'white',
-                borderRadius: 1,
-                '& .MuiOutlinedInput-root': {
-                  borderRadius: 1,
-                }
-              }}
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment position="end">
-                    <IconButton size="small" onClick={toggleSearch}>
-                      <Close />
-                    </IconButton>
-                  </InputAdornment>
-                ),
-              }}
-            />
-          </Collapse>
-          
-          <IconButton 
-            onClick={toggleSearch}
-            sx={{ 
-              color: 'white',
-              ml: state.searchOpen ? 1 : 0
-            }}
-          >
-            <Search />
-          </IconButton>
         </Toolbar>
       </AppBar>
 
-      {/* Lista de músicas (colapsável) */}
-      {filteredFiles.length > 0 && (
-        <Paper sx={{ 
-          p: 1, 
-          mx: 1, 
-          mt: 1,
-          maxHeight: '200px',
-          overflowY: 'auto',
-          backgroundColor: '#f5f5f5'
-        }}>
-          <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap' }}>
-            {filteredFiles.map((file, index) => (
-              <Button
-                key={index}
-                variant={state.files[state.currentFileIndex] === file ? "contained" : "outlined"}
+      {/* Drawer para lista de músicas */}
+      <Drawer
+        anchor="left"
+        open={state.drawerOpen}
+        onClose={toggleDrawer}
+      >
+        <Box sx={{ width: 300, p: 2 }}>
+          <Typography variant="h6" sx={{ mb: 2 }}>
+            Todas as Músicas
+          </Typography>
+          <Autocomplete
+            freeSolo
+            options={state.searchHistory}
+            getOptionLabel={(option) => option}
+            value={state.searchQuery}
+            onInputChange={(event, newInputValue) => {
+              setState((prev) => ({
+                ...prev,
+                searchQuery: newInputValue,
+                searchOpen: newInputValue.trim().length > 0,
+              }));
+            }}
+            onChange={(event, newValue) => {
+              if (typeof newValue === 'string') {
+                const trimmedValue = newValue.trim();
+                if (trimmedValue) {
+                  // Atualiza histórico: move para o topo se existir, ou adiciona novo
+                  setState((prev) => {
+                    let newHistory = [...prev.searchHistory];
+                    const index = newHistory.indexOf(trimmedValue);
+                    if (index > -1) {
+                      newHistory.splice(index, 1);
+                    }
+                    newHistory.unshift(trimmedValue);
+                    return {
+                      ...prev,
+                      searchHistory: newHistory.slice(0, 10), // Limita a 10 itens
+                      searchQuery: trimmedValue,
+                      searchOpen: true,
+                    };
+                  });
+                }
+              }
+            }}
+            renderInput={(params) => (
+              <TextField
+                {...params}
                 size="small"
-                onClick={() => {
-                  setState((prev) => ({
-                    ...prev,
-                    currentFileIndex: state.files.indexOf(file),
-                    transposition: 0,
-                    isPlaying: false,
-                  }));
-                }}
+                placeholder="Buscar música..."
                 sx={{ 
-                  mb: 1,
-                  textTransform: 'none',
-                  fontSize: '0.75rem'
+                  width: '100%',
+                  mb: 2,
+                  backgroundColor: '#f5f5f5',
+                  borderRadius: 1,
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: 1,
+                  }
                 }}
-              >
-                {file.title} - {file.artist}
-              </Button>
-            ))}
-          </Stack>
-        </Paper>
-      )}
+                InputProps={{
+                  ...params.InputProps,
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      {state.searchQuery ? (
+                        <IconButton
+                          size="small"
+                          onClick={() =>
+                            setState((prev) => ({
+                              ...prev,
+                              searchQuery: '',
+                              searchOpen: false,
+                            }))
+                          }
+                        >
+                          <Close />
+                        </IconButton>
+                      ) : (
+                        <Search fontSize="small" />
+                      )}
+                    </InputAdornment>
+                  ),
+                }}
+              />
+            )}
+          />
+          <Divider sx={{ mb: 1 }} />
+          {(() => {
+            const grouped = state.files.reduce((acc: Record<string, ChordFile[]>, f) => {
+              const key = f.artist || 'Artista desconhecido';
+              (acc[key] ||= []).push(f);
+              return acc;
+            }, {} as Record<string, ChordFile[]>);
+            const artists = Object.keys(grouped).sort((a, b) => a.localeCompare(b));
+            return artists.map((artist) => (
+              <Accordion key={artist} disableGutters>
+                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={`${artist}-content`} id={`${artist}-header`}>
+                  <Typography sx={{ fontWeight: 600 }}>{artist}</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <List disablePadding>
+                    {grouped[artist].map((file) => {
+                      const originalIndex = state.files.findIndex(
+                        (f) => f.title === file.title && f.artist === file.artist
+                      );
+                      return (
+                        <ListItem key={`${file.title}-${originalIndex}`} disablePadding>
+                          <ListItemButton
+                            selected={originalIndex === state.currentFileIndex}
+                            onClick={() => {
+                              setState((prev) => ({
+                                ...prev,
+                                currentFileIndex: originalIndex,
+                                drawerOpen: false,
+                                searchOpen: false,
+                                searchQuery: '',
+                              }));
+                            }}
+                          >
+                            <ListItemText primary={file.title} />
+                          </ListItemButton>
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                </AccordionDetails>
+              </Accordion>
+            ));
+          })()}
+        </Box>
+      </Drawer>
 
       {/* Área principal de conteúdo */}
       <Box sx={{ 
@@ -283,7 +378,35 @@ export default function ChordViewer() {
         overflow: 'hidden',
         position: 'relative'
       }}>
-        {currentFile && (
+        {state.searchOpen && state.searchQuery ? (
+          <Box sx={{ p: 2, overflowY: 'auto' }}>
+            <Typography variant="h6">Resultados da busca:</Typography>
+            {filteredFiles.length > 0 ? (
+              <Stack spacing={1}>
+                {filteredFiles.map((file, idx) => (
+                  <Button
+                    key={idx}
+                    variant="outlined"
+                    onClick={() => {
+                      // Encontra o índice original no array completo
+                      const originalIndex = state.files.findIndex((f) => f.title === file.title && f.artist === file.artist);
+                      setState((prev) => ({
+                        ...prev,
+                        currentFileIndex: originalIndex,
+                        searchQuery: '', // Limpa a busca
+                        searchOpen: false, // Fecha o campo de busca
+                      }));
+                    }}
+                  >
+                    {file.title} - {file.artist}
+                  </Button>
+                ))}
+              </Stack>
+            ) : (
+              <Typography color="textSecondary">Nenhuma música encontrada.</Typography>
+            )}
+          </Box>
+        ) : currentFile ? (
           <>
             {/* Título da música (compacto) */}
             <Paper sx={{ 
@@ -355,9 +478,7 @@ export default function ChordViewer() {
               ))}
             </Box>
           </>
-        )}
-
-        {!currentFile && state.files.length === 0 && (
+        ) : state.files.length === 0 ? (
           <Box sx={{ 
             flex: 1, 
             display: 'flex', 
@@ -369,7 +490,7 @@ export default function ChordViewer() {
               Carregando cifras...
             </Typography>
           </Box>
-        )}
+        ) : null}
       </Box>
 
       {/* Controles fixos na parte inferior */}
