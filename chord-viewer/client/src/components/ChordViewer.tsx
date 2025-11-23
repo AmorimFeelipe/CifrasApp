@@ -347,10 +347,10 @@ export default function ChordViewer() {
       >
         <Toolbar
           sx={{
-            minHeight: isMobile ? '60px' : '80px',
+            minHeight: isMobile ? '52px' : '72px',
             justifyContent: 'space-between',
-            px: { xs: 1.5, sm: 3 },
-            gap: 2,
+            px: { xs: 1.25, sm: 3 },
+            gap: 1.5,
           }}
         >
           <IconButton
@@ -364,7 +364,7 @@ export default function ChordViewer() {
             <Menu />
           </IconButton>
           <Box sx={{ flexGrow: 1 }}>
-            <Typography variant={isMobile ? 'h6' : 'h4'} sx={{ fontWeight: 700 }}>
+            <Typography variant={isMobile ? 'h6' : 'h5'} sx={{ fontWeight: 700 }}>
               CifrasApp
             </Typography>
           </Box>
@@ -802,22 +802,22 @@ export default function ChordViewer() {
           p: { xs: 1, sm: 2, md: 4 },
           ml: !isMobile && state.drawerOpen ? `${drawerWidth}px` : 0,
           transition: 'margin-left 0.2s ease',
-        }}
-      >
-        <Stack
-          sx={{
-            width: '100%',
-            maxWidth: contentMaxWidth,
-            flex: 1,
-            gap: { xs: 2, md: 3 },
-            pb: currentFile ? { xs: 12, md: 6 } : 2,
           }}
         >
+          <Stack
+            sx={{
+              width: '100%',
+              maxWidth: contentMaxWidth,
+              flex: 1,
+              gap: { xs: 1.5, md: 2 },
+              pb: currentFile ? { xs: 10, md: 6 } : 2,
+            }}
+          >
           {currentFile && (
             <Paper
               sx={{
-                p: { xs: 2, md: 3 },
-                borderRadius: 3,
+                p: { xs: 1.5, md: 2 },
+                borderRadius: 2.5,
                 background: 'rgba(15,23,42,0.88)',
                 color: '#f8fafc',
                 border: '1px solid rgba(255,255,255,0.08)',
@@ -826,10 +826,10 @@ export default function ChordViewer() {
               <Typography variant="overline" sx={{ opacity: 0.7 }}>
                 Tocando agora
               </Typography>
-              <Typography variant={isMobile ? 'h5' : 'h4'} sx={{ fontWeight: 700, mb: 1 }}>
+              <Typography variant={isMobile ? 'h6' : 'h5'} sx={{ fontWeight: 700, mb: 0.5, lineHeight: 1.2 }}>
                 {currentFile.title}
               </Typography>
-              <Typography variant="body1" sx={{ color: '#f8fafc' }}>
+              <Typography variant="body2" sx={{ color: '#f8fafc' }}>
                 {currentFile.artist}
               </Typography>
             </Paper>
@@ -838,9 +838,9 @@ export default function ChordViewer() {
           <Paper
             sx={{
               flex: 1,
-              minHeight: { xs: '60vh', md: '65vh' },
-              maxHeight: { xs: '75vh', md: '80vh' },
-              borderRadius: 3,
+              minHeight: { xs: '65vh', md: '70vh' },
+              maxHeight: { xs: '80vh', md: '85vh' },
+              borderRadius: 2.5,
               background: PANEL_GRADIENT,
               border: '1px solid rgba(255,255,255,0.08)',
               boxShadow: '0 20px 50px rgba(15,23,42,0.5)',
@@ -954,39 +954,39 @@ export default function ChordViewer() {
 
       {/* Controles fixos */}
       {currentFile && (
-        <Paper
-          sx={{
-            position: 'sticky',
-            bottom: 16,
-            alignSelf: 'center',
-            width: { xs: 'calc(100% - 24px)', sm: '70%', md: '60%', lg: '720px' },
-            maxWidth: '100%',
-            mt: 2,
-            px: { xs: 2, sm: 3 },
-            py: { xs: 1.5, sm: 1.5 },
-            pb: { xs: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))', sm: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))' },
-            borderRadius: 12,
-            background: 'rgba(15,23,42,0.92)',
-            color: 'white',
-            border: '1px solid rgba(255,255,255,0.12)',
-            boxShadow: '0 20px 40px rgba(15,23,42,0.6)',
-          }}
-        >
-          <Stack
-            direction="row"
-            spacing={{ xs: 1, sm: 2 }}
-            alignItems="center"
-            justifyContent="space-between"
-            flexWrap="wrap"
-          >
-            {/* Controles de Play */}
-            <Fab
-              size="small"
-              color="secondary"
-              onClick={togglePlayPause}
-              sx={{ 
-                background: state.isPlaying
-                  ? 'linear-gradient(135deg,#f87171,#ef4444)'
+            <Paper
+              sx={{
+                position: 'sticky',
+                bottom: 16,
+                alignSelf: 'center',
+                width: { xs: 'calc(100% - 24px)', sm: '70%', md: '60%', lg: '720px' },
+                maxWidth: '100%',
+                mt: 1.5,
+                px: { xs: 1.5, sm: 2 },
+                py: { xs: 1.25, sm: 1.25 },
+                pb: { xs: 'calc(1.25rem + env(safe-area-inset-bottom, 0px))', sm: 'calc(1.25rem + env(safe-area-inset-bottom, 0px))' },
+                borderRadius: 10,
+                background: 'rgba(15,23,42,0.92)',
+                color: 'white',
+                border: '1px solid rgba(255,255,255,0.12)',
+                boxShadow: '0 16px 30px rgba(15,23,42,0.55)',
+              }}
+            >
+              <Stack
+                direction="row"
+                spacing={{ xs: 0.75, sm: 1.5 }}
+                alignItems="center"
+                justifyContent="space-between"
+                flexWrap="nowrap"
+              >
+                {/* Controles de Play */}
+                <Fab
+                  size="small"
+                  color="secondary"
+                  onClick={togglePlayPause}
+                  sx={{ 
+                    background: state.isPlaying
+                      ? 'linear-gradient(135deg,#f87171,#ef4444)'
                   : 'linear-gradient(135deg,#34d399,#10b981)',
                 boxShadow: 'none',
                 color: '#0f172a',
@@ -995,59 +995,59 @@ export default function ChordViewer() {
               {state.isPlaying ? <Pause /> : <PlayArrow />}
             </Fab>
 
-            {/* Controles de Velocidade */}
-            <Stack direction="row" spacing={0.5} alignItems="center">
-              <Typography variant="caption" sx={{ minWidth: '45px', textAlign: 'center', opacity: 0.8 }}>
-                {state.scrollSpeed.toFixed(1)}x
-              </Typography>
-              <IconButton 
-                size="small" 
-                onClick={decreaseSpeed}
-                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
-              >
-                <Remove />
-              </IconButton>
-              <IconButton 
-                size="small" 
-                onClick={increaseSpeed}
-                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
-              >
-                <Add />
-              </IconButton>
-            </Stack>
+                {/* Controles de Velocidade */}
+                <Stack direction="row" spacing={0.5} alignItems="center">
+                  <IconButton 
+                    size="small" 
+                    onClick={decreaseSpeed}
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Remove />
+                  </IconButton>
+                  <Typography variant="caption" sx={{ minWidth: '36px', textAlign: 'center', opacity: 0.8 }}>
+                    {state.scrollSpeed.toFixed(1)}x
+                  </Typography>
+                  <IconButton 
+                    size="small" 
+                    onClick={increaseSpeed}
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Add />
+                  </IconButton>
+                </Stack>
 
-            {/* Controles de Transposição */}
-            <Stack direction="row" spacing={0.5} alignItems="center">
-              <Typography variant="caption" sx={{ minWidth: '45px', textAlign: 'center', opacity: 0.8 }}>
-                Tom: {state.transposition > 0 ? '+' : ''}{state.transposition}
-              </Typography>
-              <IconButton 
-                size="small" 
-                onClick={decreaseKey}
-                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
-              >
-                <Remove />
-              </IconButton>
-              <IconButton 
-                size="small" 
-                onClick={increaseKey}
-                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
-              >
-                <Add />
-              </IconButton>
-              <Button
-                size="small"
-                variant="text"
-                onClick={resetTransposition}
-                sx={{ 
-                  color: 'white',
-                  minWidth: 'auto',
-                  px: 1,
-                  textTransform: 'none',
-                }}
-              >
-                Reset
-              </Button>
+                {/* Controles de Transposição */}
+                <Stack direction="row" spacing={0.5} alignItems="center">
+                  <Typography variant="caption" sx={{ minWidth: '40px', textAlign: 'center', opacity: 0.8 }}>
+                    Tom: {state.transposition > 0 ? '+' : ''}{state.transposition}
+                  </Typography>
+                  <IconButton 
+                    size="small" 
+                    onClick={decreaseKey}
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Remove />
+                  </IconButton>
+                  <IconButton 
+                    size="small" 
+                    onClick={increaseKey}
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Add />
+                  </IconButton>
+                  <Button
+                    size="small"
+                    variant="text"
+                    onClick={resetTransposition}
+                    sx={{ 
+                      color: 'white',
+                      minWidth: 'auto',
+                      px: 1,
+                      textTransform: 'none',
+                    }}
+                  >
+                    Reset
+                  </Button>
             </Stack>
           </Stack>
         </Paper>
