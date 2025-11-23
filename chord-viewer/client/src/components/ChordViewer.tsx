@@ -33,10 +33,19 @@ import {
   Search,
   Close,
   Menu,
+  Delete,
   ExpandMore as ExpandMoreIcon,
 } from '@mui/icons-material';
 import { ChordFile, parseChordFile } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
+
+const REPERTOIRE_STORAGE_KEY = 'chordCustomRepertoires';
+
+interface CustomRepertoire {
+  id: string;
+  name: string;
+  songKeys: string[];
+}
 
 interface ChordViewerState {
   files: ChordFile[];
@@ -48,6 +57,7 @@ interface ChordViewerState {
   searchOpen: boolean;
   searchHistory: string[];
   drawerOpen: boolean;
+  customRepertoires: CustomRepertoire[];
 }
 
 export default function ChordViewer() {
@@ -64,7 +74,9 @@ export default function ChordViewer() {
     searchOpen: false,
     searchHistory: [],
     drawerOpen: false,
+    customRepertoires: [],
   });
+  const [newRepertoireName, setNewRepertoireName] = useState('');
 
   const contentRef = useRef<HTMLDivElement>(null);
   const scrollIntervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -84,6 +96,42 @@ export default function ChordViewer() {
   useEffect(() => {
     localStorage.setItem('chordSearchHistory', JSON.stringify(state.searchHistory));
   }, [state.searchHistory]);
+
+  // Carregar repert��rios personalizados
+  useEffect(() => {
+    const savedRepertoires = localStorage.getItem(REPERTOIRE_STORAGE_KEY);
+    if (savedRepertoires) {
+      try {
+        const parsed = JSON.parse(savedRepertoires);
+        if (Array.isArray(parsed)) {
+          const sanitized: CustomRepertoire[] = parsed
+            .filter(
+              (rep: any) =>
+                rep &&
+                typeof rep.id === 'string' &&
+                typeof rep.name === 'string' &&
+                Array.isArray(rep.songKeys)
+            )
+            .map((rep: any) => ({
+              id: rep.id,
+              name: rep.name,
+              songKeys: rep.songKeys.filter((key: any) => typeof key === 'string'),
+            }));
+          setState((prev) => ({
+            ...prev,
+            customRepertoires: sanitized,
+          }));
+        }
+      } catch (error) {
+        console.error('Erro ao carregar repert��rios personalizados:', error);
+      }
+    }
+  }, []);
+
+  // Persistir repert��rios personalizados
+  useEffect(() => {
+    localStorage.setItem(REPERTOIRE_STORAGE_KEY, JSON.stringify(state.customRepertoires));
+  }, [state.customRepertoires]);
 
   // Carregar arquivos .chords recursivamente
   useEffect(() => {
@@ -113,6 +161,65 @@ export default function ChordViewer() {
 
     loadChordFiles();
   }, []);
+
+  const getSongKey = (file: ChordFile) => `${file.title}|||${file.artist}`;
+
+  const createRepertoire = () => {
+    const trimmedName = newRepertoireName.trim();
+    if (!trimmedName) {
+      return;
+    }
+    setState((prev) => ({
+      ...prev,
+      customRepertoires: [
+        ...prev.customRepertoires,
+        {
+          id: `rep-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+          name: trimmedName,
+          songKeys: [],
+        },
+      ],
+    }));
+    setNewRepertoireName('');
+  };
+
+  const deleteRepertoire = (repertoireId: string) => {
+    setState((prev) => ({
+      ...prev,
+      customRepertoires: prev.customRepertoires.filter((rep) => rep.id !== repertoireId),
+    }));
+  };
+
+  const addSongToRepertoire = (repertoireId: string, file: ChordFile | null) => {
+    if (!file) {
+      return;
+    }
+    const songKey = getSongKey(file);
+    setState((prev) => ({
+      ...prev,
+      customRepertoires: prev.customRepertoires.map((rep) =>
+        rep.id === repertoireId
+          ? rep.songKeys.includes(songKey)
+            ? rep
+            : { ...rep, songKeys: [...rep.songKeys, songKey] }
+          : rep
+      ),
+    }));
+  };
+
+  const removeSongFromRepertoire = (repertoireId: string, songKey: string) => {
+    setState((prev) => ({
+      ...prev,
+      customRepertoires: prev.customRepertoires.map((rep) =>
+        rep.id === repertoireId
+          ? { ...rep, songKeys: rep.songKeys.filter((key) => key !== songKey) }
+          : rep
+      ),
+    }));
+  };
+
+  const findFileByKey = (songKey: string) =>
+    state.files.find((file) => getSongKey(file) === songKey);
 
   // Alternar play/pause
   const togglePlayPause = () => {
@@ -324,6 +431,135 @@ export default function ChordViewer() {
               />
             )}
           />
+          <Divider sx={{ mb: 1 }} />
+          <Box sx={{ mb: 2 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
+              Meus repertorios
+            </Typography>
+            <Stack direction="row" spacing={1} sx={{ mb: 1 }}>
+              <TextField
+                value={newRepertoireName}
+                onChange={(event) => setNewRepertoireName(event.target.value)}
+                size="small"
+                placeholder="Nome do repertorio"
+                fullWidth
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter') {
+                    event.preventDefault();
+                    createRepertoire();
+                  }
+                }}
+              />
+              <Button
+                variant="contained"
+                size="small"
+                startIcon={<Add fontSize="small" />}
+                onClick={createRepertoire}
+                disabled={!newRepertoireName.trim()}
+                sx={{ textTransform: 'none', whiteSpace: 'nowrap', px: 2 }}
+              >
+                Adicionar
+              </Button>
+            </Stack>
+            {state.customRepertoires.length === 0 ? (
+              <Typography variant="body2" color="text.secondary">
+                Crie listas personalizadas para organizar suas cifras.
+              </Typography>
+            ) : (
+              state.customRepertoires.map((rep) => (
+                <Accordion key={rep.id} disableGutters sx={{ mb: 1 }}>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls={`${rep.id}-content`}
+                    id={`${rep.id}-header`}
+                    sx={{ alignItems: 'center' }}
+                  >
+                    <Typography sx={{ flexGrow: 1, fontWeight: 600 }}>
+                      {rep.name}
+                    </Typography>
+                    <IconButton
+                      size="small"
+                      edge="end"
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        event.preventDefault();
+                        deleteRepertoire(rep.id);
+                      }}
+                    >
+                      <Delete fontSize="small" />
+                    </IconButton>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Autocomplete
+                      size="small"
+                      options={state.files}
+                      value={null}
+                      onChange={(event, newValue) => addSongToRepertoire(rep.id, newValue)}
+                      getOptionLabel={(option) => `${option.title} (${option.artist})`}
+                      sx={{ mb: 1 }}
+                      noOptionsText="Nenhuma musica encontrada"
+                      renderInput={(params) => (
+                        <TextField
+                          {...params}
+                          label="Adicionar musica"
+                          placeholder="Selecione uma musica"
+                        />
+                      )}
+                      disabled={state.files.length === 0}
+                      clearOnBlur
+                    />
+                    {rep.songKeys.length === 0 ? (
+                      <Typography variant="body2" color="text.secondary">
+                        Nenhuma musica adicionada ainda.
+                      </Typography>
+                    ) : (
+                      <List disablePadding dense>
+                        {rep.songKeys.map((songKey) => {
+                          const file = findFileByKey(songKey);
+                          if (!file) {
+                            return null;
+                          }
+                          const originalIndex = state.files.findIndex(
+                            (f) => f.title === file.title && f.artist === file.artist
+                          );
+                          return (
+                            <ListItem
+                              key={`${rep.id}-${songKey}`}
+                              disablePadding
+                              secondaryAction={
+                                <IconButton
+                                  edge="end"
+                                  size="small"
+                                  onClick={() => removeSongFromRepertoire(rep.id, songKey)}
+                                >
+                                  <Close fontSize="small" />
+                                </IconButton>
+                              }
+                            >
+                              <ListItemButton
+                                selected={originalIndex === state.currentFileIndex}
+                                onClick={() => {
+                                  setState((prev) => ({
+                                    ...prev,
+                                    currentFileIndex: originalIndex,
+                                    drawerOpen: false,
+                                    searchOpen: false,
+                                    searchQuery: '',
+                                  }));
+                                }}
+                              >
+                                <ListItemText primary={file.title} secondary={file.artist} />
+                              </ListItemButton>
+                            </ListItem>
+                          );
+                        })}
+                      </List>
+                    )}
+                  </AccordionDetails>
+                </Accordion>
+              ))
+            )}
+          </Box>
           <Divider sx={{ mb: 1 }} />
           {(() => {
             const grouped = state.files.reduce((acc: Record<string, ChordFile[]>, f) => {
