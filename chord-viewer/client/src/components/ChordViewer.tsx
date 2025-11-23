@@ -35,11 +35,14 @@ import {
   Menu,
   Delete,
   ExpandMore as ExpandMoreIcon,
+  ArrowBack,
 } from '@mui/icons-material';
 import { ChordFile, parseChordFile } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
 
 const REPERTOIRE_STORAGE_KEY = 'chordCustomRepertoires';
+const BRAND_GRADIENT = 'linear-gradient(135deg, #0f172a, #1d4ed8)';
+const PANEL_GRADIENT = 'linear-gradient(160deg, #0b1121, #141b2f)';
 
 interface CustomRepertoire {
   id: string;
@@ -63,6 +66,7 @@ interface ChordViewerState {
 export default function ChordViewer() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const drawerWidth = isMobile ? '100%' : 340;
   
   const [state, setState] = useState<ChordViewerState>({
     files: [],
@@ -310,53 +314,109 @@ export default function ChordViewer() {
   const currentFile = state.files[state.currentFileIndex];
 
   return (
-    <Box sx={{ 
-      height: '100vh', 
-      display: 'flex', 
-      flexDirection: 'column',
-      overflow: 'hidden'
-    }}>
-      {/* Header compacto */}
-      <AppBar position="static" sx={{ 
-        backgroundColor: '#1976d2',
-        boxShadow: 2,
-        minHeight: isMobile ? '56px' : '64px'
-      }}>
-        <Toolbar sx={{ 
-          minHeight: isMobile ? '56px' : '64px',
-          justifyContent: 'space-between',
-          px: { xs: 1, sm: 2 }
-        }}>
-          <IconButton 
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        background: BRAND_GRADIENT,
+        color: '#e2e8f0',
+      }}
+    >
+      {/* Header */}
+      <AppBar
+        position="static"
+        elevation={0}
+        sx={{
+          background: 'rgba(15,23,42,0.82)',
+          backdropFilter: 'blur(16px)',
+          borderBottom: '1px solid rgba(255,255,255,0.08)',
+        }}
+      >
+        <Toolbar
+          sx={{
+            minHeight: isMobile ? '60px' : '80px',
+            justifyContent: 'space-between',
+            px: { xs: 1.5, sm: 3 },
+            gap: 2,
+          }}
+        >
+          <IconButton
             onClick={toggleDrawer}
-            sx={{ 
+            sx={{
               color: 'white',
-              mr: 1
+              mr: 1,
+              border: '1px solid rgba(255,255,255,0.2)',
             }}
           >
             <Menu />
           </IconButton>
-          <Typography variant={isMobile ? "h6" : "h5"} sx={{ 
-            fontWeight: 'bold',
-            flexGrow: 1,
-            mr: 2
-          }}>
-            🎸 Cifras
-          </Typography>
-          
+          <Box sx={{ flexGrow: 1 }}>
+            <Typography variant={isMobile ? 'h6' : 'h4'} sx={{ fontWeight: 700 }}>
+              CifrasApp
+            </Typography>
+          </Box>
+          {!isMobile && (
+            <Button
+              variant="outlined"
+              color="inherit"
+              onClick={toggleDrawer}
+              sx={{
+                borderColor: 'rgba(255,255,255,0.4)',
+                color: 'white',
+                textTransform: 'none',
+              }}
+            >
+              Biblioteca
+            </Button>
+          )}
         </Toolbar>
       </AppBar>
 
-      {/* Drawer para lista de músicas */}
+      {/* Drawer principal */}
       <Drawer
         anchor="left"
         open={state.drawerOpen}
         onClose={toggleDrawer}
+        PaperProps={{
+          sx: {
+            width: drawerWidth,
+            background: 'rgba(15,23,42,0.95)',
+            color: '#e2e8f0',
+            borderRight: '1px solid rgba(255,255,255,0.08)',
+            backdropFilter: 'blur(18px)',
+          },
+        }}
       >
-        <Box sx={{ width: 300, p: 2 }}>
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            Todas as Músicas
-          </Typography>
+        <Box
+          sx={{
+            p: { xs: 2, sm: 3 },
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: { xs: 1.5, sm: 2 },
+          }}
+        >
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <IconButton
+              size="small"
+              onClick={toggleDrawer}
+              sx={{
+                color: '#e2e8f0',
+                border: '1px solid rgba(255,255,255,0.3)',
+              }}
+            >
+              <ArrowBack fontSize="small" />
+            </IconButton>
+            <Typography variant="overline" sx={{ opacity: 0.6 }}>
+              Biblioteca
+            </Typography>
+          </Box>
+          <Box>
+            <Typography variant="h5" sx={{ fontWeight: 700, lineHeight: 1.2, color: '#f8fafc' }}>
+              Todas as músicas
+            </Typography>
+          </Box>
           <Autocomplete
             freeSolo
             options={state.searchHistory}
@@ -396,17 +456,31 @@ export default function ChordViewer() {
                 {...params}
                 size="small"
                 placeholder="Buscar música..."
-                sx={{ 
+                sx={{
                   width: '100%',
                   mb: 2,
-                  backgroundColor: '#f5f5f5',
-                  borderRadius: 1,
                   '& .MuiOutlinedInput-root': {
-                    borderRadius: 1,
-                  }
+                    borderRadius: '14px',
+                    backgroundColor: 'rgba(255,255,255,0.04)',
+                    color: '#e2e8f0',
+                    '& fieldset': {
+                      borderColor: 'rgba(255,255,255,0.1)',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: 'rgba(255,255,255,0.3)',
+                    },
+                  },
+                  '& .MuiInputBase-input': {
+                    color: '#e2e8f0',
+                  },
                 }}
                 InputProps={{
                   ...params.InputProps,
+                  sx: {
+                    '& .MuiInputBase-input::placeholder': {
+                      color: 'rgba(226,232,240,0.6)',
+                    },
+                  },
                   endAdornment: (
                     <InputAdornment position="end">
                       {state.searchQuery ? (
@@ -419,11 +493,12 @@ export default function ChordViewer() {
                               searchOpen: false,
                             }))
                           }
+                          sx={{ color: '#e2e8f0' }}
                         >
-                          <Close />
+                          <Close fontSize="small" />
                         </IconButton>
                       ) : (
-                        <Search fontSize="small" />
+                        <Search fontSize="small" sx={{ color: 'rgba(255,255,255,0.6)' }} />
                       )}
                     </InputAdornment>
                   ),
@@ -432,22 +507,49 @@ export default function ChordViewer() {
             )}
           />
           <Divider sx={{ mb: 1 }} />
-          <Box sx={{ mb: 2 }}>
-            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
-              Meus repertorios
+          <Box
+            sx={{
+              mb: 2,
+              p: 2,
+              borderRadius: 3,
+              border: '1px solid rgba(255,255,255,0.08)',
+              background: 'rgba(255,255,255,0.02)',
+            }}
+          >
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, color: '#f8fafc' }}>
+              Meus repertórios
             </Typography>
-            <Stack direction="row" spacing={1} sx={{ mb: 1 }}>
+            <Typography variant="body2" sx={{ opacity: 0.7, mb: 1.5 }}>
+              Organize listas para cada evento ou estilo.
+            </Typography>
+            <Stack direction="row" spacing={1} sx={{ mb: 1.5 }}>
               <TextField
                 value={newRepertoireName}
                 onChange={(event) => setNewRepertoireName(event.target.value)}
                 size="small"
-                placeholder="Nome do repertorio"
+                placeholder="Nova lista"
                 fullWidth
                 onKeyDown={(event) => {
                   if (event.key === 'Enter') {
                     event.preventDefault();
                     createRepertoire();
                   }
+                }}
+                sx={{
+                  '& .MuiOutlinedInput-root': {
+                    borderRadius: '12px',
+                    backgroundColor: 'rgba(255,255,255,0.04)',
+                    color: '#e2e8f0',
+                    '& fieldset': {
+                      borderColor: 'rgba(255,255,255,0.12)',
+                    },
+                    '&:hover fieldset': {
+                      borderColor: 'rgba(255,255,255,0.3)',
+                    },
+                  },
+                  '& .MuiInputBase-input::placeholder': {
+                    color: 'rgba(226,232,240,0.65)',
+                  },
                 }}
               />
               <Button
@@ -456,25 +558,42 @@ export default function ChordViewer() {
                 startIcon={<Add fontSize="small" />}
                 onClick={createRepertoire}
                 disabled={!newRepertoireName.trim()}
-                sx={{ textTransform: 'none', whiteSpace: 'nowrap', px: 2 }}
+                sx={{
+                  textTransform: 'none',
+                  whiteSpace: 'nowrap',
+                  px: 2,
+                  background: 'linear-gradient(135deg,#22d3ee,#6366f1)',
+                  '&:hover': {
+                    background: 'linear-gradient(135deg,#0ea5e9,#4f46e5)',
+                  },
+                }}
               >
                 Adicionar
               </Button>
             </Stack>
             {state.customRepertoires.length === 0 ? (
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" sx={{ opacity: 0.7 }}>
                 Crie listas personalizadas para organizar suas cifras.
               </Typography>
             ) : (
               state.customRepertoires.map((rep) => (
-                <Accordion key={rep.id} disableGutters sx={{ mb: 1 }}>
+                <Accordion
+                  key={rep.id}
+                  disableGutters
+                  sx={{
+                    mb: 1,
+                    backgroundColor: 'rgba(15,23,42,0.6)',
+                    borderRadius: 2,
+                    '&:before': { display: 'none' },
+                  }}
+                >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon htmlColor="#94a3b8" />}
                     aria-controls={`${rep.id}-content`}
                     id={`${rep.id}-header`}
-                    sx={{ alignItems: 'center' }}
+                    sx={{ alignItems: 'center', px: 2 }}
                   >
-                    <Typography sx={{ flexGrow: 1, fontWeight: 600 }}>
+                    <Typography sx={{ flexGrow: 1, fontWeight: 600, color: '#f8fafc' }}>
                       {rep.name}
                     </Typography>
                     <IconButton
@@ -485,11 +604,12 @@ export default function ChordViewer() {
                         event.preventDefault();
                         deleteRepertoire(rep.id);
                       }}
+                      sx={{ color: '#f87171' }}
                     >
                       <Delete fontSize="small" />
                     </IconButton>
                   </AccordionSummary>
-                  <AccordionDetails>
+                  <AccordionDetails sx={{ px: 2, pt: 0 }}>
                     <Autocomplete
                       size="small"
                       options={state.files}
@@ -497,20 +617,35 @@ export default function ChordViewer() {
                       onChange={(event, newValue) => addSongToRepertoire(rep.id, newValue)}
                       getOptionLabel={(option) => `${option.title} (${option.artist})`}
                       sx={{ mb: 1 }}
-                      noOptionsText="Nenhuma musica encontrada"
+                      noOptionsText="Nenhuma música encontrada"
                       renderInput={(params) => (
                         <TextField
                           {...params}
-                          label="Adicionar musica"
-                          placeholder="Selecione uma musica"
+                          label="Adicionar música"
+                          placeholder="Selecione uma música"
+                          sx={{
+                            '& .MuiInputLabel-root': {
+                              color: 'rgba(226,232,240,0.7)',
+                            },
+                            '& .MuiOutlinedInput-root': {
+                              borderRadius: 2,
+                              color: '#f8fafc',
+                              '& fieldset': {
+                                borderColor: 'rgba(255,255,255,0.12)',
+                              },
+                              '&:hover fieldset': {
+                                borderColor: 'rgba(255,255,255,0.3)',
+                              },
+                            },
+                          }}
                         />
                       )}
                       disabled={state.files.length === 0}
                       clearOnBlur
                     />
                     {rep.songKeys.length === 0 ? (
-                      <Typography variant="body2" color="text.secondary">
-                        Nenhuma musica adicionada ainda.
+                      <Typography variant="body2" sx={{ opacity: 0.8, color: '#f8fafc' }}>
+                        Nenhuma música adicionada ainda.
                       </Typography>
                     ) : (
                       <List disablePadding dense>
@@ -531,6 +666,7 @@ export default function ChordViewer() {
                                   edge="end"
                                   size="small"
                                   onClick={() => removeSongFromRepertoire(rep.id, songKey)}
+                                  sx={{ color: '#f87171' }}
                                 >
                                   <Close fontSize="small" />
                                 </IconButton>
@@ -547,8 +683,20 @@ export default function ChordViewer() {
                                     searchQuery: '',
                                   }));
                                 }}
-                              >
-                                <ListItemText primary={file.title} secondary={file.artist} />
+                              sx={{
+                                borderRadius: 1,
+                                color: '#f8fafc',
+                                '&.Mui-selected': {
+                                  backgroundColor: 'rgba(99,102,241,0.2)',
+                                },
+                              }}
+                            >
+                                <ListItemText
+                                  primary={file.title}
+                                  secondary={file.artist}
+                                  primaryTypographyProps={{ sx: { color: '#f8fafc' } }}
+                                  secondaryTypographyProps={{ sx: { color: 'rgba(226,232,240,0.7)' } }}
+                                />
                               </ListItemButton>
                             </ListItem>
                           );
@@ -569,9 +717,23 @@ export default function ChordViewer() {
             }, {} as Record<string, ChordFile[]>);
             const artists = Object.keys(grouped).sort((a, b) => a.localeCompare(b));
             return artists.map((artist) => (
-              <Accordion key={artist} disableGutters>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={`${artist}-content`} id={`${artist}-header`}>
-                  <Typography sx={{ fontWeight: 600 }}>{artist}</Typography>
+              <Accordion
+                key={artist}
+                disableGutters
+                sx={{
+                  mb: 1,
+                  backgroundColor: 'rgba(255,255,255,0.02)',
+                  borderRadius: 2,
+                  border: '1px solid rgba(255,255,255,0.05)',
+                  '&:before': { display: 'none' },
+                }}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon htmlColor="#94a3b8" />}
+                  aria-controls={`${artist}-content`}
+                  id={`${artist}-header`}
+                >
+                  <Typography sx={{ fontWeight: 600, color: '#f8fafc' }}>{artist}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <List disablePadding>
@@ -592,8 +754,19 @@ export default function ChordViewer() {
                                 searchQuery: '',
                               }));
                             }}
+                            sx={{
+                              borderRadius: 1,
+                              color: '#f8fafc',
+                              px: 1.5,
+                              '&.Mui-selected': {
+                                backgroundColor: 'rgba(99,102,241,0.2)',
+                              },
+                            }}
                           >
-                            <ListItemText primary={file.title} />
+                            <ListItemText
+                              primary={file.title}
+                              primaryTypographyProps={{ sx: { color: '#f8fafc' } }}
+                            />
                           </ListItemButton>
                         </ListItem>
                       );
@@ -606,153 +779,201 @@ export default function ChordViewer() {
         </Box>
       </Drawer>
 
-      {/* Área principal de conteúdo */}
-      <Box sx={{ 
-        flex: 1, 
-        display: 'flex', 
-        flexDirection: 'column',
-        overflow: 'hidden',
-        position: 'relative'
-      }}>
-        {state.searchOpen && state.searchQuery ? (
-          <Box sx={{ p: 2, overflowY: 'auto' }}>
-            <Typography variant="h6">Resultados da busca:</Typography>
-            {filteredFiles.length > 0 ? (
-              <Stack spacing={1}>
-                {filteredFiles.map((file, idx) => (
-                  <Button
-                    key={idx}
-                    variant="outlined"
-                    onClick={() => {
-                      // Encontra o índice original no array completo
-                      const originalIndex = state.files.findIndex((f) => f.title === file.title && f.artist === file.artist);
-                      setState((prev) => ({
-                        ...prev,
-                        currentFileIndex: originalIndex,
-                        searchQuery: '', // Limpa a busca
-                        searchOpen: false, // Fecha o campo de busca
-                      }));
-                    }}
-                  >
-                    {file.title} - {file.artist}
-                  </Button>
-                ))}
-              </Stack>
-            ) : (
-              <Typography color="textSecondary">Nenhuma música encontrada.</Typography>
-            )}
-          </Box>
-        ) : currentFile ? (
-          <>
-            {/* Título da música (compacto) */}
-            <Paper sx={{ 
-              p: 1, 
-              mx: 1, 
-              mt: 1,
-              backgroundColor: '#f9f9f9',
-              minHeight: 'auto'
-            }}>
-              <Typography variant={isMobile ? "h6" : "h5"} sx={{ 
-                fontWeight: 'bold',
-                textAlign: 'center'
-              }}>
+      {/* Área principal */}
+      <Box
+        sx={{
+          flex: 1,
+          display: 'flex',
+          justifyContent: 'center',
+          overflowX: 'hidden',
+          p: { xs: 1, sm: 2, md: 4 },
+        }}
+      >
+        <Stack
+          sx={{
+            width: '100%',
+            maxWidth: 1100,
+            flex: 1,
+            gap: { xs: 2, md: 3 },
+            pb: currentFile ? { xs: 12, md: 6 } : 2,
+          }}
+        >
+          {currentFile && (
+            <Paper
+              sx={{
+                p: { xs: 2, md: 3 },
+                borderRadius: 3,
+                background: 'rgba(15,23,42,0.88)',
+                color: '#f8fafc',
+                border: '1px solid rgba(255,255,255,0.08)',
+              }}
+            >
+              <Typography variant="overline" sx={{ opacity: 0.7 }}>
+                Tocando agora
+              </Typography>
+              <Typography variant={isMobile ? 'h5' : 'h4'} sx={{ fontWeight: 700, mb: 1 }}>
                 {currentFile.title}
               </Typography>
-              <Typography variant="body2" color="textSecondary" sx={{ 
-                textAlign: 'center'
-              }}>
+              <Typography variant="body1" sx={{ color: '#f8fafc' }}>
                 {currentFile.artist}
               </Typography>
             </Paper>
+          )}
 
-            {/* Conteúdo das cifras com scroll */}
-            <Box
-              ref={contentRef}
-              sx={{
-                flex: 1,
-                p: 2,
-                mx: 1,
-                mb: 8, // Espaço para controles fixos
-                overflowY: 'auto',
-                backgroundColor: '#fafafa',
-                fontFamily: 'monospace',
-                fontSize: isMobile ? '12px' : '14px',
-                lineHeight: '2',
-                border: '1px solid #ddd',
-                borderRadius: 1,
-              }}
-            >
-              {currentFile.content.map((line, index) => (
-                <Box key={index} sx={{ mb: 2 }}>
-                  <Typography
-                    component="div"
-                    sx={{
-                      fontWeight: 'bold',
-                      color: '#d32f2f',
-                      fontFamily: 'monospace',
-                      fontSize: isMobile ? '12px' : '14px',
-                      minHeight: '1.5em',
-                      whiteSpace: 'pre-wrap',
-                      wordBreak: 'break-word',
-                    }}
-                  >
-                    {transposeText(line.chords, state.transposition)}
+          <Paper
+            sx={{
+              flex: 1,
+              minHeight: { xs: '60vh', md: '65vh' },
+              maxHeight: { xs: '75vh', md: '70vh' },
+              borderRadius: 3,
+              background: PANEL_GRADIENT,
+              border: '1px solid rgba(255,255,255,0.08)',
+              boxShadow: '0 20px 50px rgba(15,23,42,0.5)',
+              display: 'flex',
+              flexDirection: 'column',
+              overflow: 'hidden',
+            }}
+          >
+            {state.searchOpen && state.searchQuery ? (
+              <Box sx={{ p: 3, overflowY: 'auto', flex: 1 }}>
+                <Typography variant="h6" sx={{ mb: 2 }}>
+                  Resultados da busca
+                </Typography>
+                {filteredFiles.length > 0 ? (
+                  <Stack spacing={1}>
+                    {filteredFiles.map((file, idx) => (
+                      <Button
+                        key={idx}
+                        variant="outlined"
+                        color="inherit"
+                        sx={{
+                          justifyContent: 'flex-start',
+                          borderColor: 'rgba(255,255,255,0.2)',
+                          color: '#e2e8f0',
+                          textTransform: 'none',
+                        }}
+                        onClick={() => {
+                          const originalIndex = state.files.findIndex(
+                            (f) => f.title === file.title && f.artist === file.artist
+                          );
+                          setState((prev) => ({
+                            ...prev,
+                            currentFileIndex: originalIndex,
+                            searchQuery: '',
+                            searchOpen: false,
+                          }));
+                        }}
+                      >
+                        {file.title} · {file.artist}
+                      </Button>
+                    ))}
+                  </Stack>
+                ) : (
+                  <Typography color="rgba(226,232,240,0.7)">
+                    Nenhuma música encontrada.
                   </Typography>
-                  <Typography
-                    component="div"
-                    sx={{
-                      fontFamily: 'monospace',
-                      fontSize: isMobile ? '12px' : '14px',
-                      minHeight: '1.5em',
-                      whiteSpace: 'pre-wrap',
-                      wordBreak: 'break-word',
-                    }}
-                  >
-                    {line.lyrics}
-                  </Typography>
+                )}
+              </Box>
+            ) : currentFile ? (
+              <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <Box
+                  ref={contentRef}
+                  sx={{
+                    flex: 1,
+                    height: '100%',
+                    overflowY: 'auto',
+                    p: { xs: 2, md: 3 },
+                    fontFamily: 'JetBrains Mono, Consolas, monospace',
+                    fontSize: isMobile ? '13px' : '15px',
+                    lineHeight: 2,
+                    color: '#e2e8f0',
+                  }}
+                >
+                  {currentFile.content.map((line, index) => (
+                    <Box key={index} sx={{ mb: 2 }}>
+                      <Typography
+                        component="div"
+                        sx={{
+                          fontWeight: 600,
+                          color: '#fde047',
+                          minHeight: '1.5em',
+                          whiteSpace: 'pre-wrap',
+                          wordBreak: 'break-word',
+                        }}
+                      >
+                        {transposeText(line.chords, state.transposition)}
+                      </Typography>
+                      <Typography
+                        component="div"
+                        sx={{
+                          minHeight: '1.5em',
+                          whiteSpace: 'pre-wrap',
+                          wordBreak: 'break-word',
+                          color: '#f8fafc',
+                        }}
+                      >
+                        {line.lyrics}
+                      </Typography>
+                    </Box>
+                  ))}
                 </Box>
-              ))}
-            </Box>
-          </>
-        ) : state.files.length === 0 ? (
-          <Box sx={{ 
-            flex: 1, 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center',
-            p: 4
-          }}>
-            <Typography variant="h6" color="textSecondary" sx={{ textAlign: 'center' }}>
-              Carregando cifras...
-            </Typography>
-          </Box>
-        ) : null}
+              </Box>
+            ) : state.files.length === 0 ? (
+              <Box
+                sx={{
+                  flex: 1,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  p: 4,
+                }}
+              >
+                <Typography variant="h6" sx={{ color: 'rgba(226,232,240,0.7)' }}>
+                  Carregando cifras...
+                </Typography>
+              </Box>
+            ) : null}
+          </Paper>
+        </Stack>
       </Box>
 
-      {/* Controles fixos na parte inferior */}
+      {/* Controles fixos */}
       {currentFile && (
-        <Paper sx={{ 
-          position: 'fixed',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          p: 1,
-          backgroundColor: '#1976d2',
-          color: 'white',
-          zIndex: 1000,
-          boxShadow: '0 -2px 10px rgba(0,0,0,0.1)'
-        }}>
-          <Stack direction="row" spacing={1} alignItems="center" justifyContent="center">
+        <Paper
+          sx={{
+            position: 'sticky',
+            bottom: 16,
+            alignSelf: 'center',
+            width: { xs: 'calc(100% - 24px)', sm: '70%', md: '50%' },
+            maxWidth: 420,
+            mt: 2,
+            px: { xs: 2, sm: 3 },
+            py: { xs: 1.5, sm: 1.5 },
+            borderRadius: 12,
+            background: 'rgba(15,23,42,0.92)',
+            color: 'white',
+            border: '1px solid rgba(255,255,255,0.12)',
+            boxShadow: '0 20px 40px rgba(15,23,42,0.6)',
+          }}
+        >
+          <Stack
+            direction="row"
+            spacing={{ xs: 1, sm: 2 }}
+            alignItems="center"
+            justifyContent="space-between"
+            flexWrap="wrap"
+          >
             {/* Controles de Play */}
             <Fab
               size="small"
               color="secondary"
               onClick={togglePlayPause}
               sx={{ 
-                backgroundColor: state.isPlaying ? '#f44336' : '#4caf50',
-                '&:hover': {
-                  backgroundColor: state.isPlaying ? '#d32f2f' : '#388e3c',
-                }
+                background: state.isPlaying
+                  ? 'linear-gradient(135deg,#f87171,#ef4444)'
+                  : 'linear-gradient(135deg,#34d399,#10b981)',
+                boxShadow: 'none',
+                color: '#0f172a',
               }}
             >
               {state.isPlaying ? <Pause /> : <PlayArrow />}
@@ -760,20 +981,20 @@ export default function ChordViewer() {
 
             {/* Controles de Velocidade */}
             <Stack direction="row" spacing={0.5} alignItems="center">
-              <Typography variant="caption" sx={{ minWidth: '60px', textAlign: 'center' }}>
+              <Typography variant="caption" sx={{ minWidth: '45px', textAlign: 'center', opacity: 0.8 }}>
                 {state.scrollSpeed.toFixed(1)}x
               </Typography>
               <IconButton 
                 size="small" 
                 onClick={decreaseSpeed}
-                sx={{ color: 'white' }}
+                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Remove />
               </IconButton>
               <IconButton 
                 size="small" 
                 onClick={increaseSpeed}
-                sx={{ color: 'white' }}
+                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Add />
               </IconButton>
@@ -781,20 +1002,20 @@ export default function ChordViewer() {
 
             {/* Controles de Transposição */}
             <Stack direction="row" spacing={0.5} alignItems="center">
-              <Typography variant="caption" sx={{ minWidth: '40px', textAlign: 'center' }}>
+              <Typography variant="caption" sx={{ minWidth: '45px', textAlign: 'center', opacity: 0.8 }}>
                 Tom: {state.transposition > 0 ? '+' : ''}{state.transposition}
               </Typography>
               <IconButton 
                 size="small" 
                 onClick={decreaseKey}
-                sx={{ color: 'white' }}
+                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Remove />
               </IconButton>
               <IconButton 
                 size="small" 
                 onClick={increaseKey}
-                sx={{ color: 'white' }}
+                sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)' }}
               >
                 <Add />
               </IconButton>
@@ -805,7 +1026,8 @@ export default function ChordViewer() {
                 sx={{ 
                   color: 'white',
                   minWidth: 'auto',
-                  px: 1
+                  px: 1,
+                  textTransform: 'none',
                 }}
               >
                 Reset
