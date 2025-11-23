@@ -26,8 +26,6 @@ import {
   AccordionDetails,
 } from '@mui/material';
 import {
-  PlayArrow,
-  Pause,
   Add,
   Remove,
   Search,
@@ -38,6 +36,7 @@ import {
   ArrowBack,
   ChevronLeft,
   ChevronRight,
+  TextFields,
 } from '@mui/icons-material';
 import { ChordFile, parseChordFile } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
@@ -64,7 +63,6 @@ interface ChordViewerState {
   searchHistory: string[];
   drawerOpen: boolean;
   customRepertoires: CustomRepertoire[];
-  controlsCollapsed?: boolean;
 }
 
 export default function ChordViewer() {
@@ -87,7 +85,6 @@ export default function ChordViewer() {
     searchHistory: [],
     drawerOpen: false,
     customRepertoires: [],
-    controlsCollapsed: false,
   });
   const [newRepertoireName, setNewRepertoireName] = useState('');
 
@@ -268,19 +265,19 @@ export default function ChordViewer() {
 
   // Aumentar velocidade
   const increaseSpeed = () => {
-    setState((prev) => ({
-      ...prev,
-      scrollSpeed: Math.min(prev.scrollSpeed + 0.5, 5),
-    }));
-  };
+  setState((prev) => {
+    const next = Math.min(prev.scrollSpeed + 0.5, 5);
+    return { ...prev, scrollSpeed: next, isPlaying: next > 0 };
+  });
+};
 
   // Diminuir velocidade
   const decreaseSpeed = () => {
-    setState((prev) => ({
-      ...prev,
-      scrollSpeed: Math.max(prev.scrollSpeed - 0.5, 0.5),
-    }));
-  };
+  setState((prev) => {
+    const next = Math.max(prev.scrollSpeed - 0.5, 0);
+    return { ...prev, scrollSpeed: next, isPlaying: next > 0 };
+  });
+};
 
   // Resetar transposição
   const resetTransposition = () => {
@@ -833,12 +830,43 @@ export default function ChordViewer() {
               <Typography variant="overline" sx={{ opacity: 0.7 }}>
                 Tocando agora
               </Typography>
-              <Typography variant={isMobile ? 'h6' : 'h5'} sx={{ fontWeight: 700, mb: 0.5, lineHeight: 1.2 }}>
-                {currentFile.title}
-              </Typography>
-              <Typography variant="body2" sx={{ color: '#f8fafc' }}>
-                {currentFile.artist}
-              </Typography>
+              <Stack direction="row" alignItems="center" justifyContent="space-between" spacing={1}>
+  <Box sx={{ flex: 1, minWidth: 0 }}>
+    <Typography variant={isMobile ? 'h6' : 'h5'} sx={{ fontWeight: 700, mb: 0.25, lineHeight: 1.2, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+      {currentFile.title}
+    </Typography>
+    <Typography variant="body2" sx={{ color: '#f8fafc', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+      {currentFile.artist}
+    </Typography>
+  </Box>
+  <Stack direction="row" spacing={0.5} alignItems="center">
+    <TextFields fontSize="small" sx={{ color: '#f8fafc' }} />
+    <IconButton
+      size="small"
+      onClick={() =>
+        setState((prev) => ({
+          ...prev,
+          fontScale: Math.max(0.85, prev.fontScale - 0.05),
+        }))
+      }
+      sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+    >
+      <Remove />
+    </IconButton>
+    <IconButton
+      size="small"
+      onClick={() =>
+        setState((prev) => ({
+          ...prev,
+          fontScale: Math.min(1.3, prev.fontScale + 0.05),
+        }))
+      }
+      sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+    >
+      <Add />
+    </IconButton>
+  </Stack>
+</Stack>
             </Paper>
           )}
 
@@ -960,7 +988,7 @@ export default function ChordViewer() {
         </Stack>
       </Box>
 
-      {/* Controles fixos */}
+          {/* Controles fixos */}
       {currentFile && (
         <Box
           sx={{
@@ -973,28 +1001,28 @@ export default function ChordViewer() {
           }}
         >
           {state.controlsCollapsed ? (
-            <Fab
-              size="small"
-              color="secondary"
+            <IconButton
+              size="medium"
               onClick={() => setState((prev) => ({ ...prev, controlsCollapsed: false }))}
               sx={{
-                background: 'linear-gradient(135deg,#34d399,#10b981)',
-                color: '#0f172a',
-                boxShadow: '0 10px 20px rgba(15,23,42,0.4)',
+                color: 'white',
+                background: 'rgba(15,23,42,0.9)',
+                border: '1px solid rgba(255,255,255,0.2)',
+                width: 40,
+                height: 40,
               }}
             >
-              <ChevronLeft />
-            </Fab>
+              <ChevronRight />
+            </IconButton>
           ) : (
             <Paper
               sx={{
-                position: 'relative',
                 width: { xs: 'calc(100% - 24px)', sm: '70%', md: '60%', lg: '720px' },
                 maxWidth: '100%',
                 mt: 1.5,
-                px: { xs: 1.5, sm: 2 },
-                py: { xs: 1.25, sm: 1.25 },
-                pb: { xs: 'calc(1.25rem + env(safe-area-inset-bottom, 0px))', sm: 'calc(1.25rem + env(safe-area-inset-bottom, 0px))' },
+                px: { xs: 1.25, sm: 1.75 },
+                py: { xs: 1.1, sm: 1.2 },
+                pb: { xs: 'calc(1.1rem + env(safe-area-inset-bottom, 0px))', sm: 'calc(1.1rem + env(safe-area-inset-bottom, 0px))' },
                 borderRadius: 10,
                 background: 'rgba(15,23,42,0.92)',
                 color: 'white',
@@ -1002,21 +1030,6 @@ export default function ChordViewer() {
                 boxShadow: '0 16px 30px rgba(15,23,42,0.55)',
               }}
             >
-              <IconButton
-                size="small"
-                onClick={() => setState((prev) => ({ ...prev, controlsCollapsed: true }))}
-                sx={{
-                  position: 'absolute',
-                  right: 8,
-                  top: 8,
-                  color: 'white',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  width: 32,
-                  height: 32,
-                }}
-              >
-                <ChevronRight />
-              </IconButton>
               <Stack
                 direction="row"
                 spacing={{ xs: 0.75, sm: 1.25 }}
@@ -1024,106 +1037,46 @@ export default function ChordViewer() {
                 justifyContent="space-between"
                 flexWrap="nowrap"
               >
-                {/* Controles de Play */}
-                <Fab
+                <IconButton
                   size="small"
-                  color="secondary"
-                  onClick={togglePlayPause}
-                  sx={{ 
-                    background: state.isPlaying
-                      ? 'linear-gradient(135deg,#f87171,#ef4444)'
-                      : 'linear-gradient(135deg,#34d399,#10b981)',
-                    boxShadow: 'none',
-                    color: '#0f172a',
+                  onClick={() => setState((prev) => ({ ...prev, controlsCollapsed: true }))}
+                  sx={{
+                    color: 'white',
+                    border: '1px solid rgba(255,255,255,0.2)',
+                    width: 32,
+                    height: 32,
                   }}
                 >
-                  {state.isPlaying ? <Pause /> : <PlayArrow />}
-                </Fab>
+                  <ChevronLeft />
+                </IconButton>
 
-                {/* Controles de Velocidade */}
+                {/* Velocidade (auto start/stop) */}
                 <Stack direction="row" spacing={0.5} alignItems="center">
-                  <IconButton 
-                    size="small" 
-                    onClick={decreaseSpeed}
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
+                  <IconButton size="small" onClick={decreaseSpeed} sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}>
                     <Remove />
                   </IconButton>
                   <Typography variant="caption" sx={{ minWidth: '36px', textAlign: 'center', opacity: 0.8 }}>
                     {state.scrollSpeed.toFixed(1)}x
                   </Typography>
-                  <IconButton 
-                    size="small" 
-                    onClick={increaseSpeed}
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
+                  <IconButton size="small" onClick={increaseSpeed} sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}>
                     <Add />
                   </IconButton>
                 </Stack>
 
-                {/* Controles de Transposição */}
+                {/* Transposição */}
                 <Stack direction="row" spacing={0.5} alignItems="center">
                   <Typography variant="caption" sx={{ minWidth: '40px', textAlign: 'center', opacity: 0.8 }}>
                     Tom: {state.transposition > 0 ? '+' : ''}{state.transposition}
                   </Typography>
-                  <IconButton 
-                    size="small" 
-                    onClick={decreaseKey}
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
+                  <IconButton size="small" onClick={decreaseKey} sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}>
                     <Remove />
                   </IconButton>
-                  <IconButton 
-                    size="small" 
-                    onClick={increaseKey}
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
+                  <IconButton size="small" onClick={increaseKey} sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}>
                     <Add />
                   </IconButton>
-                  <Button
-                    size="small"
-                    variant="text"
-                    onClick={resetTransposition}
-                    sx={{ 
-                      color: 'white',
-                      minWidth: 'auto',
-                      px: 1,
-                      textTransform: 'none',
-                    }}
-                  >
+                  <Button size="small" variant="text" onClick={resetTransposition} sx={{ color: 'white', minWidth: 'auto', px: 1, textTransform: 'none' }}>
                     Reset
                   </Button>
-                </Stack>
-
-                {/* Controles de fonte */}
-                <Stack direction="row" spacing={0.5} alignItems="center">
-                  <Typography variant="caption" sx={{ minWidth: '40px', textAlign: 'center', opacity: 0.8 }}>
-                    Texto
-                  </Typography>
-                  <IconButton
-                    size="small"
-                    onClick={() =>
-                      setState((prev) => ({
-                        ...prev,
-                        fontScale: Math.max(0.85, prev.fontScale - 0.05),
-                      }))
-                    }
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
-                    <Remove />
-                  </IconButton>
-                  <IconButton
-                    size="small"
-                    onClick={() =>
-                      setState((prev) => ({
-                        ...prev,
-                        fontScale: Math.min(1.3, prev.fontScale + 0.05),
-                      }))
-                    }
-                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-                  >
-                    <Add />
-                  </IconButton>
                 </Stack>
               </Stack>
             </Paper>
