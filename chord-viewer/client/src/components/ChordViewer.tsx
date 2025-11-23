@@ -66,7 +66,10 @@ interface ChordViewerState {
 export default function ChordViewer() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
   const drawerWidth = isMobile ? '100%' : 340;
+  const drawerVariant = isMobile ? 'temporary' : 'persistent';
+  const contentMaxWidth = isDesktop ? 1400 : 1100;
   
   const [state, setState] = useState<ChordViewerState>({
     files: [],
@@ -84,6 +87,14 @@ export default function ChordViewer() {
 
   const contentRef = useRef<HTMLDivElement>(null);
   const scrollIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Abrir biblioteca por padr?o em telas grandes
+  useEffect(() => {
+    setState((prev) => ({
+      ...prev,
+      drawerOpen: !isMobile,
+    }));
+  }, [isMobile]);
 
   // Carregar histórico do localStorage ao montar o componente
   useEffect(() => {
@@ -142,7 +153,7 @@ export default function ChordViewer() {
     const loadChordFiles = async () => {
       try {
         // Importar todos os arquivos .chords da pasta Chords
-        const chordFiles = await import.meta.glob('../Chords/*.chords', { as: 'raw' });
+        const chordFiles = await import.meta.glob('../Chords/*.chords', { query: '?raw', import: 'default' });
         const files: ChordFile[] = [];
         
         for (const path in chordFiles) {
@@ -321,6 +332,7 @@ export default function ChordViewer() {
         flexDirection: 'column',
         background: BRAND_GRADIENT,
         color: '#e2e8f0',
+        pb: 'calc(env(safe-area-inset-bottom, 0px) + 120px)',
       }}
     >
       {/* Header */}
@@ -376,6 +388,7 @@ export default function ChordViewer() {
       {/* Drawer principal */}
       <Drawer
         anchor="left"
+        variant={drawerVariant}
         open={state.drawerOpen}
         onClose={toggleDrawer}
         PaperProps={{
@@ -787,12 +800,14 @@ export default function ChordViewer() {
           justifyContent: 'center',
           overflowX: 'hidden',
           p: { xs: 1, sm: 2, md: 4 },
+          ml: !isMobile && state.drawerOpen ? `${drawerWidth}px` : 0,
+          transition: 'margin-left 0.2s ease',
         }}
       >
         <Stack
           sx={{
             width: '100%',
-            maxWidth: 1100,
+            maxWidth: contentMaxWidth,
             flex: 1,
             gap: { xs: 2, md: 3 },
             pb: currentFile ? { xs: 12, md: 6 } : 2,
@@ -824,7 +839,7 @@ export default function ChordViewer() {
             sx={{
               flex: 1,
               minHeight: { xs: '60vh', md: '65vh' },
-              maxHeight: { xs: '75vh', md: '70vh' },
+              maxHeight: { xs: '75vh', md: '80vh' },
               borderRadius: 3,
               background: PANEL_GRADIENT,
               border: '1px solid rgba(255,255,255,0.08)',
@@ -944,11 +959,12 @@ export default function ChordViewer() {
             position: 'sticky',
             bottom: 16,
             alignSelf: 'center',
-            width: { xs: 'calc(100% - 24px)', sm: '70%', md: '50%' },
-            maxWidth: 420,
+            width: { xs: 'calc(100% - 24px)', sm: '70%', md: '60%', lg: '720px' },
+            maxWidth: '100%',
             mt: 2,
             px: { xs: 2, sm: 3 },
             py: { xs: 1.5, sm: 1.5 },
+            pb: { xs: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))', sm: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))' },
             borderRadius: 12,
             background: 'rgba(15,23,42,0.92)',
             color: 'white',
