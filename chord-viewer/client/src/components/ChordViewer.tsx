@@ -56,11 +56,13 @@ interface ChordViewerState {
   transposition: number;
   isPlaying: boolean;
   scrollSpeed: number;
+  fontScale: number;
   searchQuery: string;
   searchOpen: boolean;
   searchHistory: string[];
   drawerOpen: boolean;
   customRepertoires: CustomRepertoire[];
+  controlsCollapsed?: boolean;
 }
 
 export default function ChordViewer() {
@@ -77,11 +79,13 @@ export default function ChordViewer() {
     transposition: 0,
     isPlaying: false,
     scrollSpeed: 1,
+    fontScale: 1,
     searchQuery: '',
     searchOpen: false,
     searchHistory: [],
     drawerOpen: false,
     customRepertoires: [],
+    controlsCollapsed: false,
   });
   const [newRepertoireName, setNewRepertoireName] = useState('');
 
@@ -323,6 +327,7 @@ export default function ChordViewer() {
   }, [state.isPlaying, state.scrollSpeed]);
 
   const currentFile = state.files[state.currentFileIndex];
+  const adjustedFontSize = (isMobile ? 13 : 15) * state.fontScale;
 
   return (
     <Box
@@ -898,8 +903,9 @@ export default function ChordViewer() {
                     height: '100%',
                     overflowY: 'auto',
                     p: { xs: 2, md: 3 },
+                    pb: { xs: 18, md: 14 },
                     fontFamily: 'JetBrains Mono, Consolas, monospace',
-                    fontSize: isMobile ? '13px' : '15px',
+                    fontSize: `${adjustedFontSize}px`,
                     lineHeight: 2,
                     color: '#e2e8f0',
                   }}
@@ -954,11 +960,33 @@ export default function ChordViewer() {
 
       {/* Controles fixos */}
       {currentFile && (
+        <Box
+          sx={{
+            position: 'sticky',
+            bottom: 16,
+            alignSelf: 'center',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          {state.controlsCollapsed ? (
+            <Fab
+              size="small"
+              color="secondary"
+              onClick={() => setState((prev) => ({ ...prev, controlsCollapsed: false }))}
+              sx={{
+                background: 'linear-gradient(135deg,#34d399,#10b981)',
+                color: '#0f172a',
+                boxShadow: '0 10px 20px rgba(15,23,42,0.4)',
+              }}
+            >
+              <ChevronLeft />
+            </Fab>
+          ) : (
             <Paper
               sx={{
-                position: 'sticky',
-                bottom: 16,
-                alignSelf: 'center',
+                position: 'relative',
                 width: { xs: 'calc(100% - 24px)', sm: '70%', md: '60%', lg: '720px' },
                 maxWidth: '100%',
                 mt: 1.5,
@@ -972,9 +1000,24 @@ export default function ChordViewer() {
                 boxShadow: '0 16px 30px rgba(15,23,42,0.55)',
               }}
             >
+              <IconButton
+                size="small"
+                onClick={() => setState((prev) => ({ ...prev, controlsCollapsed: true }))}
+                sx={{
+                  position: 'absolute',
+                  right: 8,
+                  top: 8,
+                  color: 'white',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  width: 32,
+                  height: 32,
+                }}
+              >
+                <ChevronRight />
+              </IconButton>
               <Stack
                 direction="row"
-                spacing={{ xs: 0.75, sm: 1.5 }}
+                spacing={{ xs: 0.75, sm: 1.25 }}
                 alignItems="center"
                 justifyContent="space-between"
                 flexWrap="nowrap"
@@ -987,13 +1030,13 @@ export default function ChordViewer() {
                   sx={{ 
                     background: state.isPlaying
                       ? 'linear-gradient(135deg,#f87171,#ef4444)'
-                  : 'linear-gradient(135deg,#34d399,#10b981)',
-                boxShadow: 'none',
-                color: '#0f172a',
-              }}
-            >
-              {state.isPlaying ? <Pause /> : <PlayArrow />}
-            </Fab>
+                      : 'linear-gradient(135deg,#34d399,#10b981)',
+                    boxShadow: 'none',
+                    color: '#0f172a',
+                  }}
+                >
+                  {state.isPlaying ? <Pause /> : <PlayArrow />}
+                </Fab>
 
                 {/* Controles de Velocidade */}
                 <Stack direction="row" spacing={0.5} alignItems="center">
@@ -1048,9 +1091,42 @@ export default function ChordViewer() {
                   >
                     Reset
                   </Button>
-            </Stack>
-          </Stack>
-        </Paper>
+                </Stack>
+
+                {/* Controles de fonte */}
+                <Stack direction="row" spacing={0.5} alignItems="center">
+                  <Typography variant="caption" sx={{ minWidth: '40px', textAlign: 'center', opacity: 0.8 }}>
+                    Texto
+                  </Typography>
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      setState((prev) => ({
+                        ...prev,
+                        fontScale: Math.max(0.85, prev.fontScale - 0.05),
+                      }))
+                    }
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Remove />
+                  </IconButton>
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      setState((prev) => ({
+                        ...prev,
+                        fontScale: Math.min(1.3, prev.fontScale + 0.05),
+                      }))
+                    }
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Add />
+                  </IconButton>
+                </Stack>
+              </Stack>
+            </Paper>
+          )}
+        </Box>
       )}
     </Box>
   );
