@@ -36,6 +36,8 @@ import {
   Delete,
   ExpandMore as ExpandMoreIcon,
   ArrowBack,
+  ChevronLeft,
+  ChevronRight,
 } from '@mui/icons-material';
 import { ChordFile, parseChordFile } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
