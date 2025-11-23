@@ -841,29 +841,29 @@ export default function ChordViewer() {
   </Box>
   <Stack direction="row" spacing={0.5} alignItems="center">
     <TextFields fontSize="small" sx={{ color: '#f8fafc' }} />
-    <IconButton
-      size="small"
-      onClick={() =>
-        setState((prev) => ({
-          ...prev,
-          fontScale: Math.max(0.85, prev.fontScale - 0.05),
-        }))
-      }
-      sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-    >
-      <Remove />
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      setState((prev) => ({
+                        ...prev,
+                        fontScale: Math.max(0.8, prev.fontScale - 0.1),
+                      }))
+                    }
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Remove />
     </IconButton>
-    <IconButton
-      size="small"
-      onClick={() =>
-        setState((prev) => ({
-          ...prev,
-          fontScale: Math.min(1.3, prev.fontScale + 0.05),
-        }))
-      }
-      sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
-    >
-      <Add />
+                  <IconButton
+                    size="small"
+                    onClick={() =>
+                      setState((prev) => ({
+                        ...prev,
+                        fontScale: Math.min(1.4, prev.fontScale + 0.1),
+                      }))
+                    }
+                    sx={{ color: 'white', border: '1px solid rgba(255,255,255,0.2)', width: 32, height: 32 }}
+                  >
+                    <Add />
     </IconButton>
   </Stack>
 </Stack>
