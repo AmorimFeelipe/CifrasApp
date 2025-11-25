@@ -7,6 +7,7 @@ import os
 import threading
 import time
 import sys
+import json
 
 class FastChordScraper:
     def __init__(self, root):
@@ -68,7 +69,7 @@ class FastChordScraper:
         self.status_var = tk.StringVar(value="Pronto.")
         ttk.Label(action_frame, textvariable=self.status_var, foreground="gray").pack(side=tk.LEFT)
         
-        ttk.Button(action_frame, text="💾 Salvar .chords", command=self.save_file).pack(side=tk.RIGHT)
+        ttk.Button(action_frame, text="💾 Salvar .json", command=self.save_file).pack(side=tk.RIGHT)
         ttk.Button(action_frame, text="🧹 Limpar", command=self.clear_all).pack(side=tk.RIGHT, padx=5)
 
     def extract_data(self):
@@ -146,31 +147,38 @@ class FastChordScraper:
     def save_file(self):
         content = self.text_area.get(1.0, tk.END).strip()
         if not content:
+            messagebox.showwarning("Atenção", "Não há conteúdo para salvar.")
             return
-            
-        artist = self.artist_var.get().strip() or "Artista"
-        title = self.title_var.get().strip() or "Titulo"
-        
-        # Formato de arquivo solicitado
-        filename_suggestion = f"{artist} - {title}.chords"
-        # Limpa caracteres ilegais no nome do arquivo
+
+        artist = self.artist_var.get().strip() or "Artista Desconhecido"
+        title = self.title_var.get().strip() or "Sem Título"
+        key = self.key_var.get().strip() or "N/A"
+
+        # Sugestão de nome de arquivo
+        filename_suggestion = f"{artist} - {title}.json"
         filename_suggestion = re.sub(r'[<>:"/\\|?*]', '', filename_suggestion)
 
         filepath = filedialog.asksaveasfilename(
-            defaultextension=".chords",
+            defaultextension=".json",
             initialfile=filename_suggestion,
-            filetypes=[("Arquivos Chord", "*.chords"), ("Texto", "*.txt")]
+            filetypes=[("Arquivos JSON", "*.json"), ("Todos os arquivos", "*.*")]
         )
-        
+
         if filepath:
-            with open(filepath, "w", encoding="utf-8") as f:
-                # Cabeçalho padrão para seu parser
-                f.write(f"Título: {title}\n")
-                f.write(f"Artista: {artist}\n")
-                f.write(f"Tom: {self.key_var.get()}\n")
-                f.write("="*20 + "\n\n")
-                f.write(content)
-            self.status_var.set(f"Salvo em {os.path.basename(filepath)}")
+            # Estrutura de dados JSON
+            data = {
+                "title": title,
+                "artist": artist,
+                "key": key,
+                "content": content
+            }
+            try:
+                with open(filepath, "w", encoding="utf-8") as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
+                self.status_var.set(f"Salvo com sucesso em {os.path.basename(filepath)}")
+            except Exception as e:
+                messagebox.showerror("Erro ao Salvar", f"Não foi possível salvar o arquivo:\n{e}")
+                self.status_var.set("Falha ao salvar.")
 
     def clear_all(self):
         self.url_entry.delete(0, tk.END)
