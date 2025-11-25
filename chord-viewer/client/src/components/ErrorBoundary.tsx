@@ -35,8 +35,9 @@ import {
   Menu,
   ExpandMore as ExpandMoreIcon,
 } from '@mui/icons-material';
-import { ChordFile, parseChordFile } from '../lib/chordParser';
+import { ChordFile } from '../types';
 import { transposeText } from '../lib/chordTransposer';
+import { processRawContent } from '../lib/jsonContentParser';
 
 interface ChordViewerState {
   files: ChordFile[];
@@ -87,14 +88,24 @@ export default function ChordViewer() {
   useEffect(() => {
     const loadChordFiles = async () => {
       try {
-        // Importar todos os arquivos .chords da pasta Chords
-        const chordFiles = await import.meta.glob('../Chords/*.chords', { as: 'raw' });
+        // Importar todos os arquivos .json da pasta Chords
+        const chordFiles = await import.meta.glob('../Chords/*.json', { as: 'raw' });
         const files: ChordFile[] = [];
         
         for (const path in chordFiles) {
           const content = await chordFiles[path]();
-          const parsed = parseChordFile(content);
-          files.push(parsed);
+          const jsonData = JSON.parse(content);
+
+          // A 'content' do JSON é uma string, precisamos processá-la
+          const parsedContent = processRawContent(jsonData.content);
+
+          const songData: ChordFile = {
+            title: jsonData.title,
+            artist: jsonData.artist,
+            key: jsonData.key,
+            content: parsedContent,
+          };
+          files.push(songData);
         }
         
         // Ordenar os arquivos por título em ordem alfabética
@@ -415,7 +426,7 @@ export default function ChordViewer() {
                 borderRadius: 1,
               }}
             >
-              {currentFile.content.map((line, index) => (
+              {currentFile.content.map((line: { chords: string; lyrics: string }, index: number) => (
                 <Box key={index} sx={{ mb: 2 }}>
                   <Typography
                     component="div"
