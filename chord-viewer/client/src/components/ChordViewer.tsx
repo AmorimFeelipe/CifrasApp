@@ -24,6 +24,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  CircularProgress,
 } from '@mui/material';
 import {
   Add,
@@ -37,8 +38,9 @@ import {
   ChevronLeft,
   ChevronRight,
   TextFields,
+  TravelExplore,
 } from '@mui/icons-material';
-import { ChordFile, parseChordFile } from '../lib/chordParser';
+import { ChordFile, parseChordFile, ChordLine } from '../lib/chordParser';
 import { transposeText } from '../lib/chordTransposer';
 
 const REPERTOIRE_STORAGE_KEY = 'chordCustomRepertoires';
@@ -63,6 +65,11 @@ interface ChordViewerState {
   searchHistory: string[];
   drawerOpen: boolean;
   customRepertoires: CustomRepertoire[];
+  scrapedUrl: string;
+  scrapedChord: ChordFile | null;
+  isScraping: boolean;
+  activeView: 'library' | 'scraped';
+  controlsCollapsed: boolean;
 }
 
 export default function ChordViewer() {
@@ -72,10 +79,10 @@ export default function ChordViewer() {
   const drawerWidth = isMobile ? '100%' : 340;
   const drawerVariant = isMobile ? 'temporary' : 'persistent';
   const contentMaxWidth = isDesktop ? 1400 : 1100;
-  
+
   const [state, setState] = useState<ChordViewerState>({
     files: [],
-    currentFileIndex: 0,
+    currentFileIndex: -1,
     transposition: 0,
     isPlaying: false,
     scrollSpeed: 1,
@@ -85,6 +92,11 @@ export default function ChordViewer() {
     searchHistory: [],
     drawerOpen: false,
     customRepertoires: [],
+    scrapedUrl: '',
+    scrapedChord: null,
+    isScraping: false,
+    activeView: 'library',
+    controlsCollapsed: false,
   });
   const [newRepertoireName, setNewRepertoireName] = useState('');
 
@@ -160,7 +172,7 @@ export default function ChordViewer() {
         const files: ChordFile[] = [];
         
         for (const path in chordFiles) {
-          const content = await chordFiles[path]();
+          const content = (await chordFiles[path]()) as string;
           const parsed = parseChordFile(content);
           files.push(parsed);
         }
@@ -179,6 +191,43 @@ export default function ChordViewer() {
 
     loadChordFiles();
   }, []);
+
+  const handleScrape = async () => {
+    if (!state.scrapedUrl) return;
+
+    setState(prev => ({ ...prev, isScraping: true, scrapedChord: null }));
+
+    try {
+      const response = await fetch(`/api/scrape?url=${encodeURIComponent(state.scrapedUrl)}`);
+      if (!response.ok) {
+        throw new Error('Falha ao buscar a cifra');
+      }
+      const data = await response.json();
+
+      const chordLines: ChordLine[] = data.chords.split('\n\n').map((block: string) => {
+        const lines = block.split('\n');
+        return {
+          chords: lines[0] || '',
+          lyrics: lines.slice(1).join('\n') || ' ',
+        };
+      });
+
+      setState(prev => ({
+        ...prev,
+        scrapedChord: {
+          title: data.title,
+          artist: data.artist,
+          key: data.key,
+          content: chordLines,
+        },
+        isScraping: false,
+        activeView: 'scraped',
+      }));
+    } catch (error) {
+      console.error('Erro ao fazer scraping:', error);
+      setState(prev => ({ ...prev, isScraping: false }));
+    }
+  };
 
   const getSongKey = (file: ChordFile) => `${file.title}|||${file.artist}`;
 
@@ -325,7 +374,8 @@ export default function ChordViewer() {
     };
   }, [state.isPlaying, state.scrollSpeed]);
 
-  const currentFile = state.files[state.currentFileIndex];
+  const currentFile = state.activeView === 'library' ? state.files[state.currentFileIndex] : state.scrapedChord;
+
   const adjustedFontSize = (isMobile ? 13 : 15) * state.fontScale;
 
   return (
@@ -690,11 +740,12 @@ export default function ChordViewer() {
                               }
                             >
                               <ListItemButton
-                                selected={originalIndex === state.currentFileIndex}
+                                selected={originalIndex === state.currentFileIndex && state.activeView === 'library'}
                                 onClick={() => {
                                   setState((prev) => ({
                                     ...prev,
                                     currentFileIndex: originalIndex,
+                                    activeView: 'library',
                                     drawerOpen: false,
                                     searchOpen: false,
                                     searchQuery: '',
@@ -761,11 +812,12 @@ export default function ChordViewer() {
                       return (
                         <ListItem key={`${file.title}-${originalIndex}`} disablePadding>
                           <ListItemButton
-                            selected={originalIndex === state.currentFileIndex}
+                            selected={originalIndex === state.currentFileIndex && state.activeView === 'library'}
                             onClick={() => {
                               setState((prev) => ({
                                 ...prev,
                                 currentFileIndex: originalIndex,
+                                activeView: 'library',
                                 drawerOpen: false,
                                 searchOpen: false,
                                 searchQuery: '',
@@ -817,6 +869,66 @@ export default function ChordViewer() {
               pb: currentFile ? { xs: 10, md: 6 } : 2,
             }}
           >
+            <Paper
+              sx={{
+                p: { xs: 1.5, md: 2 },
+                borderRadius: 2.5,
+                background: 'rgba(15,23,42,0.88)',
+                color: '#f8fafc',
+                border: '1px solid rgba(255,255,255,0.08)',
+              }}
+            >
+              <Stack direction="row" spacing={2} alignItems="center">
+                <TextField
+                  fullWidth
+                  variant="outlined"
+                  size="small"
+                  placeholder="Cole a URL da cifra aqui..."
+                  value={state.scrapedUrl}
+                  onChange={(e) => setState(prev => ({ ...prev, scrapedUrl: e.target.value }))}
+                  onKeyDown={(e) => e.key === 'Enter' && handleScrape()}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <TravelExplore sx={{ color: '#94a3b8' }} />
+                      </InputAdornment>
+                    ),
+                  }}
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      borderRadius: '14px',
+                      backgroundColor: 'rgba(255,255,255,0.04)',
+                      color: '#e2e8f0',
+                      '& fieldset': {
+                        borderColor: 'rgba(255,255,255,0.1)',
+                      },
+                      '&:hover fieldset': {
+                        borderColor: 'rgba(255,255,255,0.3)',
+                      },
+                    },
+                    '& .MuiInputBase-input::placeholder': {
+                      color: 'rgba(226,232,240,0.6)',
+                    },
+                  }}
+                />
+                <Button
+                  variant="contained"
+                  onClick={handleScrape}
+                  disabled={state.isScraping || !state.scrapedUrl}
+                  sx={{
+                    textTransform: 'none',
+                    px: 3,
+                    background: 'linear-gradient(135deg,#22d3ee,#6366f1)',
+                    '&:hover': {
+                      background: 'linear-gradient(135deg,#0ea5e9,#4f46e5)',
+                    },
+                  }}
+                >
+                  {state.isScraping ? <CircularProgress size={24} color="inherit" /> : 'Buscar'}
+                </Button>
+              </Stack>
+            </Paper>
+
           {currentFile && (
             <Paper
               sx={{
