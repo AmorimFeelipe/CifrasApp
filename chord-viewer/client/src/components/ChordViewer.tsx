@@ -35,10 +35,11 @@ export default function ChordViewer() {
   // 1. Carregamento Inicial do Índice de Músicas
   useEffect(() => {
     const loadSongIndex = async () => {
-      const modules = import.meta.glob('../Chords/*.chords', { query: '?raw', import: 'default' });
+      // Agora busca .json e .chords
+const modules = import.meta.glob('../Chords/*.{chords,json}', { query: '?raw', import: 'default' });
 
       const list: SongMeta[] = Object.entries(modules).map(([path, loader]) => {
-        const filename = path.split('/').pop()?.replace('.chords', '') || 'Desconhecido';
+        const filename = path.split('/').pop()?.replace(/\.(chords|json)$/, '') || 'Desconhecido';
         const parts = filename.split(' - ');
         return {
           path,
