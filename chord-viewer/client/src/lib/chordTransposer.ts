@@ -1,59 +1,106 @@
-// Notas em ordem cromática
-const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
-const notesFlat = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
+// lib/chordTransposer.ts
 
-// Mapa de notas com bemois alternativos
-const noteMap: Record<string, number> = {
-  'C': 0, 'B#': 0,
-  'C#': 1, 'Db': 1,
-  'D': 2,
-  'D#': 3, 'Eb': 3,
-  'E': 4, 'Fb': 4,
-  'F': 5, 'E#': 5,
-  'F#': 6, 'Gb': 6,
-  'G': 7,
-  'G#': 8, 'Ab': 8,
-  'A': 9,
-  'A#': 10, 'Bb': 10,
-  'B': 11, 'Cb': 11,
+const notesSharp = [
+  "C",
+  "C#",
+  "D",
+  "D#",
+  "E",
+  "F",
+  "F#",
+  "G",
+  "G#",
+  "A",
+  "A#",
+  "B",
+];
+const notesFlat = [
+  "C",
+  "Db",
+  "D",
+  "Eb",
+  "E",
+  "F",
+  "Gb",
+  "G",
+  "Ab",
+  "A",
+  "Bb",
+  "B",
+];
+
+const noteToValue: Record<string, number> = {
+  C: 0,
+  "B#": 0,
+  "C#": 1,
+  Db: 1,
+  D: 2,
+  "D#": 3,
+  Eb: 3,
+  E: 4,
+  Fb: 4,
+  F: 5,
+  "E#": 5,
+  "F#": 6,
+  Gb: 6,
+  G: 7,
+  "G#": 8,
+  Ab: 8,
+  A: 9,
+  "A#": 10,
+  Bb: 10,
+  B: 11,
+  Cb: 11,
 };
 
-export function transposeChord(chord: string, semitones: number): string {
-  if (!chord || chord.trim() === '') return '';
+function getNoteValue(note: string): number | undefined {
+  return noteToValue[note];
+}
 
-  // Extrair a nota base (primeira 1 ou 2 caracteres)
-  let noteLength = 1;
-  if (chord.length > 1 && (chord[1] === '#' || chord[1] === 'b')) {
-    noteLength = 2;
-  }
+function shiftNote(note: string, semitones: number): string {
+  const val = getNoteValue(note);
+  if (val === undefined) return note;
 
-  const baseNote = chord.substring(0, noteLength);
-  const rest = chord.substring(noteLength);
+  // Garante índice positivo com +1200
+  const newVal = (val + semitones + 1200) % 12;
 
-  // Obter índice da nota
-  const noteIndex = noteMap[baseNote];
-  if (noteIndex === undefined) {
-    return chord; // Se não reconhecer, retorna o acorde original
-  }
-
-  // Calcular nova nota
-  const newIndex = (noteIndex + semitones + 120) % 12; // +120 para evitar números negativos
-  
-  // Preferir sustenidos ou bemois baseado na nota original
-  const useFlat = baseNote.includes('b');
-  const newNote = useFlat ? notesFlat[newIndex] : notes[newIndex];
-
-  return newNote + rest;
+  // Lógica simples: se era bemol (b) ou F, tenta manter bemol. Se não, sustenido.
+  const useFlat = note.includes("b") || note === "F";
+  return useFlat ? notesFlat[newVal] : notesSharp[newVal];
 }
 
 export function transposeText(text: string, semitones: number): string {
   if (semitones === 0) return text;
 
-  // Padrão para encontrar acordes (nota seguida opcionalmente de # ou b, seguida de modificadores)
-  const chordPattern = /([A-G](?:[#b])?(?:maj7|maj9|maj11|maj13|min7|min9|min11|min13|m7|m9|m11|m13|7|9|11|13|sus2|sus4|add9|add11|add13|dim|dim7|aug|aug7|m|M)?(?:\/[A-G](?:[#b])?)?)/g;
+  // --- REGEX PERMISSIVA ---
+  // 1. (^|\s|\||\()  -> Começo de linha, espaço, barra vertical | ou abre parenteses (
+  // 2. ([A-G][#b]?)  -> A Nota Fundamental (ex: C#)
+  // 3. ([^\s\/|)]*)  -> O Sufixo: Pega TUDO que não for espaço, barra ou fecha parenteses.
+  //                     Isso aceita (add9), 7M, m7(b5), etc.
+  // 4. (\/[A-G][#b]?)? -> O Baixo (opcional): Barra / seguida de nota
 
-  return text.replace(chordPattern, (match) => {
-    return transposeChord(match, semitones);
+  const chordRegex = /(^|\s|\||\()([A-G][#b]?)([^\s\/|)]*)(\/[A-G][#b]?)?/g;
+
+  return text.replace(chordRegex, (match, prefix, root, suffix, bass) => {
+    // Filtro de segurança: Se o sufixo tiver vogais e for longo, provavelmente é uma palavra (ex: "Amor")
+    // Exceção: sufixos como 'maj', 'dim', 'aug', 'sus' contêm vogais mas são acordes.
+    const isTextWord =
+      /[aeiou]/i.test(suffix) && !/maj|min|dim|aug|sus|add/i.test(suffix);
+
+    if (isTextWord && suffix.length > 2) {
+      return match; // Retorna sem mexer
+    }
+
+    const newRoot = shiftNote(root, semitones);
+    let newBass = bass;
+
+    if (bass) {
+      // bass vem como "/G". Tira a barra, muda a nota, devolve a barra.
+      const bassNote = bass.substring(1);
+      newBass = "/" + shiftNote(bassNote, semitones);
+    }
+
+    // Reconstrói mantendo o prefixo original (espaço, parenteses, etc)
+    return prefix + newRoot + (suffix || "") + (newBass || "");
   });
 }
-

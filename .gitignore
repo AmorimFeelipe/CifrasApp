@@ -11,3 +11,7 @@ __pycache__/
 # Node.js dependencies
 node_modules/
 .vite/
+
+# Redundant build output directories
+docs/
+gh-pages/

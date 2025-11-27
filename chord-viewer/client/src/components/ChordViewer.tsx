@@ -1,212 +1,397 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from "react";
 import {
-  Menu, Minus, Plus, Play, Pause, Music2
-} from 'lucide-react';
-import { ChordFile, SongMeta } from '../types';
-import { parseChordFile } from '../lib/chordParser';
-import { transposeText } from '../lib/chordTransposer';
-import { useWakeLock } from '../hooks/useWakeLock';
-import { useAutoScroller } from '../hooks/useAutoScroller';
-import SongListSidebar from './SongListSidebar'; // Componente extraído
-
-// --- COMPONENTE PRINCIPAL ---
+  Menu,
+  Minus,
+  Plus,
+  Play,
+  Pause,
+  Music2,
+  ChevronDown,
+  ChevronUp,
+  Sun,
+  Moon,
+} from "lucide-react";
+import { ChordFile, SongMeta } from "../types";
+import { parseChordFile } from "../lib/chordParser";
+import { transposeText } from "../lib/chordTransposer";
+import { useWakeLock } from "../hooks/useWakeLock";
+import { useAutoScroller } from "../hooks/useAutoScroller";
+import SongListSidebar from "./SongListSidebar";
+import { useSetlists } from "../hooks/useSetlists";
+import { useTheme } from "../contexts/ThemeContext";
+import { Drawer, DrawerContent } from "@/components/ui/drawer"; // Requer: npx shadcn@latest add drawer
+import ChordDiagram from "./ChordDiagram";
+import { getChordData, ChordShape } from "../lib/chords-db";
 
 export default function ChordViewer() {
-  useWakeLock(); // Ativa tela sempre ligada
+  useWakeLock();
+  const {
+    setlists,
+    createSetlist,
+    deleteSetlist,
+    addToSetlist,
+    removeFromSetlist,
+  } = useSetlists();
+  const { theme, setTheme } = useTheme();
 
-  // Estados Globais
+  // Estados
   const [songList, setSongList] = useState<SongMeta[]>([]);
   const [currentSong, setCurrentSong] = useState<ChordFile | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
-  // Estados de Leitura
+  // UI & Dicionário
+  const [isToolbarMinimized, setIsToolbarMinimized] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [selectedChord, setSelectedChord] = useState<ChordShape | null>(null);
+
+  // Leitura
   const [transposition, setTransposition] = useState(0);
-  const [fontSize, setFontSize] = useState(16);
+  const [fontSize, setFontSize] = useState(18);
   const [scrollSpeed, setScrollSpeed] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  // Hook de scroll automático
   useAutoScroller(scrollContainerRef, { isPlaying, scrollSpeed });
 
-  // 1. Carregamento Inicial do Índice de Músicas
+  // Scroll Header Logic
+  const lastScrollY = useRef(0);
+  const handleScroll = () => {
+    if (!scrollContainerRef.current) return;
+    const currentY = scrollContainerRef.current.scrollTop;
+    const isScrollingDown = currentY > lastScrollY.current;
+    if (currentY > 50) setIsHeaderVisible(!isScrollingDown);
+    else setIsHeaderVisible(true);
+    lastScrollY.current = currentY;
+  };
+
+  // Renderizador de Linha Interativa (Cifra Clicável)
+  const renderInteractiveLine = (lineText: string, semitones: number) => {
+    const transposedLine = transposeText(lineText, semitones);
+    // Regex: Captura (Espaços)(Acorde)(Sufixo opcional)
+    const regex =
+      /([A-G][#b]?(?:m|maj|dim|aug|sus|add|5|6|7|9|11|13|\+|-|º)*)(?:\/[A-G][#b]?)?/g;
+
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(transposedLine)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(
+          <span key={`sp-${lastIndex}`}>
+            {transposedLine.substring(lastIndex, match.index)}
+          </span>
+        );
+      }
+
+      const chordName = match[0];
+      const chordData = getChordData(chordName);
+      const isClickable = !!chordData;
+
+      parts.push(
+        <span
+          key={`ch-${match.index}`}
+          onClick={e => {
+            if (isClickable) {
+              e.stopPropagation();
+              setSelectedChord(chordData);
+            }
+          }}
+          className={`
+            font-bold mb-1.5 select-none tracking-wide inline-block rounded px-0.5 -mx-0.5 transition-all
+            ${
+              isClickable
+                ? "chord-highlight cursor-pointer hover:bg-primary/10 active:scale-95"
+                : "text-muted-foreground opacity-70"
+            }
+          `}
+        >
+          {chordName}
+        </span>
+      );
+      lastIndex = regex.lastIndex;
+    }
+    if (lastIndex < transposedLine.length) {
+      parts.push(<span key="end">{transposedLine.substring(lastIndex)}</span>);
+    }
+    return parts;
+  };
+
+  // Carregar Index
   useEffect(() => {
     const loadSongIndex = async () => {
-      // Agora busca .json e .chords
-const modules = import.meta.glob('../Chords/*.{chords,json}', { query: '?raw', import: 'default' });
-
+      const modules = import.meta.glob("../Chords/*.{chords,json}", {
+        query: "?raw",
+        import: "default",
+      });
       const list: SongMeta[] = Object.entries(modules).map(([path, loader]) => {
-        const filename = path.split('/').pop()?.replace(/\.(chords|json)$/, '') || 'Desconhecido';
-        const parts = filename.split(' - ');
+        const filename =
+          path
+            .split("/")
+            .pop()
+            ?.replace(/\.(chords|json)$/, "") || "Desconhecido";
+        const parts = filename.split(" - ");
         return {
           path,
-          artist: parts.length > 1 ? parts[0].trim() : 'Desconhecido',
-          title: parts.length > 1 ? parts.slice(1).join(' - ').trim() : filename,
+          artist: parts.length > 1 ? parts[0].trim() : "Desconhecido",
+          title:
+            parts.length > 1 ? parts.slice(1).join(" - ").trim() : filename,
           loader: loader as () => Promise<string>,
         };
       });
-
       list.sort((a, b) => a.title.localeCompare(b.title));
       setSongList(list);
     };
     loadSongIndex();
   }, []);
 
-  // 2. Carregar o conteúdo da música selecionada
   const loadSong = async (meta: SongMeta) => {
     setIsLoading(true);
     setSidebarOpen(false);
     try {
       const rawContent = await meta.loader();
       const parsed = parseChordFile(rawContent);
-      if (parsed.title === 'Sem título') parsed.title = meta.title;
-      if (parsed.artist === 'Artista desconhecido') parsed.artist = meta.artist;
+      if (parsed.title === "Sem título") parsed.title = meta.title;
+      if (parsed.artist === "Artista desconhecido") parsed.artist = meta.artist;
       setCurrentSong(parsed);
       setTransposition(0);
       setIsPlaying(false);
+      if (scrollContainerRef.current) scrollContainerRef.current.scrollTop = 0;
     } catch (error) {
-      console.error("Erro ao abrir cifra:", error);
-      alert("Não foi possível carregar este arquivo.");
+      console.error(error);
     } finally {
       setIsLoading(false);
     }
   };
 
-  // 3. Lógica do player de scroll
-  const togglePlay = () => {
-    if (!isPlaying && scrollSpeed === 0) setScrollSpeed(1); // Inicia com velocidade padrão
-    setIsPlaying(!isPlaying);
-  };
-
-  // Filtro de busca
   const filteredList = useMemo(() => {
     const q = searchQuery.toLowerCase();
-    return songList.filter(s =>
-      s.title.toLowerCase().includes(q) || s.artist.toLowerCase().includes(q)
+    return songList.filter(
+      s =>
+        s.title.toLowerCase().includes(q) || s.artist.toLowerCase().includes(q)
     );
   }, [songList, searchQuery]);
 
   return (
-    <div className="flex h-screen w-full bg-slate-950 text-slate-100 overflow-hidden font-sans">
-
-      {/* --- SIDEBAR (Componente Extraído) --- */}
+    <div className="flex h-full w-full bg-background text-foreground overflow-hidden font-sans selection:bg-primary/20 transition-colors duration-300">
       <SongListSidebar
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
         songList={filteredList}
+        setlists={setlists}
         currentSong={currentSong}
         onSelectSong={loadSong}
         searchQuery={searchQuery}
         onSearchQueryChange={setSearchQuery}
+        onCreateSetlist={createSetlist}
+        onDeleteSetlist={deleteSetlist}
+        onAddToSetlist={addToSetlist}
+        onRemoveFromSetlist={removeFromSetlist}
       />
 
-      {/* --- ÁREA PRINCIPAL --- */}
       <main className="flex-1 flex flex-col h-full relative">
-        <header className="h-14 border-b border-slate-800 flex items-center px-4 bg-slate-900/50 backdrop-blur justify-between shrink-0">
-          <div className="flex items-center gap-3">
-            <button onClick={() => setSidebarOpen(true)} className="md:hidden p-2 -ml-2 text-slate-300">
+        {/* HEADER */}
+        <header
+          className={`
+            absolute top-0 left-0 right-0 z-20 h-16 px-4 flex items-center justify-between
+            bg-background/95 border-b border-border/50 backdrop-blur-md
+            transition-transform duration-300 ease-in-out shadow-sm
+            ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"}
+          `}
+        >
+          <div className="flex items-center gap-3 overflow-hidden">
+            <button
+              onClick={() => setSidebarOpen(true)}
+              className="p-2 -ml-2 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+            >
               <Menu size={24} />
             </button>
             {currentSong ? (
-              <div className="overflow-hidden">
-                <h1 className="font-bold text-slate-100 truncate text-sm md:text-base leading-tight">
+              <div className="flex flex-col overflow-hidden">
+                <h1 className="font-bold text-foreground truncate text-sm md:text-base leading-tight">
                   {currentSong.title}
                 </h1>
-                <p className="text-xs text-slate-400 truncate">{currentSong.artist}</p>
+                <p className="text-xs text-muted-foreground truncate font-medium">
+                  {currentSong.artist}
+                </p>
               </div>
             ) : (
-              <span className="text-slate-500 text-sm">Selecione uma música</span>
+              <span className="text-foreground font-bold tracking-tight flex items-center gap-2">
+                <Music2 size={20} className="text-primary" /> CifrasApp
+              </span>
             )}
           </div>
 
-          {currentSong && (
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-all"
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+            <div className="flex items-center h-9 bg-secondary rounded-full border border-border px-1">
               <button
-                onClick={() => setFontSize(s => Math.max(10, s - 2))}
-                className="p-2 text-slate-400 hover:bg-slate-800 rounded hidden sm:block"
-                aria-label="Diminuir fonte"
+                onClick={() => setFontSize(s => Math.max(12, s - 2))}
+                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground"
               >
-                <span className="text-xs font-bold">A-</span>
+                A-
               </button>
+              <div className="w-px h-4 bg-border mx-0.5"></div>
               <button
-                onClick={() => setFontSize(s => Math.min(32, s + 2))}
-                className="p-2 text-slate-400 hover:bg-slate-800 rounded hidden sm:block"
-                aria-label="Aumentar fonte"
+                onClick={() => setFontSize(s => Math.min(40, s + 2))}
+                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground"
               >
-                <span className="text-xs font-bold">A+</span>
+                A+
               </button>
             </div>
-          )}
+          </div>
         </header>
 
-        {/* Visualizador da Cifra */}
+        {/* SCROLL AREA */}
         <div
           ref={scrollContainerRef}
-          className="flex-1 overflow-y-auto bg-[#0b0f19] relative scroll-smooth"
+          onScroll={handleScroll}
+          className="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth no-scrollbar bg-background"
+          onClick={() => setIsHeaderVisible(true)}
         >
           {isLoading ? (
-            <div className="h-full flex items-center justify-center text-blue-400 animate-pulse">
-              <Music2 size={48} />
+            <div className="h-full flex flex-col items-center justify-center text-primary gap-4">
+              <Music2 size={48} className="animate-bounce opacity-50" />
+              <span className="text-sm font-medium text-muted-foreground animate-pulse">
+                Carregando...
+              </span>
             </div>
           ) : currentSong ? (
             <div
-              className="min-h-full p-4 pb-48 md:p-8 md:pb-48 max-w-4xl mx-auto"
+              className="min-h-full px-5 pt-24 pb-[50vh] max-w-3xl mx-auto transition-all duration-200 ease-out"
               style={{ fontSize: `${fontSize}px` }}
             >
               {currentSong.content.map((line, idx) => (
-                <div key={idx} className="mb-4 leading-relaxed font-mono whitespace-pre-wrap">
-                  <div className="text-yellow-400 font-bold mb-1 select-none">
-                    {transposeText(line.chords, transposition)}
-                  </div>
-                  <div className="text-slate-300">
-                    {line.lyrics || <br />}
+                <div
+                  key={idx}
+                  className="mb-6 leading-relaxed font-mono whitespace-pre-wrap break-words"
+                >
+                  {/* CIFRA INTERATIVA */}
+                  {line.chords && (
+                    <div className="mb-1.5 whitespace-pre">
+                      {renderInteractiveLine(line.chords, transposition)}
+                    </div>
+                  )}
+                  <div className="text-foreground/90 font-normal tracking-normal opacity-90">
+                    {line.lyrics || (
+                      <span className="opacity-0 select-none">.</span>
+                    )}
                   </div>
                 </div>
               ))}
             </div>
           ) : (
-            <div className="h-full flex flex-col items-center justify-center text-slate-600 p-8 text-center">
-              <Music2 size={64} className="mb-4 opacity-20" />
-              <p className="text-lg font-medium">Bem-vindo ao CifrasApp</p>
-              <p className="text-sm mt-2 max-w-xs">Abra o menu para escolher uma música.</p>
+            <div className="h-full flex flex-col items-center justify-center text-muted-foreground p-8 text-center">
+              <div className="w-24 h-24 bg-secondary/50 rounded-full flex items-center justify-center border border-border mb-4">
+                <Music2 size={48} className="text-muted-foreground/50" />
+              </div>
+              <h2 className="text-xl font-bold text-foreground">
+                Seu Palco Digital
+              </h2>
+              <p className="text-sm text-muted-foreground mt-2">
+                Selecione uma música para começar.
+              </p>
             </div>
           )}
         </div>
 
-        {/* --- BARRA DE CONTROLE FLUTUANTE --- */}
+        {/* DRAWER (GAVETA) DE ACORDES */}
+        <Drawer
+          open={!!selectedChord}
+          onOpenChange={open => !open && setSelectedChord(null)}
+        >
+          <DrawerContent className="bg-background border-border max-h-[80vh]">
+            <div className="mx-auto w-full max-w-sm pb-8 pt-4">
+              {selectedChord && <ChordDiagram chord={selectedChord} />}
+            </div>
+          </DrawerContent>
+        </Drawer>
+
+        {/* BOTTOM TOOLBAR */}
         {currentSong && (
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[95%] max-w-lg bg-slate-900/90 backdrop-blur-md border border-slate-700/50 rounded-2xl shadow-2xl p-2 z-30">
-            <div className="flex items-center justify-between gap-1">
-
-              {/* Tom */}
-              <div className="flex items-center bg-slate-800/50 rounded-xl px-2 py-1">
-                <button onClick={() => setTransposition(t => t - 1)} className="p-2 text-slate-300 hover:text-white"><Minus size={18} /></button>
-                <div className="flex flex-col items-center w-10 mx-1">
-                  <span className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Tom</span>
-                  <span className="font-bold text-blue-400">{transposition > 0 ? `+${transposition}` : transposition}</span>
+          <div
+            className={`absolute bottom-6 left-0 right-0 z-30 flex justify-center px-4 pointer-events-none transition-transform duration-500 ease-in-out ${
+              isToolbarMinimized ? "translate-y-[150%]" : "translate-y-0"
+            }`}
+          >
+            <div className="w-full max-w-md bg-background/90 backdrop-blur-xl border border-border/60 rounded-full shadow-2xl flex items-center justify-between p-2 pl-6 pointer-events-auto ring-1 ring-black/5">
+              <div className="flex flex-col items-center gap-0.5 mr-4">
+                <span className="text-[9px] uppercase tracking-wider font-bold text-muted-foreground">
+                  Tom
+                </span>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setTransposition(t => t - 1)}
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                  >
+                    <Minus size={14} />
+                  </button>
+                  <span
+                    className={`w-6 text-center font-bold text-sm ${
+                      transposition !== 0
+                        ? "text-primary"
+                        : "text-muted-foreground"
+                    }`}
+                  >
+                    {transposition > 0 ? `+${transposition}` : transposition}
+                  </span>
+                  <button
+                    onClick={() => setTransposition(t => t + 1)}
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                  >
+                    <Plus size={14} />
+                  </button>
                 </div>
-                <button onClick={() => setTransposition(t => t + 1)} className="p-2 text-slate-300 hover:text-white"><Plus size={18} /></button>
               </div>
-
-              {/* Play/Pause */}
               <button
-                onClick={togglePlay}
-                className={`w-12 h-12 rounded-full flex items-center justify-center transition-all shadow-lg ${isPlaying ? 'bg-red-500' : 'bg-blue-500'}`}
+                onClick={() => {
+                  if (!isPlaying && scrollSpeed === 0) setScrollSpeed(1);
+                  setIsPlaying(!isPlaying);
+                }}
+                className={`w-14 h-14 -mt-8 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 ring-4 ring-background ${
+                  isPlaying
+                    ? "bg-destructive text-white shadow-destructive/40"
+                    : "bg-primary text-primary-foreground shadow-primary/40"
+                }`}
               >
-                {isPlaying ? <Pause size={24} fill="currentColor" /> : <Play size={24} fill="currentColor" className="ml-1" />}
+                {isPlaying ? (
+                  <Pause size={24} fill="currentColor" />
+                ) : (
+                  <Play size={24} fill="currentColor" className="ml-1" />
+                )}
               </button>
-
-              {/* Velocidade */}
-              <div className="flex items-center bg-slate-800/50 rounded-xl px-2 py-1">
-                <button onClick={() => setScrollSpeed(s => Math.max(0.5, s - 0.5))} className="p-2 text-slate-300 hover:text-white"><Minus size={18} /></button>
-                <div className="flex flex-col items-center w-12 mx-1">
-                  <span className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Veloc.</span>
-                  <span className="font-bold text-green-400">{scrollSpeed.toFixed(1)}x</span>
+              <div className="flex flex-col items-center gap-0.5 ml-4">
+                <span className="text-[9px] uppercase tracking-wider font-bold text-muted-foreground">
+                  Vel
+                </span>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() =>
+                      setScrollSpeed(s => Math.max(0.1, +(s - 0.1).toFixed(1)))
+                    }
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                  >
+                    <ChevronDown size={14} />
+                  </button>
+                  <span className="w-6 text-center font-bold text-sm text-muted-foreground">
+                    {scrollSpeed.toFixed(1)}
+                  </span>
+                  <button
+                    onClick={() =>
+                      setScrollSpeed(s => Math.min(5, +(s + 0.1).toFixed(1)))
+                    }
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                  >
+                    <ChevronUp size={14} />
+                  </button>
                 </div>
-                <button onClick={() => setScrollSpeed(s => Math.min(10, s + 0.5))} className="p-2 text-slate-300 hover:text-white"><Plus size={18} /></button>
               </div>
             </div>
           </div>

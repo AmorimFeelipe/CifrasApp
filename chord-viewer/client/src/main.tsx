@@ -1,14 +1,14 @@
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
-createRoot(document.getElementById("root")!).render(<App />);
-
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    const swUrl = `${import.meta.env.BASE_URL}sw.js`;
-    navigator.serviceWorker.register(swUrl).catch((err) => {
-      console.error("Service worker registration failed:", err);
-    });
-  });
-}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    {/* O ThemeProvider PRECISA estar por volta do App */}
+    <ThemeProvider defaultTheme="dark" storageKey="cifras-theme">
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
+);

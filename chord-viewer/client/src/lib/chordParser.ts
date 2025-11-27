@@ -11,72 +11,109 @@ export interface ChordLine {
 }
 
 export function parseChordFile(rawInput: string): ChordFile {
-  // 1. Tenta ler como JSON (Novo formato do Python)
+  // 1. Tenta ler como JSON (Novo formato)
   try {
     const data = JSON.parse(rawInput);
-    // Se for JSON, o conteúdo interno ainda é texto com quebra de linha,
-    // então precisamos processar as linhas desse conteúdo.
     if (data.content) {
       return {
-        title: data.title || 'Sem título',
-        artist: data.artist || 'Artista desconhecido',
+        title: data.title || "Sem título",
+        artist: data.artist || "Artista desconhecido",
         key: data.key,
-        content: parseContentLines(data.content) // Reusa a lógica de linhas
+        content: parseContentLines(data.content),
       };
     }
   } catch (e) {
-    // Não é JSON, continua para o parser antigo (formato texto)
+    // Não é JSON, continua para texto simples
   }
 
-  // 2. Parser Antigo (Fallback para arquivos .chords existentes)
-  const lines = rawInput.split('\n');
-  let title = '';
-  let artist = '';
-  
-  // Extrai metadados do texto antigo
-  let i = 0;
-  while (i < lines.length) {
+  // 2. Leitura Legacy (Texto simples)
+  const lines = rawInput.split("\n");
+  let title = "Sem título";
+  let artist = "Artista desconhecido";
+  let startIndex = 0;
+
+  // Tenta extrair metadados do início
+  for (let i = 0; i < Math.min(lines.length, 10); i++) {
     const line = lines[i].trim();
-    if (line.includes('Título:') || line.includes('Title:')) {
-      title = line.split(':')[1].trim();
-    } else if (line.includes('Artista:') || line.includes('Artist:')) {
-      artist = line.split(':')[1].trim();
-    } else if (line !== '' && !line.startsWith('=')) {
-      break;
-    }
-    i++;
+    if (line.includes("Título:") || line.includes("Title:"))
+      title = line.split(":")[1].trim();
+    else if (line.includes("Artista:") || line.includes("Artist:"))
+      artist = line.split(":")[1].trim();
+    else if (line.startsWith("=")) startIndex = i + 1;
   }
+
+  // Se não achou o separador =, processa tudo ou começa de onde parou
+  const contentText =
+    startIndex > 0 ? lines.slice(startIndex).join("\n") : rawInput;
 
   return {
-    title: title || 'Sem título',
-    artist: artist || 'Artista desconhecido',
-    content: parseContentLines(rawInput) // Processa tudo
+    title,
+    artist,
+    content: parseContentLines(contentText),
   };
 }
 
-// Função auxiliar para processar as linhas (funciona para ambos)
 function parseContentLines(text: string): ChordLine[] {
-  const lines = text.split('\n');
+  const lines = text.split("\n");
   const chordLines: ChordLine[] = [];
-  
+
   for (let i = 0; i < lines.length; i++) {
-    const line = lines[i]; # Não usa trim() aqui para manter indentação dos acordes
-    
-    // Regex simples para detectar linha de acordes (ex: A  Bm7  G)
-    // Detecta letras maiúsculas com espaços, evitando frases normais
-    const isChordLine = line.match(/^[A-G][#b]?(m|maj|dim|aug|sus|add|[0-9])*(\s+[A-G][#b]?.*)*$/) && line.length < 100;
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    if (!trimmed) {
+      chordLines.push({ chords: "", lyrics: "" });
+      continue;
+    }
+
+    // --- A MÁGICA ESTÁ AQUI ---
+    // Verifica se é uma linha de acordes.
+    // Regra 1: Deve ter pelo menos uma nota maiúscula (A-G).
+    const hasNote = /[A-G]/.test(trimmed);
+
+    // Regra 2: Não pode ter palavras comuns de letras de música.
+    // Letras que NUNCA ou RARAMENTE aparecem em cifras (h, k, l, n*, p, q, r, t, v, w, x, y, z).
+    // *n aparece em 'min', mas é raro sozinha. 'l' em 'add'? não, add nao tem l.
+    // Exceções cuidadosas: 'sus', 'dim', 'aug', 'maj', 'add', 'sol', 'la', 'si', 'do', 're', 'mi', 'fa'.
+
+    // Vamos simplificar: Se tiver vogais seguidas de consoantes que formam palavras reais (ex: "que", "pra", "vou"), é letra.
+    // O regex abaixo procura palavras com letras "proibidas" em cifras padrão.
+    const hasLyricsWords =
+      /[hjkpqvwxyz]/.test(trimmed.toLowerCase()) ||
+      /[rt]/.test(
+        trimmed.toLowerCase().replace(/intro|riff|tab|parte|refrão/g, "")
+      );
+    // 'r' e 't' aparecem em 'intro', 'parte', então removemos essas palavras chaves antes de testar.
+
+    // Regra 3: Espaçamento. Linhas de cifra costumam ter espaços duplos entre acordes.
+    const hasGap = /\s{2,}/.test(line);
+
+    // DECISÃO FINAL:
+    // É cifra se: Tem nota E (Tem espaçamento OU Não tem palavras de letra)
+    const isChordLine =
+      hasNote && (!hasLyricsWords || (hasGap && !line.includes(" ")));
 
     if (isChordLine) {
       const chords = line;
-      const lyrics = (i + 1 < lines.length) ? lines[i + 1] : '';
-      
-      chordLines.push({ chords, lyrics });
-      i++; // Pula a próxima linha pois já foi usada como letra
-    } else {
-      // Se não é acorde, é apenas letra ou linha vazia
-      if (line.trim() !== '' && !line.startsWith('=')) { 
-         chordLines.push({ chords: '', lyrics: line });
+      // Tenta pegar a próxima linha como letra
+      let lyrics = "";
+      if (i + 1 < lines.length) {
+        const nextLine = lines[i + 1];
+        // Se a próxima linha NÃO for cifra e NÃO for vazia, é a letra deste par.
+        // (Repete o teste simplificado na próxima linha)
+        const nextIsChord =
+          /[A-G]/.test(nextLine) &&
+          !/[hjkpqvwxyz]/.test(nextLine.toLowerCase());
+
+        if (!nextIsChord && nextLine.trim() !== "") {
+          lyrics = nextLine;
+          i++; // Pula a próxima linha pois já a usamos
+        }
       }
+      chordLines.push({ chords, lyrics });
+    } else {
+      // É apenas letra
+      chordLines.push({ chords: "", lyrics: line });
     }
   }
   return chordLines;
