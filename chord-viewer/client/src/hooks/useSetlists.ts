@@ -5,18 +5,15 @@ export function useSetlists() {
   const [setlists, setSetlists] = useState<Setlist[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Função que busca os dados do servidor
   const fetchSetlists = async () => {
     try {
       const res = await fetch("/api/setlists");
+      if (!res.ok) throw new Error("Falha na conexão com servidor");
+      
       const data = await res.json();
       if (Array.isArray(data)) {
-        // Só atualiza o estado se houver diferença para evitar re-render desnecessário
-        // (Aqui fazemos uma comparação simples pelo tamanho ou conteúdo JSON)
         setSetlists((prev) => {
-          if (JSON.stringify(prev) !== JSON.stringify(data)) {
-            return data;
-          }
+          if (JSON.stringify(prev) !== JSON.stringify(data)) return data;
           return prev;
         });
       }
@@ -28,27 +25,32 @@ export function useSetlists() {
   };
 
   useEffect(() => {
-    // 1. Carrega imediatamente ao abrir
     fetchSetlists();
-
-    // 2. Configura para recarregar a cada 2 segundos (Polling)
-    // Isso garante que se você criar no celular, aparece no PC em 2 segs.
     const intervalId = setInterval(fetchSetlists, 2000);
-
-    // Limpa o intervalo quando sair da tela
     return () => clearInterval(intervalId);
   }, []);
 
-  const saveToServer = (newList: Setlist[]) => {
-    // Atualiza localmente na hora (otimista)
+  const saveToServer = async (newList: Setlist[]) => {
+    // 1. Atualiza visualmente primeiro (Otimista)
+    const oldList = setlists; // Guarda backup caso falhe
     setSetlists(newList);
 
-    // Envia para o servidor
-    fetch("/api/setlists", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newList),
-    }).catch((err) => console.error("Erro ao salvar no servidor:", err));
+    try {
+      // 2. Tenta salvar no servidor
+      const response = await fetch("/api/setlists", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newList),
+      });
+
+      if (!response.ok) throw new Error("Erro no servidor");
+      
+    } catch (err) {
+      // 3. Se der erro, avisa e reverte
+      console.error("Erro crítico ao salvar:", err);
+      alert("❌ Erro ao salvar! Verifique se o servidor (dev:server) está rodando.");
+      setSetlists(oldList); // Desfaz a alteração visual
+    }
   };
 
   const createSetlist = (name: string) => {
