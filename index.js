@@ -1,18 +1,48 @@
 // server/serverroutes.ts
 import { createServer } from "http";
+import fs from "fs";
+import path from "path";
+var DB_FILE = path.join(__dirname, "setlists_db.json");
+function readDB() {
+  if (!fs.existsSync(DB_FILE)) {
+    return [];
+  }
+  const data = fs.readFileSync(DB_FILE, "utf-8");
+  try {
+    return JSON.parse(data);
+  } catch (e) {
+    return [];
+  }
+}
+function writeDB(data) {
+  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+}
 function registerRoutes(app2) {
+  app2.get("/api/setlists", (req, res) => {
+    const setlists = readDB();
+    res.json(setlists);
+  });
+  app2.post("/api/setlists", (req, res) => {
+    const newSetlists = req.body;
+    if (Array.isArray(newSetlists)) {
+      writeDB(newSetlists);
+      res.json({ success: true, message: "Salvo com sucesso" });
+    } else {
+      res.status(400).json({ error: "Formato inv\xE1lido" });
+    }
+  });
   const httpServer = createServer(app2);
   return httpServer;
 }
 
 // server/servervite.ts
 import express2 from "express";
-import fs from "fs";
-import path, { dirname } from "path";
+import fs2 from "fs";
+import path2, { dirname } from "path";
 import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 var __filename = fileURLToPath(import.meta.url);
-var __dirname = dirname(__filename);
+var __dirname2 = dirname(__filename);
 var log = (message, source = "express") => {
   const formattedTime = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -26,21 +56,21 @@ async function setupVite(app2, server) {
   const vite = await createViteServer({
     server: { middlewareMode: true },
     appType: "custom",
-    root: path.resolve(__dirname, "..", "client"),
+    root: path2.resolve(__dirname2, "..", "client"),
     // Aponta para a pasta client
-    configFile: path.resolve(__dirname, "..", "vite.config.ts")
+    configFile: path2.resolve(__dirname2, "..", "vite.config.ts")
   });
   app2.use(vite.middlewares);
   app2.use("*", async (req, res, next) => {
     const url = req.originalUrl;
     try {
-      const clientTemplate = path.resolve(
-        __dirname,
+      const clientTemplate = path2.resolve(
+        __dirname2,
         "..",
         "client",
         "index.html"
       );
-      let template = fs.readFileSync(clientTemplate, "utf-8");
+      let template = fs2.readFileSync(clientTemplate, "utf-8");
       template = template.replace(
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${Math.random()}"`
@@ -54,15 +84,15 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path.resolve(__dirname, "..", "dist");
-  if (!fs.existsSync(distPath)) {
+  const distPath = path2.resolve(__dirname2, "..", "dist");
+  if (!fs2.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
     );
   }
   app2.use(express2.static(distPath));
   app2.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+    res.sendFile(path2.resolve(distPath, "index.html"));
   });
 }
 
@@ -72,7 +102,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use((req, res, next) => {
   const start = Date.now();
-  const path2 = req.path;
+  const path3 = req.path;
   let capturedJsonResponse = void 0;
   const originalResJson = res.json;
   res.json = function(bodyJson, ...args) {
@@ -81,8 +111,8 @@ app.use((req, res, next) => {
   };
   res.on("finish", () => {
     const duration = Date.now() - start;
-    if (path2.startsWith("/api")) {
-      let logLine = `${req.method} ${path2} ${res.statusCode} in ${duration}ms`;
+    if (path3.startsWith("/api")) {
+      let logLine = `${req.method} ${path3} ${res.statusCode} in ${duration}ms`;
       if (capturedJsonResponse) {
         logLine += ` :: ${JSON.stringify(capturedJsonResponse)}`;
       }
