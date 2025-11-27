@@ -1,0 +1,95 @@
+const n=`Título: A Desconhecida
+Artista: Fernando Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:17:36
+============================================================
+
+[Intro]
+
+Dedilhado base: P  i  ma   P  i  ma   P  i
+
+D                F#m         Em
+  Numa tarde tão linda de sol ela me
+       A7
+apareceu
+D                    F#m
+  Com um sorriso tão triste um olhar tão
+  Em    A7
+profundo já sofreu
+D                 F#m           Em/B
+  Suas mãos tão pequenas e frias sua voz
+     A7
+tropeçava também
+D                F#m               Em
+  Me falava da infância de lágrimas
+           A7
+nunca teve ninguém
+
+      D                F#m
+Nunca teve amor não sentiu o calor de
+  Em    A7
+alguém
+      D              F#m
+Nem sequer ouviu a palavra carinho, seu
+Em         A7
+ninho não existiu
+
+D        F#m                    Em
+  Sinceramente eu chorei de tristeza ao
+A7             D
+ouvir tanta coisa
+              F#m             Em    A7
+Que a vida oferece e a gente padece sem
+querer
+
+D           F#m             Em
+  Depois de tudo que ouvi não consigo
+          A7
+esquecer
+D               F#m          Em
+  Ela me disse adeus e se foi nem seu
+     A7
+nome eu sei dizer
+
+D             F#m                Em   A7
+  De onde ela veio, pra onde ela vai, oh!
+oh!
+D             F#m                G  A7
+  De onde ela veio, pra onde ela vai  não
+D
+sei dizer
+
+      D                F#m
+Nunca teve amor não sentiu o calor de
+  Em    A7
+alguém
+      D              F#m
+Nem sequer ouviu a palavra carinho, seu
+Em        A7
+ninho não resistiu
+
+D        F#m                    Em
+  Sinceramente eu chorei de tristeza ao
+A7             D
+ouvir tanta coisa
+              F#m             Em    A7
+Que a vida oferece, que a gente padece sem
+querer
+
+D           F#m             Em
+  Depois de tudo o que eu vi  não consigo
+       A7
+ esquecer
+D               F#m          Em
+  Ela me disse adeus e se foi  nem seu
+       A7
+nome eu sei dizer
+
+D             F#m                Em   A7
+  De onde ela veio, pra onde ela vai, oh!
+oh!
+D             F#m                G  A7
+  De onde ela veio, pra onde ela vai  não
+     D
+ sei dizer`;export{n as default};

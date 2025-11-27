@@ -1,0 +1,92 @@
+const n=`Título: Dormi Na Praça
+Artista: Bruno & Marrone
+Tom: N/A
+URL: https://www.cifraclub.com/bruno-e-marrone/dormi-na-praca/#instrument=guitar
+Extraído em: 25/10/2025 23:15:16
+============================================================
+
+[Intro] E
+
+[Primera Parte]
+
+    E          G#m        C#m
+Eu caminhei sozinho pela rua
+   A             G#            C#m
+Falei com as estrelas e com a lua
+    A                G#
+Deitei no banco da praça
+ C#m              A
+Tentando te esquecer
+  E         B            E  B
+Adormeci e sonhei com você
+
+[Pre-Estribillo]
+
+    E          G#m       C#m
+No sonho você veio provocante
+    A            G#            C#m
+Me deu um beijo doce e me abraçou
+   A           G#          C#m       A
+E bem na hora "H" no ponto alto do amor
+   E             B            E  B
+Já era dia e o guarda me acordou
+
+[Estribillo]
+
+      E
+Seu guarda eu não sou vagabundo
+                  B
+Eu não sou delinquente
+
+Sou um cara carente
+              A             E   B
+Eu dormi na praça pensando nela
+      E
+Seu guarda seja meu amigo
+             B
+Me bata me prenda faça tudo comigo
+            A               E   B
+Mas não me deixe, ficar sem ela
+
+[Pre-Estribillo]
+
+    E          G#m       C#m
+No sonho você veio provocante
+    A            G#            C#m
+Me deu um beijo doce e me abraçou
+   A           G#          C#m       A
+E bem na hora "H" no ponto alto do amor
+   E             B            E  B
+Já era dia e o guarda me acordou
+
+[Estribillo]
+
+      E
+Seu guarda eu não sou vagabundo
+                  B
+Eu não sou delinquente
+
+Sou um cara carente
+              A             E   B
+Eu dormi na praça pensando nela
+      E
+Seu guarda seja meu amigo
+             B
+Me bata me prenda faça tudo comigo
+            A               E   B
+Mas não me deixe, ficar sem ela
+
+      E
+Seu guarda eu não sou vagabundo
+                  B
+Eu não sou delinquente
+
+Sou um cara carente
+              A             E   B
+Eu dormi na praça pensando nela
+      E
+Seu guarda seja meu amigo
+             B
+Me bata me prenda faça tudo comigo
+            A               E
+Mas não me deixe, ficar sem ela`;export{n as default};

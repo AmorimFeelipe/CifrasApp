@@ -1,0 +1,55 @@
+const n=`Título: Canteiros
+Artista: Fagner
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:24:53
+============================================================
+
+[Intro] D  D4/A  D  D4(6)  D4(7)  D4(6)  D
+        D  D4/A  D  D4(6)  D4(7)  D4(6)  D
+
+D                 A  Bm
+Quando penso em você
+         Bm         G    D
+Fecho os olhos de saudade
+                  A   G
+Tenho tido muita coisa,
+      F#     Bm    A
+Menos a felicidade
+
+D                       A    Bm
+Correm os meus dedos longos
+   Bm                  G     D
+Em versos tristes que invento
+                         A  G
+Nem aquilo a que me entrego
+       F#          Bm
+Já me da contentamento
+
+      D        Gm         C         F
+Pode ser até manhã, cedo claro feito dia
+                     Em      A
+Mas nada do que me dizem me faz sentir
+    Dm
+alegria
+                    Gm       C
+Eu só queria ter no mato um gosto de
+     F
+framboesa
+                       Em            A
+Prá correr entre os canteiros e esconder
+           Dm
+minha tristeza
+
+Dm                   C
+Que eu ainda sou bem moço prá tanta
+      Em7
+tristeza
+                Bb5                Dm
+E deixemos de coisa, cuidemos da vida,
+                  C                     Em7
+Pois se não chega a morte ou coisa parecida
+               Bb5                    Dm
+E nos arrasta moço,  sem ter visto a vida
+
+( Dm  C  Bb5  Dm )`;export{n as default};

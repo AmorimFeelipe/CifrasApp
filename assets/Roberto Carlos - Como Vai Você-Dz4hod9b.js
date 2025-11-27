@@ -1,0 +1,54 @@
+const e=`Título: Como Vai Você
+Artista: Roberto Carlos
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:30:26
+============================================================
+
+[Intro] E7
+
+            A  E/G# F#m                     C#m  Em7
+Como vai você,      eu preciso saber da sua vida
+                      A7               D  Dm
+Peça a alguém pra me contar sobre seu dia
+                            E4  E7
+Anoiteceu e eu preciso só saber
+
+            A  E/G#  F#m                     C#m  Em7
+Como vai você,      que já modificou a minha vida
+                A7          D     Dm
+Razão da minha paz já esquecida
+                                     E4  E7
+Nem sei se gosto mais de mim ou de você
+
+ A                    E/G#          F#m
+Vem que a sede de te amar me faz melhor
+               F#m/E           D
+Eu quero amanhecer ao seu redor
+A/C#       Bm                E7
+Preciso tanto me fazer feliz
+ A                  E/G#          F#m
+Vem que o tempo pode afastar nós dois
+                F#m/E        D
+Não deixe tanta vida pra depois
+ A/C#    Bm         E7
+Eu só preciso saber
+            A
+Como vai você
+
+( Bm  E7 )
+
+ A                   E/G#           F#m
+Vem que a sede de te amar me faz melhor
+              F#m/E          D
+Eu quero amanhecer ao seu redor
+ A/C#       Bm                  E7
+Preciso tanto me fazer feliz
+ A                  E/G#          F#m
+Vem que o tempo pode afastar nós dois
+                F#m/E        D
+Não deixe tanta vida pra depois
+ A/C#       Bm            E7
+Eu só preciso saber
+            A
+Como vai você`;export{e as default};

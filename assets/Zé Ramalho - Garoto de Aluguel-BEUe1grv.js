@@ -1,0 +1,105 @@
+const a=`Título: Garoto de Aluguel
+Artista: Zé Ramalho
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:16:07
+============================================================
+
+[Intro] Em  Bm  Am  B7
+
+[Primera Parte]
+
+ Em
+Baby
+                                   Bm
+Dê-me seu dinheiro que eu quero viver
+                                  Am
+Dê-me seu relógio que eu quero saber
+                                  B7
+Quanto tempo falta para lhe esquecer
+                                  Em
+Quanto vale um homem para amar você
+
+                             Bm
+Minha profissão é suja e vulgar
+                               Am
+Quero um pagamento para me deitar
+                                  B7
+E junto com você estrangular meu riso
+                                Em
+Dê-me seu amor que dele não preciso
+
+Bm
+Oh, oh
+Am     B7
+Oh, oh
+
+[Segunda Parte]
+
+ Em
+Baby
+                          Bm
+Nossa relação acaba-se assim
+                                  Am
+Como um caramelo que chega-se ao fim
+                              B7
+Na boca vermelha de uma dama louca
+                                Em
+Pague meu dinheiro e vista sua roupa
+
+                                  Bm
+Deixe a porta aberta quando for saindo
+                                Am
+Você vai chorando e eu fico sorrindo
+                                B7
+Conte pras amigas que tudo foi mal
+                             Em
+Nada me preocupa de um marginal
+
+Bm
+Oh, oh
+Am    B7
+Oh, oh
+
+[Segunda Parte]
+
+ Em
+Baby
+                          Bm
+Nossa relação acaba-se assim
+                                  Am
+Como um caramelo que chega-se ao fim
+                              B7
+Na boca vermelha de uma dama louca
+                                Em
+Pague meu dinheiro e vista sua roupa
+
+                                 Bm
+Deixe a porta aberta quando for saindo
+                                Am
+Você vai chorando e eu fico sorrindo
+                                B7
+Conte pras amigas que tudo foi mal
+                             Em
+Nada me preocupa de um marginal
+
+Bm
+Oh, oh
+Am     B7
+Oh, oh
+
+[Final]
+
+ Em
+Baby, baby, baby
+ Bm
+Baby, baby, baby
+Am                         B7
+Oh, oh, oh, oh, oh, oh, oh
+
+ Em
+Baby, baby, baby
+ Bm
+Baby, baby, baby
+Am                         B7
+Oh, oh, oh, oh, oh, oh, oh`;export{a as default};

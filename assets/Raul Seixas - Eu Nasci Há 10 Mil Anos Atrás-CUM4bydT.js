@@ -1,0 +1,198 @@
+const n=`Título: Eu Nasci Há 10 Mil Anos Atrás
+Artista: Raul Seixas
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:29:09
+============================================================
+
+[Intro]
+
+       C
+Um dia,  numa rua da cidade
+    F
+Eu vi um velhinho sentado na calçada
+         G
+Com uma cuia de esmola e
+              D
+Uma viola na mão
+
+O povo parou pra ouvir
+
+Ele agradeceu as moedas e
+             E
+Cantou essa música
+
+Que contava uma história
+
+Que era mais ou menos assim
+
+[Estribillo]
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+[Primera Parte]
+
+        D
+Eu vi Cristo ser crucificado
+    A               F#m
+O amor nascer e ser assassinado
+           E             E7
+Eu vi as bruxas pegando fogo
+                    A         A7
+Prá pagarem seus pecados, eu vi
+          D
+Eu vi Moisés cruzar o Mar Vermelho
+       A                   F#m
+Vi Maomé cair na terra de joelhos
+       E                           E7
+Eu vi Pedro negar Cristo por três vezes
+             A         E7
+Diante do espelho, eu vi
+
+[Estribillo]
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+     A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+[Segunda Parte]
+
+          D
+Eu vi as velas se acenderem para o Papa
+        A                    F#m
+Vi Babilônia ser riscada do mapa
+           E                     E7
+Vi Conde Drácula sugando sangue novo
+                   A           A7
+E se escondendo atrás da capa, eu vi
+
+        D
+Eu vi a arca de Noé cruzar os mares
+        A                           F#m
+Vi Salomão cantar seus salmos pelos ares
+       E                             E7
+Vi Zumbi fugir com os negros prá floresta
+                     A         E7
+Pro Quilombo dos Palmares, eu vi
+
+[Estribillo]
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+[Tercera Parte]
+
+         D
+Eu vi o sangue que corria da montanha
+        A                     F#m
+Quando Hitler chamou toda Alemanha
+         E                       E7
+Vi o soldado que sonhava com a amada
+                 A    A7
+Numa cama de campanha
+          D
+Eu li os símbolos sagrados de umbanda
+       A                      F#m
+Fui criança prá poder dançar ciranda
+        E                           E7
+Quando todos praguejavam contra o frio
+                    A      E7
+Eu fiz a cama na varanda
+
+[Estribillo]
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+       A     D              A    D   E
+Eu nasci há dez mil anos atrás
+       A              D
+E não tem nada nesse mundo
+                     E
+Que eu não saiba demais
+
+         D
+Eu tava junto com os macacos na caverna
+         A                          F#m
+Eu bebi vinho com as mulheres na taberna
+            E                       E7
+E quando a pedra despencou da ribanceira
+                     A            A7
+Eu também quebrei a perna, eu também
+
+             D
+Eu fui testemunha do amor de Rapunzel
+            A                       F#m
+Eu vi a estrela de Davi brilhar no céu
+        B7
+E pr'aquele que provar que eu estou
+    E
+mentindo
+                  A      F
+Eu tiro o meu chapéu
+
+[Estribillo Final]
+
+       Bb    Eb             Bb   Eb   F
+Eu nasci há dez mil anos atrás
+       Bb             Eb
+E não tem nada nesse mundo
+                     F
+Que eu não saiba demais
+       Bb    Eb             Bb   Eb   F
+Eu nasci há dez mil anos atrás
+       Bb             Eb
+E não tem nada nesse mundo
+                     F
+Que eu não saiba demais
+
+       Bb    Eb             Bb   Eb   F
+Eu nasci há dez mil anos atrás
+       Bb             Eb
+E não tem nada nesse mundo
+                     F
+Que eu não saiba demais
+
+       Bb    Eb             Bb   Eb   F
+Eu nasci há dez mil anos atrás
+       Bb             Eb
+E não tem nada nesse mundo
+                     F
+Que eu não saiba demais`;export{n as default};

@@ -1,0 +1,127 @@
+const e=`Título: Você não me ensinou a te esquecer
+Artista: Fernando Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:17:56
+============================================================
+
+[Intro] Cm  B5+  Eb/Bb  Am7(5-)
+        Ab  Bb7/Ab  Gm7(5-)  C7
+        F7  G7
+
+[Primera Parte]
+
+Cm
+  Não vejo mais você faz tanto tempo
+D7
+ Que vontade que eu sinto
+Fm                            G
+ De olhar em seus olhos ganhar seus abraços
+     Cm                 G
+E verdade eu não minto
+
+Cm
+ E nesse desespero em que me vejo
+           D7
+Já cheguei a tal ponto
+Fm                     G
+ De me trocar diversas vezes por você
+       Cm               C7
+Só pra vê se te encontro
+
+[Pre-Estribillo]
+
+Fm7                 Bb     Eb
+ Você bem que podia perdoar
+   G                  Cm
+E só mais uma vez me aceitar
+Fm                    G
+  Prometo agora vou  fazer por onde
+       Cm           Gm C
+Nunca mais perde-la
+
+[Estribillo]
+
+ Ab       Bb7/Ab                Gm
+E agora que faço eu na vida sem você
+ C                           Fm7
+Você não me ensinou a te esquecer
+  G                      Cm
+Você só me ensinou a te querer
+                        Cm6           Cm
+E te querendo eu vou tentando te encontrar
+
+          Ab
+Vou me perdendo
+    Bb7/Ab                       Gm
+Buscando em outros braços seus abraços
+   C                       Fm7
+Perdido no vazio de outros passos
+    G                        Cm
+Do abismo  que  você se retirou
+
+E me atirou e me deixou aqui sozinho
+
+ Ab       Bb7/Ab               Gm7
+E agora que faço eu na vida sem você
+C                            Fm7
+Você não me ensinou a te esquecer
+  G                      Cm
+Você só me ensinou a te querer
+                     G
+E te querendo eu vou tentando te encontrar
+
+[Repete a Primeira Parte]
+
+Cm
+ E nesse desespero em que me vejo
+      D7
+Já cheguei a tal ponto
+Fm                      G
+  De me trocar diversas vezes por você
+       Cm                G
+Só pra vê se te encontro
+
+[Solo] Cm  D7  Fm  G  Cm  C
+
+[Pre-Estribillo]
+
+Fm7                 Bb     Eb
+ Você bem que podia perdoar
+      G              Cm
+E só mais uma vez me aceitar
+Fm                 G
+ Prometo agora eu vou fazer por onde
+       Cm           Gm C
+Nunca mais perde-la
+
+[Estribillo]
+
+ Ab       Bb7/Ab               Gm
+E agora que faço eu na vida sem você
+ C                            Fm7
+Você não me ensinou a te esquecer
+  G                        Cm
+Você só me ensinou a te querer
+
+E te querendo eu vou tentando te encontrar
+
+          Ab
+Vou me perdendo
+    Bb7/Ab                      Gm
+Buscando em outros braços seus abraços
+   C                       Fm7
+Perdido no vazio de outros passos
+    G                        Cm
+Do abismo em que  você se retirou
+
+E me atirou e me deixou aqui sozinho
+
+ Ab       Bb7/Ab               Gm
+E agora que faço eu na vida sem você
+  C                          Fm
+Você não me ensinou a te esquecer
+  G                    Cm
+Você só me ensinou a te querer
+
+E te querendo eu vou tentando me encontrar`;export{e as default};

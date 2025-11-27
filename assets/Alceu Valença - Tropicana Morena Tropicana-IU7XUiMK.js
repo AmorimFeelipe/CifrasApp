@@ -1,0 +1,199 @@
+const n=`Título: Tropicana (Morena Tropicana)
+Artista: Alceu Valença
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:23:25
+============================================================
+
+[Intro] Bm7  F#m7  Em  F#7
+        Bm7  F#m7  Em  F#7
+
+[Primera Parte]
+
+Bm7
+    Da manga rosa
+                   F#m7
+Quero o gosto e o sumo
+         Em        F#7  Bm7
+Melão maduro, sapoti, juá
+                         F#m7
+Jaboticaba, teu olhar noturno
+          Em        F#7  Bm7
+Beijo travoso de umbú cajá
+
+[Pre-Estribillo]
+
+        A     G          D
+Pele macia é carne de caju
+        A          G              D
+Saliva doce, doce mel, mel de uruçú
+
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+
+[Estribillo]
+
+             Bm7
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai
+
+[Primera Parte]
+
+Bm7
+    Da manga rosa
+                   F#m7
+Quero o gosto e o sumo
+         Em        F#7  Bm7
+Melão maduro, sapoti, juá
+                         F#m7
+Jaboticaba, teu olhar noturno
+          Em        F#7  Bm7
+Beijo travoso de umbú cajá
+
+[Pre-Estribillo]
+
+        A     G          D
+Pele macia é carne de caju
+        A          G              D
+Saliva doce, doce mel, mel de uruçú
+
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+
+[Estribillo]
+
+             Bm7
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai
+
+             Bm7
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai
+
+[Solo] Bm7  F#m7  Em  F#7
+       Bm7  F#m7  Em  F#7  Bm7
+       A  G  D  A  G  D
+       F#7  Bm7  F#7  Bm7
+       F#7  Bm7  F#7  Bm7
+
+[Estribillo]
+
+             Bm7
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai
+
+[Primera Parte]
+
+Bm7
+    Da manga rosa
+                   F#m7
+Quero o gosto e o sumo
+         Em        F#7  Bm7
+Melão maduro, sapoti, juá
+                         F#m7
+Jaboticaba, teu olhar noturno
+          Em        F#7  Bm7
+Beijo travoso de umbú cajá
+
+[Pre-Estribillo]
+
+        A     G          D
+Pele macia é carne de caju
+        A          G              D
+Saliva doce, doce mel, mel de uruçú
+
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+         F#7                     Bm7
+Linda morena, fruta de vez temporana
+                 F#7
+Caldo de cana caiana
+              Bm7
+Vou te desfrutar
+
+[Estribillo]
+
+             Bm7
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Oi, oi, oi, oi
+
+Morena tropicana
+                  F#m7
+Eu quero o teu sabor
+Em  F#7     Bm7
+Ai, ai, ai, ai`;export{n as default};

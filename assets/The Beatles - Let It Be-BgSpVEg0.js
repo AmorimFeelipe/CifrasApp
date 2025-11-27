@@ -1,0 +1,170 @@
+const n=`Título: Let It Be
+Artista: The Beatles
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 18/10/2025 11:23:06
+============================================================
+
+[Intro] C  G  Am  F
+        C  G  F  F7M(2/4+)  F6  C
+
+   C       G     Am        F   F6  C
+
+   G       F   F7M(2/4+) F6   C
+
+[Primera Parte]
+
+        C              G
+When I find myself in times of trouble
+ Am          F          F6
+Mother Mary comes to me
+  C                G              F
+Speaking words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+
+    C              G
+And in my hour of darkness
+         Am                F         F6
+She is standing right in front of me
+  C                G              F
+Speaking words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+
+[Estribillo]
+
+   Am      Am/G    F       C
+
+   C       G       F   F7M(2/4+) F6 C
+
+          Am         Am/G       F          C
+Let it   be, let it be, let it be, let it be
+                  G              F
+Whisper words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+
+[Segunda Parte]
+
+   C         G          Am        F     F6
+
+   C         G         F   F7M(2/4+) F6  C
+
+      C              G
+And when the broken-hearted people
+ Am            F           F6
+Living in the world agree
+  C                  G           F
+There will be an answer, let it be
+
+( F7M(2/4+)  F6  C )
+
+      C                    G
+For though they may be parted
+           Am                  F           F6
+There is still a chance that they will see
+  C              G               F
+There will be an answer, let it be
+
+( F7M(2/4+)  F6  C )
+
+[Estribillo]
+
+          Am         Am/G       F          C
+Let it   be, let it be, let it be, let it be
+                     G           F
+There will be an answer, let it be
+
+( F7M(2/4+)  F6  C )
+
+          Am         Am/G       F          C
+Let it   be, let it be, let it be, let it be
+                  G              F
+Whisper words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+( F  F7M(2/4+)  F6  C )
+( Bb  Am  G  F  C/E )
+( F  F7M(2/4+)  F6  C )
+( Bb  Am  G  F  C/E )
+
+[Solo] C  G  Am  F  C
+       G  F  F7M(2/4+)  F6  C
+
+   F   F7M(2/4+) F6 C  Bb   Am   G    F   C/E
+
+[Parte 1 de 8]
+        C           G
+
+[Parte 2 de 8]
+         Am          F
+
+[Parte 3 de 8]
+    C                G
+
+[Parte 4 de 8]
+    F             C
+
+[Parte 5 de 8]
+         C             G
+
+[Parte 6 de 8]
+        Am                 F
+
+[Parte 7 de 8]
+        C                   G       F
+
+[Parte 8 de 8]
+                       C
+
+[Estribillo]
+
+        Am         Am/G       F          C
+Let it be, let it be, let it be, let it be
+                  G              F
+Whisper words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+
+[Segunda Parte]
+
+      C                  G
+And when the night is cloudy
+           Am                 F          F6
+There is still a light that shines on me
+  C            G              F
+Shine until tomorrow, let it be
+
+( F7M(2/4+)  F6  C )
+
+   C              G
+I wake up to the sound of music
+ Am          F           F6
+Mother Mary comes to me
+  C                G              F
+Speaking words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+
+[Estribillo]
+
+          Am         Am/G       F          C
+Let it   be, let it be, let it be, let it be
+                     G           F
+There will be an answer, let it be
+
+( F7M(2/4+)  F6  C )
+
+          Am         Am/G       F          C
+Let it   be, let it be, let it be, let it be
+                  G              F
+Whisper words of wisdom, let it be
+
+( F7M(2/4+)  F6  C )
+( F F7M(2/4+) F6 C )
+( Bb Am G F C )
+
+[Final]
+
+   F   F7M(2/4+) F6 C  Bb Am   G    F   C/E`;export{n as default};

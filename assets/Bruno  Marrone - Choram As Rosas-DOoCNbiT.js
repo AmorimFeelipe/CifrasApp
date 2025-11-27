@@ -1,0 +1,107 @@
+const n=`Título: Choram As Rosas
+Artista: Bruno & Marrone
+Tom: N/A
+URL: https://www.cifraclub.com/bruno-e-marrone/choram-as-rosas/simplificada.html
+Extraído em: 25/10/2025 23:19:20
+============================================================
+
+[Intro] G  D  Em  C
+        G  D  Em  C
+
+[Primera Parte]
+
+G            D
+  Choram as rosas
+        C
+Seu perfume agora
+                  G
+Se transforma em lágrimas
+                    D   C
+Eu me sinto tão perdi__do
+           G
+Choram as rosas
+
+            D
+Chora minha alma
+         C                    G
+Como um pássaro de asas machucadas
+                       D   C
+Nos meus sonhos te procu__ro
+            G
+Chora minha alma
+
+[Pre-Estribillo]
+
+C                 Em       D
+  Lágrimas que invade meu coração
+C             G        D
+  Lágrimas palavras da alma
+ C          Em      D         C
+Lágrimas a pura linguagem do amor
+
+[Estribillo]
+
+G            D
+  Choram as rosas
+Em              C
+   Porque não quero estar aqui
+G             D
+  Sem seu perfume
+C               Am      D     G
+  Porque já sei    que te perdi
+                Bm   C
+E entre outras coi__sas
+              G  D  C
+Eu choro por ti
+
+[Segunda Parte]
+
+G             D
+  Falta seu cheiro
+        C                         G
+Que eu sentia quando você me abraçava
+
+Sem teu corpo
+         D
+Sem teu beijo
+C              G
+  Tudo é sem graça
+
+[Pre-Estribillo]
+
+C                 Em       D
+  Lágrimas que invade meu coração
+C             G        D
+  Lágrimas palavras da alma
+ C          Em       D         C
+Lágrimas a pura linguagem do amor
+
+[Estribillo Final]
+
+G            D
+  Choram as rosas
+Em              C
+   Porque não quero estar aqui
+G             D
+  Sem seu perfume
+C               Am      D     G
+  Porque já sei    que te perdi
+                Bm   C
+E entre outras coi__sas
+              G  D  Em  C
+Eu choro por ti
+
+G            D
+  Choram as rosas
+Em              C
+   Porque não quero estar aqui
+G             D
+  Sem seu perfume
+C               Am      D     G
+  Porque já sei    que te perdi
+                Bm   C
+E entre outras coi__sas
+              G  D  Em  C
+Eu choro por ti
+
+( G  D  Em  C  G )`;export{n as default};

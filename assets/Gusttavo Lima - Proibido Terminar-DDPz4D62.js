@@ -1,0 +1,104 @@
+const n=`Título: Proibido Terminar
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:02:13
+============================================================
+
+[Intro] G  D/F#  Em  C
+
+[Primera Parte]
+
+G
+  Vai ter dias que eu vou
+D/F#                   Em
+Acordar querendo menos
+                B                     C
+Neste dia, cê acorda me querendo mais
+                   G
+Vai ter dia que você
+                        A
+Só vai tá dez por cento
+                      D
+Te completo com os noventa
+      D          G
+Fica tudo em paz
+
+[Segunda Parte]
+
+        D
+Casal é isso
+           Em
+Tem briga sempre
+
+Vem na ponta da língua o:
+                C
+Some da minha frente
+    G         A7
+Mas o te amo vence
+D
+O te amo vence
+
+[Estribillo]
+
+G         D                     Em
+  Tá liberado acordar de mau humor
+           Bm                      C
+Normal um dia ou outro não fazer amor
+        G                   A
+Ciúme existe, é só saber lidar
+           D4        D
+Só tá proibido terminar
+
+G           D                          Em
+  Nesse mundão, eu por você, você por mim
+          Bm                     C
+Casais felizes também têm dias ruins
+           G                  A7
+São dois adultos, é só conversar
+           D4        D
+Só tá proibido terminar
+
+[Solo] Am  Bm  C  D  E
+
+[Segunda Parte]
+
+A         E/G#
+  Casal é isso
+           F#m
+Tem briga sempre
+
+Vem na ponta da língua o:
+      C#m       D
+Some da minha frente
+    A/C#      E
+Mas o te amo vence
+
+O te amo vence
+
+[Estribillo]
+
+A         E                     F#m
+  Tá liberado acordar de mau humor
+           C#m                     D
+Normal um dia ou outro não fazer amor
+        C#m                 B7
+Ciúme existe, é só saber lidar
+           E
+Só tá proibido terminar
+
+A           E                          F#m
+  Nesse mundão, eu por você, você por mim
+          C#m                    D
+Casais felizes também têm dias ruins
+           C#m                B7
+São dois adultos, é só conversar
+           E
+Só tá proibido terminar
+
+[Final] Bm  F#m  A  E
+        Bm  F#m  A  E
+        Bm  F#m  A  E
+        Bm  F#m  A  E
+
+[Tab - Final]`;export{n as default};

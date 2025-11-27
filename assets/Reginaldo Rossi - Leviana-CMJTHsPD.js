@@ -1,0 +1,58 @@
+const a=`Título: Leviana
+Artista: Reginaldo Rossi
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:13:08
+============================================================
+
+Am
+Eu te amei
+        C
+Me entreguei
+G                                    Dm
+De um jeito que ninguém jamais se entregou
+F                                  C
+Amor igual ao meu jamais vai encontrar
+                                    D   F
+Amar como eu te amo ninguém vai te amar
+          Am
+Por que você
+C                                   G
+  Ficava sussurrando junto ao meu ouvido
+                                  F
+Mentiras misturadas com os seus gemidos
+        Dm                 E7
+E eu acreditava na sua palavra
+   Am
+Leviana
+C                                  G
+  Fazendo mil loucuras comigo na cama
+                                    F
+Queria acreditar que você ainda me ama
+             Dm                    E7
+E apesar de tudo eu sinto a sua falta
+
+    Am     F       Am      F      Am
+Leviana!leviana leviana leviana leviana
+
+C                                   G
+  Ficava sussurrando junto ao meu ouvido
+                                  F
+Mentiras misturadas com os seus gemidos
+        Dm                 E7
+E eu acreditava na sua palavra
+   Am
+Leviana
+C                                  G
+  Fazendo mil loucuras comigo na cama
+                                    F
+Queria acreditar que você ainda me ama
+             Dm                    E7
+E apesar de tudo eu sinto a sua falta
+
+    Am        F
+Leviana!  Leviana (voce não presta)
+   Am
+Leviana(mais eu te amo)
+    F      Am
+Leviana leviana`;export{a as default};

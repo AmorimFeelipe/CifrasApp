@@ -1,0 +1,72 @@
+const e=`Título: Outra Vez
+Artista: Roberto Carlos
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:30:41
+============================================================
+
+[Intro] F#m  B7
+
+      E                    C#m
+Você foi, o maior dos meus casos
+             F#m
+De todos os abraços
+                    B7
+O que eu nunca esqueci
+     A                      Am
+Você foi, dos amores que eu tive
+             E                         E7M
+O mais complicado e o mais simples pra mim
+     Bm                      E7
+Você foi, o melhor dos meus erros
+                  A
+A mais estranha estória
+                   Am
+Que alguém já escreveu
+E
+E é por essas e outras
+F#                          B
+Que a minha saudade, faz lembrar
+              B7(4)  B7
+De tudo outra vez
+
+     E                 C#m
+Você foi, a mentira sincera
+                 F#m                  B7
+Brincadeira mais séria, que me aconteceu
+      A                 Am
+Você foi, o caso mais antigo
+             E                 E7M
+O amor mais amigo, que me apareceu
+Bm                    E             E7
+Das lembranças que eu trago na vida
+         A                       Am
+Você é a saudade que eu gosto de ter
+     E                   F#       B7
+Só assim, sinto você bem perto de mim
+      E   E7
+Outra vez
+     B                        B7
+Esqueci de tentar te esquecer
+     E                       E7
+Resolvi te querer por querer
+    D#7
+Decidi, te lembrar quantas vezes
+              G#m              B7(4) B7
+Eu tenha a vontade sem nada perder, ah
+     E               C#m
+Você foi, toda a felicidade
+              F#m                 B7
+Você foi a maldade, que só me fez bem
+     A                      Am
+Você foi, o melhor dos meus planos
+                E                    E7M
+E o maior dos enganos, que eu pude fazer
+Bm                    E             E7
+Das lembranças que eu trago na vida
+         A                       Am
+Você é a saudade que eu gosto de ter
+    E                    F#       B7
+Só assim, sinto você bem perto de mim
+      E   F#m  B7  E
+Outra vez`;export{e as default};

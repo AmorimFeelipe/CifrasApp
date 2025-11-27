@@ -1,0 +1,30 @@
+const a=`Título: Em Plena Lua de Mel
+Artista: Reginaldo Rossi
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 29/10/2025 23:13:22
+============================================================
+
+C            F          C       G
+Toda vez que o seu namorado sai, você vai
+       Am
+ ver outro rapaz
+C         F          C          G
+Olha todo mundo está comentando, o seu
+            Am
+cartaz tá aumentando
+F          G          F           G
+Moça linda por favor, guarde todo esse
+       Am
+amor pra um rapaz
+F           G           F            G
+Dá vergonha de dizer, o que disseram de
+            Am
+você. Mas ouça
+
+Am                                       F
+Dizem que o seu coração, voa mais que avião
+                 E                    Am
+Dizem que o seu amor, só tem gosto de fel
+              F        E            Am
+Vai trair o marido, em plena lua de mel`;export{a as default};
