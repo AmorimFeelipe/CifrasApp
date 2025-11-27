@@ -395,4 +395,21 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
                     }}
                   >
                     <span className="font-medium truncate">{setlist.name}</span>
-                    <span className="text-xs opacity-70 ml
+                    <span className="text-xs opacity-70 ml-2">
+                      {isAlreadyIn ? "Remover" : "Adicionar"}
+                    </span>
+                  </Button>
+                );
+              })
+            )}
+          </div>
+          <DialogFooter>
+             <Button variant="ghost" onClick={() => setSongToAddToSetlist(null)}>Concluir</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+};
+
+export default SongListSidebar;
