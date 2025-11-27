@@ -12,49 +12,90 @@ export function useAutoScroller(
   const requestRef = useRef<number>(0);
   const fractionalPos = useRef(0);
   const lastTimestamp = useRef<number>(0);
+  
+  // Flag para saber se o usuário está segurando a tela (Toque/Clique)
+  const isUserInteracting = useRef(false);
+
+  // Configura os ouvintes de toque (Touch/Mouse)
+  useEffect(() => {
+    const element = scrollContainerRef.current;
+    if (!element) return;
+
+    const onInteractStart = () => {
+      isUserInteracting.current = true;
+    };
+
+    const onInteractEnd = () => {
+      isUserInteracting.current = false;
+      // Sincroniza a posição ao soltar para evitar pulos
+      fractionalPos.current = element.scrollTop;
+    };
+
+    // Mobile (Touch)
+    element.addEventListener("touchstart", onInteractStart, { passive: true });
+    element.addEventListener("touchend", onInteractEnd);
+    element.addEventListener("touchcancel", onInteractEnd);
+
+    // Desktop (Mouse - opcional, ajuda se o usuário clicar na barra de rolagem)
+    element.addEventListener("mousedown", onInteractStart);
+    element.addEventListener("mouseup", onInteractEnd);
+    // detecta se o mouse saiu da janela soltando o clique
+    element.addEventListener("mouseleave", onInteractEnd); 
+
+    return () => {
+      element.removeEventListener("touchstart", onInteractStart);
+      element.removeEventListener("touchend", onInteractEnd);
+      element.removeEventListener("touchcancel", onInteractEnd);
+      element.removeEventListener("mousedown", onInteractStart);
+      element.removeEventListener("mouseup", onInteractEnd);
+      element.removeEventListener("mouseleave", onInteractEnd);
+    };
+  }, []);
 
   const animate = useCallback(
     (timestamp: number) => {
       if (!lastTimestamp.current) lastTimestamp.current = timestamp;
 
-      // Calcula o tempo que passou desde o último quadro (em segundos)
-      // Isso garante que a velocidade seja igual em monitores 60Hz, 120Hz ou 144Hz
+      // Calcula o delta de tempo
       const deltaTime = (timestamp - lastTimestamp.current) / 1000;
       lastTimestamp.current = timestamp;
 
       if (scrollContainerRef.current && scrollSpeed > 0) {
         const element = scrollContainerRef.current;
 
-        // Detecção de intervenção manual:
-        // Se a posição real mudou muito (usuário tocou na tela), atualizamos nossa referência
-        if (Math.abs(element.scrollTop - fractionalPos.current) > 10) {
+        // SE O USUÁRIO ESTIVER TOCANDO NA TELA:
+        // Apenas atualizamos nossa referência interna para acompanhar o dedo,
+        // mas NÃO forçamos o element.scrollTop (deixamos o navegador nativo cuidar disso).
+        if (isUserInteracting.current) {
           fractionalPos.current = element.scrollTop;
+        } else {
+          // SE ESTIVER LIVRE:
+          // Aplicamos a rolagem automática.
+          
+          // Detecção extra: Se a posição real mudou muito bruscamente (scroll do mouse), sincroniza.
+          if (Math.abs(element.scrollTop - fractionalPos.current) > 50) {
+            fractionalPos.current = element.scrollTop;
+          }
+
+          const pixelsPerSecond = 30 * scrollSpeed;
+          fractionalPos.current += pixelsPerSecond * deltaTime;
+          element.scrollTop = fractionalPos.current;
         }
-
-        // --- AJUSTE DE VELOCIDADE ---
-        // Definimos uma base: Velocidade 1.0 = 30 pixels por segundo.
-        // É lento o suficiente para ler, mas constante.
-        const pixelsPerSecond = 30 * scrollSpeed;
-
-        fractionalPos.current += pixelsPerSecond * deltaTime;
-        element.scrollTop = fractionalPos.current;
       }
 
       requestRef.current = requestAnimationFrame(animate);
     },
-    [scrollSpeed]
+    [scrollSpeed] // Removemos isPlaying da dependência para o loop ser controlado pelo useEffect abaixo
   );
 
   useEffect(() => {
     if (isPlaying) {
-      lastTimestamp.current = 0; // Reseta o tempo
-
-      // Sincroniza a posição inicial ao dar Play
+      lastTimestamp.current = 0;
+      
       if (scrollContainerRef.current) {
         fractionalPos.current = scrollContainerRef.current.scrollTop;
       }
 
-      // Inicia o loop de animação
       requestRef.current = requestAnimationFrame(animate);
     } else {
       if (requestRef.current) {
