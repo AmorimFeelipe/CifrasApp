@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# CORREÇÃO: O bloco permissions deve ficar aqui, no nível da raiz (sem recuo extra)
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
