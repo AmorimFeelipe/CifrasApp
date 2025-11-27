@@ -69,6 +69,38 @@ export default function ChordViewer() {
     lastScrollY.current = currentY;
   };
 
+  // --- NOVO: Cálculo Automático de Fonte ao Abrir Música ---
+  useEffect(() => {
+    if (!currentSong || !scrollContainerRef.current) return;
+
+    // 1. Encontrar a linha mais longa (focando nas cifras que não quebram linha - whitespace-pre)
+    let maxLineLength = 0;
+    currentSong.content.forEach(line => {
+      // Verifica o tamanho da linha de acordes (geralmente a que causa overflow horizontal)
+      if (line.chords && line.chords.length > maxLineLength) {
+        maxLineLength = line.chords.length;
+      }
+    });
+
+    // Fallback para músicas muito curtas ou só letra
+    if (maxLineLength < 30) maxLineLength = 40;
+
+    // 2. Obter largura disponível (subtraindo padding, ex: 32px)
+    const containerWidth = scrollContainerRef.current.clientWidth - 32;
+
+    // 3. Constante de proporção (Fontes monoespaçadas tem largura aprox 0.6 da altura)
+    // Formula: TamanhoFonte = LarguraTela / (NumCaracteres * 0.6)
+    let idealFontSize = containerWidth / (maxLineLength * 0.6);
+
+    // 4. Limites de Legibilidade (Min 10px, Max 18px inicial)
+    if (idealFontSize < 10) idealFontSize = 10;
+    if (idealFontSize > 18) idealFontSize = 18;
+
+    setFontSize(Math.floor(idealFontSize));
+
+  }, [currentSong]); // Roda sempre que a música muda
+  // --------------------------------------------------------
+
   // Renderizador de Linha Interativa (Cifra Clicável)
   const renderInteractiveLine = (lineText: string, semitones: number) => {
     const transposedLine = transposeText(lineText, semitones);
@@ -256,10 +288,11 @@ export default function ChordViewer() {
         </header>
 
         {/* SCROLL AREA */}
+        {/* CORREÇÃO DE SCROLL: Removido 'scroll-smooth' e 'smooth-scroll-container' para não conflitar com JS */}
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth no-scrollbar bg-background smooth-scroll-container"
+          className="flex-1 overflow-y-auto overflow-x-hidden relative no-scrollbar bg-background"
           onClick={() => setIsHeaderVisible(true)}
         >
           {isLoading ? (
@@ -271,14 +304,12 @@ export default function ChordViewer() {
             </div>
           ) : currentSong ? (
             <div
-              // FIX DE LAYOUT: w-full, max-w-full e overflow-hidden para não estourar
               className="min-h-full w-full max-w-full px-5 pt-24 pb-[50vh] mx-auto transition-all duration-200 ease-out selectable-text overflow-hidden"
               style={{ fontSize: `${fontSize}px` }}
             >
               {currentSong.content.map((line, idx) => (
                 <div
                   key={idx}
-                  // FIX DE LAYOUT: break-all quebra tablaturas gigantes
                   className="mb-6 leading-relaxed font-mono whitespace-pre-wrap break-words break-all max-w-full"
                 >
                   {/* CIFRA INTERATIVA */}
