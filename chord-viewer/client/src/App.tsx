@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -20,21 +21,32 @@ function AppRouter() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
+  // FIX CRÍTICO: Calcula a altura real da janela para evitar problemas com barra de endereço mobile
+  useEffect(() => {
+    const setAppHeight = () => {
+      document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+    };
+    
+    // Executa ao carregar e ao redimensionar
+    window.addEventListener('resize', setAppHeight);
+    setAppHeight();
+    
+    return () => window.removeEventListener('resize', setAppHeight);
+  }, []);
+
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light" storageKey="cifras-ui-theme">
         <TooltipProvider>
-          <Toaster />
-          <AppRouter />
+          {/* Container Principal Blindado contra Scroll Externo */}
+          <div 
+            className="flex flex-col w-full bg-background overflow-hidden"
+            style={{ height: 'var(--app-height, 100vh)' }}
+          >
+            <Toaster />
+            <AppRouter />
+          </div>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

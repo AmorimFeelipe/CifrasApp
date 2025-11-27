@@ -69,7 +69,7 @@ export default function ChordViewer() {
     lastScrollY.current = currentY;
   };
 
-  // Renderizador de Linha
+  // Renderizador de Linha Interativa (Cifra Clicável)
   const renderInteractiveLine = (lineText: string, semitones: number) => {
     const transposedLine = transposeText(lineText, semitones);
     const regex = /([A-G][#b]?(?:m|maj|dim|aug|sus|add|5|6|7|9|11|13|\+|-|º)*)(?:\/[A-G][#b]?)?/g;
@@ -196,7 +196,7 @@ export default function ChordViewer() {
         onRemoveFromSetlist={removeFromSetlist}
       />
 
-      <main className="flex-1 flex flex-col h-full relative text-base"> {/* Força text-base na UI geral */}
+      <main className="flex-1 flex flex-col h-full relative text-base">
         
         {/* HEADER */}
         <header
@@ -255,7 +255,7 @@ export default function ChordViewer() {
           </div>
         </header>
 
-        {/* SCROLL AREA - Adicionada classe smooth-scroll-container */}
+        {/* SCROLL AREA */}
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
@@ -271,17 +271,19 @@ export default function ChordViewer() {
             </div>
           ) : currentSong ? (
             <div
-              className="min-h-full px-5 pt-24 pb-[50vh] max-w-3xl mx-auto transition-all duration-200 ease-out selectable-text"
+              // FIX DE LAYOUT: w-full, max-w-full e overflow-hidden para não estourar
+              className="min-h-full w-full max-w-full px-5 pt-24 pb-[50vh] mx-auto transition-all duration-200 ease-out selectable-text overflow-hidden"
               style={{ fontSize: `${fontSize}px` }}
             >
               {currentSong.content.map((line, idx) => (
                 <div
                   key={idx}
-                  className="mb-6 leading-relaxed font-mono whitespace-pre-wrap break-words"
+                  // FIX DE LAYOUT: break-all quebra tablaturas gigantes
+                  className="mb-6 leading-relaxed font-mono whitespace-pre-wrap break-words break-all max-w-full"
                 >
                   {/* CIFRA INTERATIVA */}
                   {line.chords && (
-                    <div className="mb-1.5 whitespace-pre">
+                    <div className="mb-1.5 whitespace-pre overflow-x-auto no-scrollbar">
                       {renderInteractiveLine(line.chords, transposition)}
                     </div>
                   )}
@@ -327,7 +329,6 @@ export default function ChordViewer() {
               isToolbarMinimized ? "translate-y-[150%]" : "translate-y-0"
             }`}
           >
-            {/* Forçamos text-base aqui para não mudar com o zoom da música */}
             <div className="w-full max-w-md bg-background/90 backdrop-blur-xl border border-border/60 rounded-full shadow-2xl flex items-center justify-between p-2 pl-6 pointer-events-auto ring-1 ring-black/5 text-base">
               
               <div className="flex flex-col items-center gap-0.5 mr-4 flex-shrink-0">
