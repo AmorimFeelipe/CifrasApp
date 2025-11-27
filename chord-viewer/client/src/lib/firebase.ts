@@ -2,14 +2,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// SUBSTITUA COM SUAS CHAVES DO CONSOLE FIREBASE
+// COPIE E COLE SUAS CHAVES AQUI (Elas aparecem no console do Firebase)
 const firebaseConfig = {
-  apiKey: "AIzaSyD...",
-  authDomain: "cifrasapp-....firebaseapp.com",
-  projectId: "cifrasapp-...",
-  storageBucket: "cifrasapp-....appspot.com",
-  messagingSenderId: "...",
-  appId: "..."
+  apiKey: "AIzaSyAlxicC-LWHklmk3Zcp6UEd_mKYXWx5_yA",
+  authDomain: "cifrasapp-2c339.firebaseapp.com",
+  projectId: "cifrasapp-2c339",
+  storageBucket: "cifrasapp-2c339.firebasestorage.app",
+  messagingSenderId: "111070986112",
+  appId: "1:111070986112:web:213c3cf2b0639d3dec0b65"
 };
 
 const app = initializeApp(firebaseConfig);
