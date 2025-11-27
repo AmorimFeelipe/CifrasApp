@@ -1,92 +1,85 @@
 import { useState, useEffect } from "react";
 import { Setlist } from "../types";
+import { 
+  collection, 
+  doc, 
+  setDoc, 
+  deleteDoc, 
+  onSnapshot, 
+  query, 
+  orderBy 
+} from "firebase/firestore";
+import { db } from "../lib/firebase"; // Importa a conexão que criamos
 
 export function useSetlists() {
   const [setlists, setSetlists] = useState<Setlist[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const fetchSetlists = async () => {
-    try {
-      const res = await fetch("/api/setlists");
-      if (!res.ok) throw new Error("Falha na conexão com servidor");
-      
-      const data = await res.json();
-      if (Array.isArray(data)) {
-        setSetlists((prev) => {
-          if (JSON.stringify(prev) !== JSON.stringify(data)) return data;
-          return prev;
-        });
-      }
-    } catch (err) {
-      console.error("Erro ao buscar repertórios:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
-    fetchSetlists();
-    const intervalId = setInterval(fetchSetlists, 2000);
-    return () => clearInterval(intervalId);
+    // Referência à coleção "setlists" no banco de dados
+    const q = query(collection(db, "setlists"), orderBy("name"));
+
+    // onSnapshot: OUVINTE em tempo real.
+    // Sempre que algo mudar no servidor, essa função roda sozinha.
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const data = snapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id, // Garante que o ID venha do documento
+      })) as Setlist[];
+      
+      setSetlists(data);
+      setLoading(false);
+    }, (error) => {
+      console.error("Erro no Firebase:", error);
+      setLoading(false);
+    });
+
+    // Limpa o ouvinte quando sair da tela
+    return () => unsubscribe();
   }, []);
 
-  const saveToServer = async (newList: Setlist[]) => {
-    // 1. Atualiza visualmente primeiro (Otimista)
-    const oldList = setlists; // Guarda backup caso falhe
-    setSetlists(newList);
-
-    try {
-      // 2. Tenta salvar no servidor
-      const response = await fetch("/api/setlists", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newList),
-      });
-
-      if (!response.ok) throw new Error("Erro no servidor");
-      
-    } catch (err) {
-      // 3. Se der erro, avisa e reverte
-      console.error("Erro crítico ao salvar:", err);
-      alert("❌ Erro ao salvar! Verifique se o servidor (dev:server) está rodando.");
-      setSetlists(oldList); // Desfaz a alteração visual
-    }
-  };
-
-  const createSetlist = (name: string) => {
+  const createSetlist = async (name: string) => {
+    const id = crypto.randomUUID();
     const newSetlist: Setlist = {
-      id: crypto.randomUUID(),
+      id,
       name,
       songs: [],
     };
-    saveToServer([...setlists, newSetlist]);
+    // Salva no Firestore (coleção 'setlists', documento com ID gerado)
+    await setDoc(doc(db, "setlists", id), newSetlist);
   };
 
-  const deleteSetlist = (id: string) => {
+  const deleteSetlist = async (id: string) => {
     if (confirm("Tem certeza que deseja excluir este repertório?")) {
-      saveToServer(setlists.filter((s) => s.id !== id));
+      await deleteDoc(doc(db, "setlists", id));
     }
   };
 
-  const addToSetlist = (setlistId: string, songPath: string) => {
-    const newList = setlists.map((s) => {
-      if (s.id === setlistId) {
-        if (s.songs.includes(songPath)) return s;
-        return { ...s, songs: [...s.songs, songPath] };
-      }
-      return s;
+  const addToSetlist = async (setlistId: string, songPath: string) => {
+    // 1. Acha a lista atual na memória para pegar as músicas antigas
+    const currentList = setlists.find(s => s.id === setlistId);
+    if (!currentList) return;
+
+    // 2. Evita duplicatas
+    if (currentList.songs.includes(songPath)) return;
+
+    // 3. Atualiza no Firebase
+    const updatedSongs = [...currentList.songs, songPath];
+    await setDoc(doc(db, "setlists", setlistId), { 
+      ...currentList, 
+      songs: updatedSongs 
     });
-    saveToServer(newList);
   };
 
-  const removeFromSetlist = (setlistId: string, songPath: string) => {
-    const newList = setlists.map((s) => {
-      if (s.id === setlistId) {
-        return { ...s, songs: s.songs.filter((p) => p !== songPath) };
-      }
-      return s;
+  const removeFromSetlist = async (setlistId: string, songPath: string) => {
+    const currentList = setlists.find(s => s.id === setlistId);
+    if (!currentList) return;
+
+    const updatedSongs = currentList.songs.filter(p => p !== songPath);
+    await setDoc(doc(db, "setlists", setlistId), { 
+      ...currentList, 
+      songs: updatedSongs 
     });
-    saveToServer(newList);
   };
 
   return {
