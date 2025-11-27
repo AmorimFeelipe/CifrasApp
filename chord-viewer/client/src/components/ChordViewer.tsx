@@ -19,7 +19,7 @@ import { useAutoScroller } from "../hooks/useAutoScroller";
 import SongListSidebar from "./SongListSidebar";
 import { useSetlists } from "../hooks/useSetlists";
 import { useTheme } from "../contexts/ThemeContext";
-import { Drawer, DrawerContent } from "@/components/ui/drawer"; // Requer: npx shadcn@latest add drawer
+import { Drawer, DrawerContent } from "@/components/ui/drawer"; 
 import ChordDiagram from "./ChordDiagram";
 import { getChordData, ChordShape } from "../lib/chords-db";
 
@@ -61,17 +61,18 @@ export default function ChordViewer() {
     if (!scrollContainerRef.current) return;
     const currentY = scrollContainerRef.current.scrollTop;
     const isScrollingDown = currentY > lastScrollY.current;
+    
+    // Só esconde o header se rolar mais que 50px
     if (currentY > 50) setIsHeaderVisible(!isScrollingDown);
     else setIsHeaderVisible(true);
+    
     lastScrollY.current = currentY;
   };
 
-  // Renderizador de Linha Interativa (Cifra Clicável)
+  // Renderizador de Linha
   const renderInteractiveLine = (lineText: string, semitones: number) => {
     const transposedLine = transposeText(lineText, semitones);
-    // Regex: Captura (Espaços)(Acorde)(Sufixo opcional)
-    const regex =
-      /([A-G][#b]?(?:m|maj|dim|aug|sus|add|5|6|7|9|11|13|\+|-|º)*)(?:\/[A-G][#b]?)?/g;
+    const regex = /([A-G][#b]?(?:m|maj|dim|aug|sus|add|5|6|7|9|11|13|\+|-|º)*)(?:\/[A-G][#b]?)?/g;
 
     const parts = [];
     let lastIndex = 0;
@@ -127,17 +128,12 @@ export default function ChordViewer() {
         import: "default",
       });
       const list: SongMeta[] = Object.entries(modules).map(([path, loader]) => {
-        const filename =
-          path
-            .split("/")
-            .pop()
-            ?.replace(/\.(chords|json)$/, "") || "Desconhecido";
+        const filename = path.split("/").pop()?.replace(/\.(chords|json)$/, "") || "Desconhecido";
         const parts = filename.split(" - ");
         return {
           path,
           artist: parts.length > 1 ? parts[0].trim() : "Desconhecido",
-          title:
-            parts.length > 1 ? parts.slice(1).join(" - ").trim() : filename,
+          title: parts.length > 1 ? parts.slice(1).join(" - ").trim() : filename,
           loader: loader as () => Promise<string>,
         };
       });
@@ -151,7 +147,6 @@ export default function ChordViewer() {
     setIsLoading(true);
     setSidebarOpen(false);
 
-    // Se o objeto já for uma cifra carregada (vinda da busca online)
     if ("content" in song) {
       setCurrentSong(song);
       setTransposition(0);
@@ -161,7 +156,6 @@ export default function ChordViewer() {
       return;
     }
 
-    // Se for um metadado de música local, carrega do arquivo
     try {
       const rawContent = await song.loader();
       const parsed = parseChordFile(rawContent);
@@ -181,8 +175,7 @@ export default function ChordViewer() {
   const filteredList = useMemo(() => {
     const q = searchQuery.toLowerCase();
     return songList.filter(
-      s =>
-        s.title.toLowerCase().includes(q) || s.artist.toLowerCase().includes(q)
+      s => s.title.toLowerCase().includes(q) || s.artist.toLowerCase().includes(q)
     );
   }, [songList, searchQuery]);
 
@@ -203,7 +196,8 @@ export default function ChordViewer() {
         onRemoveFromSetlist={removeFromSetlist}
       />
 
-      <main className="flex-1 flex flex-col h-full relative">
+      <main className="flex-1 flex flex-col h-full relative text-base"> {/* Força text-base na UI geral */}
+        
         {/* HEADER */}
         <header
           className={`
@@ -216,7 +210,7 @@ export default function ChordViewer() {
           <div className="flex items-center gap-3 overflow-hidden">
             <button
               onClick={() => setSidebarOpen(true)}
-              className="p-2 -ml-2 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+              className="p-2 -ml-2 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-md transition-colors flex-shrink-0"
             >
               <Menu size={24} />
             </button>
@@ -236,24 +230,24 @@ export default function ChordViewer() {
             )}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-shrink-0">
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-all"
+              className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-all flex-shrink-0"
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <div className="flex items-center h-9 bg-secondary rounded-full border border-border px-1">
+            <div className="flex items-center h-9 bg-secondary rounded-full border border-border px-1 flex-shrink-0">
               <button
                 onClick={() => setFontSize(s => Math.max(12, s - 2))}
-                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground"
+                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground flex-shrink-0"
               >
                 A-
               </button>
               <div className="w-px h-4 bg-border mx-0.5"></div>
               <button
                 onClick={() => setFontSize(s => Math.min(40, s + 2))}
-                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground"
+                className="w-8 h-full flex items-center justify-center text-xs font-bold text-muted-foreground hover:text-foreground flex-shrink-0"
               >
                 A+
               </button>
@@ -261,11 +255,11 @@ export default function ChordViewer() {
           </div>
         </header>
 
-        {/* SCROLL AREA */}
+        {/* SCROLL AREA - Adicionada classe smooth-scroll-container */}
         <div
           ref={scrollContainerRef}
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth no-scrollbar bg-background"
+          className="flex-1 overflow-y-auto overflow-x-hidden relative scroll-smooth no-scrollbar bg-background smooth-scroll-container"
           onClick={() => setIsHeaderVisible(true)}
         >
           {isLoading ? (
@@ -277,7 +271,7 @@ export default function ChordViewer() {
             </div>
           ) : currentSong ? (
             <div
-              className="min-h-full px-5 pt-24 pb-[50vh] max-w-3xl mx-auto transition-all duration-200 ease-out"
+              className="min-h-full px-5 pt-24 pb-[50vh] max-w-3xl mx-auto transition-all duration-200 ease-out selectable-text"
               style={{ fontSize: `${fontSize}px` }}
             >
               {currentSong.content.map((line, idx) => (
@@ -333,15 +327,17 @@ export default function ChordViewer() {
               isToolbarMinimized ? "translate-y-[150%]" : "translate-y-0"
             }`}
           >
-            <div className="w-full max-w-md bg-background/90 backdrop-blur-xl border border-border/60 rounded-full shadow-2xl flex items-center justify-between p-2 pl-6 pointer-events-auto ring-1 ring-black/5">
-              <div className="flex flex-col items-center gap-0.5 mr-4">
+            {/* Forçamos text-base aqui para não mudar com o zoom da música */}
+            <div className="w-full max-w-md bg-background/90 backdrop-blur-xl border border-border/60 rounded-full shadow-2xl flex items-center justify-between p-2 pl-6 pointer-events-auto ring-1 ring-black/5 text-base">
+              
+              <div className="flex flex-col items-center gap-0.5 mr-4 flex-shrink-0">
                 <span className="text-[9px] uppercase tracking-wider font-bold text-muted-foreground">
                   Tom
                 </span>
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setTransposition(t => t - 1)}
-                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground flex-shrink-0"
                   >
                     <Minus size={14} />
                   </button>
@@ -356,18 +352,19 @@ export default function ChordViewer() {
                   </span>
                   <button
                     onClick={() => setTransposition(t => t + 1)}
-                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground flex-shrink-0"
                   >
                     <Plus size={14} />
                   </button>
                 </div>
               </div>
+
               <button
                 onClick={() => {
                   if (!isPlaying && scrollSpeed === 0) setScrollSpeed(1);
                   setIsPlaying(!isPlaying);
                 }}
-                className={`w-14 h-14 -mt-8 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 ring-4 ring-background ${
+                className={`w-14 h-14 -mt-8 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 ring-4 ring-background flex-shrink-0 ${
                   isPlaying
                     ? "bg-destructive text-white shadow-destructive/40"
                     : "bg-primary text-primary-foreground shadow-primary/40"
@@ -379,7 +376,8 @@ export default function ChordViewer() {
                   <Play size={24} fill="currentColor" className="ml-1" />
                 )}
               </button>
-              <div className="flex flex-col items-center gap-0.5 ml-4">
+
+              <div className="flex flex-col items-center gap-0.5 ml-4 flex-shrink-0">
                 <span className="text-[9px] uppercase tracking-wider font-bold text-muted-foreground">
                   Vel
                 </span>
@@ -388,7 +386,7 @@ export default function ChordViewer() {
                     onClick={() =>
                       setScrollSpeed(s => Math.max(0.1, +(s - 0.1).toFixed(1)))
                     }
-                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground flex-shrink-0"
                   >
                     <ChevronDown size={14} />
                   </button>
@@ -399,7 +397,7 @@ export default function ChordViewer() {
                     onClick={() =>
                       setScrollSpeed(s => Math.min(5, +(s + 0.1).toFixed(1)))
                     }
-                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground"
+                    className="w-8 h-8 flex items-center justify-center bg-secondary hover:bg-accent rounded-full transition-colors text-foreground flex-shrink-0"
                   >
                     <ChevronUp size={14} />
                   </button>
