@@ -2,32 +2,42 @@
 import { createServer } from "http";
 import fs from "fs";
 import path from "path";
-var DB_FILE = path.join(__dirname, "setlists_db.json");
+var DB_FILE = path.join(process.cwd(), "server", "setlists_db.json");
+if (!fs.existsSync(DB_FILE)) {
+  fs.writeFileSync(DB_FILE, "[]");
+}
 function readDB() {
-  if (!fs.existsSync(DB_FILE)) {
-    return [];
-  }
-  const data = fs.readFileSync(DB_FILE, "utf-8");
   try {
+    if (!fs.existsSync(DB_FILE)) return [];
+    const data = fs.readFileSync(DB_FILE, "utf-8");
     return JSON.parse(data);
   } catch (e) {
+    console.error("Erro ao ler banco de dados:", e);
     return [];
   }
 }
 function writeDB(data) {
-  fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+  try {
+    fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+    console.log("\u2705 Dados salvos com sucesso em:", DB_FILE);
+  } catch (e) {
+    console.error("\u274C Erro ao salvar dados:", e);
+  }
 }
 function registerRoutes(app2) {
   app2.get("/api/setlists", (req, res) => {
+    console.log("\u{1F4E5} Recebendo pedido de repert\xF3rios...");
     const setlists = readDB();
     res.json(setlists);
   });
   app2.post("/api/setlists", (req, res) => {
+    console.log("\u{1F4BE} Salvando repert\xF3rio...");
     const newSetlists = req.body;
     if (Array.isArray(newSetlists)) {
       writeDB(newSetlists);
       res.json({ success: true, message: "Salvo com sucesso" });
     } else {
+      console.error("\u26A0\uFE0F Tentativa de salvar dados inv\xE1lidos");
       res.status(400).json({ error: "Formato inv\xE1lido" });
     }
   });
@@ -42,7 +52,7 @@ import path2, { dirname } from "path";
 import { fileURLToPath } from "url";
 import { createServer as createViteServer } from "vite";
 var __filename = fileURLToPath(import.meta.url);
-var __dirname2 = dirname(__filename);
+var __dirname = dirname(__filename);
 var log = (message, source = "express") => {
   const formattedTime = (/* @__PURE__ */ new Date()).toLocaleTimeString("en-US", {
     hour: "numeric",
@@ -56,16 +66,16 @@ async function setupVite(app2, server) {
   const vite = await createViteServer({
     server: { middlewareMode: true },
     appType: "custom",
-    root: path2.resolve(__dirname2, "..", "client"),
+    root: path2.resolve(__dirname, "..", "client"),
     // Aponta para a pasta client
-    configFile: path2.resolve(__dirname2, "..", "vite.config.ts")
+    configFile: path2.resolve(__dirname, "..", "vite.config.ts")
   });
   app2.use(vite.middlewares);
   app2.use("*", async (req, res, next) => {
     const url = req.originalUrl;
     try {
       const clientTemplate = path2.resolve(
-        __dirname2,
+        __dirname,
         "..",
         "client",
         "index.html"
@@ -84,7 +94,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(__dirname2, "..", "dist");
+  const distPath = path2.resolve(__dirname, "..", "dist");
   if (!fs2.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
