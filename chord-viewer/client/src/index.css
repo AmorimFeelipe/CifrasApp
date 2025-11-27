@@ -28,6 +28,10 @@
 
 /* --- PALETA DE CORES --- */
 :root {
+  /* Comportamento de App Nativo */
+  touch-action: pan-x pan-y; /* Melhora a resposta do toque */
+  height: 100%;
+  
   /* Modo Claro (Light) */
   --background: oklch(1 0 0); /* Branco Puro */
   --foreground: oklch(0.145 0 0); /* Preto Suave */
@@ -59,22 +63,22 @@
 
   --radius: 0.65rem;
 
-  /* Cor Especial para Acordes no Modo Claro (Azul Profundo ou Laranja Escuro) */
+  /* Cor Especial para Acordes no Modo Claro */
   --chord-color: oklch(0.488 0.243 264.376); /* Azul Indigo */
 }
 
 .dark {
   /* Modo Escuro (Dark) - Zinc Moderno */
-  --background: oklch(0.1 0 0); /* Quase preto, não preto absoluto */
+  --background: oklch(0.1 0 0); /* Quase preto */
   --foreground: oklch(0.985 0 0);
 
-  --card: oklch(0.145 0 0); /* Um pouco mais claro que o fundo */
+  --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
 
   --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
 
-  --primary: oklch(0.985 0 0); /* Botões Brancos no Escuro */
+  --primary: oklch(0.985 0 0);
   --primary-foreground: oklch(0.205 0 0);
 
   --secondary: oklch(0.269 0 0);
@@ -93,7 +97,7 @@
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
 
-  /* Cor Especial para Acordes no Modo Escuro (Amarelo Ouro) */
+  /* Cor Especial para Acordes no Modo Escuro */
   --chord-color: oklch(0.85 0.18 85);
 }
 
@@ -105,18 +109,32 @@
     @apply bg-background text-foreground transition-colors duration-300;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Fallback */
-    height: 100dvh; /* Mobile fix */
+    
+    /* FIX MOBILE: Garante altura correta e remove comportamentos de navegador */
+    height: 100vh; 
+    height: 100dvh; 
     width: 100vw;
     overflow: hidden;
+    
+    /* App Feel */
+    overscroll-behavior-y: none; /* Remove o pulo elástico */
+    user-select: none; /* Impede selecionar texto (exceto inputs) */
+    -webkit-user-select: none; /* Safari */
+    -webkit-tap-highlight-color: transparent; /* Remove o highlight azul no clique */
   }
+  
   #root {
     height: 100%;
     width: 100%;
     overflow: hidden;
   }
 
-  /* Classe utilitária para os acordes que muda de cor sozinha */
+  /* Permite selecionar texto apenas onde é útil */
+  input, textarea {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+
   .chord-highlight {
     color: var(--chord-color);
   }
