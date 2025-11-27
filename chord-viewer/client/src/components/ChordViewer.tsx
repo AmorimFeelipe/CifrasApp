@@ -147,14 +147,26 @@ export default function ChordViewer() {
     loadSongIndex();
   }, []);
 
-  const loadSong = async (meta: SongMeta) => {
+  const loadSong = async (song: SongMeta | ChordFile) => {
     setIsLoading(true);
     setSidebarOpen(false);
+
+    // Se o objeto já for uma cifra carregada (vinda da busca online)
+    if ("content" in song) {
+      setCurrentSong(song);
+      setTransposition(0);
+      setIsPlaying(false);
+      if (scrollContainerRef.current) scrollContainerRef.current.scrollTop = 0;
+      setIsLoading(false);
+      return;
+    }
+
+    // Se for um metadado de música local, carrega do arquivo
     try {
-      const rawContent = await meta.loader();
+      const rawContent = await song.loader();
       const parsed = parseChordFile(rawContent);
-      if (parsed.title === "Sem título") parsed.title = meta.title;
-      if (parsed.artist === "Artista desconhecido") parsed.artist = meta.artist;
+      if (parsed.title === "Sem título") parsed.title = song.title;
+      if (parsed.artist === "Artista desconhecido") parsed.artist = song.artist;
       setCurrentSong(parsed);
       setTransposition(0);
       setIsPlaying(false);

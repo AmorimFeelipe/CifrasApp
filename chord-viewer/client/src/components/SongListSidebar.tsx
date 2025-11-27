@@ -16,7 +16,7 @@ import {
   Loader2,
 } from "lucide-react";
 import { SongMeta, Setlist } from "../types";
-import { useOnlineSearch } from "../hooks/useOnlineSearch"; // NOVO HOOK
+
 import {
   Accordion,
   AccordionContent,
@@ -76,33 +76,9 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
   const [newListName, setNewListName] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  // --- MODO ONLINE ---
-  const [mode, setMode] = useState<"local" | "online">("local");
-  const { isSearching, searchResults, searchOnline, fetchCifra } =
-    useOnlineSearch();
-  const [onlineQuery, setOnlineQuery] = useState("");
 
-  const handleOnlineSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    searchOnline(onlineQuery);
-  };
+  
 
-  const handleOnlineSelect = async (result: any) => {
-    // 1. Baixa a cifra
-    const cifra = await fetchCifra(result.path);
-    if (cifra) {
-      // 2. Carrega no visualizador como se fosse uma música local
-      // Truque: Criamos um objeto fake que já tem o conteúdo carregado
-      onSelectSong({
-        title: cifra.title,
-        artist: cifra.artist,
-        path: "temp-online",
-        loader: async () => JSON.stringify(cifra), // Loader falso que retorna o que já temos
-      });
-      onClose(); // Fecha sidebar no mobile
-    }
-  };
-  // -------------------
 
   const groupedSongs = useMemo(() => {
     const groups: Record<string, SongMeta[]> = {};
@@ -214,36 +190,8 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
           md:relative md:translate-x-0 md:w-1/3 lg:w-1/4 flex flex-col
         `}
       >
-        {/* Toggle Local/Online */}
-        <div className="p-2 border-b border-border/50 flex gap-1 bg-muted/30">
-          <button
-            onClick={() => setMode("local")}
-            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-all flex items-center justify-center gap-2
-               ${
-                 mode === "local"
-                   ? "bg-background shadow text-foreground"
-                   : "text-muted-foreground hover:text-foreground"
-               }
-             `}
-          >
-            <Music size={14} /> Minhas Cifras
-          </button>
-          <button
-            onClick={() => setMode("online")}
-            className={`flex-1 py-1.5 text-xs font-bold rounded-md transition-all flex items-center justify-center gap-2
-               ${
-                 mode === "online"
-                   ? "bg-background shadow text-primary"
-                   : "text-muted-foreground hover:text-foreground"
-               }
-             `}
-          >
-            <Globe size={14} /> Buscar Online
-          </button>
-        </div>
 
-        {mode === "local" ? (
-          // --- MODO LOCAL (Igual antes) ---
+
           <>
             <div className="p-4 pb-2 border-b border-border shrink-0">
               <div className="relative">
@@ -410,61 +358,6 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
               </TabsContent>
             </Tabs>
           </>
-        ) : (
-          // --- MODO ONLINE (NOVO) ---
-          <div className="flex-1 flex flex-col overflow-hidden">
-            <div className="p-4 pb-2 border-b border-border shrink-0">
-              <form onSubmit={handleOnlineSearch} className="relative">
-                <Globe
-                  className="absolute left-3 top-2.5 text-primary animate-pulse"
-                  size={16}
-                />
-                <input
-                  type="text"
-                  placeholder="Digite música ou artista..."
-                  className="w-full bg-secondary rounded-lg pl-9 pr-12 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
-                  value={onlineQuery}
-                  onChange={e => setOnlineQuery(e.target.value)}
-                  autoFocus
-                />
-                {isSearching && (
-                  <Loader2
-                    className="absolute right-3 top-2.5 text-primary animate-spin"
-                    size={16}
-                  />
-                )}
-              </form>
-              <div className="text-[10px] text-muted-foreground mt-2 text-center">
-                Busca direta no CifraClub via Servidor
-              </div>
-            </div>
-
-            <ScrollArea className="flex-1 px-2 pt-2">
-              <div className="space-y-1 pb-20">
-                {searchResults.map((res, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleOnlineSelect(res)}
-                    className="w-full text-left p-3 rounded-md transition-colors flex items-center gap-3 text-sm hover:bg-secondary group border border-transparent hover:border-border"
-                  >
-                    <Download
-                      size={14}
-                      className="text-muted-foreground group-hover:text-primary"
-                    />
-                    <span className="text-foreground font-medium truncate">
-                      {res.title}
-                    </span>
-                  </button>
-                ))}
-                {searchResults.length === 0 && !isSearching && (
-                  <div className="p-8 text-center text-muted-foreground text-sm">
-                    Digite algo e dê Enter para buscar na web.
-                  </div>
-                )}
-              </div>
-            </ScrollArea>
-          </div>
-        )}
       </aside>
       {isOpen && (
         <div

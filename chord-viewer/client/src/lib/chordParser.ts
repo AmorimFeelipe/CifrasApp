@@ -53,7 +53,7 @@ export function parseChordFile(rawInput: string): ChordFile {
   };
 }
 
-function parseContentLines(text: string): ChordLine[] {
+export function parseContentLines(text: string): ChordLine[] {
   const lines = text.split("\n");
   const chordLines: ChordLine[] = [];
 

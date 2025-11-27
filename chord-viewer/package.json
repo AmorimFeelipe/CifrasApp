@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
+    "dev:server": "tsx watch server/index.ts",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
@@ -43,9 +44,6 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "@radix-ui/react-tooltip": "^1.2.8",
     "@tanstack/react-query": "^4.41.0",
-    "@types/cheerio": "^0.22.35",
-    "axios": "^1.13.2",
-    "cheerio": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
