@@ -201,7 +201,7 @@ export default function ChordViewer() {
         {/* HEADER */}
         <header
           className={`
-            absolute top-0 left-0 right-0 z-20 h-16 px-4 flex items-center justify-between
+            absolute top-0 left-0 right-0 z-20 h-auto min-h-16 px-4 pt-[env(safe-area-inset-top)] flex items-center justify-between
             bg-background/95 border-b border-border/50 backdrop-blur-md
             transition-transform duration-300 ease-in-out shadow-sm
             ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"}
@@ -324,9 +324,10 @@ export default function ChordViewer() {
         {/* BOTTOM TOOLBAR */}
         {currentSong && (
           <div
-            className={`absolute bottom-6 left-0 right-0 z-30 flex justify-center px-4 pointer-events-none transition-transform duration-500 ease-in-out ${
+            className={`absolute left-0 right-0 z-30 flex justify-center px-4 pointer-events-none transition-transform duration-500 ease-in-out ${
               isToolbarMinimized ? "translate-y-[150%]" : "translate-y-0"
             }`}
+            style={{ bottom: "calc(1.5rem + env(safe-area-inset-bottom))" }}
           >
             <div className="w-full max-w-md bg-background/90 backdrop-blur-xl border border-border/60 rounded-full shadow-2xl flex items-center justify-between p-2 pl-6 pointer-events-auto ring-1 ring-black/5 text-base">
               
