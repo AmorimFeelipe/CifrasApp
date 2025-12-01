@@ -48,7 +48,7 @@ export default function ChordViewer() {
 
   // Leitura
   const [transposition, setTransposition] = useState(0);
-  const [fontSize, setFontSize] = useState(18);
+  const [fontSize, setFontSize] = useState(12);
   const [scrollSpeed, setScrollSpeed] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -68,38 +68,6 @@ export default function ChordViewer() {
     
     lastScrollY.current = currentY;
   };
-
-  // --- NOVO: Cálculo Automático de Fonte ao Abrir Música ---
-  useEffect(() => {
-    if (!currentSong || !scrollContainerRef.current) return;
-
-    // 1. Encontrar a linha mais longa (focando nas cifras que não quebram linha - whitespace-pre)
-    let maxLineLength = 0;
-    currentSong.content.forEach(line => {
-      // Verifica o tamanho da linha de acordes (geralmente a que causa overflow horizontal)
-      if (line.chords && line.chords.length > maxLineLength) {
-        maxLineLength = line.chords.length;
-      }
-    });
-
-    // Fallback para músicas muito curtas ou só letra
-    if (maxLineLength < 30) maxLineLength = 40;
-
-    // 2. Obter largura disponível (subtraindo padding, ex: 32px)
-    const containerWidth = scrollContainerRef.current.clientWidth - 32;
-
-    // 3. Constante de proporção (Fontes monoespaçadas tem largura aprox 0.6 da altura)
-    // Formula: TamanhoFonte = LarguraTela / (NumCaracteres * 0.6)
-    let idealFontSize = containerWidth / (maxLineLength * 0.6);
-
-    // 4. Limites de Legibilidade (Min 10px, Max 18px inicial)
-    if (idealFontSize < 10) idealFontSize = 10;
-    if (idealFontSize > 18) idealFontSize = 18;
-
-    setFontSize(Math.floor(idealFontSize));
-
-  }, [currentSong]); // Roda sempre que a música muda
-  // --------------------------------------------------------
 
   // Renderizador de Linha Interativa (Cifra Clicável)
   const renderInteractiveLine = (lineText: string, semitones: number) => {
