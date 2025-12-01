@@ -13,6 +13,14 @@ export function useAutoScroller(
   const fractionalPos = useRef(0);
   const lastTimestamp = useRef<number>(0);
   
+  // Ref para velocidade atual, permitindo que o loop leia o valor mais recente
+  // sem precisar ser recriado (o que causaria "pulos" ou reinícios).
+  const speedRef = useRef(scrollSpeed);
+
+  useEffect(() => {
+    speedRef.current = scrollSpeed;
+  }, [scrollSpeed]);
+  
   // Flag para saber se o usuário está segurando a tela (Toque/Clique)
   const isUserInteracting = useRef(false);
 
@@ -60,32 +68,36 @@ export function useAutoScroller(
       const deltaTime = (timestamp - lastTimestamp.current) / 1000;
       lastTimestamp.current = timestamp;
 
-      if (scrollContainerRef.current && scrollSpeed > 0) {
-        const element = scrollContainerRef.current;
+      if (scrollContainerRef.current) {
+        const currentSpeed = speedRef.current;
+        
+        if (currentSpeed > 0) {
+          const element = scrollContainerRef.current;
 
-        // SE O USUÁRIO ESTIVER TOCANDO NA TELA:
-        // Apenas atualizamos nossa referência interna para acompanhar o dedo,
-        // mas NÃO forçamos o element.scrollTop (deixamos o navegador nativo cuidar disso).
-        if (isUserInteracting.current) {
-          fractionalPos.current = element.scrollTop;
-        } else {
-          // SE ESTIVER LIVRE:
-          // Aplicamos a rolagem automática.
-          
-          // Detecção extra: Se a posição real mudou muito bruscamente (scroll do mouse), sincroniza.
-          if (Math.abs(element.scrollTop - fractionalPos.current) > 50) {
+          // SE O USUÁRIO ESTIVER TOCANDO NA TELA:
+          // Apenas atualizamos nossa referência interna para acompanhar o dedo,
+          // mas NÃO forçamos o element.scrollTop (deixamos o navegador nativo cuidar disso).
+          if (isUserInteracting.current) {
             fractionalPos.current = element.scrollTop;
-          }
+          } else {
+            // SE ESTIVER LIVRE:
+            // Aplicamos a rolagem automática.
+            
+            // Detecção extra: Se a posição real mudou muito bruscamente (scroll do mouse), sincroniza.
+            if (Math.abs(element.scrollTop - fractionalPos.current) > 50) {
+              fractionalPos.current = element.scrollTop;
+            }
 
-          const pixelsPerSecond = 30 * scrollSpeed;
-          fractionalPos.current += pixelsPerSecond * deltaTime;
-          element.scrollTop = fractionalPos.current;
+            const pixelsPerSecond = 30 * currentSpeed;
+            fractionalPos.current += pixelsPerSecond * deltaTime;
+            element.scrollTop = fractionalPos.current;
+          }
         }
       }
 
       requestRef.current = requestAnimationFrame(animate);
     },
-    [scrollSpeed] // Removemos isPlaying da dependência para o loop ser controlado pelo useEffect abaixo
+    [] // Sem dependências: o loop nunca é recriado, ele lê speedRef.current
   );
 
   useEffect(() => {

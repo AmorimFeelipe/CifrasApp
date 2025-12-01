@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo } from "react";
+import React, { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import {
   Menu,
   Minus,
@@ -70,7 +70,8 @@ export default function ChordViewer() {
   };
 
   // Renderizador de Linha Interativa (Cifra Clicável)
-  const renderInteractiveLine = (lineText: string, semitones: number) => {
+  // Otimização: Memoizado para evitar recriação constante
+  const renderInteractiveLine = useCallback((lineText: string, semitones: number) => {
     const transposedLine = transposeText(lineText, semitones);
     const regex = /([A-G][#b]?(?:m|maj|dim|aug|sus|add|5|6|7|9|11|13|\+|-|º)*)(?:\/[A-G][#b]?)?/g;
 
@@ -118,7 +119,17 @@ export default function ChordViewer() {
       parts.push(<span key="end">{transposedLine.substring(lastIndex)}</span>);
     }
     return parts;
-  };
+  }, []);
+
+  // Otimização: Pré-processar o conteúdo da música quando mudar a música ou a transposição
+  const processedContent = useMemo(() => {
+    if (!currentSong) return null;
+    return currentSong.content.map((line, idx) => ({
+      ...line,
+      renderedChords: line.chords ? renderInteractiveLine(line.chords, transposition) : null,
+      id: idx
+    }));
+  }, [currentSong, transposition, renderInteractiveLine]);
 
   // Carregar Index
   useEffect(() => {
@@ -275,15 +286,15 @@ export default function ChordViewer() {
               className="min-h-full w-full max-w-full px-5 pt-24 pb-[50vh] mx-auto transition-all duration-200 ease-out selectable-text overflow-hidden"
               style={{ fontSize: `${fontSize}px` }}
             >
-              {currentSong.content.map((line, idx) => (
+              {processedContent?.map((line) => (
                 <div
-                  key={idx}
+                  key={line.id}
                   className="mb-6 leading-relaxed font-mono whitespace-pre-wrap break-words break-all max-w-full"
                 >
                   {/* CIFRA INTERATIVA */}
-                  {line.chords && (
+                  {line.renderedChords && (
                     <div className="mb-1.5 whitespace-pre overflow-x-auto no-scrollbar">
-                      {renderInteractiveLine(line.chords, transposition)}
+                      {line.renderedChords}
                     </div>
                   )}
                   <div className="text-foreground/90 font-normal tracking-normal opacity-90">

@@ -1,15 +1,12 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useCallback } from "react";
 import {
   Search,
   X,
-  Music,
+  Music2,
   User,
-  Plus,
-  Trash2,
-  MoreVertical,
   FolderPlus,
   ListMusic,
-  Music2
+  Trash2,
 } from "lucide-react";
 import { SongMeta, Setlist, ChordFile } from "../types";
 
@@ -32,6 +29,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import SongItemRow from "./SongItemRow";
 
 interface SongListSidebarProps {
   isOpen: boolean;
@@ -92,55 +90,10 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
     }
   };
 
-  const handleOpenOptions = (e: React.MouseEvent, song: SongMeta) => {
+  const handleOpenOptions = useCallback((e: React.MouseEvent, song: SongMeta) => {
     e.stopPropagation();
     setSongToAddToSetlist(song);
-  };
-
-  // Componente interno para renderizar a linha da música (com os 3 pontinhos)
-  const SongItemRow = ({ song, isInsideSetlist = false, setlistId = "" }: { song: SongMeta, isInsideSetlist?: boolean, setlistId?: string }) => (
-    <div 
-      className={`
-        w-full text-left p-2 rounded-md transition-colors flex items-center gap-3 text-sm cursor-pointer group
-        ${currentSong?.title === song.title
-            ? "bg-primary/10 text-primary font-medium border border-primary/20"
-            : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-        }
-      `}
-      onClick={() => onSelectSong(song)}
-    >
-      <Music size={14} className={currentSong?.title === song.title ? "text-primary" : "opacity-50"} />
-      
-      <div className="flex-1 overflow-hidden">
-        <span className="truncate block">{song.title}</span>
-        {(isInsideSetlist || searchQuery) && (
-          <span className="text-xs text-muted-foreground/70 truncate block">
-            {song.artist}
-          </span>
-        )}
-      </div>
-
-      {/* Botão de Ação (3 Pontos ou Lixeira) */}
-      {isInsideSetlist ? (
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onRemoveFromSetlist(setlistId, song.path);
-          }}
-          className="p-2 opacity-0 group-hover:opacity-100 transition-opacity text-destructive hover:bg-destructive/10 rounded-full"
-        >
-          <Trash2 size={14} />
-        </button>
-      ) : (
-        <button
-          onClick={(e) => handleOpenOptions(e, song)}
-          className="p-2 text-muted-foreground hover:text-foreground hover:bg-background rounded-full transition-colors active:scale-95"
-        >
-          <MoreVertical size={14} />
-        </button>
-      )}
-    </div>
-  );
+  }, []);
 
   return (
     <>
@@ -205,7 +158,14 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
                   // Se tiver busca, mostra lista plana
                   <div className="space-y-1 pb-4 pt-2">
                     {songList.map(song => (
-                      <SongItemRow key={song.path} song={song} />
+                      <SongItemRow 
+                        key={song.path} 
+                        song={song} 
+                        currentSong={currentSong}
+                        onSelectSong={onSelectSong}
+                        searchQuery={searchQuery}
+                        onOpenOptions={handleOpenOptions}
+                      />
                     ))}
                   </div>
                 ) : (
@@ -232,7 +192,13 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
                         </AccordionTrigger>
                         <AccordionContent className="pb-2 space-y-1">
                           {songs.map(song => (
-                            <SongItemRow key={song.path} song={song} />
+                            <SongItemRow 
+                              key={song.path} 
+                              song={song} 
+                              currentSong={currentSong}
+                              onSelectSong={onSelectSong}
+                              onOpenOptions={handleOpenOptions}
+                            />
                           ))}
                         </AccordionContent>
                       </AccordionItem>
@@ -298,8 +264,11 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
                             <SongItemRow
                               key={path}
                               song={song}
+                              currentSong={currentSong}
+                              onSelectSong={onSelectSong}
                               isInsideSetlist
                               setlistId={list.id}
+                              onRemoveFromSetlist={onRemoveFromSetlist}
                             />
                           );
                         })}
