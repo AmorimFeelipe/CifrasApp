@@ -129,7 +129,7 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
           {/* 2. RESTAURADO: Abas (Tabs) */}
           <Tabs
             defaultValue="library"
-            className="flex-1 flex flex-col overflow-hidden"
+            className="flex-1 flex flex-col min-h-0"
           >
             <div className="px-4 pt-2">
               <TabsList className="w-full bg-secondary/50 grid grid-cols-2 p-1 rounded-lg">
