@@ -151,7 +151,7 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
             {/* CONTEÚDO: BIBLIOTECA (Organizado por Artista) */}
             <TabsContent
               value="library"
-              className="flex-1 overflow-hidden flex flex-col mt-2 data-[state=inactive]:hidden"
+              className="flex-1 min-h-0 flex flex-col mt-2 data-[state=inactive]:hidden"
             >
               <ScrollArea className="flex-1 px-2">
                 {searchQuery.length > 0 ? (
@@ -211,7 +211,7 @@ const SongListSidebar: React.FC<SongListSidebarProps> = ({
             {/* CONTEÚDO: REPERTÓRIOS (Expansível) */}
             <TabsContent
               value="setlists"
-              className="flex-1 overflow-hidden flex flex-col mt-2 data-[state=inactive]:hidden"
+              className="flex-1 min-h-0 flex flex-col mt-2 data-[state=inactive]:hidden"
             >
               <div className="px-4 mb-2">
                 <Button

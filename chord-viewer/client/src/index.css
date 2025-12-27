@@ -153,19 +153,12 @@
   }
 }
 
-/* Força a rolagem na lista de artistas/biblioteca */
-[data-state="active"].flex-1.overflow-hidden.flex.flex-col {
-    overflow-y: auto !important;
-    height: 100%;
+/* Ajuste para garantir que o Radix ScrollArea ocupe todo o espaço no mobile e permita rolagem */
+[data-slot="scroll-area-viewport"] {
+  display: block !important;
 }
 
-/* Ajuste para garantir que o contêiner pai não corte o conteúdo */
-aside .flex-1.flex.flex-col.overflow-hidden {
-    overflow: visible !important;
-}
-
-/* Melhora a rolagem no mobile */
+/* Melhora a experiência de rolagem em dispositivos touch */
 .overflow-y-auto, [data-state="active"] {
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
-
