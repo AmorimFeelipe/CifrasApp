@@ -152,3 +152,16 @@
     color: var(--chord-color);
   }
 }
+
+.sidebar-scroll {
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* Melhora a rolagem no iPhone */
+}
+
+/* Garante que a barra lateral ocupe a altura disponível */
+aside, .sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
