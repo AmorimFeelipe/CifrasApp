@@ -153,15 +153,19 @@
   }
 }
 
-.sidebar-scroll {
-  height: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch; /* Melhora a rolagem no iPhone */
+/* Força a rolagem na lista de artistas/biblioteca */
+[data-state="active"].flex-1.overflow-hidden.flex.flex-col {
+    overflow-y: auto !important;
+    height: 100%;
 }
 
-/* Garante que a barra lateral ocupe a altura disponível */
-aside, .sidebar-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+/* Ajuste para garantir que o contêiner pai não corte o conteúdo */
+aside .flex-1.flex.flex-col.overflow-hidden {
+    overflow: visible !important;
 }
+
+/* Melhora a rolagem no mobile */
+.overflow-y-auto, [data-state="active"] {
+    -webkit-overflow-scrolling: touch;
+}
+
