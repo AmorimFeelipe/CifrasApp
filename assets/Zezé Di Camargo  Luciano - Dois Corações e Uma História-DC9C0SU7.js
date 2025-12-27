@@ -1,0 +1,139 @@
+const n=`Título: Dois Corações e Uma História
+Artista: Zezé Di Camargo & Luciano
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:07:58
+============================================================
+
+[Primera Parte]
+
+               Bm
+No meio da conversa
+                 E
+De um caso terminando
+                     A
+Um fala e o outro escuta
+                        F#m
+E os olhos vão chorando
+       Bm
+A lógica de tudo
+         E
+É o desamor que chega
+           A
+Depois que um descobre
+                       Bm7  C#m
+Que o outro não se entrega
+
+          Bm
+Quem vai sair arruma
+    E
+As coisas põe na mala
+           A
+Enquanto o outro fuma
+                 F#m
+Um cigarro na sala
+     Bm
+E o coração palhaço
+   E
+Começa a bater forte
+           D       E
+Quem fica não deseja
+             A
+Que o outro tenha sorte
+
+[Estribillo]
+
+              D
+E longe um do outro
+                 E
+A vida é toda errada
+                  A
+O homem não se importa
+                   F#
+Com a roupa amarrotada
+                Bm
+E a mulher em crise
+                E
+Quantas vezes chora
+                 D               E
+A dor de ter perdido um grande amor
+     A         F  Bb
+Que foi embora
+
+[Segunda parte]
+
+                  Cm
+Mas quando vem a volta
+              F
+O homem se arruma
+                   Bb
+Faz barba, lava o carro
+                     Gm
+Se banha, se perfuma
+             Cm
+E liga pro amigo
+                   F
+Que tanto lhe deu força
+              Bb
+E jura nunca mais
+
+Vai perder essa moça
+
+            Cm
+E a mulher se abraça
+        F
+À mãe, diz obrigado
+         Bb
+E põe aquela roupa
+                      Gm
+Que agrada o seu amado
+           Cm
+E passa a tarde toda
+          F
+Cuidando da beleza
+          Eb
+Jantar à luz de velas
+F            Bb
+  E amor de sobremesa
+
+[Estribillo]
+
+              Eb
+E perto um do outro
+              F
+A vida é diferente
+             Bb
+A solidão dá espaço
+                      G
+Ao amor que estava ausente
+                   Cm
+Quem olha não tem jeito
+             F
+De duvidar agora
+                Eb
+Da força da paixão que tem
+F                   Bb
+  Dois corações e uma história
+
+              Eb
+E perto um do outro
+              F
+A vida é diferente
+             Bb
+A solidão dá espaço
+                      G
+Ao amor que estava ausente
+                   Cm
+Quem olha não tem jeito
+             F
+De duvidar agora
+                Eb
+Da força da paixão que tem
+F                         Bb   Gm
+  Dois corações e uma história
+                Cm
+Da força da paixão que tem
+F                   Bb         Eb  F
+  Dois corações e uma história
+
+[Final] Bb  Eb  F  Bb`;export{n as default};

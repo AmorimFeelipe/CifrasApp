@@ -1,0 +1,133 @@
+const n=`Título: Cem Mil
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:45:43
+============================================================
+
+[Intro] Dm  C  G
+
+[Primera Parte]
+
+Dm           F
+   Não fale mais o meu nome
+        C
+Não me telefone
+       G                     Dm
+Por favor, não pergunte por mim
+
+         F
+Vê se me esquece e some
+          C
+Se eu te ver de longe
+        G                    Dm
+Viro a cara e finjo que não vi
+
+[Segunda Parte]
+
+                    F
+Mas eu não vou mentir
+                 C
+Tá doendo lá no fundo
+              G
+Sem você, eu não consigo mais dormir
+
+ Dm
+Vamos fazer assim
+ F
+Melhor não me procurar
+ C                  G
+Porque eu morro de medo de te perdoar
+
+[Estribillo]
+
+Dm                               F
+   Eu tô falando mal de você, iê, iê
+                              Am
+Que você nunca soube fazer, iê, iê
+                                 G
+Cem mil com quem quiser eu aposto
+                             Dm
+Se ela bater o dedo, eu volto
+
+                              F
+Eu tô falando mal de você, iê, iê
+                              Am
+Que você nunca soube fazer, iê, iê
+                                 G
+Cem mil com quem quiser eu aposto
+                             Dm
+Se ela bater o dedo, eu volto
+  Dm              G             Am
+Ela não vale um real, mas eu adoro
+
+[Solo] Am  Em  G  Dm
+       Am  Em  G  D
+       Dm  C  G
+
+[Primera Parte]
+
+Dm           F
+   Não fale mais o meu nome
+        C
+Não me telefone
+       G                     Dm
+Por favor, não pergunte por mim
+
+         F
+Vê se me esquece e some
+          C
+Se eu te ver de longe
+        G                    Dm
+Viro a cara e finjo que não vi
+
+[Segunda Parte]
+
+                    F
+Mas eu não vou mentir
+                 C
+Tá doendo lá no fundo
+              G
+Sem você, eu não consigo mais dormir
+
+ Dm
+Vamos fazer assim
+ F
+Melhor não me procurar
+ C                  G
+Porque eu morro de medo de te perdoar
+
+[Estribillo]
+
+Dm                               F
+   Eu tô falando mal de você, iê, iê
+                              Am
+Que você nunca soube fazer, iê, iê
+                                 G
+Cem mil com quem quiser eu aposto
+                             Dm
+Se ela bater o dedo, eu volto
+
+                              F
+Eu tô falando mal de você, iê, iê
+                              Am
+Que você nunca soube fazer, iê, iê
+                                 G
+Cem mil com quem quiser eu aposto
+                             Dm
+Se ela bater o dedo, eu volto
+
+                              F
+Eu tô falando mal de você, iê, iê
+                              Am
+Que você nunca soube fazer, iê, iê
+                                 G
+Cem mil com quem quiser eu aposto
+                             Dm
+Se ela bater o dedo, eu volto
+  Dm              G            Am
+Ela não vale um real, mas eu adoro
+
+[Final] Am  Em  G  Dm
+        Am  Em  G  D
+        Dm  C  G`;export{n as default};

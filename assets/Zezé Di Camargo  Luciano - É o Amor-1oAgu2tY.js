@@ -1,0 +1,118 @@
+const n=`Título: É o Amor
+Artista: Zezé Di Camargo & Luciano
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:04:13
+============================================================
+
+[Intro] C  G  D  G  D
+
+[Primera Parte]
+
+    G
+Eu não vou negar que sou louco por você
+                                    D
+Tô maluco pra te ver, eu não vou negar
+    Am                              D
+Eu não vou negar, sem você tudo é saudade
+                 Am
+Você traz felicidade
+D               G  Am  D
+  Eu não vou negar
+    G
+Eu não vou negar, você é meu doce mel
+                                  C
+Meu pedacinho de céu, eu não vou negar
+
+[Pre-Estribillo]
+
+Você é minha doce amada
+           G
+Minha alegria, meu conto de fada
+            Am7
+Minha fantasia
+                 D               G
+A paz que eu preciso pra sobreviver
+    C
+Eu sou o seu apaixonado, de alma
+        G
+transparente
+                                 Am7
+Um louco alucinado meio inconsequente
+               D         G
+Um caso complicado de se entender
+
+[Estribillo]
+
+      C
+É o amor, que mexe com a minha cabeça
+              G
+E me deixa assim
+
+Que faz eu pensar em você
+            D
+E esquecer de mim
+     Am7                   D
+Que faz eu esquecer que a vida
+               G
+É feita pra viver
+      C
+É o amor
+                                        G
+Que veio como um tiro certo no meu coração
+                                       D
+Que derrubou a base forte da minha paixão
+     Am7                   D
+Que fez eu entender que a vida é nada sem
+ G   Am  D
+você
+
+[Puente]
+
+    G
+Eu não vou negar, você é meu doce mel
+                                  C
+Meu pedacinho de céu, eu não vou negar
+
+[Pre-Estribillo]
+
+Você é minha doce amada
+           G
+Minha alegria, meu conto de fada
+            Am7
+Minha fantasia
+                 D               G
+A paz que eu preciso pra sobreviver
+    C
+Eu sou o seu apaixonado, de alma
+        G
+transparente
+                               Am7
+Um louco alucinado meio inconsequente
+               D         G
+Um caso complicado de se entender
+
+[Estribillo]
+
+      C
+É o amor, que mexe com a minha cabeça
+              G
+E me deixa assim
+
+Que faz eu pensar em você
+            D
+E esquecer de mim
+     Am7                   D
+Que faz eu esquecer que a vida
+               G
+É feita pra viver
+      C
+É o amor
+                                        G
+Que veio como um tiro certo no meu coração
+                                       D
+Que derrubou a base forte da minha paixão
+     Am7
+Que fez eu entender
+       D               G   Am  D  G
+Que a vida é nada sem você`;export{n as default};

@@ -1,0 +1,104 @@
+const n=`Título: No Dia Em Que Eu Saí De Casa
+Artista: Zezé Di Camargo & Luciano
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:04:32
+============================================================
+
+[Intro] Bm  E  A  E  A
+
+[Primera Parte]
+
+No dia em que eu saí de casa
+
+Minha mãe me disse
+            D
+Filho, vem cá
+    E
+Passou a mão em meus cabelos
+
+Olhou em meus olhos
+           A
+Começou falar
+
+Por onde você for eu sigo
+              A7
+Com meu pensamento
+                 D
+Sempre onde estiver
+
+Em minhas orações
+    A
+Eu vou pedir a Deus
+    E                  A
+Que ilumine os passos seus
+
+[Estribillo]
+
+           D
+Eu sei que ela nunca compreendeu
+                            A
+Os meus motivos de sair de lá
+                              E
+Mas ela sabe que depois que cresce
+              D                  A
+O filho vira passarinho e quer voar
+
+           D
+Eu bem queria continuar ali
+                              A
+Mas o destino quis me contrariar
+                           E
+E o olhar de minha mãe na porta
+
+Eu deixei chorando
+           A
+A me abençoar
+
+( Bm  E  A  E  A )
+
+[Segunda Parte]
+
+A minha mãe naquele dia
+                           D
+Me falou do mundo como ele é
+   E
+Parece que ela conhecia
+                              A
+Cada pedra que eu iria por o pé
+
+E sempre ao lado do meu pai
+              A7               D
+Da pequena cidade ela jamais saiu
+
+Ela me disse assim:
+     A
+Meu filho, vá com Deus
+    E                     A
+Que esse mundo inteiro é seu
+
+[Estribillo]
+
+           D
+Eu sei que ela nunca compreendeu
+                            A
+Os meus motivos de sair de lá
+                              E
+Mas ela sabe que depois que cresce
+              D
+O filho vira passarinho
+         A
+E quer voar
+
+           D
+Eu bem queria continuar ali
+                              A
+Mas o destino quis me contrariar
+                           E
+E o olhar de minha mãe na porta
+                              A
+Eu deixei chorando a me abençoar
+                           E
+E o olhar de minha mãe na porta
+                              A  E  A
+Eu deixei chorando a me abençoar`;export{n as default};

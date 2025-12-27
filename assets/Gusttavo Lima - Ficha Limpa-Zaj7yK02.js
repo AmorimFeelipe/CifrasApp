@@ -1,0 +1,113 @@
+const n=`Título: Ficha Limpa
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:43:51
+============================================================
+
+[Intro] D  E
+
+[Primera Parte]
+
+A
+  Quando você me toca
+               D
+Não arrepia a pele
+
+A
+  Suas palavras não me cortam
+        D
+Mas me ferem
+
+[Pre-Estribillo]
+
+Bm                        D
+Eu não tô feliz, você também
+                       F#m
+A gente tá enganando quem?
+                    E
+Tá tudo fora do normal
+                              D
+No momento, a gente pode ser tudo
+                        Dm
+Tudo, tudo, menos um casal
+
+[Estribillo]
+
+ D                       E
+Doa a quem doer, no caso eu
+                                F#m
+Tô indo embora com minha ficha limpa
+                          D
+De saudade, de cabeça erguida
+                               Bm
+Eu vou sofrer, mas não vou recair
+                             D
+Mas já você vai precisar de mim
+
+ D                       E
+Doa a quem doer, no caso eu
+                                F#m
+Tô indo embora com minha ficha limpa
+                          D
+De saudade, de cabeça erguida
+                               Bm
+Eu vou sofrer, mas não vou recair
+                             D
+Mas já você vai precisar de mim
+                 Dm
+Pra te tirar do fundo desse poço
+    F#m
+Que eu saí
+
+[Solo] D  E  F#m
+
+[Pre-Estribillo]
+
+Bm                        D
+Eu não tô feliz, você também
+                       F#m
+A gente tá enganando quem?
+                    E
+Tá tudo fora do normal
+                              D
+No momento, a gente pode ser tudo
+                        Dm
+Tudo, tudo, menos um casal
+
+[Estribillo]
+
+ D                       E
+Doa a quem doer, no caso eu
+                                F#m
+Tô indo embora com minha ficha limpa
+                          D
+De saudade, de cabeça erguida
+                               Bm
+Eu vou sofrer, mas não vou recair
+                             D
+Mas já você vai precisar de mim
+
+ D                       E
+Doa a quem doer, no caso eu
+                                F#m
+Tô indo embora com minha ficha limpa
+                          D
+De saudade, de cabeça erguida
+                               Bm
+Eu vou sofrer, mas não vou recair
+                             D
+Mas já você vai precisar de mim
+                 Dm
+Pra te tirar do fundo desse poço
+    F#m
+Que eu saí
+
+A                             Bm
+Eu vou sofrer, mas não vou recair
+                             D
+Mas já você vai precisar de mim
+                 Dm
+Pra te tirar do fundo desse poço
+F#m          A
+    Que eu saí`;export{n as default};

@@ -1,0 +1,116 @@
+const n=`Título: Ciumeira
+Artista: Marília Mendonça
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:22:41
+============================================================
+
+[Intro] Bm  F#m  E
+        Bm  F#m  E
+
+[Primera Parte]
+
+ Bm                 F#m
+No começo, eu entendia
+            E
+Mas era só cama, não tinha amor
+ Bm                   F#m
+Lembro quando você dizia
+          E
+Vou desligar porque ela chegou
+
+[Pre-Estribillo]
+
+Bm                     F#m
+E a gente foi se envolvendo
+            E
+Perdendo o medo
+ Bm                    F#m
+Não tinha lugar e nem hora
+            E
+Pra dar um beijo
+                         D
+Coração não tá mais aceitando
+    Dm               A   E
+Só metade do seu: Te amo
+
+[Estribillo]
+
+          A
+É uma ciumeira atrás da outra
+                     E
+Ter que dividir seu corpo e a sua boca
+                   Bm
+Tá bom que eu aceitei por um instante
+                  D
+A verdade é que amante
+                  E
+Não quer ser amante
+
+          A
+É uma ciumeira atrás da outra
+                     E
+Ter que dividir seu corpo e a sua boca
+                   Bm
+Tá bom que eu aceitei por um instante
+                  D
+A verdade é que amante
+                  E
+Não quer ser amante
+          A
+É uma ciumeira atrás da outra
+
+( Bm  F#m  E )
+( Bm  F#m  E )
+
+[Pre-Estribillo]
+
+Bm                     F#m
+E a gente foi se envolvendo
+            E
+Perdendo o medo
+ Bm                    F#m
+Não tinha lugar e nem hora
+            E
+Pra dar um beijo
+                         D
+Coração não tá mais aceitando
+    Dm               A   E
+Só metade do seu: Te amo
+
+[Estribillo Final]
+
+          A
+É uma ciumeira atrás da outra
+                     E
+Ter que dividir seu corpo e a sua boca
+                   Bm
+Tá bom que eu aceitei por um instante
+                  D
+A verdade é que amante
+                  E
+Não quer ser amante
+
+          A
+É uma ciumeira atrás da outra
+                     E
+Ter que dividir seu corpo e a sua boca
+                   Bm
+Tá bom que eu aceitei por um instante
+                  D
+A verdade é que amante
+                  E
+Não quer ser amante
+
+          A
+É uma ciumeira atrás da outra
+                     E
+Ter que dividir seu corpo e a sua boca
+                   Bm
+Tá bom que eu aceitei por um instante
+                  D
+A verdade é que amante
+                  E
+Não quer ser amante
+          A
+É uma ciumeira atrás da outra`;export{n as default};

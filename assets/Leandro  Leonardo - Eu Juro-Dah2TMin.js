@@ -1,0 +1,113 @@
+const n=`Título: Eu Juro
+Artista: Leandro & Leonardo
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:10:43
+============================================================
+
+[Intro] D  Bm  F#m  G  A7
+        D  Bm  F#m  G  A7
+
+[Primera Parte]
+
+D            G      A     D
+  Eu vejo a luz do teu olhar
+          G    A   Bm
+Como uma noite de luar
+             G           G  A7
+Luz que me guia onde eu for
+
+   D         G     A     D
+Você, meu motivo pra sorrir
+         G      A     Bm
+Caminho certo pra seguir
+          D
+Saiba que é só teu
+ E               G  A7
+Meu verdadeiro amor
+
+[Estribillo]
+
+    D             Bm
+Eu juro, por mim mesmo
+                    F#m
+Por Deus, por meus pais
+         G  A7
+Vou te amar
+    D               Bm              F#m
+Eu juro, que esse amor não acaba jamais
+         G  A
+Vou te amar
+
+   Em                       A7
+É tanto querer, é tanta paixão
+   Em                       A7
+Te amo do fundo do meu coração
+    D
+Eu juro
+
+( Bm  F#m  A4  A7 )
+
+[Segunda Parte]
+
+D          G    A     D
+  Um homem e  uma mulher
+             G     A   Bm
+Juntos pro que der e vier
+        G                 A7
+A meia luz, a dois, a sós
+
+   D      G     A      D
+Então, a gente vai sonhar
+         G    A   Bm
+E conseguir realizar
+              D
+Um mundo de amor sem fim
+     E                G  A7
+Porque só depende de nós
+
+[Estribillo]
+
+    D             Bm
+Eu juro, por mim mesmo
+                    F#m
+Por Deus, por meus pais
+         G  A7
+Vou te amar
+    D               Bm              F#m
+Eu juro, que esse amor não acaba jamais
+         G  A
+Vou te amar
+
+   Em                       A7
+É tanto querer, é tanta paixão
+   Em                       A7
+Te amo do fundo do meu coração
+
+Eu juro
+
+[Solo] D  Bm  F#m  A4  A7
+
+[Estribillo]
+
+    D             Bm
+Eu juro, por mim mesmo
+                    F#m
+Por Deus, por meus pais
+         G  A7
+Vou te amar
+    D               Bm              F#m
+Eu juro, que esse amor não acaba jamais
+         G  A
+Vou te amar
+
+   Em                       A7
+É tanto querer, é tanta paixão
+   Em                       A7
+Te amo do fundo do meu coração
+    D  Bm
+Eu juro
+    G  A7
+Eu juro
+
+[Final] D`;export{n as default};

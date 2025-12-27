@@ -1,0 +1,118 @@
+const n=`Título: Propaganda
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:35:21
+============================================================
+
+[Intro] D
+
+
+[Primeira parte]
+
+                D
+Ela queima o arroz
+                A
+Quebra copo na pia
+              Bm
+Tropeça no sofá, machuca o dedinho
+                   G
+E a culpa ainda é minha
+
+     D
+Ela ronca demais
+                    A
+Mancha as minhas camisas
+                  Bm
+Dá até medo de olhar
+                        G
+Quando ela tá naqueles dias
+
+
+[Pré-refrão]
+
+                        Em
+É isso que eu falo pros outros
+                              G
+Mas você sabe que o esquema é outro
+        D
+Só faço isso pra malandro
+                     A
+Não querer crescer o olho
+
+[Estribillo]
+
+           D
+Tá doido que eu vou
+                       A
+Fazer propaganda de você
+                          Bm
+Isso não é medo de te perder, amor
+     G
+É pavor, é pavor
+
+           D
+Tá doido que eu vou
+                       A
+Fazer propaganda de você
+                          Bm
+Isso não é medo de te perder, amor
+     G
+É pavor
+                                   D
+É minha, cuido mesmo, pronto e acabou
+(A  Bm  G)
+
+[Primeira parte]
+
+                D
+Ela queima o arroz
+                A
+Quebra copo na pia
+              Bm
+Tropeça no sofá, machuca o dedinho
+                   G
+E a culpa ainda é minha
+
+     D
+Ela ronca demais
+                    A
+Mancha as minhas camisas
+                  Bm
+Dá até medo de olhar
+                        G
+Quando ela tá naqueles dias
+
+
+[Pré-refrão]
+
+                        Em
+É isso que eu falo pros outros
+                              G
+Mas você sabe que o esquema é outro
+        D
+Só faço isso pra malandro
+                     A
+Não querer crescer o olho
+
+[Estribillo]
+
+           D
+Tá doido que eu vou
+                       A
+Fazer propaganda de você
+                          Bm
+Isso não é medo de te perder, amor
+     G
+É pavor, é pavor
+
+           D
+Tá doido que eu vou
+                       A
+Fazer propaganda de você
+                          Bm
+Isso não é medo de te perder, amor
+     G
+É pavor
+                                   D
+É minha, cuido mesmo, pronto e acabou`;export{n as default};

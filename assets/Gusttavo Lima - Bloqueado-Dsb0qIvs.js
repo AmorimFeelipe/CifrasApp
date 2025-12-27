@@ -1,0 +1,119 @@
+const a=`Título: Bloqueado
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:45:09
+============================================================
+
+[Intro] Bm  A2
+
+Parte 3 de 3
+
+[Primera Parte]
+
+   C#m
+Tô aqui bebendo em
+
+Um botequinho de esquina
+
+Cerveja e pinga depois de um
+ A
+Dia inteiro de trabalho
+
+Já é fim de tarde
+ E
+Me bateu uma saudade
+ G#m
+Me bateu uma saudade
+
+[Segunda Parte]
+
+    C#m
+Eu sei que eu não posso ligar
+
+Pra quem já me esqueceu
+                                A
+Coração prometeu nunca mais recair
+
+Só que agora bebeu, tá sem dignidade
+ E
+Me bateu uma saudade
+    G#m
+Daquelas que o coração arde
+
+[Pre-Estribillo]
+
+A
+9912-5003
+B9
+Olha eu recaindo outra vez
+
+[Estribillo]
+
+     C#m              B9
+Lembrei que tô bloqueado
+                                 F#m
+É muita raiva misturada com tristeza
+                          E/G#       A   B9
+Olha eu chorando e dando porrada na mesa
+
+     C#m              B9
+Lembrei que tô bloqueado
+                                 F#m
+É muita raiva misturada com tristeza
+                          E/G#       A
+Olha eu chorando e dando porrada na mesa
+    B9               C#m
+Derrama, derrama cerveja
+
+[Solo] C#m  B9
+       C#m  B9  A  F#m
+
+Parte 2 de 5
+
+[Segunda Parte]
+
+    C#m
+Eu sei que eu não posso ligar
+
+Pra quem já me esqueceu
+                                A
+Coração prometeu nunca mais recair
+
+Só que agora bebeu, tá sem dignidade
+ E
+Me bateu uma saudade
+    G#m
+Daquelas que o coração arde
+
+[Pre-Estribillo]
+
+A
+9912-5003
+B9
+Olha eu recaindo outra vez
+
+[Estribillo Final]
+
+     C#m              B9
+Lembrei que tô bloqueado
+                                 F#m
+É muita raiva misturada com tristeza
+                          E/G#       A   B9
+Olha eu chorando e dando porrada na mesa
+
+     C#m              B9
+Lembrei que tô bloqueado
+                                 F#m
+É muita raiva misturada com tristeza
+                          E/G#       A   B9
+Olha eu chorando e dando porrada na mesa
+
+     C#m              B9
+Lembrei que tô bloqueado
+                                 F#m
+É muita raiva misturada com tristeza
+                          E/G#       A
+Olha eu chorando e dando porrada na mesa
+    B9               C#m
+Derrama, derrama cerveja`;export{a as default};

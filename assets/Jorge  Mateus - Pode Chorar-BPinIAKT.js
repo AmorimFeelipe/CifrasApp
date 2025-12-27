@@ -1,0 +1,150 @@
+const n=`Título: Pode Chorar
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:36:02
+============================================================
+
+[Intro] C  G  Am  F
+        Dm  Am  G
+        C  G  Am  F
+        Dm  Am  G
+
+[Primera Parte]
+
+  C                    G
+Quase que acabo com a minha vida
+Am                       F
+   Você me pôs num beco sem saída
+      C             G
+Por que fez isso comigo?
+
+C                     G
+  Me dediquei somente a você
+ Am                       F
+Tudo que eu podia, eu tentei fazer
+     C             G
+Mas não, não adiantou
+
+[Segunda Parte]
+
+                        F
+Você não sabe o que é amar
+                        Am
+Você não sabe o que é amor
+                    F
+Acha que é somente ficar, ficar, ficar
+Dm                G
+   E se rolar, rolou
+
+                       F
+Não se maltrata o coração
+                    Am
+De quem não merece sofrer
+                      F
+Não vou ficar na solidão, de mão em mão
+Dm               G7
+   Assim como você
+
+[Estribillo]
+
+         C
+Pode chorar
+                        G
+Mas eu não volto pra você
+         Am
+Pode chorar
+                       F
+Você não vai me convencer
+         Dm
+Pode chorar
+
+Você se lembra
+              Am          G
+O quanto eu chorei por você
+
+         C
+Pode chorar
+                        G
+Mas eu não volto pra você
+         Am
+Pode chorar
+                       F
+Você não vai me convencer
+         Dm
+Pode chorar
+
+Você se lembra
+              Am          G
+O quanto eu chorei por você
+
+( C  G  Am )
+( F  Dm  Am  G )
+
+[Primera Parte]
+
+  C                    G
+Quase que acabo com a minha vida
+ Am                   F
+Você me pôs num beco sem saída
+      C             G
+Por que fez isso comigo?
+
+ C                  G
+Me dediquei somente a você
+ Am                       F
+Tudo que eu podia, eu tentei fazer
+     C            G
+Mas não, não adiantou
+
+[Segunda Parte]
+
+                        F
+Você não sabe o que é amar
+                        Am
+Você não sabe o que é amor
+                    F
+Acha que é somente ficar, ficar, ficar
+Dm             G
+E se rolar, rolou
+
+                       F
+Não se maltrata o coração
+                       Am
+De quem não merece sofrer
+                      F
+Não vou ficar na solidão, de mão em mão
+Dm              G7
+  Assim como você
+
+[Estribillo]
+
+         C
+Pode chorar
+                        G
+Mas eu não volto pra você
+         Am
+Pode chorar
+                       F
+Você não vai me convencer
+         Dm
+Pode chorar
+
+Você se lembra
+              Am          G
+O quanto eu chorei por você
+
+         C
+Pode chorar
+                        G
+Mas eu não volto pra você
+         Am
+Pode chorar
+                       F
+Você não vai me convencer
+         Dm
+Pode chorar
+
+Você se lembra
+              Am          G
+O quanto eu chorei por você`;export{n as default};

@@ -1,0 +1,88 @@
+const n=`Título: Flores Em Vida
+Artista: Zezé Di Camargo & Luciano
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:04:50
+============================================================
+
+Intro 2x: Bm  D  A  E
+
+Primeira Parte:
+
+                 Bm
+Quero seu amor agora
+D                  A   E
+  Não a saudade depois
+                        Bm
+Seu carinho pela vida afora
+             D           A          E
+Antes que o fim pare entre nós dois
+
+                 Bm
+Quero sua companhia
+D                   A         E
+  Caminhar na mesma   direção
+                      Bm
+É certo que um certo dia
+                D           A       E
+A vida nos separe em alguma estação
+
+                 Bm  D
+Quero flores em vida
+                   A      E
+Seu sorriso a me iluminar
+                     Bm
+As lágrimas de despedida
+                 D        A       E
+Não estarei por perto pra enxugar
+
+Refrão:
+
+Bm        D       A
+Eu quero viver a vida
+        E        Bm
+Quero flores em vida
+    D           A          E
+Colhidas no jardim do amor
+
+Bm        D       A
+Eu quero viver a vida
+        E        Bm
+Quero flores em vida
+    D           A          E
+Colhidas no jardim do amor
+
+Do nosso amor
+
+Repete Intro 2x: Bm  D  A  E
+
+                 Bm  D
+Quero flores em vida
+                   A      E
+Seu sorriso a me iluminar
+                     Bm
+As lágrimas de despedida
+                 D        A       E
+Não estarei por perto pra enxugar
+
+Refrão:
+
+Bm        D       A
+Eu quero viver a vida
+        E        Bm
+Quero flores em vida
+    D           A          E
+Colhidas no jardim do amor
+
+Bm        D       A
+Eu quero viver a vida
+        E        Bm
+Quero flores em vida
+    D           A          E
+Colhidas no jardim do amor
+           Bm  D  A  E
+Do nosso amor
+           Bm  D  A
+Do nosso amor
+           E  Bm
+Do nosso amor`;export{n as default};

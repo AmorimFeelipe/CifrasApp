@@ -1,0 +1,146 @@
+const n=`Título: Paredes
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:37:21
+============================================================
+
+Intro: G
+
+                   D
+Despertador tocou,   cadê o meu amor
+        Em                   C
+Pra me dar o primeiro beijo do dia
+    G            D
+Na hora do café,   cadê minha mulher
+        Em                  D
+Que os meus desejos, de cor   sabia
+
+Pré-refrão:
+
+    C
+Eu tentei trabalhar
+
+Tá difícil concentrar
+        Em                        G
+Fim de tarde é pior, ao se pôr o sol
+            D
+Ela me esperava
+
+Com o sorriso estampado na cara
+        C
+Hoje o dia tá passando
+
+A saudade apertando
+        D
+E eu sozinho nessa casa
+
+Refrão:
+
+                            C
+Ah, se essas paredes não falassem
+                             G
+Ah, se o travesseiro não contasse
+                     D
+Todas as noites de amor
+                   Em
+Que eu vivi com você
+
+                          C
+Ah, se essa cama não lembrasse
+                         G
+Ah, se esse espelho mostrasse
+       Bm
+Você aqui
+                     Em
+Pra eu conseguir dormir
+
+                            C
+Ah, se essas paredes não falassem
+                             G
+Ah, se o travesseiro não contasse
+                     D
+Todas as noites de amor
+                   Em
+Que eu vivi com você
+
+                          C
+Ah, se essa cama não lembrasse
+                         G
+Ah, se esse espelho mostrasse
+       Bm
+Você aqui
+                     Em
+Pra eu conseguir dormir
+
+C  G  Bm  Em
+
+Primeira Parte:
+
+    G              D
+Despertador tocou,   cadê o meu amor
+        Em                   C
+Pra me dar o primeiro beijo do dia
+    G            D
+Na hora do café,   cadê minha mulher
+        Em                  D
+Que os meus desejos, de cor   sabia
+
+Pré-refrão:
+
+    C
+Eu tentei trabalhar
+
+Tá difícil concentrar
+        Em                        G
+Fim de tarde é pior, ao se pôr o sol
+            D
+Ela me esperava
+
+Com o sorriso estampado na cara
+        C
+Hoje o dia tá passando
+
+A saudade apertando
+        D
+E eu sozinho nessa casa
+
+Refrão:
+
+                            C
+Ah, se essas paredes não falassem
+                             G
+Ah, se o travesseiro não contasse
+                     D
+Todas as noites de amor
+                   Em
+Que eu vivi com você
+
+                          C
+Ah, se essa cama não lembrasse
+                         G
+Ah, se esse espelho mostrasse
+       Bm
+Você aqui
+                     Em
+Pra eu conseguir dormir
+
+                            C
+Ah, se essas paredes não falassem
+                             G
+Ah, se o travesseiro não contasse
+                     D
+Todas as noites de amor
+                   Em
+Que eu vivi com você
+
+                          C
+Ah, se essa cama não lembrasse
+                         G
+Ah, se esse espelho mostrasse
+       Bm
+Você aqui
+                     Em
+Pra eu conseguir dormir
+
+C  G  Bm  Em`;export{n as default};

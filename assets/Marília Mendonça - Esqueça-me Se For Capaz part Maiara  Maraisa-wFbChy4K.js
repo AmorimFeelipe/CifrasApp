@@ -1,0 +1,88 @@
+const n=`Título: Esqueça-me Se For Capaz (part. Maiara & Maraisa)
+Artista: Marília Mendonça
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:18:20
+============================================================
+
+[Intro] Em  A  F#m  Bm
+
+[Primera Parte]
+
+ Em
+Já que devolveu minhas roupas
+ A
+Já que arquivou nossas fotos
+ F#m                     Bm
+Deve ter outra pessoa, aposto
+
+[Pre-Estribillo]
+
+ Em
+Tá aproveitando a vida
+           A
+Os novos amigos
+                               F#m
+Indo pra lugares que não ia comigo
+                       Bm
+Tá se enganando e nem sabe disso
+
+[Estribillo]
+
+               Em
+Beijar outras bocas depois que termina
+           A
+É fácil demais
+                                 F#m
+Fazer sexo por fazer todo mundo faz
+                   Bm
+Mas esqueça-me se for capaz
+
+          Em
+Pode namorar e postar
+                        A
+Pra tentar tirar minha paz
+                            F#m
+Mudar telefone, de cidade, vai
+                   Bm
+Mas esqueça-me se for capaz
+
+( Em  A  F#m  Bm )
+
+[Pre-Estribillo]
+
+ Em
+Tá aproveitando a vida
+           A
+Os novos amigos
+                               F#m
+Indo pra lugares que não ia comigo
+                       Bm
+Tá se enganando e nem sabe disso
+
+[Estribillo]
+
+               Em
+Beijar outras bocas depois que termina
+           A
+É fácil demais
+                                 F#m
+Fazer sexo por fazer todo mundo faz
+                   Bm
+Mas esqueça-me se for capaz
+
+          Em
+Pode namorar e postar
+                        A
+Pra tentar tirar minha paz
+                            F#m
+Mudar telefone, de cidade, vai
+                   Bm
+Mas esqueça-me se for capaz
+
+( Em  A )
+
+               F#m
+Esqueça-me se for capaz
+               Bm       Em
+Esqueça-me se for capaz`;export{n as default};

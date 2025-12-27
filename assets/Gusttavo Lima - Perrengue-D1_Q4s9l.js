@@ -1,0 +1,122 @@
+const n=`Título: Perrengue
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:46:42
+============================================================
+
+[Intro] C  G  Am7  F9
+
+[Primera Parte]
+
+             C
+E não foi só uma vez não
+                 G
+Que eu tentei reconciliação
+           Am7
+Eu bati demais na mesma tecla
+             F9
+Eu querendo paz e você guerra
+
+[Pre-Estribillo]
+
+             Dm7                    F
+Até onde eu sei relacionamento é a dois
+                  C                   G
+Meu nome na sua agenda era atender depois
+      Dm7
+Terminei, fiquei mal
+        F
+Eu tô triste
+      Dm7                         G
+Mas quando um não quer dois não existe
+
+[Estribillo]
+
+                     C         G
+E que eu vou sentir falta, eu vou
+                  Am7       F
+Eu vou beber lembrando, eu vou
+                    C
+Cê vai passar o perrengue que meu coração
+    G
+sofreu
+        Dm7                F
+Quando perceber que me perdeu
+
+                     C         G
+E que eu vou sentir falta, eu vou
+                  Am7       F
+Eu vou beber lembrando, eu vou
+                    C
+Cê vai passar o perrengue que meu coração
+    G
+sofreu
+        Dm7       C/E       F
+Quando perceber que me perdeu
+
+Tudo que vai volta menos eu
+
+[Solo] C  G  Am7  F
+       Am7  G  F
+
+[Pre-Estribillo]
+
+             Dm7                    F
+Até onde eu sei relacionamento é a dois
+                  C                   G
+Meu nome na sua agenda era atender depois
+      Dm7
+Terminei, fiquei mal
+        F
+Eu tô triste
+      Dm7                         G
+Mas quando um não quer dois não existe
+
+[Estribillo]
+
+                     C         G
+E que eu vou sentir falta, eu vou
+                  Am7       F
+Eu vou beber lembrando, eu vou
+                    C
+Cê vai passar o perrengue que meu coração
+    G
+sofreu
+        Dm7       C/E      F
+Quando perceber que me perdeu
+
+                     C         G
+E que eu vou sentir falta, eu vou
+                  Am7       F
+Eu vou beber lembrando, eu vou
+                    C
+Cê vai passar o perrengue que meu coração
+    G
+sofreu
+        Dm7       C/E      F
+Quando perceber que me perdeu
+
+( Am7  G  Bb9  F )
+
+[Solo] Dm7  C  Bb9  Am7  F  G
+
+[Estribillo]
+
+                     C#        G#
+E que eu vou sentir falta, eu vou
+                  A#m7      F#
+Eu vou beber lembrando, eu vou
+                    C#
+Cê vai passar o perrengue que meu coração
+    G#
+sofreu
+        D#m7      C#       F#
+Quando perceber que me perdeu
+
+Tudo que vai volta menos eu
+
+( D#m7  C#9  B9  C#9 )
+( D#m7  C#9  B9  C#9 )
+
+[Final] C#  G#  A#m7  F#  C#`;export{n as default};

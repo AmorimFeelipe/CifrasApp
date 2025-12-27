@@ -1,0 +1,108 @@
+const n=`Título: Gatinha Assanhada
+Artista: Gusttavo Lima
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:46:04
+============================================================
+
+Primeira parte:
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+
+Segunda parte:
+
+(C#m  A  E  B) 2x
+
+ C#m                A
+DJ aumenta o som e bota pra fritar
+    E                 B
+Que ela já tá louca, louca pra dançar
+ C#m                A
+DJ aumenta o som e deixa acontecer
+    E                B
+Tô curtindo parado, vendo ela mexer
+
+Solo preparação refrão:
+
+Refrão:
+                 C#m                  A
+E tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+               C#m                  A
+Tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+
+Primeira parte:
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+
+Segunda parte:
+
+(C#m  A  E  B) 2x
+
+ C#m                A
+DJ aumenta o som e bota pra fritar
+    E                 B
+Que ela já tá louca, louca pra dançar
+ C#m                A
+DJ aumenta o som e deixa acontecer
+    E                B
+Tô curtindo parado, vendo ela mexer
+
+Solo preparação refrão:
+
+Refrão:
+                 C#m                  A
+E tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+               C#m                  A
+Tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+
+               C#m                  A
+Tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+                 C#m                  A
+E tá perdendo a linha, descendo na balada
+                E              B
+Com dedinho na boca, ela tá pirada
+
+Primeira parte:
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+   C#m                A
+Gatinha assanhada cê tá querendo o quê
+E               B
+Eu quero mexer, eu quero mexer
+
+(C#m  A  E  B) 2x
+
+C#m`;export{n as default};

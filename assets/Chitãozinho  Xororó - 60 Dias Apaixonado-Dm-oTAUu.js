@@ -1,0 +1,72 @@
+const n=`Título: 60 Dias Apaixonado
+Artista: Chitãozinho & Xororó
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:01:07
+============================================================
+
+[Intro] D  A7  G  D  A7  D
+
+    D               A           G
+Viajando pra Mato Grosso, Aparecida do
+   D
+Taboado
+                  A         G
+Lá conheci uma morena, que me deixou
+     D
+amarrado
+                   A                 G
+Deixei a linda pequena, por Deus, confesso,
+         D
+ desconsolado
+  D7             G
+Mudei o jeito de ser
+                  A        G         D
+Bebendo pra esquecer, 60 dias apaixonado
+
+( D  A7  D  A7 )
+
+      D              A          G
+Dois meses juntinho dela eternamente serão
+     D
+lembrados
+                  A         G
+Pedaço da minha vida, lembranças do meu
+     D
+passado
+                  A          G
+Jamais será esquecida a imagem bela, de um
+      D
+anjo amado
+    D7              G
+Dois meses passaram logo
+                    A        G          D
+É num copo que eu afogo, 60 dias apaixonado
+
+( D  A7  D  A7 )
+
+       D                 A
+Se alguém fala em Mato Grosso eu sinto o
+ G          D
+peito despedaçado
+                  A             G
+O pranto rola depressa, do meu rosto já
+    D
+cansado
+                  A        G          D
+Jamais eu esquecerei Aparecida do Taboado
+   D7              G
+Deixei a minha querida
+                      A        G
+Deixei minha própria vida 60 dias
+        D
+apaixonado
+
+   D7              G
+Deixei a minha querida
+                      A        G
+Deixei minha própria vida 60 dias
+       D
+apaixonado
+
+[Final] D  A7  D  A7`;export{n as default};

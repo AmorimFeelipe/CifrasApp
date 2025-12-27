@@ -1,0 +1,110 @@
+const n=`Título: O Que É Que Tem?
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:33:45
+============================================================
+
+[Intro] C  D  G
+
+[Primera Parte]
+
+    G               D
+E pra deixar acontecer
+                  Am
+A pena tem que valer
+         C       D
+Tem que ser com você
+
+ Am              G
+Nós livres pra voar
+                D                Am
+E esse céu que hoje tá tão lindo
+                 C
+Carregado de estrelas
+             D                     Am
+E a Lua tá cheia refletindo o seu rosto
+                   C
+Dá um gosto de pensar
+              G               D          C  D
+Eu, você e o céu e a noite inteira pra amar
+
+[Estribillo]
+
+                   G                  D
+E quando o Sol chegar a gente ama de novo
+                  Am
+A gente liga pro povo
+                 G             D          G
+Fala que ta namorando, e casa semana que vem
+                D              Am
+Deixa o povo falar, que é que tem?
+
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D         Am
+Isso não é problema de ninguém
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D
+Isso não é problema de ninguém
+
+[Primera Parte]
+
+    G               D
+E pra deixar acontecer
+                  Am
+A pena tem que valer
+         C       D
+Tem que ser com você
+
+ Am              G
+Nós livres pra voar
+                D                Am
+E esse céu que hoje tá tão lindo
+                 C
+Carregado de estrelas
+             D                     Am
+E a Lua tá cheia refletindo o seu rosto
+                   C
+Dá um gosto de pensar
+              G               D          C  D
+Eu, você e o céu e a noite inteira pra amar
+
+[Estribillo]
+
+                   G                  D
+E quando o Sol chegar a gente ama de novo
+                  Am
+A gente liga pro povo
+                 G             D          G
+Fala que ta namorando, e casa semana que vem
+                D              Am
+Deixa o povo falar, que é que tem?
+
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D         Am
+Isso não é problema de ninguém
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D         Am
+Isso não é problema de ninguém
+
+                   G                  D
+E quando o Sol chegar a gente ama de novo
+                  Am
+A gente liga pro povo
+                 G             D          G
+Fala que ta namorando, e casa semana que vem
+                D              Am
+Deixa o povo falar, que é que tem?
+
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D         Am
+Isso não é problema de ninguém
+          C            D       Am
+Eu quero ser lembrado com você
+         C           D
+Isso não é problema de ninguém`;export{n as default};

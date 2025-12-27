@@ -1,0 +1,139 @@
+const n=`Título: A Hora É Agora
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:33:30
+============================================================
+
+[Intro] Am  C  G  D
+
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+
+[Primera Parte]
+
+Am
+   Aumente o som
+C                        G
+  Pra ficar bom a nossa festa
+                 D
+Não tem hora pra acabar
+Am                C
+   O teu sorriso
+                      G
+Abre as portas do paraíso
+                   D
+Vem comigo pra gente dançar
+Am                C
+   A melhor hora,   sempre é agora
+        G                         D
+E o melhor lugar é sempre onde você está
+Am
+   E a luz nunca se apaga
+C
+  Juízo sempre acaba
+Am            C          D
+   E a nossa música vai começar
+
+[Estribillo]
+
+ G
+Paz e amor
+             C
+É o que eu quero pra nós
+       Em         D                  C
+E que nada nesse mundo cale a nossa voz
+ G              C
+Céu e mar e alguém para amar
+         Em          D
+E o arrepio toda vez
+                      C
+Que a gente se encontrar
+
+         Am
+E nunca vai passar
+                C          D
+Mesmo quando o sol chegar, oooh oooh
+
+ Am      C       G             D
+Naaa naa,  na na   na na na na   na nana
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+
+[Primera Parte]
+
+Am
+   Aumente o som
+C                        G
+  Pra ficar bom a nossa festa
+                 D
+Não tem hora pra acabar
+Am                C
+   O teu sorriso
+                      G
+Abre as portas do paraíso
+                   D
+Vem comigo pra gente dançar
+Am                C
+   A melhor hora,   sempre é agora
+        G                         D
+E o melhor lugar é sempre onde você está
+Am
+   E a luz nunca se apaga
+C
+  Juízo sempre acaba
+Am            C          D
+   E a nossa música vai começar
+
+[Estribillo]
+
+ G
+Paz e amor
+             C
+É o que eu quero pra nós
+       Em         D                  C
+E que nada nesse mundo cale a nossa voz
+ G              C
+Céu e mar e alguém para amar
+         Em          D
+E o arrepio toda vez
+                      C
+Que a gente se encontrar
+
+ G
+Paz e amor
+             C
+É o que eu quero pra nós
+       Em         D                  C
+E que nada nesse mundo cale a nossa voz
+ G              C
+Céu e mar e alguém para amar
+         Em          D
+E o arrepio toda vez
+                      C
+Que a gente se encontrar
+
+         Am
+E nunca vai passar
+                C          D
+Mesmo quando o sol chegar, oooh oooh
+
+ Am      C       G             D
+Naaa naa,  na na   na na na na   na nana
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+Am          C          G             D
+Oooh ooh,oh ooh  na na   na na na na   na nana
+Am       C       G             D
+Oooh ooh,  na na   na na na na   na nana
+Am        C          G             D
+Oooh ooh oooh  na na   na na na na   na nana
+
+[Final] Am  C  G  D
+        Am  C  G  D
+        Am  C  G  D
+        Am`;export{n as default};

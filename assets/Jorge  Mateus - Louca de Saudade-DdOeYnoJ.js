@@ -1,0 +1,106 @@
+const n=`Título: Louca de Saudade
+Artista: Jorge & Mateus
+Tom: N/A
+URL: https://www.cifraclub.com/chitaozinho-e-xororo/sinonimos/simplificada.html
+Extraído em: 26/12/2025 23:30:37
+============================================================
+
+[Intro] C  Em  F  Fm
+        C  Em  F  Fm
+
+[Primera Parte]
+
+ F                    G
+Se uma canção me lembrar
+          F            C
+Troque o CD, não ouça mais
+ F                     G
+Se um perfume me recordar
+           F              C
+Troque de marca, não use mais
+              F                  C
+Já que me trocou por um outro alguém
+        F                 G
+Substituir é o que te convém
+
+[Estribillo]
+
+                  C               Em
+Mas quando o coração não me enxergar
+               F
+Vai te deixar louca de saudade
+ Fm
+Louca de saudade
+       C              Em
+O coração vai me desejar
+             F
+E te deixar louca de saudade
+ Fm
+Louca de saudade
+          Dm
+Eu quero ver então
+    G
+Se vai poder trocar de coração
+
+( C  Em  F  Fm )
+
+[Segunda Parte]
+
+ F                     G
+Se algum lugar me lembrar
+             F             C
+Troque de rota, não passe lá
+ F                   G
+Se um filme me recordar
+            F              C
+Troque o canal, é só desligar
+              F                  C
+Já que me trocou por um outro alguém
+        F                 G
+Substituir é o que te convém
+
+[Estribillo]
+
+                  C               Em
+Mas quando o coração não me enxergar
+               F
+Vai te deixar louca de saudade
+ Fm
+Louca de saudade
+       C              Em
+O coração vai me desejar
+             F
+E te deixar louca de saudade
+ Fm
+Louca de saudade
+          Dm
+Eu quero ver então
+    G
+Se vai poder trocar
+          Dm
+Eu quero ver então
+    G                       C  G
+Se vai poder trocar de coração
+
+                  C               Em
+Mas quando o coração não me enxergar
+               F
+Vai te deixar louca de saudade
+ Fm
+Louca de saudade
+       C              Em
+O coração vai me desejar
+             F
+E te deixar louca de saudade
+ Fm
+Louca de saudade
+          Dm
+Eu quero ver então
+    G
+Se vai poder trocar
+          Dm
+Eu quero ver então
+    G                       C  G
+Se vai poder trocar de coração
+
+[Final] C  Em  F  Fm  C`;export{n as default};
