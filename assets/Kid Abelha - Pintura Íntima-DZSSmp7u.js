@@ -1,0 +1,103 @@
+const n=`Título: Pintura Íntima
+Artista: Kid Abelha
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 28/12/2025 00:03:42
+============================================================
+
+[Intro] D  G  A
+        D  G  A
+        D  G  A
+        D  G  A
+        G  A  G  A
+        G  A  G  A
+
+[Primera Parte]
+
+G       A         G          A
+  Vem amor que a hora é essa
+G          A       G      A
+  Vê se entende a minha pressa
+G         A          G      A
+  Não me diz que eu tô errado
+G        A        G     A
+  Eu tô seco, eu tô molhado
+
+[Pre-Estribillo]
+
+ G        A       G     A       G     A
+Deixa as contas que no fim das contas
+           G         A  D
+O que interessa prá nós é
+
+[Estribillo]
+
+        G      A    D   G  A
+Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+
+[Solo] G  A  G  A
+
+[Segunda Parte]
+
+G        A            G    A
+  Larga logo desse espelho
+G          A              G     A
+  Não reparou que eu tô até vermelho
+G      A          G        A    G
+ Tá ficando tarde   no meu edredom
+        A    G   A
+Logo o sono bate
+
+[Pre-Estribillo]
+
+ G        A       G     A       G     A
+Deixa as contas que no fim das contas
+           G         A
+O que interessa prá nós é
+
+[Estribillo]
+
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+
+( G  A  G  A )
+( G  A  G  A )
+
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada
+D         G      A    D   G  A
+  Fazer amor de madrugada
+D           G     A    D   G  A
+  Amor com jeito de virada`;export{n as default};

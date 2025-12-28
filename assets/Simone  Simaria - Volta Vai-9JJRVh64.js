@@ -1,0 +1,86 @@
+const n=`Título: Volta Vai
+Artista: Simone & Simaria
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:20:33
+============================================================
+
+[Intro] D  F#m  C#m  E
+        D  F#m  C#m  E
+
+[Primera Parte]
+
+D                  F#m
+Eu poderia te enganar, mentir
+C#m                 E
+   Fingir que esqueci
+ D                      F#m
+Mas a verdade é que eu vivo a sonhar
+C#m                 E
+   Em te ver voltar
+ D
+Me perdoa
+            F#m
+Eu não fui santa, errei
+C#m                  E
+Esse é meu último pedido
+D                      F#m
+  Loucamente assim eu só te amei
+C#m                      E
+  Não vai doer, voltar comigo
+
+[Estribillo]
+
+ D             F#m
+Volta, volta, vai
+         C#m
+O seu olhar tá me dizendo
+       E
+Que você tá me querendo
+ D              F#m
+Volta, volta atrás
+      C#m
+A nossa felicidade
+      E
+Nos amamos, você sabe
+
+( D  F#m  C#m  E )
+( D  F#m  C#m  E )
+
+[Primera Parte]
+
+D                  F#m
+Eu poderia te enganar, mentir
+C#m                 E
+   Fingir que esqueci
+ D                      F#m
+Mas a verdade é que eu vivo a sonhar
+C#m                 E
+   Em te ver voltar
+ D
+Me perdoa
+            F#m
+Eu não fui santa, errei
+C#m                  E
+Esse é meu último pedido
+D                      F#m
+  Loucamente assim eu só te amei
+C#m                      E
+  Não vai doer, volta comigo
+
+Refrão: 2x
+ D             F#m
+Volta, volta, vai
+         C#m
+O seu olhar tá me dizendo
+       E
+Que você tá me querendo
+ D              F#m
+Volta, volta atrás
+      C#m
+A nossa felicidade
+      E
+Nos amamos, você sabe
+
+[Final] D  F#m  C#m  E
+        D  F#m  C#m  E`;export{n as default};

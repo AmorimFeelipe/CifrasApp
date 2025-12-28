@@ -1,0 +1,47 @@
+const n=`Título: Moreninha Linda
+Artista: Tonico e Tinoco
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 22:58:28
+============================================================
+
+[Primera Parte]
+
+G                D7                            G
+Meu coração tá pisado como a flor que murcha e cai
+C              D7                       G
+Pisado pelo desprezo do amor quando desfaz
+C                   D7                       G
+Deixando a triste lembrança adeus para nunca mais
+
+[Estribillo]
+
+ G         D7                 G
+Moreninha linda do meu bem querer
+              D7              G
+É triste a saudade longe de você
+
+( G  D7  C )
+
+    G          D7                    G
+O amor nasce sozinho não é preciso plantar
+ C                D7                    G
+A paixão nasce no peito farsidade no olhar
+C                   D7                   G
+Você nasceu para outro eu nasci pra te amar
+
+[Estribillo]
+
+   G       D7               G
+Moreninha linda do meu bem querer
+            D7                G
+E triste a saudade longe de voce
+
+( G  D7  C )
+
+G                D7                       G
+Eu tenho meu canarinho que canta quando me vê
+C                    D7                    G
+Eu canto por ter tristeza canário por padecer
+C                    D7                G
+Da saudade da floresta eu saudade de você`;export{n as default};

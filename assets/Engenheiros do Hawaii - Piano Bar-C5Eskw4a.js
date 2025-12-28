@@ -1,0 +1,133 @@
+const n=`Título: Piano Bar
+Artista: Engenheiros do Hawaii
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:58:10
+============================================================
+
+[Intro]  E  B  G#  C#m  E  A  G#m  C#m  F#m
+
+  B7  E
+
+[Primera Parte]
+
+E                 B                     G#
+   O que você me pede e eu não posso fazer
+C#m               E                  A
+   Assim você me perde,e eu perco você
+            G#m           C#m
+   Como um barco perde o rumo
+            F#m              B4(9) B   E
+   Como uma árvore no outono      perde a
+cor
+
+                   B                    G#
+   O que você não pode eu não vou te pedir
+C#m          E
+   O que você não quer eu não quero
+        A
+insistir
+    G#m             C#m
+   Diga a verdade, doa a quem doer
+        F#m          B4(9)    B       E
+   Doe sangue e me dê    seu telefone
+
+                     B                G#
+   Todos os dias eu venho ao mesmo lugar
+C#m               E
+   Às vezes fica longe, impossível de
+         A
+encontrar
+          G#m               C#m
+   Mas, quando o bourbon é bom toda noite é
+  F#m B4(9) B   E
+ noite  de luar
+
+                    B
+   No táxi que me trouxe até aqui Bob
+   G#
+Marley me dava razão
+C#m                 E
+   As últimas do esporte, hora certa,
+    A
+crime, religião
+     G#m        C#m          F#m
+    Na verdade nada é uma palavra esperando
+B         C#m
+ tradução
+
+[Pasaje]
+
+[Segunda Parte]
+
+E              B            G#
+   Toda vez que  falta luz
+C#m            E                A
+   Toda vez que  algo nos falta
+          G#m                 C#m
+   O invisível nos salta aos olhos
+       F#m           B         E
+   Um salto no escuro  da piscina
+
+              B              G#
+   O fogo ilumina muito por muito pouco
+tempo
+C#m         E
+   Em muito pouco tempo o fogo apaga
+     A
+tudo, e tudo um dia vira luz
+         G#m           C#m
+   Toda vez que falta luz
+F#m       B         Cº       C#m
+   O invisível nos salta aos olhos
+
+[Tercera Parte]
+
+           F#m  G#                   C#m
+  Ontem à noite,   eu conheci uma guria
+          F#m   G#           C#m
+  Já era tarde,   era quase dia
+             F#m  G#          C#m
+  Era o princípio   num precipício
+             F#m  G#      C#m
+  Era o meu corpo   que caía
+
+           F#m  G#                C#m
+  Ontem à noite,   a noite tava fria
+            F#m  G#              C#m
+  Tudo queimava,   mas nada aquecia
+            F#m      G#        C#m
+  Ela apareceu, parecia tão sozinha
+                   F#m         G#     C#m
+  Parecia que era minha aquela   solidão
+
+( C#m7   C7M(5+)  E/B  Bbm7(5-) )
+( C#m7   C7M(5+)  E/B  Bbm7(5-) )
+
+[Cuarta Parte]
+
+F#m                  G#
+   Eu conheci uma guria que eu já conhecia
+C#m
+
+                   F#m        G#
+   De outros carnavais,   com outras
+         C#m
+fantasias
+             F#m      G#            C#m
+   Ela apareceu, parecia tão sozinha
+                    F#m          G#  C#m
+   Parecia que era minha aquela solidão
+
+F#m                  G#
+   Eu conheci uma guria que eu já conhecia
+C#m
+
+                   F#m        G#
+   De outros carnavais,   com outras
+         C#m
+fantasias
+             F#m      G#            C#m
+   Ela apareceu, parecia tão sozinha
+                    F#m          G#  E
+   Parecia que era minha aquela solidão`;export{n as default};

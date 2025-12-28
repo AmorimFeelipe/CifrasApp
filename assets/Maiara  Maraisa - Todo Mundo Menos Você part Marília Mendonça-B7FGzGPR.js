@@ -1,0 +1,135 @@
+const o=`Título: Todo Mundo Menos Você (part. Marília Mendonça)
+Artista: Maiara & Maraisa
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:17:02
+============================================================
+
+[Intro]
+
+ G
+Todo mundo, todo mundo, todo mundo vê
+D
+  Eu só queria que você soubesse
+                  Am
+Que todo minha mudança é genuína
+                    C
+Genuinamente por você
+
+[Primera Parte]
+
+ G
+Dizem que eu ando bem melhor depois que eu terminei
+ D
+Todo mundo consegue enxergar o quanto eu melhorei
+Am                                     C
+   Engraçado ver eles pensando que eu te superei
+
+ G
+Mesmo entendendo que o problema nunca foi você
+D
+Se não tivesse ido eu não ia me resolver
+ Am                 C
+Tava confortável né? E ninguém aprende assim
+      Am                      C
+Aprendi, mas cadê você pra me aplaudir?
+
+[Pre-Estribillo]
+
+    G
+Se todo mundo viu porque você não tá vendo
+ D
+Todo esse esforço que eu tô fazendo
+  Am
+Pra fazer você se sentir orgulhoso
+  C
+Pra fazer você se apaixonar de novo
+
+    G
+Se todo mundo viu porque você não tá vendo
+ D
+Todo esse esforço que eu tô fazendo
+  Am
+Pra fazer você se sentir orgulhoso
+  C
+Pra fazer você se apaixonar por mim de novo
+
+[Estribillo]
+
+ G
+Todo mundo, todo mundo, todo mundo vê
+ D
+Todo mundo menos você
+ Am
+Todo mundo, todo mundo, todo mundo vê
+ C
+Todo mundo menos você
+
+ G
+Todo mundo, todo mundo, todo mundo vê
+ D
+Todo mundo menos você
+ Am
+Todo mundo, todo mundo, todo mundo vê
+ C
+Todo mundo menos você
+
+[Puente]
+
+G
+  Olha, não é pra te colocar pressão
+
+Mas eu queria saber se você gostou
+          D
+Da minha nova versão
+
+
+Caso não tenha gostado
+
+Me avisa, tá tudo bem
+   Am
+A gente corre esse risco quando muda por alguém
+C
+E ninguém aprende assim
+      Am                      C
+Aprendi, mas cadê você pra me aplaudir?
+
+[Pre-Estribillo]
+
+    G
+Se todo mundo viu porque você não tá vendo
+ D
+Todo esse esforço que eu tô fazendo
+  Am
+Pra fazer você se sentir orgulhoso
+  C
+Pra fazer você se apaixonar de novo
+
+    G
+Se todo mundo viu porque você não tá vendo
+ D
+Todo esse esforço que eu tô fazendo
+  Am
+Pra fazer você se sentir orgulhoso
+  C
+Pra fazer você se apaixonar por mim de novo
+
+[Estribillo]
+
+ G
+Todo mundo, todo mundo, todo mundo vê
+ D
+Todo mundo menos você
+ Am
+Todo mundo, todo mundo, todo mundo vê
+ C
+Todo mundo menos você
+
+ G
+Todo mundo, todo mundo, todo mundo vê
+ D
+Todo mundo menos você
+ Am
+Todo mundo, todo mundo, todo mundo vê
+ C                   G
+Todo mundo menos você`;export{o as default};

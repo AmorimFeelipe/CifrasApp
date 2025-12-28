@@ -1,0 +1,58 @@
+const e=`Título: Oi Erro
+Artista: Simone Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:24:02
+============================================================
+
+[Intro] F  C
+
+F                            C
+Cedo ou tarde isso ia acontecer
+F                           C
+Mesmo rolê, eu, minha ex e você
+                Dm               F
+Ela vai fazer raiva, mas não se estressa
+             C
+Me beija na boca que ainda tem muita festa
+Bb                                 F
+Qualquer ida no banheiro vamo se trombar
+Bb                                      G
+E aí vai ser a hora certa pra te apresentar
+
+F                        C
+Oi, erro, esse aqui é meu acerto
+F                         C
+Oi, erro, agora eu acertei em cheio
+     Dm                          F
+Pela primeira vez do meu lado esquerdo
+                C
+Tem alguém que me ama direito
+     Dm                          F
+Pela primeira vez do meu lado esquerdo
+                C
+Tem alguém que me ama direito
+
+( Dm  F  C )
+
+              Dm                     F
+Ela vai fazer raiva, mas não se estressa
+             C
+Me beija na boca que ainda tem muita festa
+   Bb                               F
+Qualquer ida no banheiro vamo se trombar
+  Bb                                     G
+E aí vai ser a hora certa pra te apresentar
+
+F                            C
+Oi, erro, esse aqui é meu acerto
+F                           C
+Oi, erro, agora eu acertei em cheio
+     Dm                          F
+Pela primeira vez do meu lado esquerdo
+                 C
+Tem alguém que me ama direito
+ Dm                              F
+Pela primeira vez do meu lado esquerdo
+                 C
+Tem alguém que me ama direito`;export{e as default};

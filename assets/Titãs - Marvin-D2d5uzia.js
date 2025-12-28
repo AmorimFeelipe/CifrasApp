@@ -1,0 +1,122 @@
+const n=`Título: Marvin
+Artista: Titãs
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:49:38
+============================================================
+
+Intro: Bm  E (2x)
+       F#  E (2x)
+
+Primeira Parte:
+F#
+  Meu pai não tinha educação
+E
+  Ainda me lembro, era um grande coração
+F#
+  Ganhava a vida com muito suor
+E
+  E mesmo assim não podia ser pior
+F#
+  Pouco dinheiro pra poder pagar
+E
+  Todas as contas e despesas do lar
+
+     Bm
+Mas Deus quis vê-lo no chão
+                  E
+Com as mãos levantadas pro céu
+
+Implorando perdão
+    Bm
+Chorei, meu pai disse: "Boa sorte",
+       E
+Com a mão no meu ombro
+
+Em seu leito de morte
+
+E disse
+
+Refrão:
+  B                    B7M
+"Marvin, agora é só você
+                B7
+E não vai adiantar
+                 E      G#   C#m
+Chorar vai me fazer sofrer"
+
+(volta a segunda base da intro)
+
+( F#  E ) (2x)
+
+(Primeira Parte)
+
+F#
+  Três dias depois de morrer
+E
+  Meu pai, eu queria saber
+F#
+  Mas não botava nem um pé na escola
+E
+  Mamãe lembrava disso a toda hora
+F#
+  Todo dia antes do sol sair
+E
+  Eu trabalhava sem me distrair
+
+    Bm
+As vezes acho que não vai dar pé
+     E
+Eu queria fugir, mas onde eu estiver
+    Bm
+Eu sei muito bem o que ele quis dizer
+     E
+Meu pai, eu me lembro, não me deixa
+esquecer
+
+Ele disse
+
+Refrão 2:
+  B                      B7M
+"Marvin, a vida é pra valer
+                 B7
+Eu fiz o meu melhor
+                    E      G#  C#m
+E o seu destino eu sei de cor"
+
+(Trecho declamado sobre a base do Refrão)
+
+E então um dia uma forte chuva veio
+E acabou com o trabalho de um ano inteiro
+E aos treze anos de idade eu sentia
+todo o peso do mundo em
+minhas costas
+Eu queria jogar mas perdi a aposta,
+
+(volta a base da primeira parte)
+
+F#
+  Trabalhava feito um burro nos campos
+E
+  Só via carne se roubasse um frango
+F#
+  Meu pai cuidava de toda a família
+E
+  Sem perceber segui a mesma trilha
+F#
+  Toda noite minha mãe orava
+  E
+"Deus, era em nome da fome que eu roubava"
+
+    Bm
+Dez anos passaram, cresceram meus irmãos
+     E
+E os anjos levaram minha mãe pelas mãos
+    Bm
+Chorei, meu pai disse: "Boa sorte"
+       E
+Com a mão no meu ombro
+
+Em seu leito de morte
+
+(Refrão até o final)`;export{n as default};

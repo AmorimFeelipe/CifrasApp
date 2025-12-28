@@ -1,0 +1,111 @@
+const a=`Título: Estado Decadente
+Artista: Zé Neto e Cristiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:29:21
+============================================================
+
+[Intro] C  G  Dm  F
+
+[Primera Parte]
+
+C
+  E lá se vai mais uma noite
+
+Que eu to virando
+G
+  No vazio desse apartamento
+
+[Riff 1]
+
+               Am7
+Já tô quase pirando
+
+Me bate o desespero
+               F9
+Empilhando garrafa
+
+Passa o tempo só você não passa
+
+[Estribillo]
+
+               C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+      G        C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+[Solo] C  G  Dm7  F
+       C  G  Dm7  F
+
+[Primera Parte]
+
+C
+  E lá se vai mais uma noite
+
+Que eu to virando
+G
+  No vazio desse apartamento
+
+[Riff 2]
+
+               Dm7
+Já tô quase pirando
+
+Me bate o desespero
+               F9
+Empilhando garrafa
+
+Passa o tempo só você não passa
+
+[Estribillo]
+
+               C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+      G        C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+      G        C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+      G        C            G
+No estado decadente que eu tô
+              Dm7       F
+A tristeza decora essa casa
+                    C         G
+Eu sei que ninguém morre de amor
+        Dm7            F
+Mas cachaça e saudade mata
+
+[Final] C  G  Dm7  F  C`;export{a as default};

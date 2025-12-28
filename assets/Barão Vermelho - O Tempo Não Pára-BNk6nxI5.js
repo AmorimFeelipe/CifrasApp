@@ -1,0 +1,142 @@
+const n=`Título: O Tempo Não Pára
+Artista: Barão Vermelho
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:55:17
+============================================================
+
+Intro.: Em7
+
+Em7
+Disparo contra o sol
+                       Am7
+Sou forte, sou por acaso
+                            D       B7
+Minha metralhadora cheia de mágoas
+            Em7
+Eu sou um cara
+
+Cansado de correr na direção contrária
+Am7
+Sem pódium de chegada
+                 D   B7
+Ou beijo de namorada
+                  Em7
+Eu sou mais um cara
+
+Mas se você achar que eu estou derrotado
+Am7
+Saiba que ainda estão rolando os dados
+D    B7                          Em7
+Porque o tempo, o tempo não pára
+                   riff 1
+Dias sim, dias não
+Am7
+Eu vou sobrevivendo sem um arranhão
+D   B7                       Em7 riff 2
+Da caridade de quem me detesta
+G                            Am7
+A tua piscina está cheia de ratos
+                                  D    D#º
+Suas idéias não correspondem aos fatos
+              C
+O tempo não pára
+G                               Am7
+Eu vejo um futuro repetir o passado
+                                D    D#º
+Eu vejo um museu de grandes novidades
+             C         C    D
+O tempo não pára, não pára não, não pára
+Em7
+
+
+Eu não tenho data pra comemorar
+Am7
+As vezes os meus dias são de par em par
+D B7                         Em7
+Procurando agulhas no palheiro
+
+Nas noites de frio é melhor nem nascer
+    Am7
+Nas de calor, se escolhe:
+
+É matar ou morrer
+D   B7                        Em7
+E assim nos tornamos brasileiros
+                                     Riff 1
+Te chamam de ladrão, de bicha, maconheiro
+
+Am7                                 D B7
+Transformam um país inteiro num puteiro
+                              Em7   riff 2
+Pois assim se ganha mais dinheiro
+G      Riff 3                  Am7
+A tua piscina está cheia de ratos
+                                  D    D#º
+Suas idéias não correspondem aos fatos
+              C
+O tempo não pára
+G      Riff 4                    Am
+Eu vejo um futuro repetir o passado
+                                D     D#º
+Eu vejo um museu de grandes novidades
+             C         C    D
+O tempo não pára, não pára não, não pára
+Em7
+
+
+Solo:(G Am D D#º C Em Am Dº C)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Em7             riff 1
+Dias sim, dias não
+Am7
+Eu vou sobrevivendo sem um arranhão
+D                          Em7  riff 2
+Da caridade de quem me detesta
+G        Riff 3               Am7
+A tua piscina está cheia de ratos
+                                  D    D#º
+Suas idéias não correspondem aos fatos
+              C
+O tempo não pára
+
+G        Riff 4                  Am7
+Eu vejo um futuro repetir o passado
+                                D     D#º
+Eu vejo um museu de grandes novidades
+             C
+O tempo não pára,
+                                        D
+não pára não, não, não, não, não, não, não
+ Em7
+pára
+
+riff 1
+
+
+
+riff 2
+
+
+Riff 3
+
+e ||
+E ||
+
+
+Riff 4
+
+e ||
+E ||`;export{n as default};

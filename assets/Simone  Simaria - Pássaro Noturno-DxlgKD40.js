@@ -1,0 +1,86 @@
+const n=`Título: Pássaro Noturno
+Artista: Simone & Simaria
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:20:45
+============================================================
+
+[Intro] C#m  G#m  D#m  F#
+        C#m  G#m  D#m  F#
+
+[Primera Parte]
+
+      C#m         G#m      D#m
+Procurei em encontrei, meu amor, minha cara
+    F#
+ metade
+          C#m          G#m         D#m
+ Me entreguei, te mostrei quem eu sou, a
+            F#
+minha verdade
+C#m                G#m                D#m
+    Sou pássaro noturno, quer ser meu par?
+               F#
+ Procuro entender por que
+C#m                      G#m            D#m
+    Eu sem você, já não durmo, nem sei voar
+            F#
+ Sonhar, viver
+
+[Estribillo]
+
+C#m
+Todo dia eu quero, todo dia espero
+G#m                              D#m
+Todo dia eu chamo, todo dia eu amo
+      F#
+Só você
+ Yeah yeah
+C#m
+E vai valer a pena, mudar essa cena
+G#m                               D#m
+Viver meu roteiro, amo o tempo inteiro
+      F#
+Só você
+
+( C#m  G#m  D#m  F# )
+
+[Primera Parte]
+
+      C#m         G#m      D#m
+Procurei e encontrei, meu amor, minha cara
+    F#
+metade
+          C#m          G#m         D#m
+ Me entreguei, te mostrei quem eu sou, a
+           F#
+minha verdade
+C#m                G#m                D#m
+    Sou pássaro noturno, quer ser meu par?
+               F#
+ Procuro entender
+C#m                      G#m            D#m
+    Eu sem você, já não durmo, nem sei voar
+            F#
+ Sonhar, viver
+
+Refrão 2x
+
+C#m
+Todo dia eu quero, todo dia espero
+G#m                              D#m
+Todo dia eu chamo, todo dia eu amo
+      F#
+Só você
+ Yeah yeah
+C#m
+E vai valer a pena, mudar essa cena
+G#m                                D#m
+Viver meu roteiro, amo o tempo inteiro
+      F#
+Só você
+
+( C#m  G#m  D#m  F# )
+
+                  C#m
+Sou pássaro noturno`;export{n as default};

@@ -1,0 +1,141 @@
+const n=`Título: Quer Casar Comigo
+Artista: Bruno & Marrone
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:07:27
+============================================================
+
+[Intro] A  E/G#  F#m
+        Em  D  A/C#  Bm
+
+A
+Quer,quer,quer
+            Bm
+Quer casar comigo, ser mais que bons
+ E
+amigos, que
+               A  E4  E
+Nem o céu e o mar
+A
+Quer, quer, quer
+                     Bm
+Quer ser pra sempre minha, sereia ou
+   E
+rainha, pra
+           A    E4 E
+Mim tanto faz
+
+A
+Quer,quer,quer
+             Bm
+Quer casar comigo, ser mais que bons
+  E
+amigos, que
+               A  E4  E
+Nem o céu e o mar
+A
+Quer, quer, quer
+                     Bm
+Quer ser pra sempre minha, sereia ou
+   E
+rainha, pra
+           A    E4 E
+Mim tanto faz
+
+    A
+Chegou chutando o balde fazendo, fazendo,
+  Bm
+baderna no meu coração
+
+E
+Mostrou que veio pra ficar e agora to
+           A
+carente, to
+                  E4 E
+Xonado tem jeito não
+
+A
+Que vou fazer da vida sem o seu carinho,
+seu
+    Bm
+Jeitinho, seu dengo, seu cheiro, xamego
+          E
+Ai, ai menina, lá vou eu de novo aqui te
+       A E4 E
+perguntar
+
+A
+Quer,quer,quer
+             Bm
+Quer casar comigo, ser mais que bons
+  E
+amigos, que
+               A E4 E
+Nem o céu e o mar
+A
+Quer, quer, quer
+                     Bm
+Quer ser pra sempre minha, sereia ou
+   E
+rainha, pra
+           A  E4 E
+Mim tanto faz
+
+A
+Quer,quer,quer
+             Bm
+Quer casar comigo, ser mais que bons
+  E
+amigos, que
+               A  E4  E
+Nem o céu e o mar
+A
+Quer, quer, quer
+                     Bm
+Quer ser pra sempre minha, sereia ou
+   E
+rainha, pra
+           A    E4 E
+Mim tanto faz
+
+[Intro]
+
+    A
+Chegou chutando o balde fazendo, fazendo,
+  Bm
+baderna
+
+No meu coração
+
+E
+Mostrou que veio pra ficar e agora to
+carente, to
+   A              E4  E
+Xonado tem jeito não
+
+A
+Que vou fazer da vida sem o seu carinho,
+seu
+    Bm
+Jeitinho, seu dengo, seu cheiro, xamego
+          E
+Ai, ai menina, lá vou eu de novo aqui te
+       A E4 E
+perguntar
+
+A
+Quer,quer,quer
+             Bm
+Quer casar comigo, ser mais que bons
+  E
+amigos, que
+               A E4 E
+Nem o céu e o mar
+A
+Quer, quer, quer
+                     Bm
+Quer ser pra sempre minha, sereia ou
+   E
+rainha, pra
+           A  E4 E
+Mim tanto faz`;export{n as default};

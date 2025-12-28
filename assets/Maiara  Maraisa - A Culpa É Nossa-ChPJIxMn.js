@@ -1,0 +1,152 @@
+const n=`Título: A Culpa É Nossa
+Artista: Maiara & Maraisa
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:16:47
+============================================================
+
+[Intro] Em  C  G  D
+
+[Primera Parte]
+
+Em                             C
+   Tá preocupado com o que eu vou falar
+G
+  Quando alguém perguntar
+     D
+O motivo da gente largar
+Em                    C
+   Eu vou falar a verdade
+G                   D
+  Se isso te incomoda
+
+[Pre-Estribillo]
+
+    Em                 C2
+Pensasse antes de ter feito
+               G
+O que chama de erro
+               D
+Eu chamo de escolha
+     Am
+Ou quer me convencer
+
+Que alguém colocou uma arma
+ G/B  C
+na  sua cabeça
+                             ( C  D )
+E falou: "Beija minha boca!"
+
+[Estribillo]
+
+ Em                   C
+Já que 'cê não quer sair
+                   G
+Como o ruim da história
+            D
+Então fala aí
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+ Am
+Já que 'cê não quer sair
+                   G/B  C
+Como o ruim da histó___ria
+                              Em
+Então mente aí que a culpa é nossa
+
+[Solo] C  G  D
+
+[Pre-Estribillo]
+
+    Em                 C2
+Pensasse antes de ter feito
+               G
+O que chama de erro
+               D
+Eu chamo de escolha
+     Am
+Ou quer me convencer
+                             G/B  C
+Que alguém colocou uma arma na  sua cabeça
+                             C  D
+E falou: "Beija minha boca!"
+
+[Estribillo]
+
+ Em                   C
+Já que 'cê não quer sair
+                   G
+Como o ruim da história
+            D
+Então fala aí
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+ Am
+Já que 'cê não quer sair
+                   G/B  C
+Como o ruim da histó___ria
+                              Em   C  D
+Então mente aí que a culpa é nossa
+
+ Em                   C
+Já que 'cê não quer sair
+                   G
+Como o ruim da história
+            D
+Então fala aí
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+
+               Em
+Que a culpa é nossa
+              C
+De 'cê ter traído
+               G
+De 'cê ter mentido
+               D
+De 'cê ser um bosta
+ Am
+Já que 'cê não quer sair
+                   G/B  C
+Como o ruim da histó___ria
+                              Em   C  G
+Então mente aí que a culpa é nossa
+
+D                   Em
+  Que a culpa é nossa`;export{n as default};

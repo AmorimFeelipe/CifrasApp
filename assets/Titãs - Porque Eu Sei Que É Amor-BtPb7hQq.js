@@ -1,0 +1,75 @@
+const e=`Título: Porque Eu Sei Que É Amor
+Artista: Titãs
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:50:12
+============================================================
+
+C                     C7M   Dm7
+Porque eu sei que é amor,     eu não peço
+  G       G7
+ nada em troca
+C                    C7M  Dm7
+Porque eu sei que é amor,   eu não peço
+      G     G7
+nenhuma prova
+
+F                     C
+Mesmo que você não esteja aqui
+          D7        G
+O amor está aqui, agora
+F                     C
+Mesmo que você tenha que partir
+            Dm7      G7      C
+O amor não há de ir,   embora
+
+Refrão:
+                   F                   C
+Eu sei que é pra sempre, enquanto durar
+              Dm7                 C
+E eu peço somente o que eu puder dar
+                  F                  C
+Eu sei que é pra sempre, enquanto durar
+           Dm7
+Eu peço somente...
+F/G             C
+O que eu puder dar *
+
+C                   C7M   Dm7
+Porque eu sei que é amor, sei que cada
+     G    G7
+palavra importa
+C                   C7M   Dm7
+Porque eu sei que é amor, sei que só há
+G    G7
+uma resposta
+
+F                    C
+Mesmo sem porquê eu te trago aqui
+           D7        G
+O amor está aqui, comigo
+F                    C
+Mesmo sem porquê eu te levo assim
+           Dm7     G7      C
+O amor está em mim, mais vivo
+
+Refrão:
+                   F                   C
+Eu sei que é pra sempre, enquanto durar
+            Dm7                  C
+E eu peço somente o que eu puder dar
+                   F                    C
+Eu sei que é pra sempre, enquanto durar
+                      Dm7
+Eu peço somente...
+F/G             F
+O que eu puder dar
+
+C               C7M
+Porque eu sei que é amor
+C               C7M
+Porque eu sei que é amor
+C               C7M
+Porque eu sei que é amor        C   C7M
+
+( F/G ) (3x)  C`;export{e as default};

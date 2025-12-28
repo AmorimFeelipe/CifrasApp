@@ -1,0 +1,114 @@
+const n=`Título: Pagode Em Brasília
+Artista: Tião Carreiro e Pardinho
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:00:09
+============================================================
+
+[Intro] D  A7  D  A7
+        D  G  D  A7
+        D  A7
+
+[Primera Parte]
+
+D
+  Quem tem mulher que namora
+                      A7
+Quem tem burro empacador
+
+Quem tem a roça no mato
+                       D
+Me chama que jeito eu dou
+                   D7
+Eu tiro a roça do mato
+                G   D  G
+Sua lavoura melhora
+  A7
+E o burro empacador
+                   D
+Eu corto ele na espora
+
+E a mulher namoradeira
+             A7              D   A7
+Eu passo um couro e mando embora
+
+[Solo] D  A7  D  A7
+       D  G  D  A7
+       D  A7
+
+[Segunda Parte]
+
+D
+  Tem prisioneiro inocente
+                    A7
+No fundo de uma prisão
+
+Tem muita sogra encrenqueira
+                      D
+E tem violeiro embrulhão
+                     D7
+Pros prisioneiro inocente
+                 G   D  G
+Eu arranjo adevogado
+  A7
+E a sogra encrequeira
+                   D
+Eu dou de laço dobrado
+
+E os violeiro embrulhão
+          A7              D   A7
+Com meus verso estão quebrado
+
+[Solo] D  A7  D  A7
+       D  G  D  A7
+       D  A7
+
+[Tercera Parte]
+
+D
+  Bahia deu Rui Barbosa
+                  A7
+Rio Grande deu Getúlio
+
+Em Minas deu Juscelino
+                        D
+De São Paulo e eu me orgulho
+                  D7
+Baiano não nasce burro
+                       G     D  G
+Gaúcho é o rei das cochilhas
+    A7
+Paulista ninguém contesta
+                     D
+É o brasileiro que brilha
+
+Quero ver cabra de peito
+       A7           D    A7
+Pra fazer outra Brasília
+
+[Solo] D  A7  D  A7
+       D  G  D  A7
+       D  A7
+
+[Cuarta Parte]
+
+D
+  No estado de Goiás
+                    A7
+Meu pagode está mandando
+
+O Bazar do Valdomiro
+                   D
+Em Brasília é soberano
+                D7
+No repique da viola balanceia
+          G   D  G
+O chão goiano
+     A7
+Vou fazer a retirada
+                      D
+E despedir dos paulistanos
+
+Adeus que eu já vou embora
+       A7           D    A7  D
+Que Goiás tá me chamando`;export{n as default};

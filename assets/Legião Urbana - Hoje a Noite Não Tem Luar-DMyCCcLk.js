@@ -1,0 +1,81 @@
+const n=`Título: Hoje a Noite Não Tem Luar
+Artista: Legião Urbana
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:46:50
+============================================================
+
+[Intro] G  Am7  G/B  C  D
+
+[Primera Parte]
+
+G       Am7        G/B
+Ela passou do meu lado
+      C              D
+Oi, amor - eu lhe falei
+ G      Am7      G/B
+Você está tão sozinha
+       C              D
+Ela então sorriu pra mim
+
+[Segunda Parte]
+
+B7                  Em
+   Foi assim que a conheci
+C              G
+  Naquele dia junto ao mar
+Am7           D         G      Em
+    As ondas vinham beijar a praia
+   C       D       G        Em
+O sol brilhava de tanta emoção
+    C     D         G    Em
+Um rosto lindo como o verão
+      C    D      G  Am7  G/B  C  D
+E um beijo   aconte_ceu
+
+[Tercera Parte]
+
+ G         Am7     G/B
+Nos encontramos à noite
+     C         D
+Passeamos por ai
+G        Am7      G/B
+E num lugar escondido
+       C           D
+Outro beijo lhe pedi
+
+[Cuarta Parte]
+
+B7          Em
+   Lua de prata no céu
+C                  G
+  O brilho das estrelas no chão
+Am7           D        G      Em
+    Tenho certeza que não sonhava
+   C     D        G  Em
+A noite linda continuava
+     C       D        G    Em
+E a voz tão doce que me falava
+   C    D          G     D  G  D
+O mundo   pertence a nós
+
+[Estribillo]
+
+C                   G
+  Hoje à noite não tem luar
+D                G
+  E eu estou sem ela
+C                   G
+  Já não sei onde procurar
+D                     G
+  Não sei onde ela está
+C                    G
+  Hoje  à noite não tem luar
+D                G
+  E eu estou sem ela
+C                   G
+  Já não sei onde procurar
+D                 G
+  Onde esta meu amor?
+
+[Final] C  G  D  G`;export{n as default};

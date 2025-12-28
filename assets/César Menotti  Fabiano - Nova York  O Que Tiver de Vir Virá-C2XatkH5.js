@@ -1,0 +1,138 @@
+const n=`Título: Nova York / O Que Tiver de Vir, Virá
+Artista: César Menotti & Fabiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:36:46
+============================================================
+
+[Intro] G  Am  C  Am  C
+        Am  C  Am  C  G
+
+Am           C           G
+Essa é a história de um novo herói
+ Am        C              G
+Cabelos compridos a rolar no vento
+ Am      C             G
+Pela estrada no seu caminhão
+   Am        C                   G
+Gravado no peito a sombra de um dragão
+
+ C                 G
+Tinha um sonho ir pra Nova York
+           C
+Levar a namorada
+                    G
+Fazer seu caminhão voar nas nuvens
+ C             G
+Mas enquanto isso na estrada
+        Am
+Saudade vai, vai, vai
+         C                 G
+Saudade vem, vem, vem me buscar
+
+  D                    A7
+  Você não sabe que eu sei
+            G             A7        D
+  Que você sente amor por outra pessoa
+                     A7
+  E finjo que não notei que o seu
+   G          A7     D
+pensamento comigo voa
+
+                                      Bm
+  Fecha os olhos diz que ao meu lado sempre
+ está feliz
+   G                               A7
+  Mas seu coração está em outra direção
+
+   D                                Bm
+  Na hora de amar faz tudo pra poder me
+agradar
+       G
+  Mas vejo em seu olhar a pressa de ver
+   A7
+tudo se acabar
+
+  D                                    A7
+  Olha eu já fiz tudo o que podia ser feito
+                                     G
+  Mas meu amor não tem lugar no seu peito
+                                 D      A7
+  Também não posso te obrigar a gostar de
+mim
+
+  D
+  Olha   mesmo te amando não te quero
+    A7
+sofrendo
+                                     G
+  Entrego os pontos mas não saio perdendo
+              A7                   D
+  Um grande amor a gente ganha no fim
+
+                    F#
+  E do jeito que tiver de ser será
+                   Bm
+  Só Deus muda as coisas de lugar
+                   E
+  Nem tudo que se perde tem valor
+                    A7
+  Nem tudo que é bonito é amor
+
+                    F#
+  O que passou, passou não voltará
+                    Bm
+  E o que tiver de vir virá, virá
+                   E           A7
+  Com toda força que tem a paixão
+                   D
+  E vai tomar seu coração
+
+( D )
+
+  D
+  Olha   mesmo te amando não te quero
+    A7
+sofrendo
+                                     G
+  Entrego os pontos mas não saio perdendo
+              A7                   D
+  Um grande amor a gente ganha no fim
+
+                    F#
+  E do jeito que tiver de ser será
+                   Bm
+  Só Deus muda as coisas de lugar
+                   E
+  Nem tudo que se perde tem valor
+                    A7
+  Nem tudo que é bonito é amor
+
+                    F#
+  O que passou, passou não voltará
+                    Bm
+  E o que tiver de vir virá, virá
+                   E           A7
+  Com toda força que tem a paixão
+                   D
+  E vai tomar seu coração
+
+                    F#
+  E do jeito que tiver de ser será
+                   Bm
+  Só Deus muda as coisas de lugar
+                   E
+  Nem tudo que se perde tem valor
+                    A7
+  Nem tudo que é bonito é amor
+
+                    F#
+  O que passou, passou não voltará
+                    Bm
+  E o que tiver de vir virá, virá
+                   E           A7
+  Com toda força que tem a paixão
+                   D
+  E vai tomar seu coração
+
+[Final] D`;export{n as default};

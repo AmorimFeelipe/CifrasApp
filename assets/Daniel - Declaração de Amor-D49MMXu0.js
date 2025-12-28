@@ -1,0 +1,103 @@
+const n=`Título: Declaração de Amor
+Artista: Daniel
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:11:04
+============================================================
+
+[Intro] D  A  Bm  Bm/A  G
+        D  G  Em7  A7  D
+
+D                  A    Bm  Bm/A
+Minha vida e o meu mundo   são vazios sem
+    G    A7
+ você
+ D                      A    Bm
+ Nosso amor foi tão profundo
+ Bm/A               G
+Impossível esquecer
+G                       D          Bm
+  No meu corpo tem as suas digitais
+G                       D          Bm  Bm/A
+ Na jaqueta jeans, um beijo de batom
+ G                       D
+ Estou pensando em escrever
+ Bm                     G     A7   D   Em7
+Volta, que eu te amo em luzes de neon
+ A7
+
+ D                        A   Bm
+  Hoje eu encontrei no carro
+Bm/A              G   Em7  A7
+Um bilhete de motel
+   D                  A     Bm
+  Minhas lágrimas molharam
+ Bm/A            G
+O pedaço de papel
+G                      D        Bm
+  São retratos, vídeo tapes e postais
+G                    D          Bm
+A declaração na capa de um CD
+G                       D
+  E essa música que eu canto
+  Bm                   G     A7  D    Em7
+Fiz aos prantos com saudades de você
+A7
+
+
+D           A              Bm        F#m
+Você vai ouvir minha declaração de amor
+G            A7        D  D7
+Onde você, estiver eu vou
+G          A7   D             Bm
+Você vai saber nas ondas do rádio ou na
+Bm/A   G
+Tevê
+       A7   D    A7
+Que eu amo você..ê
+D          A               Bm          F#m
+Você vai ouvir minha declaração de amor
+G           A7         D  D7
+Onde você, estiver eu vou
+G           A   D            Bm    Bm/A
+Você vai saber  nas ondas do rádio ou na
+  G
+Tevê
+       A7     D
+Que eu amo você
+    F#m        G   A7   D   Em7  A7
+Que eu não existo sem  você
+
+D                     A    Bm
+Hoje eu encontrei no carro
+   Bm/A          G  Em7  A7  D  A  Bm  G
+Um bilhete de motel
+Em7  A7  D
+
+
+D           A              Bm        F#m
+Você vai ouvir minha declaração de amor
+G            A7        D  D7
+Onde você, estiver eu vou
+G          A7   D             Bm
+Você vai saber nas ondas do rádio ou na
+Bm/A   G
+Tevê
+       A7   D    A7
+Que eu amo você..ê
+D          A               Bm          F#m
+Você vai ouvir minha declaração de amor
+G           A7         D  D7
+Onde você, estiver eu vou
+G           A   D            Bm    Bm/A
+Você vai saber  nas ondas do rádio ou na
+  G
+Tevê
+       A7     D
+Que eu amo você
+    F#m        G   A7   D
+Que eu não existo sem  você
+   F#m      G     A7  D     A  Bm  Bm/A
+Que eu não existo sem vo...cê
+      G   Em7   A7     D
+Oooh não, sem   vo....cê`;export{n as default};

@@ -1,0 +1,87 @@
+const n=`Título: Mensagem Pra Ela
+Artista: César Menotti & Fabiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:34:59
+============================================================
+
+D                   A
+Mandei mensagem pra ela
+ G                D
+Ela não me respondeu
+                  A
+Liguei no seu celular
+ G               D
+A secretaria atendeu
+ Bm                   F#m
+Resolvi abrir meu coração
+     G                 D
+E falar tudo que eu senti
+      G                 D
+Na verdade eu me apaixonei
+       A
+Na primeira vez que eu ti vi
+
+          D
+Vou te ligar
+               A
+Vou deixar recado
+               Bm
+Vou mandar mensagem
+                F#m
+Pois só desse jeito
+             G
+Eu tive coragem
+             D
+De abrir o jogo
+           A
+Nessa ligação
+     G
+Porque?
+                                  D
+Me deu a esperança de ficar com você
+                                     A
+Me deu o seu telefone, se não ia atender
+                 G          A       D
+Porque você brincou com o meu coração?
+
+Solo: A Bm F#m G A
+
+
+
+b|--|
+g|--|
+d|--|
+a|--|
+
+ Bm                   F#m
+Resolvi abrir meu coração
+      G                D
+E falar tudo que eu senti
+       G                D
+Na verdade eu me apaixonei
+      A
+A primeira vez que eu ti vi
+
+          D
+Vou te ligar
+               A
+Vou deixar recado
+               Bm
+Vou mandar mensagem
+                F#m
+Pois só desse jeito
+             G
+Eu tive coragem
+             D
+De abrir o jogo
+           A
+Nessa ligação
+     G
+Porque?
+                                  D
+Me deu a esperança de ficar com você
+                                     A
+Me deu o seu telefone, se não ia atender
+                 G          A       D
+Porque você brincou com o meu coração?`;export{n as default};

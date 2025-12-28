@@ -1,0 +1,132 @@
+const n=`Título: Erro Gostoso
+Artista: Simone Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:21:57
+============================================================
+
+[Intro] E  A
+
+[Primera Parte]
+
+ E
+Calma, deixa eu respirar um pouco
+                C#m
+Nós somos dois loucos
+
+Olha a gente nessa cama de novo
+A
+   O que cê sente, quando cê mente
+
+Na minha cara
+                       E
+Pra ter uma hora de cama suada
+
+[Pre-Estribillo]
+
+         F#m
+E eu percebo a cada visita
+           A
+Cê não gosta de mim
+
+Cê gosta é da conquista
+
+[Estribillo]
+
+E
+Ah, e agora como eu fico nessa casa
+                         C#m
+Com sorriso ou choro no rosto
+
+Cê vem aqui, me acostuma errado
+
+Cola meus pedaços
+                A
+Pra quebrar de novo
+       F#m
+Eu preciso aprender
+                  B7
+A falar "não" um pouco
+
+Pra esse erro gostoso
+
+E
+Ah, e agora como eu fico nessa casa
+                         C#m
+Com sorriso ou choro no rosto
+
+Cê vem aqui, me acostuma errado
+
+Cola meus pedaços
+                A
+Pra quebrar de novo
+       F#m
+Eu preciso aprender
+                  B7
+A falar "não" um pouco
+
+Pra esse erro gostoso
+
+( E  A )
+
+[Primera Parte]
+
+ E
+Calma, deixa eu respirar um pouco
+                C#m
+Nós somos dois loucos
+
+Olha a gente nessa cama de novo
+A
+  O que cê sente, quando cê mente
+
+Na minha cara
+                       E
+Pra ter uma hora de cama suada
+
+[Pre-Estribillo]
+
+         F#m
+E eu percebo a cada visita
+           A
+Cê não gosta de mim
+
+Cê gosta é da conquista
+
+[Estribillo]
+
+E
+Ah, e agora como eu fico nessa casa
+                         C#m
+Com sorriso ou choro no rosto
+
+Cê vem aqui, me acostuma errado
+
+Cola meus pedaços
+                A
+Pra quebrar de novo
+       F#m
+Eu preciso aprender
+                  B7
+A falar "não" um pouco
+
+Pra esse erro gostoso
+
+E
+Ah, e agora como eu fico nessa casa
+                         C#m
+Com sorriso ou choro no rosto
+
+Cê vem aqui, me acostuma errado
+
+Cola meus pedaços
+                A
+Pra quebrar de novo
+       F#m
+Eu preciso aprender
+                  B7
+A falar "não" um pouco
+
+Pra esse erro gostoso
+
+[Final] E  A  E`;export{n as default};

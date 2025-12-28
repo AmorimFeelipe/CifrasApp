@@ -1,0 +1,92 @@
+const n=`Título: Mulher Maravilha
+Artista: Zé Neto e Cristiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:28:21
+============================================================
+
+[Intro] C  F  Am  G  F
+
+[Primera Parte]
+
+          C
+Tem brinquedo espalhado pela casa toda
+        F
+E as paredes rabiscadas com o giz de cera
+          Am         G
+Mudou de tal maneira
+       F
+Nossa vida já não é a mesma
+
+   C
+A gente já não dorme mais a noite inteira
+    F
+Na mesa tem dois copos e uma mamadeira
+          Am         G
+Mudou de tal maneira
+       F
+Nossa vida já não é a mesma
+
+[Pre-Estribillo]
+
+ Am
+Tem um pinguinho de gente
+       D7
+Correndo na sala
+ F
+Com o sorriso banguelo
+                   Fm
+Eu não quero mais nada
+
+[Estribillo]
+
+ C
+Sabe aquele amor que se multiplica?
+  F
+Quem nunca sonhou ter isso na vida?
+       Am                  G
+Ser herói de alguém e, melhor ainda
+        F
+Ter do lado a Mulher Maravilha
+
+ C
+Sabe aquele amor que se multiplica?
+  F
+Quem nunca sonhou ter isso na vida?
+       Am                  G
+Ser herói de alguém e, melhor ainda
+        F
+Ter do lado a Mulher Maravilha
+
+( C  F  Am  G  F )
+
+[Pre-Estribillo]
+
+ Am
+Tem um pinguinho de gente
+       D7
+Correndo na sala
+ F
+Com o sorriso banguelo
+                   Fm
+Eu não quero mais nada
+
+[Estribillo]
+
+ C
+Sabe aquele amor que se multiplica?
+  F
+Quem nunca sonhou ter isso na vida?
+       Am                  G
+Ser herói de alguém e, melhor ainda
+        F
+Ter do lado a Mulher Maravilha
+
+ C
+Sabe aquele amor que se multiplica?
+  F
+Quem nunca sonhou ter isso na vida?
+       Am                  G
+Ser herói de alguém e, melhor ainda
+        F                      C
+Ter do lado a Mulher Maravilha`;export{n as default};

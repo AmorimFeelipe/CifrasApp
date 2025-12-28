@@ -1,0 +1,154 @@
+const n=`Título: Decida
+Artista: Milionário e José Rico
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:01:00
+============================================================
+
+[Intro]
+
+Dm
+   No amor, há momentos
+
+Que temos que dizer um para o outro:
+
+Decida
+
+[Primera Parte]
+
+ Dm
+Sente aqui comigo no sofá
+
+E vamos conversar
+                   A
+É hora de abrir o jogo
+
+Nosso amor está indo água abaixo
+
+Se deixar vira relaxo
+                Dm
+Temporal apaga fogo
+
+[Segunda Parte]
+
+      Gm
+Por que você não olha nos meus olhos?
+     Dm
+Seu beijo não tem o mesmo sabor
+   A
+O seu carinho não me faz dormir
+     Dm                      D7
+Nem sua quando a gente faz amor
+
+   Gm
+Você só vai tomar banho sozinha
+    Dm
+Na hora do jantar me diz que já comeu
+     A
+Não vê novelas e nem liga o som
+
+Diz que não tem nada bom
+                  Dm    D7
+Que satisfaça o ego seu
+
+[Pre-Estribillo]
+
+              Gm
+Você se esqueceu
+                           Dm
+Que dentro desta casa eu existo
+                   A
+Que em 82 casou comigo
+                           Dm  D7
+Por isso exijo uma explicação
+
+                      Gm
+Se sou eu que te incomoda
+                              Dm
+Pra te fazer feliz fiz o que pude
+                           Bb
+Mas o incomodado é que se mude
+   A                     D    A
+Você quem vai tomar a decisão
+
+[Estribillo]
+
+   D
+Decida
+                          F#
+Se vai embora ou ficar comigo
+    G                       D
+Se vai me respeitar como marido
+      A                           D    A
+Pois desse jeito, não estou aguentando
+
+   D
+Decida
+                               F#
+Ou pare de uma vez com esse delírio
+    G                       D
+Talvez você precisa usar colírio
+    A                          D
+Pra enxergar o quanto ainda te amo
+
+( Bb  A  Dm  D7 )
+
+[Pre-Estribillo]
+
+              Gm
+Você se esqueceu
+                           Dm
+Que dentro desta casa eu existo
+                   A
+Que em 82 casou comigo
+                           Dm  D7
+Por isso exijo uma explicação
+
+                      Gm
+Se sou eu que te incomoda
+                              Dm
+Pra te fazer feliz fiz o que pude
+                           Bb
+Mas o incomodado é que se mude
+   A                     D    A
+Você quem vai tomar a decisão
+
+[Estribillo Final]
+
+   D
+Decida
+                          F#
+Se vai embora ou ficar comigo
+    G                       D
+Se vai me respeitar como marido
+      A                           D    A
+Pois desse jeito, não estou aguentando
+
+   D
+Decida
+                               F#
+Ou pare de uma vez com esse delírio
+    G                       D
+Talvez você precisa usar colírio
+    A                          D   A
+Pra enxergar o quanto ainda te amo
+
+   D
+Decida
+                          F#
+Se vai embora ou ficar comigo
+    G                       D
+Se vai me respeitar como marido
+      A                           D    A
+Pois desse jeito, não estou aguentando
+
+   D
+Decida
+                               F#
+Ou pare de uma vez com esse delírio
+    G                       D
+Talvez você precisa usar colírio
+    A                          D
+Pra enxergar o quanto ainda te amo
+
+[Final] Bb  A  Dm`;export{n as default};

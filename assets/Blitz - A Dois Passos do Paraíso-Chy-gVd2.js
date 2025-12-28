@@ -1,0 +1,64 @@
+const o=`Título: A Dois Passos do Paraíso
+Artista: Blitz
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 28/12/2025 00:04:57
+============================================================
+
+[Intro] A  E  F#m  D
+
+A
+ Longe de casa
+E
+ Há mais de uma semana
+F#m
+ Milhas e milhas distante
+D
+ Do meu amor
+A
+ Será que ela está me esperando
+E
+ Eu fico aqui sonhando
+F#m
+ Voando alto
+D
+ Ou perto do céu
+
+A
+ Eu saio de noite
+E
+ Andando sozinho
+F#m
+ Eu vou entrando em qualquer barra
+D
+  Eu faço meu caminho
+A
+ O rádio toca uma canção
+E
+ Que me faz   lembrar você
+F#m
+ Eu fico louco de emoção
+   D
+E já não sei o que vou fazer
+
+A                    E
+ Estou a dois passos  do paraíso
+A                     E
+ Estou a dois passos  do paraíso
+A                     E
+ Estou a dois passos  do paraíso
+F#m
+ Não sei por que eu fui dizer
+D                A   E  F#m  D
+Bye bye baby bye bye
+
+A                    E
+ Estou a dois passos  do paraíso
+A                     E
+ Estou a dois passos  do paraíso
+A                     E
+ Estou a dois passos  do paraíso
+F#m
+ Não sei por que eu fui dizer
+ D                A
+ Bye bye baby bye bye`;export{o as default};

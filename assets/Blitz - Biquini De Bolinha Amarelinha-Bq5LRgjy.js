@@ -1,0 +1,91 @@
+const n=`Título: Biquini De Bolinha Amarelinha
+Artista: Blitz
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 28/12/2025 00:05:44
+============================================================
+
+A                      E
+Ana Maria entrou na cabine
+                           A
+E foi vestir um biquíni legal
+         A7                 D
+Mas era tão pequenino o biquíni
+           A          E      A
+Que Ana Maria até sentiu-se mal
+Ai, ai, ai, mas ficou sensacional
+
+[Estribillo]
+
+           E                    A            E
+Era um biquíni de bolinha amarelinha tão pequenininho
+             A
+Mal cabia na Ana Maria
+    E         A          E
+Biquíni de bolinha amarelinha tão pequenininho
+                 D  C#   G/B  A
+Que na palma da mão se escondia
+
+[Verso 2]
+
+       A                E7
+Ana Maria toda envergonhada
+                           A
+Não quis sair da cabine assim
+           A7              D
+Ficou com medo que a rapaziada
+         A        E           A
+Olhasse tudo tim tim por tim tim
+Ai, ai, ai, a garota tá pra mim
+
+[Estribillo]
+
+           E                    A            E
+Era um biquíni de bolinha amarelinha tão pequenininho
+             A
+Mal cabia na Ana Maria
+    E         A          E
+Biquíni de bolinha amarelinha tão pequenininho
+                 D  C#   G/B  A
+Que na palma da mão se escondia
+
+
+[Verso 3]
+
+       A                 E7
+Ana Maria olhou-se no espelho
+                           A
+E viu-se quase despida afinal
+             A7               D
+Ficou com o rosto todinho vermelho
+        A       E       A
+E escondeu o maiô no dedal
+
+[Refrão com fade-out no final]
+
+           E                    A            E
+Era um biquíni de bolinha amarelinha tão pequenininho
+             A
+Mal cabia na Ana Maria
+    E         A          E
+Biquíni de bolinha amarelinha tão pequenininho
+                 D  C#   G/B  A
+Que na palma da mão se escondia
+
+           E                    A            E
+Era um biquíni de bolinha amarelinha tão pequenininho
+             A
+Mal cabia na Ana Maria
+    E         A          E
+Biquíni de bolinha amarelinha tão pequenininho
+                 D  C#   G/B  A
+Que na palma da mão se escondia
+
+           E                    A            E
+Era um biquíni de bolinha amarelinha tão pequenininho
+             A
+Mal cabia na Ana Maria
+    E         A          E
+Biquíni de bolinha amarelinha tão pequenininho
+                 D  C#   G/B  A
+Que na palma da mão se escondia`;export{n as default};

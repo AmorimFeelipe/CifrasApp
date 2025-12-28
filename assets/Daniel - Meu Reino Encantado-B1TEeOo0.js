@@ -1,0 +1,96 @@
+const a=`Título: Meu Reino Encantado
+Artista: Daniel
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:12:32
+============================================================
+
+[Intro] B  F#  B  F#
+
+       B
+Eu nasci num recanto feliz
+                      F#
+Bem distante da povoação
+Foi ali que eu vivi muitos anos
+       E      F#         B
+Com papai, mamãe e os irmãos
+         B
+Nossa casa era uma casa grande
+                      F#
+Na encosta de um espigão
+
+        F#
+ Um cercado pra apartar bezerro
+                            B
+E ao lado um grande mangueirão
+
+        B
+No quintal tinha um forno de lenha
+                            F#
+E um pomar onde as aves cantavam
+Um coberto pra guardar o pilão
+  E    F#            B
+E as traias que o papai usava
+ B
+De manhã eu ia no paiol
+                          F#
+Uma espiga de milho eu pegava
+
+ F#
+Debulhava e jogava no chão
+                             B
+Num instante as galinhas juntavam
+
+ B  F#  B  F#  B
+
+       B
+Nosso carro de boi conservado
+                             F#
+Quatro juntas de bois de primeira
+Quatro cangas, dezesseis canzis
+      E        F#       B
+Encostados no pé da figueira
+   B
+Todo sábado eu ia na vila
+                           F#
+Fazer compra pra semana inteira
+
+      F#
+ O papai ia gritando com os bois
+                            B
+Eu na frente abrindo as porteiras
+
+       B
+Nosso sítio que era pequeno
+                           F#
+Pelas grandes fazendas cercado
+Precisamos vender a propriedade
+          E       F#       B
+Para um grande criador de gado
+B
+E partimos pra cidade grande
+                         F#
+A saudade partiu ao meu lado
+
+     F#
+A lavoura virou colonião
+                              B
+E acabou-se o meu reino encantado
+
+ B  F#  B  F#  B
+
+       B
+Hoje ali só existem três coisas
+                           F#
+Que o tempo ainda não deu fim
+A tapera velha desabada
+        E        F#         B
+E a figueira acenando pra mim
+E por último marcou saudade
+                           F#
+De um tempo bom que já se foi
+
+      F#
+Esquecido em baixo da figueira
+                      B
+Nosso velho carro de boi`;export{a as default};

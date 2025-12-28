@@ -1,0 +1,68 @@
+const o=`Título: Um Violeiro Toca
+Artista: Almir Sater
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:05:20
+============================================================
+
+G                      G5(7M)    G5(6)
+ Quando uma estrela cai, no escurão da
+noite,
+C
+ e um violeiro toca suas mágoas.
+D9(11)
+ Então os olhos dos bichos, vão ficando
+iluminados
+C
+Rebrilham neles estrelas de um sertão
+       D9(11)  C C5(9)
+enluarado
+G            G5(7M)            G5(6)
+Quando o amor termina, perdido numa
+esquina,
+C
+e um violeiro toca sua sina.
+D9(11)
+Então os olhos dos bichos, vão ficando
+entristecidos
+C
+Rebrilham neles lembranças dos amores
+         D9(11)  C  C5(9)
+esquecidos.
+G                   G5(7M)      G5(6)
+Quando um amor começa, nossa alegria chama,
+C
+e um violeiro toca em nossa cama.
+D9(11)
+Então os olhos dos bichos, são os olhos de
+quem ama
+C
+Pois a natureza é isso, sem medo nem dó
+     D9(11) C  C5(9)
+sem drama
+Violão 1:
+
+Refrão:
+G               G5(7M)         C7+
+Tudo é sertão, tudo é paixão, se o
+   D
+violeiro toca
+Am7            C               G
+A viola, o violeiro e o amor se tocam
+Variação:
+
+(Intro)
+
+G                   G5(7M)      G5(6)
+Quando um amor começa, nossa alegria chama,
+C
+e um violeiro toca em nossa cama.
+D9(11)
+Então os olhos dos bichos, são os olhos de
+quem ama
+C
+Pois a natureza é isso, sem medo nem dó
+     D9(11) C  C5(9)
+sem drama
+
+(Refrão)`;export{o as default};

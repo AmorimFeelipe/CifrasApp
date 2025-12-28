@@ -1,0 +1,111 @@
+const n=`Título: Ferida Curada
+Artista: Zé Neto e Cristiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:29:36
+============================================================
+
+[Intro] G  A/C#  D9
+
+[Primera Parte]
+
+      F#m
+Tão cheia de certeza
+ Bm7
+Você duvidou
+  G
+Que não existia mais
+                D
+Resquícios de amor
+      F#m
+Saiu perdida na vida
+   Bm7
+Ficando por ficar
+   G
+E não contava que a saudade
+         D
+Ia te encontrar
+
+[Pre-Estribillo]
+
+    D    A/C#  Bm7
+E agora tá aqui
+                  F#m
+Mas fiquei sem você e me acostumei
+    G                       Em
+Pensei que quando te encontrasse
+          A          G/B      A/C#
+Eu ia tremer mas eu nem balancei
+
+[Estribillo]
+
+                    G
+É que o frio na barriga
+
+A saudade esquentou
+            A
+O amor que tinha a distância zerou
+            Bm7
+Não sobrou nada
+          D
+Você é a minha ferida curada
+
+                    G
+É que o frio na barriga
+
+A saudade esquentou
+            A
+O amor que tinha a distância zerou
+            Bm7
+Não sobrou nada
+          D
+Você é a minha ferida curada
+
+G           A
+  Preocupa não
+             Bm7
+Essa dor aí logo passa
+
+[Solo] G  A  Bm7  D
+
+
+
+[Pre-Estribillo]
+
+              Bm7
+E agora tá aqui
+                 F#m
+Mas ficar sem você e me acostumei
+    G                       Em
+Pensei que quando te encontrasse
+          A
+Eu ia tremer mas eu nem balancei
+
+[Estribillo]
+
+                    G
+É que o frio na barriga
+
+A saudade esquentou
+            A
+O amor que tinha a distância zerou
+            Bm7
+Não sobrou nada
+          D
+Você é a minha ferida curada
+
+                    G
+É que o frio na barriga
+
+A saudade esquentou
+            A
+O amor que tinha a distância zerou
+            Bm7
+Não sobrou nada
+          D
+Você é a minha ferida curada
+
+G           A
+  Preocupa não
+                 Bm7
+Que essa dor aí logo passa`;export{n as default};

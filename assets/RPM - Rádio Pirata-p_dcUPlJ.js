@@ -1,0 +1,59 @@
+const n=`Título: Rádio Pirata
+Artista: RPM
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:55:39
+============================================================
+
+[Intro] B  E  B  E
+
+[Riff]
+
+B                   E
+Abordar navios mercantes
+B                                 E
+Invadir, pilhar, tomar o que é nosso
+   F#                  E
+Pirataria nas ondas do rádio
+   F#                            E
+Havia alguma coisa errada com o rei
+
+[Riff]  B  E  B  E
+
+B                      E
+Preparar a nossa invasão
+B                                 E
+E fazer justiça com as próprias mãos
+   F#                     E
+Dinamitar um paiol de bobagens
+   F#                        E
+E navegar o mar na tranqüilidade
+
+B         E
+Toquem o meu coração
+B         E
+Façam a revolução
+      F#                     E
+Que está no ar, nas ondas do rádio
+      F#                  E
+No submundo repousa o repúdio
+                   B   E B  E
+E deve despertar
+B                     E
+Disputar em cada frequência
+B                          E
+Um espaço nosso nessa decadência
+      F#                                  E
+Canções de guerra, quem sabe canções do mar
+     F#                      E
+Canções de amor ao que vai vingar
+B               E
+Toquem o meu coração
+B        E
+Façam a revolução
+      F#                       E
+Que está no ar, nas ondas do rádio
+      F#                     E
+No underground repousa o repúdio
+                    B  E  B  E
+E deve despertar...               (Riff)`;export{n as default};

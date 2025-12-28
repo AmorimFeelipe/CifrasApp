@@ -1,0 +1,63 @@
+const n=`Título: Enquanto Houver Sol
+Artista: Titãs
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:49:57
+============================================================
+
+A               B
+Quando não houver saída
+        A                   B
+Quando não houver mais solução
+ A                  G#m
+Ainda há de haver saída
+ F#m      A    B        E
+Nenhuma idéia vale uma vida
+        A                  B
+Quando não houver esperança
+        A                 B
+Quando não restar nem ilusão
+ A                     G#m
+Ainda há de haver esperança
+    F#m        A           B    E
+Em cada um de nós, algo de uma criança
+
+Refrão: guitarra 2 - riff da intro
+
+    A                    Am
+Enquanto houver sol, enquanto houver sol
+ E           G#m
+Ainda haverá
+    A                    Am              E  E4  E
+Enquanto houver sol, enquanto houver sol
+
+        A                 B
+Quando não houver caminho
+       A                   B
+Mesmo sem amor, sem direção
+   A                  G#m
+A sós ninguém está sozinho
+F#m     A            B       E
+É caminhando que se faz o caminho
+        A               B
+Quando não houver desejo
+        A                    B
+Quando não restar nem mesmo dor
+ A                   G#m
+Ainda há de haver desejo
+    F#m        A          B        E
+Em cada um de nós, aonde Deus colocou
+    A                    Am
+Enquanto houver sol, enquanto houver sol
+ E           G#m
+Ainda haverá
+    A                    Am            E  E4  E
+Enquanto houver sol, enquanto houver sol
+
+Refrão:
+    A                    Am
+Enquanto houver sol, enquanto houver sol
+ E           G#m
+Ainda haverá
+    A                    Am            E  E4  E
+Enquanto houver sol, enquanto houver sol`;export{n as default};

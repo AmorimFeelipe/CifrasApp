@@ -1,0 +1,130 @@
+const n=`Título: Menino da Porteira
+Artista: Sérgio Reis
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:02:53
+============================================================
+
+[Intro] E  A  E  A
+        E  A  E  A  E  A
+
+[Primera Parte]
+
+A
+  Toda vez que eu viajava
+                      E
+Pela estrada de Ouro Fino
+
+De longe eu avistava
+                  A
+A figura de um menino
+
+Que corria abrir a porteira
+                     E
+E depois vinha me pedindo
+
+Toque o berrante, seu moço
+                      A
+Que é pra eu ficar ouvindo
+
+[Segunda Parte]
+
+       D
+Quando a boiada passava
+                  E
+E a poeira ia baixando
+                                  A
+Eu jogava uma moeda e ele saía pulando
+
+Obrigado, boiadeiro
+                        E
+Que Deus vá lhe acompanhando
+
+Pra aquele sertão afora
+                   A
+Meu berrante ia tocando
+
+( E  A  E  A )
+( E  A  E  A  E  A )
+
+[Tercera Parte]
+
+A
+  Nos caminhos desta vida
+                          E
+Muitos espinhos eu encontrei
+
+Mas nenhum calou mais fundo
+                       A
+Do que isso que eu passei
+
+Na minha viagem de volta
+                      E
+Qualquer coisa eu cismei
+
+Vendo a porteira fechada
+                  A
+O menino não avistei
+
+[Cuarta Parte]
+
+   D
+Apeei do meu cavalo
+                         E
+E no ranchinho à beira chão
+
+Vi uma mulher chorando
+                     A
+Quis saber qual a razão
+
+Boiadeiro veio tarde
+                     E
+Veja a cruz no estradão
+
+Quem matou o meu filhinho
+                    A
+Foi um boi sem coração
+
+( E  A  E  A )
+( E  A  E  A  E  A )
+
+[Quinta Parte]
+
+A
+  Lá pras bandas de Ouro Fino
+                 E
+Levando gado selvagem
+
+Quando passo na porteira
+                 A
+Até vejo a sua imagem
+
+O seu rangido tão triste
+                    E
+Mais parece uma mensagem
+
+Daquele rosto trigueiro
+                   A
+Desejando-me boa viagem
+
+[Sexta Parte]
+
+    D
+A cruzinha no estradão
+                   E
+Do pensamento não sai
+
+Eu já fiz um juramento
+                   A
+Que não esqueço jamais
+
+Nem que o meu gado estoure
+                     E
+Que eu precise ir atrás
+
+Neste pedaço de chão
+                      A
+Berrante eu não toco mais
+
+( E  A  E  A )
+( E  A  E  A  E  A )`;export{n as default};

@@ -1,0 +1,125 @@
+const a=`Título: Oi Balde
+Artista: Zé Neto e Cristiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:28:10
+============================================================
+
+[Intro] Bm  D  Em  G
+
+[Primera Parte]
+
+ Bm
+Sabe quando a gente termina
+             D
+Um relacionamento
+             Em
+E sente um alívio
+              G
+Já passei por isso
+ Bm
+Sabe quando a gente mete o louco
+                  D
+Na cidade e sai moendo
+              Em
+Também já fiz isso
+              G
+E ainda tô fazendo
+
+[Pre-Estribillo]
+
+    Bm          D             Em
+Eu já borrei batons pela cidade
+                         G
+Mas nada apaga minha saudade
+    Bm            D                 Em
+Eu tento, mas não acho alguém do nível
+                     Gm
+Só acho amor incompatível
+
+[Estribillo]
+
+    D
+Oi balde, desculpa a cara de pau
+            A
+Mas deu saudade
+
+Eu te chutei quando a raiva
+
+Tava no auge
+Em
+    Eu fui um trouxa a gente sabe
+     G
+Que nunca foi falta de amor
+                 Gm
+Foi só falta de maturidade
+
+    D
+Oi balde, desculpa a cara de pau
+            A
+Mas deu saudade
+
+Eu te chutei quando a raiva
+
+Tava no auge
+Em
+    Eu fui um trouxa a gente sabe
+     G
+Que nunca foi falta de amor
+                 Gm
+Foi só falta de maturidade
+
+ Bm                 A
+Fala que pra te buscar
+          G
+Ainda não é tarde
+
+( Em  G  Bm  A )
+
+[Pre-Estribillo]
+
+    Bm          D             Em
+Eu já borrei batons pela cidade
+                         G
+Mas nada apaga minha saudade
+    Bm           D                 Em
+Eu tento mas não acho alguém do nível
+                     Gm
+Só acho amor incompatível
+
+[Estribillo Final]
+
+    D
+Oi balde, desculpa a cara de pau
+            A
+Mas deu saudade
+
+Eu te chutei quando a raiva
+
+Tava no auge
+Em
+    Eu fui um trouxa a gente sabe
+     G
+Que nunca foi falta de amor
+                 Gm
+Foi só falta de maturidade
+
+    D
+Oi balde, desculpa a cara de pau
+            A
+Mas deu saudade
+
+Eu te chutei quando a raiva
+
+Tava no auge
+Em
+    Eu fui um trouxa a gente sabe
+     G
+Que nunca foi falta de amor
+                 Gm
+Foi só falta de maturidade
+
+ Bm                 A
+Fala que pra te buscar
+             G
+Ainda não é tarde`;export{a as default};

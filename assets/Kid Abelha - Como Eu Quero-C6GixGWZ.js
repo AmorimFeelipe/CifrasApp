@@ -1,0 +1,153 @@
+const n=`Título: Como Eu Quero
+Artista: Kid Abelha
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 28/12/2025 00:02:53
+============================================================
+
+[Intro] Dm  F  C  G
+        Dm  F  C
+
+[Primera Parte]
+
+ C                       G
+Diz pra ficar muda, faz cara de mistério
+ Am                         F
+Tira essa bermuda, que eu quero você sério
+  C                       G
+Dramas do sucesso, mundo particular
+ Am                    F
+Solos de guitarra não vão me conquistar
+
+[Estribillo]
+
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+
+[Segunda Parte]
+
+    C
+O que você precisa
+           G
+É de um retoque total
+      Am
+Vou transformar o seu
+            F
+Rascunho em arte final
+  C
+Agora não tem jeito
+G
+  Cê tá numa cilada
+ Am
+Cada um por si
+          F
+Você por mim e mais nada
+
+[Estribillo]
+
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+
+[Puente]
+
+Dm           F
+   Longe do meu domínio
+C                   G
+  cê vai de mal a pior
+Dm                  F
+   Vem que eu te ensino
+
+Como ser bem melhor
+Dm           F
+   Longe do meu domínio
+C                   G
+  Cê vai de mal a pior
+Dm                  F
+   Vem que eu te ensino
+                    Dm
+Como ser bem melhor
+
+[Primera Parte]
+
+ C                       G
+Diz pra ficar muda, faz cara de mistério
+ Am                         F
+Tira essa bermuda, que eu quero você sério
+  C                       G
+Dramas do sucesso, mundo particular
+ Am                    F
+Solos de guitarra não vão me conquistar
+
+[Estribillo]
+
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+
+[Segunda Parte]
+
+    C
+O que você precisa
+           G
+É de um retoque total
+      Am
+Vou transformar o seu
+            F
+Rascunho em arte final
+  C
+Agora não tem jeito
+G
+  Cê tá numa cilada
+ Am
+Cada um por si
+          F
+Você por mim e mais nada
+
+[Estribillo]
+
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+
+[Puente]
+
+Dm           F
+   Longe do meu domínio
+C                   G
+  Cê vai de mal a pior
+Dm                  F
+   Vem que eu te ensino
+
+Como ser bem melhor
+Dm           F
+   Longe do meu domínio
+C                   G
+  Cê vai de mal a pior
+Dm                  F
+   Vem que eu te ensino
+
+Como ser bem melhor
+
+[Estribillo]
+
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+Am         Em                  F
+Uhhh, eu quero você, como eu quero
+
+[Final] Am  Em  F
+        Am  Em  F`;export{n as default};

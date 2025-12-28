@@ -1,0 +1,60 @@
+const n=`Título: Daqui Pra Sempre (part. Manu Bahtidão)
+Artista: Simone Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:24:55
+============================================================
+
+[Intro] Gm  Bb  Dm  F
+        Gm  Bb  Dm  F
+
+[Primera Parte]
+
+              Gm
+Todo mundo falou
+             Bb
+Que o nosso amor
+              Dm
+Era frágil demais
+              F
+Que não era capaz
+
+                Gm
+Mas não ouvi ninguém
+                  Bb
+Que não quer nosso bem
+            Dm
+Eu me dediquei
+              F
+Por nos dois lutei
+
+[Pre-Estribillo]
+
+Gm                    Bb
+Eu e você contra o mundo
+              Dm
+Eu enfrento tudo
+              F
+Se eu tiver você
+
+[Estribillo]
+
+                     Gm
+E olha onde a gente chegou
+                     Bb
+Tudo que a gente conquistou
+                       Dm
+Daqui pra sempre é só eu e tu
+                F
+Calando a boca do mundo
+
+                    Gm
+E olha onde a gente chegou
+                     Bb
+Tudo que a gente conquistou
+                       Dm
+Daqui pra sempre é só eu e tu
+                F
+Calando a boca do mundo
+                         Gm
+Eu te amo até o fim dos tempos`;export{n as default};

@@ -1,0 +1,176 @@
+const n=`Título: Índios
+Artista: Legião Urbana
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:46:59
+============================================================
+
+[Intro] G  C  D
+        G  C  D
+
+[Primera Parte]
+
+Am
+   Quem me dera ao menos uma vez
+        D
+Ter de volta todo o ouro
+
+Que entreguei a quem
+       Bm
+Conseguiu me convencer
+
+Que era prova de amizade
+       Em
+Se alguém levasse embora
+
+Até o que eu não tinha
+
+Am
+   Quem me dera ao menos uma vez
+      D
+Esquecer que acreditei
+
+Que era por brincadeira
+     Bm
+Que se cortava sempre um pano de chão
+    Em
+De linho nobre e pura seda
+
+Am
+   Quem me dera ao menos uma vez
+      D
+Explicar o que ninguém
+
+Consegue entender
+            Bm
+Que o que aconteceu ainda está por vir
+       Em
+E o futuro não é mais
+
+Como era antigamente
+
+Am
+   Quem me dera ao menos uma vez
+    D
+Provar que quem tem mais
+
+Do que precisa ter
+       Bm
+Quase sempre se convence
+
+Que não tem o bastante
+ Em
+Fala demais por não ter nada a dizer
+
+Am
+   Quem me dera ao menos uma vez
+            D
+Que o mais simples fosse visto
+
+Como o mais importante
+Bm
+   Mas nos deram espelhos
+   Em
+E vimos um mundo doente
+
+Am
+   Quem me dera ao menos uma vez
+      D
+Entender como um só Deus
+
+Ao mesmo tempo é três
+        Bm
+E esse mesmo Deus foi morto por vocês
+        Em
+Sua maldade, então
+
+Deixaram Deus tão triste
+
+[Segunda Parte]
+
+C  G/B        Am
+   Eu quis o perigo
+           D             G
+E até sangrei sozinho entenda
+   D/F#                    Em
+Assim pude trazer você de volta pra mim
+        C
+Quando descobri que é sempre só você
+          D         G        D/F#
+Que me entende do início ao fim
+
+Em
+   E é só você que tem
+   C
+A cura pro meu vício de insistir
+          D
+Nessa saudade que eu sinto
+                F         G
+De tudo que eu ainda não vi
+
+( G  C  D )
+( G  C  D )
+
+[Tercera Parte]
+
+Am
+   Quem me dera ao menos uma vez
+       D
+Acreditar por um instante
+
+Em tudo que existe
+     Bm
+E acreditar que o mundo é perfeito
+       Em
+E que todas as pessoas são felizes
+
+Am
+   Quem me dera ao menos uma vez
+   D
+Fazer com que o mundo
+
+Saiba que seu nome
+   Bm
+Está em tudo e mesmo assim
+    Em
+Ninguém lhe diz ao menos obrigado
+
+Am
+   Quem me dera ao menos uma vez
+D
+  Como a mais bela tribo
+Bm
+   Dos mais belos índios
+     Em
+Não ser atacado por ser inocente
+
+[Segunda Parte]
+
+C  G/B        Am
+   Eu quis o perigo
+           D             G
+E até sangrei sozinho entenda
+   D/F#                    Em
+Assim pude trazer você de volta pra mim
+        C
+Quando descobri que é sempre só você
+          D         G        D/F#
+Que me entende do início ao fim
+
+Em
+   E é só você que tem
+   C
+A cura pro meu vício de insistir
+          D
+Nessa saudade que eu sinto
+                F         G
+De tudo que eu ainda não vi
+
+[Final]
+
+C
+  Nos deram espelhos
+                   F    G
+E vimos um mundo doente
+
+Tentei chorar e não consegui`;export{n as default};

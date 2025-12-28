@@ -1,0 +1,100 @@
+const a=`Título: Era Um Garoto Que Como Eu Amava Os Beatles e Os Rolling Stones
+Artista: Engenheiros do Hawaii
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:56:48
+============================================================
+
+E               B
+   Era um garoto  que como eu
+ A                       B
+  Amava os Beatles e os Rolling Stones
+ E               B
+  Girava o mundo  sempre a cantar
+ A                      B
+  As coisas lindas da América
+
+E                  B
+ Não era belo mas mesmo assim
+   A           B
+Havia uma garota afim
+ E                     B
+  Cantava "Help" and "Ticket to Ride"
+      A               B
+Oh! "Lady Jane" and "Yesterday"
+
+E            A
+  Cantava viva a liberdade
+B                  E
+ Mas uma carta sem esperar
+               A
+Da sua guitarra o separou
+ F#                 B
+  Fora chamado na América
+
+  E   G   A   Bb   B
+Stop com Rolling Stones
+  E   G   A   Bb  B
+Stop com Beatles songs
+
+    A    G#m     F#m  E
+Mandado foi ao Viet__nã
+   A   G#   A Bb B
+lutar com vi__etcongs
+
+E                       A
+ Tata-ratata, tata-ratata
+                        B
+ Tata-ratata, tata-ratata
+                        E
+ Tata-ratata, tata-ratata
+           B
+ Tata-ratata
+
+E             B
+ Era um garoto  que como eu
+A                       B
+ Amava os Beatles e os Rolling Stones
+E              B
+ Girava o mundo  mas acabou
+A                      B
+ Fazendo a guerra do Vietnã
+
+E                   B
+ Cabelos longos não usa mais
+      A             B
+ Não toca a sua guitarra e sim
+E                    B
+ Um instrumento que sempre dá
+    A           B
+ A mesma nota: rata-tata
+
+E               A
+ Não tem amigos, não vê garotas
+B                 E
+ Só gente morta caída ao chão
+              A
+ Ao seu país não voltará
+F#                    B
+ Pois está morto no Vietnã
+
+  E   G   A   Bb   B
+Stop com Rolling Stones
+  E   G   A   Bb  B
+Stop com Beatles songs
+
+    A        G#m F#m     E
+No peito um coração não há
+     A    G# A  A#   B
+Mas duas me_dalhas, sim
+
+E                       A
+ Tata-ratata, tata-ratata
+                        B
+ Tata-ratata, tata-ratata
+                        E
+ Tata-ratata, tata-ratata
+           B
+ Tata-ratata
+
+[Final] E`;export{a as default};

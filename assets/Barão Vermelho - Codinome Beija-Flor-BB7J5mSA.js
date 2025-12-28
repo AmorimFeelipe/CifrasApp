@@ -1,0 +1,49 @@
+const n=`Título: Codinome Beija-Flor
+Artista: Barão Vermelho
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:54:20
+============================================================
+
+A       A7M      A        A7M
+Pra que mentir, fingir que perdoou
+    D7M          E/D       F#m7
+Tentar ficar amigos sem rancor
+    D7M      E/D       D7M              E/D
+A emoção acabou, que coincidência é o amor
+   Bm7   C#m7   D7M   D/E    F7M
+A nossa música nunca mais tocou
+
+A       A7M     A        A7M
+Pra que usar de tanta educação
+     D7M         E/D        F#m7
+Pra destilar terceiras intenções
+   D7M              E/D     D7M
+Desperdiçando o meu mel, devagarzinho flor
+   E/D
+em flor
+Bm7      C#m7    D7M     D/E   F   F/G
+Entre os meus inimigos, Beija-Flor
+
+C7M                    Bm7 E7   F7M
+Eu protegi seu nome por amor,   em um
+        G7        A7M
+codinome Beija-Flor
+C7M                      Bm7 E7     F7M
+Não responda nunca meu amor,nunca    pra
+              G         A7M
+qualquer um na rua Beija-Flor
+F7M            G     F7M
+Que só eu que podia, dentro da tua orelha
+  G
+ fria
+F7M               G          A7M
+Dizer segredos de liquidificador, voce
+F7M          G
+sonhava acordada
+F7M                    G      F7M
+Um jeito de não sentir dor, prendia o
+      G               A7M
+choro e aguava o bom do amor
+  F7M             G7M              A7M
+Prendia o choro e aguava o bom do amor`;export{n as default};

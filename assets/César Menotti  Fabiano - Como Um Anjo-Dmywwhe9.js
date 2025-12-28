@@ -1,0 +1,99 @@
+const n=`Título: Como Um Anjo
+Artista: César Menotti & Fabiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:34:28
+============================================================
+
+[Intro] G  C9  G  C9
+        G  C9  G
+
+[Primera Parte]
+
+        G
+Como um anjo
+                        D
+Você apareceu na minha vida
+            Am
+Uh, como um anjo
+               C          D
+Repleto de ternura de paixão
+
+Oh, oh, oh, oh
+
+        G
+Como um anjo
+                             D
+Encanto e sedução, doce aventura
+              Am
+Huum, que loucura
+              C            D
+Você desabrochando no meu coração
+
+[Pre-Estribillo]
+
+         Em
+Linda menina, com olhar inocente
+                        D
+Malícia, desejo e tentação
+
+Que me cobre de amor e carícia
+                C
+Vencendo a solidão
+ C  G  Am          D
+Só vo_cê pra me fazer feliz
+
+Ai ai ai ai ai ai
+
+[Estribillo]
+
+G                             Em
+Anjo, a luz do sol tá me acordando
+                          C
+Não vá embora, estou te amando
+       Am          D
+Por favor, não me deixe só
+
+Ai ai ai ai ai ai
+
+G                     Em
+Anjo não quero abrir meus olhos
+                         C
+Quero seguir vivendo um sonho
+           D        G  D
+De sermos só você e eu
+
+[Solo] G  Em  C  D  G
+
+[Pre-Estribillo]
+
+         Em
+Linda menina, com olhar inocente
+                        D
+Malícia, desejo e tentação
+
+Que me cobre de amor e carícia
+                C
+Vencendo a solidão
+ C  G  Am          D
+Só vo_cê pra me fazer feliz
+
+Ai ai ai ai ai ai
+
+[Estribillo Final]
+
+G                             Em
+Anjo, a luz do sol tá me acordando
+                          C
+Não vá embora, estou te amando
+       Am          D
+Por favor, não me deixe só
+
+Ai ai ai ai ai ai
+
+G                      Em
+Anjo, não quero abrir meus olhos
+                         C
+Quero seguir vivendo um sonho
+           D        C  G
+De sermos só você e eu`;export{n as default};

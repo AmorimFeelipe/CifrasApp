@@ -1,0 +1,139 @@
+const n=`Título: Regime Fechado
+Artista: Simone & Simaria
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:19:10
+============================================================
+
+[Intro] A  B  C#m  E
+
+  C#m                         A
+Alô, eu tô ligando só pra te dizer
+                           B
+Que eu tô dando queixa de você
+    G#
+Tô na delegacia e o polícia
+                      G#  F#m  E  B/D#  C#m
+
+ C#m
+Roubar um coração é caso sério
+ A
+Sua sentença é viver
+                F#m
+Na mesma cela que eu
+
+Já que nós dois estamos sendo
+    G#
+Acusados de adultério
+
+A
+Eu deixo esse cara
+                  B
+Cê larga essa mulher
+                                         E
+E a gente vai viver a vida como Deus quiser
+     B                 C#m
+Sem dar satisfação da nossa relação
+      A
+Condenados a viver
+          B
+Compartilhando prazer
+               C#m
+Na cela da nossa paixão
+
+A    B
+Uôôôôô
+               C#m
+Não quero advogado
+                 E
+Quero regime fechado com você, amor
+A    B
+Uôôôôô
+                C#m
+Nós somos bagunçados e reféns desse pecado
+A    B
+Uôôôôô
+               C#m
+Não quero advogado
+                 E
+Quero regime fechado com você, amor
+A    B
+Uôôôôô
+                C#m
+Nós somos bagunçados e reféns desse pecado
+
+             A
+É bandido esse meu coração
+  B                    C#m
+Eterno prisioneiro da paixão
+
+( A  B  C#m  E )
+( A  B  C#m  E )
+
+  C#m                           A
+Alô, eu tô ligando só pra te dizer
+                           B
+Que eu tô dando queixa de você
+    G#
+Tô na delegacia e o polícia
+                      G#  F#m E B/D# C#m
+
+    C#m
+Roubar um coração é caso sério
+ A
+Sua sentença é viver
+                F#m
+Na mesma cela que eu
+
+Já que nós dois estamos sendo
+    G#
+Acusados de adultério
+
+A
+Eu deixo esse cara
+                  B
+Cê larga essa mulher
+                                         E
+E a gente vai viver a vida como Deus quiser
+     B                 C#m
+Sem dar satisfação da nossa relação
+      A
+Condenados a viver
+          B
+Compartilhando prazer
+               C#m
+Na cela da nossa paixão
+
+A    B
+Uôôôôô
+               C#m
+Não quero advogado
+                 E
+Quero regime fechado com você, amor
+A    B
+Uôôôôô
+                C#m
+Nós somos bagunçados e reféns desse pecado
+A    B
+Uôôôôô
+               C#m
+Não quero advogado
+                 E
+Quero regime fechado com você, amor
+A    B
+Uôôôôô
+                C#m
+Nós somos bagunçados e reféns desse pecado
+
+             A
+É bandido esse meu coração
+  B                    C#m
+Eterno prisioneiro da paixão
+
+( A  B  C#m  E )
+( A  B  C#m  E )
+
+             A
+É bandido esse meu coração
+  B                    C#m
+Eterno prisioneiro da paixão`;export{n as default};

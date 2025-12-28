@@ -1,0 +1,88 @@
+const n=`Título: Homem Primata
+Artista: Titãs
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:50:24
+============================================================
+
+[Intro] C  F  G  C  F  G
+        C  F  G  F  C  F  C
+        F  G  C  F  G  C  F  G
+
+
+  C
+Desde os primórdios
+  F          G
+Até hoje em dia
+   C
+O homem ainda faz
+         F        G
+O que o macaco fazia
+    C              F         G
+Eu não trabalhava, eu não sabia
+       C                 F        G
+Que o homem criava e também destruía
+
+ C
+Homem primata
+ F        G       C
+Capitalismo Selvagem
+F  G
+Ôô ô
+
+ C
+Homem primata
+ F        G       C
+Capitalismo Selvagem
+F  G
+Ôô ô
+
+C
+Eu aprendi
+   F         G
+A vida é um jogo
+ C
+Cada um por si
+   F           G
+E Deus contra todos
+ C
+Você vai morrer
+   F           G
+E não vai pro céu
+   C
+É bom aprender
+   F        G
+A vida é cruel
+
+ C
+Homem primata
+ F        G       C
+Capitalismo Selvagem
+F  G
+Ôô ô
+
+F         G     F  G        C
+Eu me perdi na selva de pedra
+F         C  F         C
+Eu me perdi, eu me perdi
+
+F         G     F  G        C
+Eu me perdi na selva de pedra
+F         C  F         C
+Eu me perdi, eu me perdi
+
+ F
+"I'm a cave man
+ A young man
+
+C
+I fight with my hands
+With my hands
+
+F
+I am a jungle man
+A monkey man
+
+ C
+Concrete jungle!
+Concrete jungle!`;export{n as default};

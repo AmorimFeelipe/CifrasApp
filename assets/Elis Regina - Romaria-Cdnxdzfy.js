@@ -1,0 +1,120 @@
+const n=`Título: Romaria
+Artista: Elis Regina
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:41:42
+============================================================
+
+[Intro] G
+
+[Primera Parte]
+
+D                  G
+  É de sonho e de pó
+D                  G
+  O destino de um só
+      D              F#7   Bm7
+Feito eu perdido em pensa_mentos
+               F#7
+Sobre o meu cavalo
+Bm7                 E7       Bm7       E7
+    É de laço e de nó, de gibeira o jiló
+       Bm7       F#7    Bm7
+Dessa vida, cumprida a sol
+
+[Estribillo]
+
+        G              A7
+Sou caipira, pirapora nossa
+         D   F#7  Bm
+Senhora de Apare_cida
+    G                    A7
+Ilumina a mina escura e funda
+                 D
+O trem da minha vida
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+    A/C#  D   F#7  Bm
+Senhora  de Apare_cida
+Bm/A  G      D/F#   Em7    A7
+Ilu__mina a mina escura e funda
+                 D7(4/9)
+O trem da minha vida
+
+[Segunda Parte]
+
+D                 G
+  O meu pai foi peão
+D                G
+  Minha mãe solidão
+        D             F#7   Bm7
+Meus irmãos perderam-se na vida
+                F#7
+A custa de aventuras
+ Bm7          E/G#   Bm7      E7
+Descasei, joguei, investi, desisti
+       Bm7   F#7          Bm7
+Se há sorte, eu não sei, nunca vi
+
+[Estribillo]
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+    F#7   D   F#7  Bm
+Senhora  de Apare_cida
+Bm/A  G      D/F#   Em7    A7
+Ilu__mina a mina escura e funda
+                 D
+O trem da minha vida
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+    F#7   D   F#7  Bm
+Senhora  de Apare_cida
+Bm/A  G      D/F#   Em7    A7
+Ilu__mina a mina escura e funda
+                 D7(4/9)
+O trem da minha vida
+
+[Tercera Parte]
+
+D                G
+  Me disseram porém
+D                  G
+  Que eu viesse aqui
+       D          F#7    Bm7
+Pra pedir de romaria e prece
+             F#7
+Paz nos desaventos
+Bm7                    E/G#
+    Como eu não sei rezar
+Bm7                E7
+    Só queria mostrar
+       Bm7        F#7        Bm7
+Meu olhar, meu olhar, meu olhar
+
+[Estribillo]
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+    F#7   D   F#7  Bm
+Senhora  de Apare_cida
+Bm/A  G      D/F#   Em7    A7
+Ilu__mina a mina escura e funda
+                 D
+O trem da minha vida
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+    F#7   D   F#7  Bm
+Senhora  de Apare_cida
+Bm/A  G      D/F#   Em7    A7
+Ilu__mina a mina escura e funda
+                 D
+O trem da minha vida
+
+        G     D/F#  Em7  A7
+Sou caipira, pira__pora nossa
+         Bm     B7   Bm
+Senhora de, Apare___cida`;export{n as default};

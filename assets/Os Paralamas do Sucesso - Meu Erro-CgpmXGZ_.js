@@ -1,0 +1,89 @@
+const n=`Título: Meu Erro
+Artista: Os Paralamas do Sucesso
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:51:08
+============================================================
+
+[Intro] F  Fm
+
+[Riff Intro] C  C7  F  Fm
+             C  C7  F  Fm
+             C  C7  F  Fm
+             C  C7  F  Fm
+
+[Primera Parte]
+
+C                          Em
+  Eu quis dizer você não quis escutar
+  F                    Fm
+Agora não peça não me faça promessas
+
+         C                    Em
+Eu não quero te ver nem quero acreditar
+         F                 Fm
+Que vai ser diferente que tudo mudou
+
+[Segunda Parte]
+
+      Em                  Am
+Você diz não saber o que houve de errado
+        D
+E o meu erro foi crer
+       Fm                   C
+Que estar ao seu lado bastaria
+
+         F         Fm             C
+Ah! Meu Deus, era tudo que eu queria
+    F                  Fm
+Eu dizia seu nome, não    me abandone
+       C
+Jamais
+
+[Riff Intro] C  C7  F  Fm
+             C  C7  F  Fm
+
+[Tercera Parte]
+
+C                        Em
+  Mesmo querendo eu não vou me enganar
+       F
+Eu conheço os seus passos,
+    Fm
+Eu vejo os seus erros
+
+        C            Em
+Não há nada de novo,
+
+Ainda somos iguais
+   F
+Então não me chame
+    Fm
+Não olhe pra trás
+
+[Segunda Parte]
+
+      Em                  Am
+Você diz não saber o que houve de errado
+        D
+E o meu erro foi crer
+       Fm                   C
+Que estar ao seu lado bastaria
+
+         F         Fm             C
+Ah! Meu Deus, era tudo que eu queria
+    F                  Fm
+Eu dizia seu nome, não    me abandone
+       C
+Jamais
+
+[Final]
+
+   C  C7  F  Fm
+Jamais
+   C  C7  F  Fm
+Jamais
+   C  C7  F  Fm
+Jamais          me abandone
+   C9
+Jamais`;export{n as default};

@@ -1,0 +1,95 @@
+const n=`Título: Vento No Litoral
+Artista: Legião Urbana
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:47:10
+============================================================
+
+[Intro] Am  Em  Am  Em
+        F  C  F  C
+
+[Primera Parte]
+
+    Am
+De tarde quero descansar
+    Em
+Chegar até a praia e ver
+      Am
+Se o vento ainda está forte e vai
+     Em
+Ser bom subir nas pedras sei
+     C
+Que faço isso pra esquecer
+    Bb9
+Eu deixo a onda me acertar
+     Am                       F
+E o vento vai levando tudo embora
+
+( G  Am  F  G  C )
+
+[Segunda Parte]
+
+F                 Em
+  Agora está tão longe ver
+                Dm
+A linha do horizonte me distrai
+             G                         F
+Dos nossos planos é que tenho mais saudade
+                  Em                  Dm
+Quando olhávamos juntos na mesma direção
+         Bb9                     Am
+Aonde está você agora além de aqui
+
+Dentro de mim?
+
+( F  G  Am )
+( F  G  Am )
+( Em  Am  Em )
+( C  Bb9 )
+( Am  F  G )
+( Am  F  G )
+
+[Tercera Parte]
+
+Cm
+   Agimos certo sem querer
+G/B
+    Foi só o tempo que errou
+Bb9
+    Vai ser difícil sem você
+     A4             A            Dm
+Porque você está comigo o tempo todo
+
+Quando vejo o mar
+C
+  Existe algo que diz
+   G/B       Am            G           F
+A vida continua e se entregar é uma bobagem
+
+ Em       A7            Dm
+Já que você não está aqui
+               Dm/C     Bb9    G
+O que posso fazer é cuidar de mim
+       C                 F
+Quero ser feliz ao menos
+               Bb9        G
+Lembra que o plano era ficarmos bem?
+
+[Cuarta Parte]
+
+Am    Em                 Am    G
+   Ei,  olha só o que eu achei
+C               F  E4  E
+  Cavalos-marinhos
+
+( Am  Em  Am  Em )
+
+         C
+Sei que faço isso pra esquecer
+    Bb9
+Eu deixo a onda me acertar
+     Am                       F   G
+E o vento vai levando tudo embora
+
+[Final] G  Am  F
+        G  C  F  C`;export{n as default};

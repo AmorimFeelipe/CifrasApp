@@ -1,0 +1,91 @@
+const o=`Título: Nome Proibido
+Artista: Simone Mendes
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:23:44
+============================================================
+
+[Intro] F  G  Em  Am
+
+[Primera Parte]
+
+                  F
+Não se pergunta de ex
+               G
+Pra quem terminou
+                     Em
+Se eu não cheguei com ela
+              Am
+É porque com ela eu não tô
+
+[Pre-Estribillo]
+
+           F
+Não me interessa se ela tá indo em festa
+          C
+Bebendo à beça, beijando à beça
+                  Am
+Cês sabem que eu gosto e falar dela não faz bem
+                 G
+Mesmo assim cês falam, cês são amigos de quem?
+
+[Estribillo]
+
+ Dm                                        F
+   Não toca nesse assunto chato, por favor
+                                   C
+O nome dela é proibido aonde eu tô
+          C                               G
+É que acabou o namoro e não acabou o amor
+      G                               Dm
+É que acabou o namoro e não acabou o amor
+
+ Dm                                        F
+   Não toca nesse assunto chato, por favor
+                                   C
+O nome dela é proibido aonde eu tô
+          C                               G
+É que acabou o namoro e não acabou o amor
+      G                               Dm
+É que acabou o namoro e não acabou o amor
+
+( F  G  Em  Am )
+
+[Pre-Estribillo]
+
+           F
+Não me interessa se ela tá indo em festa
+          C
+Bebendo à beça, beijando à beça
+                  Am
+Cês sabem que eu gosto e falar dela não faz bem
+                 G
+Mesmo assim cês falam, cês são amigos de quem?
+
+[Estribillo]
+
+ Dm                                        F
+   Não toca nesse assunto chato, por favor
+                                   C
+O nome dela é proibido aonde eu tô
+          C                               G
+É que acabou o namoro e não acabou o amor
+      G                               Dm
+É que acabou o namoro e não acabou o amor
+Dm                                        F
+   Não toca nesse assunto chato, por favor
+                                   C
+O nome dela é proibido aonde eu tô
+          C                               G
+É que acabou o namoro e não acabou o amor
+      G                               Dm
+É que acabou o namoro e não acabou o amor
+
+( F )
+
+C
+    É que acabou o namoro e não acabou o amor
+G                                          Dm
+    É que acabou o namoro e não acabou o amor
+F            C
+   Meu amor`;export{o as default};

@@ -1,0 +1,77 @@
+const n=`Título: Alvorada Voraz
+Artista: RPM
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:56:01
+============================================================
+
+[Intro] Dm  C  Dm  C
+        Dm  C  Dm  C
+
+     Dm                  C
+Na virada do século, alvorada voraz
+      Dm                         C
+Nos aguardam exércitos, que nos guardam da
+paz
+              Dm  C  Dm  C
+Que paz?
+
+  Dm
+A face do mal, um grito de horror
+   Am
+Um fato normal, um êxtase de dor
+  Dm
+E medo de tudo, medo do nada
+Am
+Medo da vida, assim engatilhada
+
+Am       Bb      Am        Bb
+Fardas e forças, forjam as armações
+Am              Bb
+Farsas e jogos, armas de fogo
+   Am                    Bb
+Um corte exposto, em seu rosto amor... e
+C
+eu!
+
+[Estribillo]
+
+      Dm                                C
+Nesse mundo assim, vendo esse filme passar
+     Dm                                  C
+Assistindo ao fim, vendo o meu tempo passar
+
+( Dm  C  Dm  C )
+
+     Dm                     C
+Apocalípticamente, como um clip de ação
+        Dm                            C
+Um clic seco, um revólver, aponta em meu
+coração
+
+   Dm
+O caso morel, o crime da mala
+  Am
+Coroa Brastel, o escandalo das joias
+Dm
+É um contrabando,pois nesse pais é o
+     Am
+dinheiro quem manda
+
+Am               Bb
+Juram que não torturam ninguém
+Am                 Bb
+Agem assim pro seu próprio bem
+Am              Bb
+São tão legais, foras da lei
+Am                  Bb         C
+Sabem de tudo o que eu não sei
+
+[Estribillo]
+
+      Dm                                C
+Nesse mundo assim, vendo esse filme passar
+     Dm                                  C
+Assistindo ao fim, vendo o meu tempo passar
+
+( Dm  C  Dm  C  Dm )`;export{n as default};

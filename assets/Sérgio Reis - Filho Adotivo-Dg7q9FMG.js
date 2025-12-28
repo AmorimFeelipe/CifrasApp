@@ -1,0 +1,132 @@
+const n=`Título: Filho Adotivo
+Artista: Sérgio Reis
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:03:20
+============================================================
+
+[Intro] G  A  D
+        Bm  G  A  D
+
+[Primera Parte]
+
+                    G              D
+Com sacrifício eu criei meus sete filhos
+    A               D
+Do meu sangue eram seis
+         Bm               Em
+E um peguei com quase um mês
+                   B              Em
+Fui viajante, fui roceiro, fui andante
+                      A
+E pra alimentar meus filhos
+       G              D
+Não comi pra mais de vez
+                     G        D
+Sete crianças, sete bocas inocentes
+    A                 D
+Muito pobres, mas contentes
+     Bm             Em
+Não deixei nada faltar
+                      B              Em
+Foram crescendo, foi ficando mais difícil
+                    A
+Trabalhei de sol a sol
+          G              D
+Mas eles tinham que estudar
+
+Meu sofrimento
+         G            D
+Ah! Meu Deus valeu a pena
+     A               D
+Quantas lágrimas chorei
+          Bm             Em
+Mas tudo foi com muito amor
+
+Sete diplomas
+       B               Em
+Sendo seis muito importantes
+                        A
+Que as custas de uma enxada
+       G            D
+Conseguiram ser doutor
+
+[Estribillo 1]
+
+            G      A                  D
+Hoje estou velho, meus cabelos branqueados
+       Bm            Em
+O meu corpo está surrado
+        A              D
+Minhas mãos nem mexem mais
+        G             A            D
+Uso bengala, sei que dou muito trabalho
+            Bm        Em
+Sei que às vezes atrapalho
+      A            D
+Meus filhos até demais
+
+( G  A  D )
+( Bm  G  A  D )
+
+[Segunda Parte]
+
+                     G             D
+Passou o tempo e eu fiquei muito doente
+   A            D
+Hoje vivo num asilo
+         Bm           Em
+E só um filho vem me ver
+                    B
+Esse meu filho, coitadinho
+         Em
+Muito honesto
+                   A
+Vive apenas do trabalho
+          G          D
+Que arranjou para viver
+
+Mas Deus é grande
+    G                 D
+Vai ouvir as minhas preces
+   A               D
+Esse meu filho querido
+     Bm         Em
+Vai vencer, eu sei que vai
+
+Faz muito tempo
+     B                  Em
+Que não vejo os outros filhos
+                    A
+Sei que eles estão bem
+          G          D
+E não precisam mais do pai
+                   G              D
+E um belo dia, me sentindo abandonado
+       A                 D
+Ouvi uma voz bem do meu lado
+    Bm                Em
+Pai eu vim pra te buscar
+
+Arrume as malas
+     B               Em
+Vem comigo, pois venci
+                        A
+Comprei casa e tenho esposa
+         G           D
+E o seu neto vai chegar
+
+[Estribillo 2]
+
+        G         A               D
+De alegria eu chorei e olhei pro céu
+     Bm           Em
+Obrigado, meu Senhor
+        A           D
+A recompensa já chegou
+              G            A              D
+Meu Deus, proteja os meus seis filhos queridos
+         Bm           Em
+Mas foi meu filho adotivo
+         A            D  G  D
+Que a este velho amparou`;export{n as default};

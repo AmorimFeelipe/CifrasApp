@@ -1,0 +1,113 @@
+const n=`Título: Amigo Apaixonado
+Artista: Victor & Leo
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:32:13
+============================================================
+
+[Intro] Am  D  C  D
+        Am  D  C  D
+
+[Primera Parte]
+
+          G                        D
+Pensando bem eu gosto mesmo de você
+                        Em
+Pensando bem quero dizer
+    Am                 D
+Que amo ter te conhecido
+         G                        D
+Nada melhor que eu deixar você saber
+                          Em
+Pois é tão triste esconder
+Am                    D
+Um sentimento tão bonito
+
+[Segunda Parte]
+
+      C
+Hoje mesmo vou te procurar
+G
+  Falar de mim
+         C
+Sei que nem chegou a imaginar
+        G                        D
+Que eu pudesse te amar tanto assim
+
+[Estribillo]
+
+ G              D           Em
+Sempre fui um grande amigo seu
+                C                 G
+Só que não sei mais se assim vai ser
+              D            C
+Sempre te contei segredos meus
+             D           G
+Estou apaixonado por você
+           D           Em
+Esse amor entrou no coração
+                C              G
+Agora diz o que é que a gente faz
+            D              C
+Pode dizer sim ou dizer não
+             D           G
+Ser só seu amigo não dá mais
+
+[Solo] G  D  Em  C
+       G  D  C  D
+
+[Primera Parte]
+
+         G                        D
+Nada melhor que eu deixar você saber
+                          Em
+Pois é tão triste esconder
+    Am                 D
+Um sentimento tão bonito
+
+[Segunda Parte]
+
+      C
+Hoje mesmo vou te procurar
+G
+  Falar de mim
+         C
+Sei que nem chegou a imaginar
+          G                     D
+Que eu pudesse te amar tanto assim
+
+[Estribillo]
+
+ G              D           Em
+Sempre fui um grande amigo seu
+                C                 G
+Só que não sei mais se assim vai ser
+              D            C
+Sempre te contei segredos meus
+             D          G
+Estou apaixonado por você
+              D          Em
+Esse amor entrou no coração
+                C              G
+Agora diz o que é que a gente faz
+            D            C
+Pode dizer sim ou dizer não
+             D            G
+Ser só seu amigo não dá mais
+
+                D           Em
+Sempre fui um grande amigo seu
+                C                 G
+Só que não sei mais se assim vai ser
+              D            C
+Sempre te contei segredos meus
+             D          G
+Estou apaixonado por você
+              D          Em
+Esse amor entrou no coração
+                C              G
+Agora diz o que é que a gente faz
+            D            C
+Pode dizer sim ou dizer não
+             D            G
+Ser só seu amigo não dá mais`;export{n as default};

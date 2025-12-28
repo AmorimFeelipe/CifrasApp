@@ -1,0 +1,147 @@
+const n=`Título: Leilão
+Artista: César Menotti & Fabiano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:34:43
+============================================================
+
+[Intro] D
+
+[Primera Parte]
+
+         D
+Estou à beira da loucura
+     A
+Ninguém mais me segura
+    G                      D
+Tô fora da sua vida eu já fui
+
+[Segunda Parte]
+
+         A
+Quero a minha liberdade
+        F#m          Bm
+Posso até sentir saudades
+         G                   A
+Sei que custa dominar o coração
+
+[Pre-Estribillo]
+
+                     Em
+Mas meu amor não dá mais
+                G
+Pra você tanto faz
+                  D
+Eu me entrego já fui
+                  Em
+Eu quero a felicidade
+             G                  A
+Saber na verdade quem gosta de mim
+
+[Estribillo]
+
+                    A
+Eu vou fazer um leilão
+                           G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                       A
+Eu prefiro que seja você
+
+
+Eu vou fazer um leilão
+                           G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                A           G          Bm
+Estou aqui tão perto me arremate pra você
+
+[Solo] Em  Bm  G  A
+
+[Primera Parte]
+
+         D
+Estou à beira da loucura
+     A
+Ninguém mais me segura
+    G                      D
+Tô fora da sua vida eu já fui
+
+[Segunda Parte]
+
+         A
+Quero a minha liberdade
+        F#m          Bm
+Posso até sentir saudades
+         G                   A
+Sei que custa dominar o coração
+
+[Pre-Estribillo]
+
+                     Em
+Mas meu amor não dá mais
+                G
+Pra você tanto faz
+               D
+Eu me entrego já fui
+                  Em
+Eu quero a felicidade
+             G                  A
+Saber na verdade quem gosta de mim
+
+[Estribillo Final]
+
+                    A
+Eu vou fazer um leilão
+                           G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                       A
+Eu prefiro que seja você
+
+Eu vou fazer um leilão
+                          G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                A           G          D
+Estou aqui tão perto me arremate pra você
+
+
+Eu vou fazer um leilão
+
+Quem dá mais pelo meu coração
+
+Me ajude voltar a viver
+
+Eu prefiro que seja você
+
+
+Eu vou fazer um leilão
+
+Quem dá mais pelo meu coração
+
+Me ajude voltar a viver
+
+Estou aqui tão perto me arremate pra você
+
+                    A
+Eu vou fazer um leilão
+                           G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                       A
+Eu prefiro que seja você
+
+                    A
+Eu vou fazer um leilão
+                           G
+Quem dá mais pelo meu coração
+                     D
+Me ajude voltar a viver
+                A           G          D
+Estou aqui tão perto me arremate pra você`;export{n as default};

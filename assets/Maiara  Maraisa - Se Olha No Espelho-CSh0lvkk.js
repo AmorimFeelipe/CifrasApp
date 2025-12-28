@@ -1,0 +1,114 @@
+const n=`Título: Se Olha No Espelho
+Artista: Maiara & Maraisa
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 27/12/2025 23:16:17
+============================================================
+
+[Intro] C
+
+[Primera Parte]
+
+                      C9
+Ela não sabe se produzir
+                            Am
+Não sabe escolher a cor do batom
+ A7                         Dm
+Ela não faz ideia do que vestir
+                            G
+Tá doida pra por o seu moletom
+
+                             C9
+Pra ficar no quarto deitada na cama
+                                  Am
+Se escondendo do mundo e de quem te ama
+   A7                          Dm
+E fez da internet sua melhor amiga
+                      G
+Fugindo da realidade da vida
+
+[Pre-Estribillo]
+
+                                 C9
+Ela não tem noção do quanto ela é linda
+                                Am
+E que quando sorri mais bonita ainda
+A7               Dm          F
+Só que e__la não sabe que pra te ver feliz
+            G                  C9   G
+Eu faria de tudo pra mudar seu mundo
+
+[Estribillo]
+
+               C9
+Coloque um vestido e um batom vermelho
+         Am                    A7
+E experimenta, se olha no espelho
+            Dm
+Pra gente sair escolha alguma roupa
+           F                      G
+Você fica linda usando qualquer coisa
+
+               C9
+Mas se não quiser fico aí com você
+             Am
+No sábado à noite assistindo TV
+           Dm
+Um filme ruim com um vinho barato
+         F                     G
+O que importa é ficar do seu lado
+      C9   G
+Do seu lado
+
+[Pre-Estribillo]
+
+                                  C9
+Ela não tem noção do quanto ela é linda
+                                Am
+E que quando sorri mais bonita ainda
+A7               Dm            F
+Só que e__la não sabe que pra te ver feliz
+          G                   C9    G
+Eu faria de tudo pra mudar seu mundo
+
+[Estribillo]
+
+               C9
+Coloque um vestido e um batom vermelho
+         Am
+E experimenta, se olha no espelho
+            Dm
+Pra gente sair escolha alguma roupa
+           F                     G
+Você fica linda usando qualquer coisa
+
+              C9
+Mas se não quiser fico aí com você
+             Am
+No sábado à noite assistindo TV
+           Dm
+Um filme ruim com um vinho barato
+         F                     G
+O que importa é ficar do seu lado
+        C9
+Do seu lado
+
+               C9
+Coloque um vestido e um batom vermelho
+         Am
+E experimenta, se olha no espelho
+            Dm
+Pra gente sair escolha alguma roupa
+           F                      G
+Você fica linda usando qualquer coisa
+
+               C9
+Mas se não quiser fico aí com você
+             Am
+No sábado à noite assistindo TV
+           Dm
+Um filme ruim com um vinho barato
+         F                     G
+O que importa é ficar do seu lado
+          C9
+  Do seu lado`;export{n as default};
