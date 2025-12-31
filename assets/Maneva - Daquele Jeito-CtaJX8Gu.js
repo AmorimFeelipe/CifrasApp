@@ -1,0 +1,108 @@
+const e=`Título: Daquele Jeito
+Artista: Maneva
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 18:07:08
+============================================================
+
+[Primera Parte]
+
+C                          Bm
+ É fim de tarde, eu tô daquele jeito
+Em
+ Sem pressa, bem calmo, direito
+C                Bm
+ Tô devagar, eu tô sem maldade
+Em
+ Pirando, descalço, à vontade
+       C                     Bm
+Na calçada de casa, vendo a bola rolar
+    Em
+De longe observo você chegar
+
+[Segunda Parte]
+
+C                Bm              Em
+ Cabelo ao vento,  reparo no seu andar
+C             Bm
+ Fico sem jeito
+           Em
+Porque eu sei do seu preconceito
+C                  Bm
+ Com moleque maloqueiro que só quer pirar
+Em
+ Com moleque maloqueiro que só quer cantar
+C                     Bm
+ Perna doendo por causa do futebol
+Em
+Olho vermelho por causa do sol
+C                  Bm
+ Sou moleque maloqueiro que só quer pirar
+Em
+  Sou moleque maloqueiro que só quer cantar
+C                     Bm
+ Perna doendo por causa do futebol
+Em
+Olho vermelho por causa do sol
+C                  Bm                  Em
+ Sou moleque maloqueiro que só quer pirar
+
+[Primera Parte]
+
+C                          Bm
+ É fim de tarde, eu tô daquele jeito
+Em
+ Sem pressa, bem calmo, direito
+C                Bm
+ Tô devagar, eu tô sem maldade
+Em
+ Pirando, descalço, à vontade
+       C                     Bm
+Na calçada de casa, vendo a bola rolar
+    Em
+De longe observo você chegar
+
+[Segunda Parte]
+
+C                Bm              Em
+ Cabelo ao vento,  reparo no seu andar
+C             Bm
+ Fico sem jeito
+           Em
+Porque eu sei do seu preconceito
+C                  Bm
+ Com moleque maloqueiro que só quer pirar
+Em
+ Com moleque maloqueiro que só quer cantar
+C                     Bm
+ Perna doendo por causa do futebol
+Em
+Olho vermelho por causa do sol
+C                  Bm                  Em
+ Sou moleque maloqueiro que só quer pirar
+
+[Solo] C  Bm  Em
+       C  Bm  Em
+       C  Bm  Em
+       C  Bm  Em
+
+[Final]
+
+C                  Bm
+ Sou moleque maloqueiro que só quer pirar
+Em
+  Sou moleque maloqueiro que só quer cantar
+C                     Bm
+ Perna doendo por causa do futebol
+Em
+Olho vermelho por causa do sol
+C                  Bm
+ Sou moleque maloqueiro que só quer pirar
+Em
+  Sou moleque maloqueiro que só quer cantar
+C                     Bm
+ Perna doendo por causa do futebol
+Em
+Olho vermelho por causa do sol
+C                  Bm                  Em
+ Sou moleque maloqueiro que só quer pirar`;export{e as default};

@@ -1,0 +1,134 @@
+const n=`Título: Cracudo
+Artista: Tierry
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:48:00
+============================================================
+
+[Intro] C#m  E  B  F#  C#m  B
+
+[Primera Parte]
+
+    B
+Tô mal
+                              F#
+Tô tão mal depois que ela se foi
+                              C#m
+Sem dar tchau me deu fama de boi
+                           E
+Comprei casa enxoval do bebê
+
+Que eu sonhei tanto em ter
+
+    B
+Tô mal
+                           F#
+Não levanto nem pra tomar banho
+                      C#m
+O trabalho acabei largando
+                            E
+E os boletos insiste em chegar
+
+A luz tá pra cortar
+
+ C#m             E
+Sabe o fundo do poço
+       B
+Eu tô lá
+
+[Estribillo]
+
+   F#           C#m
+Se eu virar cracudo
+          E                       B
+Eu vou fumar esse seu coração de pedra
+                  F#
+Nem que eu venda tudo
+             C#m
+Se eu virar manguaça
+          E                       B
+Eu vou pegar esse seu coração de gelo
+                F#
+E tomar com cachaça
+
+              C#m
+Se eu virar cracudo
+          E                       B
+Eu vou fumar esse seu coração de pedra
+                  F#
+Nem que eu venda tudo
+             C#m
+Se eu virar manguaça
+          E                       B
+Eu vou pegar esse seu coração de gelo
+                F#
+E tomar com cachaça
+      E           F#
+Se o vício não matar
+    B
+Saudade mata
+
+( F#  C#m  E  B  F# )
+
+[Primera Parte]
+
+    B
+Tô mal
+                           F#
+Não levanto nem pra tomar banho
+                      C#m
+O trabalho acabei largando
+                            E
+E os boletos insiste em chegar
+
+A luz tá pra cortar
+
+ C#m             E
+Sabe o fundo do poço
+       B
+Eu tô lá
+
+[Estribillo]
+
+   F#           C#m
+Se eu virar cracudo
+          E                       B
+Eu vou fumar esse seu coração de pedra
+                  F#
+Nem que eu venda tudo
+             C#m
+Se eu virar manguaça
+          E                       B
+Eu vou pegar esse seu coração de gelo
+                F#
+E tomar com cachaça
+
+              C#m
+Se eu virar cracudo
+          E                       B
+Eu vou fumar esse seu coração de pedra
+                  F#
+Nem que eu venda tudo
+             C#m
+Se eu virar manguaça
+          E                       B
+Eu vou pegar esse seu coração de gelo
+                F#
+E tomar com cachaça
+
+              C#m
+Se eu virar cracudo
+          E                       B
+Eu vou fumar esse seu coração de pedra
+                  F#
+Nem que eu venda tudo
+             C#m
+Se eu virar manguaça
+          E                       B
+Eu vou tomar esse seu coração de gelo
+              F#
+Junto com cachaça
+      E           F#
+Se o vício não matar
+           B
+Saudade mata`;export{n as default};

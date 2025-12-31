@@ -1,0 +1,129 @@
+const n=`Título: Dengo
+Artista: João Gomes
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:52:07
+============================================================
+
+[Intro] Bm  A  E  F#
+
+[Primera Parte]
+
+     Bm
+Quando cê vai perceber
+
+Que eu lutei pra te ter?
+
+Te quero ao meu lado
+    A
+Eu sei que a minha fama não é boa
+
+E o povo me chama de beijo safado
+ E                  F#
+Mas, eu não quero mais
+
+Essa vida de farra
+
+       Bm
+Quando é que cê vai perceber
+
+Que eu lutei pra te ter?
+
+Te quero ao meu lado
+    A
+Eu sei que a minha fama não é boa
+
+E o povo me chama de beijo safado
+ E                  F#
+Mas, eu não quero mais
+
+Essa vida de farra
+
+[Estribillo]
+
+                  Bm
+Tô precisando de dengo
+                         A
+Não vê? Tô nem aí pra rolê
+
+Tô nem aí pra rolê
+                  E
+Só tô querendo você
+                     F#
+Eu só tô querendo você
+
+                  Bm
+Tô precisando de dengo
+                         A
+Não vê? Tô nem aí pra rolê
+
+Tô nem aí pra rolê
+                  E
+Só tô querendo você
+                     F#
+Eu só tô querendo você
+                     Bm
+Larga tudo e vem me ver
+
+( A  E  F# )
+
+[Primera Parte]
+
+  Bm
+Quando cê vai perceber
+
+Que eu lutei pra te ter?
+
+Te quero ao meu lado
+    A
+Eu sei que a minha fama não é boa
+
+E o povo me chama de beijo safado
+ E                  F#
+Mas, eu não quero mais
+
+Essa vida de farra
+
+       Bm
+Quando é que cê vai perceber
+
+Que eu lutei pra te ter?
+
+Te quero ao meu lado
+    A
+Eu sei que a minha fama não é boa
+
+E o povo me chama de beijo safado
+ E                  F#
+Mas, eu não quero mais
+
+Essa vida de farra
+
+[Estribillo]
+
+                  Bm
+Tô precisando de dengo
+                         A
+Não vê? Tô nem aí pra rolê
+
+Tô nem aí pra rolê
+                  E
+Só tô querendo você
+                     F#
+Eu só tô querendo você
+
+                  Bm
+Tô precisando de dengo
+                         A
+Não vê? Tô nem aí pra rolê
+
+Tô nem aí pra rolê
+                  E
+Só tô querendo você
+                     F#
+Eu só tô querendo você
+                     Bm
+Larga tudo e vem me ver
+
+[Final] A  E  F#
+        E  A  Bm`;export{n as default};

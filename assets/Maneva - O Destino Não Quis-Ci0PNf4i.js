@@ -1,0 +1,103 @@
+const e=`Título: O Destino Não Quis
+Artista: Maneva
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 18:06:37
+============================================================
+
+[Intro] F#m  D  A  E
+        F#m  D  A  E
+
+[Primera Parte]
+
+F#m               D                     A
+  O destino não quis a gente junto pra sempre
+                 E                        F#m
+Mas foi um privilégio me encontrar com você
+            D                     A
+Tudo aconteceu tão rápido e de repente
+              E                       F#m
+Mas foi suficiente pra eu nunca esquecer
+         D               A
+Todas risadas, todas as falas
+               E                     F#m
+Não foram ensaiadas tinham de acontecer
+           D                     A
+As minhas lágrimas não foram forjadas
+              E
+Prefiro o sofrer do que nunca conhecer
+
+[Segunda Parte]
+
+F#m                 D                      A
+  Teu olhar bem de perto e a força do teu beijo
+              E                         F#m
+Esse novo perfume, do teu cheiro com o meu
+             D                         A
+Saiba que mudou o meu velho mundo pra sempre
+                    E                      F#m
+Se eu viver outras vidas vou lembrar de você
+           D                   A
+Imagino momentos, viajo em um tempo
+          E                       F#m
+Crio uma vida em que estou com você
+          D                  A
+Me sinto lento, triste e cinzento
+           E                       Bm
+Quando percebo que não está por aqui
+                  D
+Mas, perto vou estar, quando lembrar
+A                   E
+ Do teu grande coração
+Bm               D
+ E até sem perceber, que mesmo longe
+A                E
+ Seremos eu e você
+
+[Primera Parte]
+
+F#m               D                     A
+  O destino não quis a gente junto pra sempre
+                 E                        F#m
+Mas foi um privilégio me encontrar com você
+            D                     A
+Tudo aconteceu tão rápido e de repente
+              E                       F#m
+Mas foi suficiente pra eu nunca esquecer
+         D               A
+Todas risadas, todas as falas
+               E                     F#m
+Não foram ensaiadas tinham de acontecer
+           D                     A
+As minhas lágrimas não foram forjadas
+              E
+Prefiro o sofrer do que nunca conhecer
+
+[Segunda Parte]
+
+F#m                 D                      A
+  Teu olhar bem de perto e a força do teu beijo
+              E                         F#m
+Esse novo perfume, do teu cheiro com o meu
+             D                         A
+Saiba que mudou o meu velho mundo pra sempre
+                    E                      F#m
+Se eu viver outras vidas vou lembrar de você
+           D                   A
+Imagino momentos, viajo em um tempo
+          E                       F#m
+Crio uma vida em que estou com você
+          D                  A
+Me sinto lento, triste e cinzento
+           E                       Bm
+Quando percebo que não está por aqui
+                  D
+Mas, perto vou estar, quando lembrar
+A                   E
+ Do teu grande coração
+Bm               D
+ E até sem perceber, que mesmo longe
+A                E
+ Seremos eu e você
+
+[Final]`;export{e as default};

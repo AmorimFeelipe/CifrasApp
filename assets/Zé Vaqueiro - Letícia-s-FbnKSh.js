@@ -1,0 +1,108 @@
+const n=`Título: Letícia
+Artista: Zé Vaqueiro
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:44:14
+============================================================
+
+Am                 Em
+Por que você foi me iludir
+    G              D
+Falando que ia voltar
+    Am                  Em
+Tu me deixou aqui sozinho
+                  G               D
+Comprei uma São Braz pra gente tomar
+
+[Pre-Estribillo]
+
+    Am                      Em
+Eu tô te esperando aqui no bar
+          G                    D
+Marcou 7 horas já são mais de 11
+ Am                          Em
+Pensa que eu não vi você passar
+            G
+Na moto amarela, a tatuagem
+         D
+Eu conheci de longe
+
+[Estribillo]
+
+   Am       Em
+Letícia, Letícia
+               G
+Pra onde você vai
+                  D
+Com aquele mototaxista?
+   Am       Em
+Letícia, Letícia
+               G
+Eu só saio do bar com
+                 D
+Você ou com a polícia
+
+   Am       Em
+Letícia, Letícia
+               G
+Pra onde você vai
+                  D
+Com aquele mototaxista?
+   Am       Em
+Letícia, Letícia
+               G
+Eu só saio do bar com
+                 D
+Você ou com a polícia
+
+[Primera Parte]
+
+     Am                 Em
+Por que você foi me iludir
+    G              D
+Falando que ia voltar
+    Am                  Em
+Tu me deixou aqui sozinho
+                  G               D
+Comprei uma São Braz pra gente tomar
+
+[Pre-Estribillo]
+
+    Am                      Em
+Eu tô te esperando aqui no bar
+          G                    D
+Marcou 7 horas já são mais de 11
+ Am                          Em
+Pensa que eu não vi você passar
+            G
+Na moto amarela, a tatuagem
+         D
+Eu conheci de longe
+
+[Estribillo]
+
+   Am       Em
+Letícia, Letícia
+               G
+Pra onde você vai
+                  D
+Com aquele mototaxista?
+   Am       Em
+Letícia, Letícia
+               G
+Eu só saio do bar com
+                 D
+Você ou com a polícia
+
+   Am       Em
+Letícia, Letícia
+               G
+Pra onde você vai
+                  D
+Com aquele mototaxista?
+   Am       Em
+Letícia, Letícia
+               G
+Eu só saio do bar com
+                 D
+Você ou com a polícia`;export{n as default};

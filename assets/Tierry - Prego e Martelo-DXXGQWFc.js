@@ -1,0 +1,88 @@
+const e=`Título: Prego e Martelo
+Artista: Tierry
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:48:52
+============================================================
+
+[Intro] Eb  Bb  Fm  Ab  Bb
+
+[Solo]
+
+[Primera Parte]
+
+Eb
+Ela quer voltar me pediu perdão
+Bb
+Mas eu só aceito sob a minha condição
+Fm
+Sem descontar em mim a sua frustração
+Ab                           Bb
+Não é justo eu pagar por uma desilusão
+
+                Eb
+Se for pra maltratar melhor nem encostar
+               Bb
+Se for pra me ferir passa longe de mim
+            Fm
+Você já me esgamou já me despedaçou
+               Ab                        Bb
+Uma parte eu já colei a outra nem prestou
+
+[Estribillo]
+
+ Eb
+Meu coração não vai ser prego
+Bb
+Na parede pra você ser o martelo
+Fm
+E pô pô pô pô pô sempre batendo e
+Ab            Bb
+Pô pô pô pô para que tá doendo
+
+Eb
+Meu coração não vai ser prego
+Bb
+Na parede pra você ser o martelo
+Fm
+E pô pô pô pô pô sempre batendo e
+Ab
+Pô pô pô
+Bb                         Eb  Bb  Fm  Ab
+Assim você acaba me perdendo
+  Bb
+
+
+[Segunda Parte]
+
+               Eb
+Se for pra maltratar Melhor nem encostar
+               Bb
+Se for pra me ferir Passa longe de mim
+            Fm
+Você já me esgamou Já me despedaçou
+               Ab                        Bb
+Uma parte eu já colei a outra nem prestou
+
+[Estribillo]
+
+ Eb
+Meu coração não vai ser prego
+Bb
+Na parede pra você ser o martelo
+Fm
+E pô pô pô pô pô Sempre batendo e
+Ab           Bb
+Pô pô pô pô Para que tá doendo
+
+Eb
+Meu coração não vai ser prego
+Bb
+Na parede pra você ser o martelo
+Fm
+E pô pô pô pô pô Sempre batendo e
+Ab
+Pô pô pô
+Bb                         Eb  Bb  Fm  Ab
+Assim você acaba me perdendo
+  Bb`;export{e as default};

@@ -1,0 +1,126 @@
+const n=`Título: Aquelas Coisas (part. Tarcísio do Acordeon)
+Artista: João Gomes
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:53:37
+============================================================
+
+[Intro] D#m  F#  B  A#7
+        D#m  F#  B  A#7
+
+[Primera Parte]
+
+D#m                F#
+    Onde é que cê tá?
+          B            A#7
+Fala pra mim se vai rolar
+
+Que eu tô afim
+              D#m              F#
+Sei que já é tarde, rodei a cidade
+            B                    A#7
+Mas você insiste em se esconder, eh
+                  D#m
+Responde essa mensagem
+           F#
+Isso é maldade
+         B            A#7
+Quero ficar com você, eh
+
+[Estribillo]
+
+                   D#m
+Quando lembrar da gente
+                     F#
+No quarto tirando a roupa
+              B                  A#7
+Aí cê vai querer o meu beijo na boca
+               D#m
+Do nada cê me liga
+                   F#
+Pra fazer aquelas coisas
+               B
+Sabe que o vaqueiro
+                 A#7
+É quem te deixa louca
+
+                   D#m
+Quando lembrar da gente
+                     F#
+No quarto tirando a roupa
+              B                  A#7
+Aí cê vai querer o meu beijo na boca
+               D#m
+Do nada cê me liga
+                   F#
+Pra fazer aquelas coisas
+               B
+Sabe que o vaqueiro
+                 A#7
+É quem te deixa louca
+
+( D#m  F#  B  A#7 )
+( D#m  F#  B  A#7 )
+
+[Primera Parte]
+
+D#m                F#
+    Onde é que cê tá?
+          B            A#7
+Fala pra mim se vai rolar
+
+Que eu tô afim
+              D#m              F#
+Sei que já é tarde, rodei a cidade
+            B                    A#7
+Mas você insiste em se esconder, eh
+                  D#m
+Responde essa mensagem
+           F#
+Isso é maldade
+         B            A#7
+Quero ficar com você, eh
+
+[Estribillo]
+
+                   D#m
+Quando lembrar da gente
+                     F#
+No quarto tirando a roupa
+              B                  A#7
+Aí cê vai querer o meu beijo na boca
+               D#m
+Do nada cê me liga
+                   F#
+Pra fazer aquelas coisas
+               B
+Sabe que o vaqueiro
+                 A#7
+É quem te deixa louca
+
+                   D#m
+Quando lembrar da gente
+                     F#
+No quarto tirando a roupa
+              B                  A#7
+Aí cê vai querer o meu beijo na boca
+               D#m
+Do nada cê me liga
+                   F#
+Pra fazer aquelas coisas
+               B
+Sabe que o vaqueiro
+                 A#7
+É quem te deixa louca
+
+( D#m  F#  B  A#7 )
+( D#m  F#  B  A#7 )
+
+[Final]
+
+D#m                F#
+    Onde é que cê tá?
+          B            A#7
+Fala pra mim se vai rolar
+            D#m
+Que eu tô afim`;export{n as default};

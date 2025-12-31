@@ -1,0 +1,118 @@
+const n=`Título: Morena
+Artista: NATTAN
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:54:41
+============================================================
+
+[Intro] G7M  Em9  Bm7  A6
+
+[Primera Parte]
+
+  G
+É isso que eu vou sentir
+                        Em7
+Toda vez que eu ver a suas fotos
+     Bm
+Porque se toda vez que eu vou sofrer assim
+    A9(13)
+Eu volto, eu volto
+
+    G
+Eu volto atrás da minha decisão
+ Em7
+Pelo o bem do meu coração
+ Bm                           A9(13)
+Você pode até tá bem, mas eu não
+
+Eu não
+
+[Pre-Estribillo]
+
+    G
+Eu faço tudo que tiver que fazer
+  Em7                          Bm
+Pra te ter de volta, pra amar você
+          A9(13)
+Pra amar você
+
+[Estribillo]
+
+G
+Olha aqui morena vê como eu tô
+   Em7
+Você não sente pena
+
+Pelo o amor de Deus
+            Bm
+Me traz de volta o teu amor
+            A9(13)
+Me traz de volta o teu amor
+
+G
+Olha aqui morena vê como eu tô
+   Em7
+Você não sente pena
+
+Pelo o amor de Deus
+            Bm
+Me traz de volta o teu amor
+            A9(13)
+Me traz de volta o teu amor
+
+( G7M  Em9  Bm7  A6 )
+
+[Primera Parte]
+
+  G
+É isso que eu vou sentir
+                        Em7
+Toda vez que eu ver a suas fotos
+     Bm
+Porque se toda vez que eu vou sofrer assim
+    A9(13)
+Eu volto, eu volto
+
+    G
+Eu volto atrás da minha decisão
+ Em7
+Pelo o bem do meu coração
+ Bm                           A9(13)
+Você pode até tá bem, mas eu não
+
+Eu não
+
+[Pre-Estribillo]
+
+    G
+Eu faço tudo que tiver que fazer
+  Em7                          Bm
+Pra te ter de volta, pra amar você
+          A9(13)
+Pra amar você
+
+[Estribillo]
+
+G
+Olha aqui morena vê como eu tô
+   Em7
+Você não sente pena
+
+Pelo o amor de Deus
+            Bm
+Me traz de volta o teu amor
+            A9(13)
+Me traz de volta o teu amor
+
+G
+Olha aqui morena vê como eu tô
+   Em7
+Você não sente pena
+
+Pelo o amor de Deus
+            Bm
+Me traz de volta o teu amor
+            A9(13)
+Me traz de volta o teu amor
+
+( G7M  Em9  Bm7  A6 )`;export{n as default};

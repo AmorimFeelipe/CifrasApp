@@ -1,0 +1,93 @@
+const n=`Título: Beija Flor (part. Mestrinho e Jota.Pê)
+Artista: João Gomes
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:51:48
+============================================================
+
+B                      C9
+E aqui dentro vai guardando o medo
+               G#m                    C9
+Mantendo em segredo o que deve mostrar
+             B                C9
+Pois já tem medo de se ver sozinho
+                   G#m
+Se perder do caminho
+                C9
+Por compartilhar
+
+        B                  C9
+E vai voando de flor em flor
+               G#m
+Feito beija-flor
+                C9
+Sem se apaixonar
+
+            B                  C9
+E pouco a pouco vai perdendo o medo
+               G#m
+De se ver do avesso
+              C9
+Por saber amar
+
+B   C9        G#m
+Voa mais que eu
+           C9
+Seu beija-flor sou eu
+B        C9    G#m
+Além de nós um eu
+            C9
+Pra que eu seja todo seu
+
+B   C9        G#m
+Voa mais que eu
+           C9
+Seu beija-flor sou eu
+B        C9    G#m
+Além de nós um eu
+            C9
+Pra que eu seja todo seu
+
+        B                  C9
+E não quer mais seguir sozinho
+                  G#m
+Construiu seu ninho
+            C9
+Vai acreditar
+               B                  C9
+Sorrir com o choro do primeiro filho
+                 G#m
+E servir de abrigo
+                C9
+Sem se questionar
+
+          B                  C9
+Pois foi voando de flor em flor
+             G#m
+Feito beija-flor
+              C9
+Até se apaixonar
+            B                  C9
+E pouco a pouco foi perdendo o medo
+                 G#m
+De se ver do avesso
+             C9
+Por saber amar
+
+B   C9        G#m
+Voa mais que eu
+           C9
+Seu beija-flor sou eu
+B        C9    G#m
+Além de nós um eu
+            C9
+Pra que eu seja todo seu
+
+B   C9        G#m
+Voa mais que eu
+           C9
+Seu beija-flor sou eu
+B        C9    G#m
+Além de nós um eu
+            C9
+Pra que eu seja todo seu`;export{n as default};

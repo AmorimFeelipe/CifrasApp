@@ -1,0 +1,61 @@
+const a=`Título: Analua
+Artista: Armandinho
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 18:08:22
+============================================================
+
+[Intro] A  Bm  D  A
+        A  Bm  D  A
+
+A                              Bm
+Porque você não sai de trás da nuvem
+                   D                 A
+Pro mar ficar mais lindo, só falta você
+A                         Bm
+A minha alma fica mais tranquila
+             D                 A
+A vida harmoniza quando vejo você
+
+Bm            E            C#m   F#m
+Hoje eu caminhei a praia inteira
+               Bm
+Com os pés na areia
+     E           A     A7
+Coração em alto mar... ohh
+
+          D                 C#m
+Lembrar você me faz pensar besteira
+                   Bm     E            A    A7
+Vida é brisa passageira, não deixa passar
+          D                 C#m
+Lembrar você me faz pensar besteira
+                  Bm    E       A   E
+Praia brava lua cheia, cadê analua?
+
+A                              Bm
+Porque você não sai de trás da nuvem
+                   D                 A
+Pro mar ficar mais lindo, só falta você
+A                         Bm
+A minha alma fica mais tranquila
+             D                 A
+A vida harmoniza quando vejo você
+
+Bm            E            C#m   F#m
+Hoje eu caminhei a praia inteira
+               Bm
+Com os pés na areia
+     E           A  A7
+Coração em alto mar
+
+          D                 C#m
+Lembrar você me faz pensar besteira
+                   Bm     E            A  A7
+Vida é brisa passageira, não deixa passar
+          D                  C#m
+Lembrar você me faz pensar besteira
+                  Bm    E       A   E
+Praia brava lua cheia, cadê analua?
+
+( A  Bm  D  A )`;export{a as default};

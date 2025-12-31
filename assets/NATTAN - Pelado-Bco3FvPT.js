@@ -1,0 +1,97 @@
+const n=`Título: Pelado
+Artista: NATTAN
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:55:08
+============================================================
+
+[Intro] Am  D
+
+[Primera Parte]
+
+   Am
+Tô indo embora
+    D
+Na marra, na força
+   G
+Tô arrumando a mala
+        D             Em
+Mas eu tô molhando a roupa
+
+ Am
+Ainda te quero
+   D
+Te amo, pra porra
+    G
+Eu vou sentir saudades
+     D               Em
+Mas tu não me deu escolha
+
+[Pre-Estribillo]
+
+                 Am
+Faz tempo que a gente não se toca
+                 D
+Eu não casei contigo
+
+Pra dormir de costas
+                   Bm
+Nosso amor tá uma bosta
+           Em
+Tô indo embora
+
+[Estribillo]
+
+               Am   D
+Mas eu sempre volto
+                          G  D  Em
+E quando vejo eu já tô é nu
+                 Am
+No teu corpo suado
+                         D
+Minhas mãos nos teus cachos
+                      Em
+A gente se entende pelado, pelado, pelado
+
+               Am   D
+Mas eu sempre volto
+                          G  D  Em
+E quando vejo eu já tô é nu
+                 Am
+No teu corpo suado
+                         D
+Minhas mãos nos teus cachos
+                      Em
+A gente se entende pelado, pelado, pelado
+
+( Am  D  G  D  Em )
+
+[Pre-Estribillo]
+
+                 Am
+Faz tempo que a gente não se toca
+                 D
+Eu não casei contigo
+
+Pra dormir de costas
+                   Bm
+Nosso amor tá uma bosta
+           Em
+Tô indo embora
+
+[Estribillo]
+
+               Am   D
+Mas eu sempre volto
+                          G  D  Em
+E quando vejo eu já tô é nu
+                 Am
+No teu corpo suado
+                         D
+Minhas mãos nos teus cachos
+                      Em
+A gente se entende pelado
+
+Pelado, pelado
+
+[Final] Am  D  G  D  Em`;export{n as default};

@@ -1,0 +1,123 @@
+const n=`Título: Tá Rocheda
+Artista: Os Barões da Pisadinha
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:46:03
+============================================================
+
+[Intro] F#m  A  E  Bm
+        F#m  A  E  Bm
+
+[Primera Parte]
+
+               F#m
+Entrei na rua dela
+
+Com meu carro rebaixado
+              A
+No meu porta-mala
+
+Escutando forró pesado
+              E
+Eu logo percebi
+
+Quando ela olhou pra mim
+                 Bm
+Dei a volta por cima
+
+E chamei ela pra sair
+
+                  F#m
+Ela aceitou o convite
+
+A gente foi cair na farra
+                  A
+Duas garrafas de vinho
+
+Ficou mal intencionada
+           E
+Foi no banheiro, do nada ela sumiu
+                 Bm
+Quando fui procurar
+
+Com outro cara ela sumiu
+
+[Estribillo]
+
+       F#m          A
+Tá rocheda, tô nem vendo
+       E                   Bm
+Pode crê, você merece um prêmio
+       F#m          A
+Tá rocheda, tô nem vendo
+       E                   Bm
+Pode crê, você merece um prêmio
+
+                            F#m
+Que mulher mais bandida do mundo
+                     A             E  Bm
+O coração que é vagabundo, vagabundo
+                           F#m
+De mulher mais bandida do mundo
+                     A             E  Bm
+O coração que é vagabundo, vagabundo
+
+( F#m  A  E  Bm )
+( F#m  A  E  Bm )
+
+[Primera Parte]
+
+               F#m
+Entrei na rua dela
+
+Com meu carro rebaixado
+              A
+No meu porta-mala
+
+Escutando forró pesado
+              E
+Eu logo percebi
+
+Quando ela olhou pra mim
+                 Bm
+Dei a volta por cima
+
+E chamei ela pra sair
+
+                  F#m
+Ela aceitou o convite
+
+A gente foi cair na farra
+                  A
+Duas garrafas de vinho
+
+Ficou mal intencionada
+           E
+Foi no banheiro, do nada ela sumiu
+                 Bm
+Quando fui procurar
+
+Com outro cara ela sumiu
+
+[Estribillo]
+
+       F#m          A
+Tá rocheda, tô nem vendo
+       E                   Bm
+Pode crê, você merece um prêmio
+       F#m          A
+Tá rocheda, tô nem vendo
+       E                   Bm
+Pode crê, você merece um prêmio
+
+                            F#m
+Que mulher mais bandida do mundo
+                     A             E  Bm
+O coração que é vagabundo, vagabundo
+                           F#m
+De mulher mais bandida do mundo
+                     A             E  Bm
+O coração que é vagabundo, vagabundo
+
+[Final] F#m  A  E  Bm
+        F#m  A  E  Bm  F#m`;export{n as default};

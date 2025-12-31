@@ -1,0 +1,42 @@
+const a=`Título: Rita
+Artista: Tierry
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:47:36
+============================================================
+
+A
+ Sua ausência tá fazendo mais estrago que a
+D          Dm
+sua traição
+           A
+Lê, lê, lê
+
+Minha cama dobrou de tamanho
+       D               Dm
+Sem você no meu colchão
+Bm
+Seu perfume tá impregnado nesse quarto
+D
+escuro
+Que saudade desse cheiro de cigarro e desse
+        A
+álcool puro
+               D  Dm
+Rita, eu desculpo tudo
+A                     Bm
+ Oh Rita, volta, desgramada
+       D                       A
+Volta, Rita, que eu perdoo a facada
+    A           Bm
+Oh Rita, não me deixa
+       D                       A
+Volta, Rita, que eu retiro a queixa
+A                    Bm
+Oh Rita, volta, desgramada
+       D                       A
+Volta, Rita, que eu perdoo a facada
+    A           Bm
+Oh Rita, não me deixa
+       D                      A
+Volta, Rita, que eu retiro a queixa`;export{a as default};

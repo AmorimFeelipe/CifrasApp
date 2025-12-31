@@ -1,0 +1,127 @@
+const n=`Título: Esquema Preferido
+Artista: Os Barões da Pisadinha
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:46:12
+============================================================
+
+[Intro] Dm  Bb  F  C
+        Dm  Bb  F  C
+
+[Primera Parte]
+
+Dm
+   Tá vendo aí
+             Bb
+Ela já tá falando
+
+Que tá com saudades
+            F
+Tá me procurando
+         C
+Daqui a pouco ela tá encostando
+Dm
+   Sabe que sou louco e sem coração
+Bb
+   Quando ela liga eu dou atenção
+F           C
+  Eu mando logo a localização
+ Bb                        C
+Hoje vai ter festa no colchão
+
+[Estribillo]
+
+     Dm
+Ela roda a cidade inteira
+             Bb
+Pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+        Dm
+Ela dispensa a balada
+                       Bb
+As amigas pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+[Solo] Dm  Bb  F  C
+       Dm  Bb  F  C
+
+[Primera Parte]
+
+Dm
+   Tá vendo aí
+             Bb
+Ela já tá falando
+
+Que tá com saudades
+            F
+Tá me procurando
+         C
+Daqui a pouco ela tá encostando
+Dm
+   Sabe que sou louco e sem coração
+Bb
+   Quando ela liga eu dou atenção
+F           C
+  Eu mando logo a localização
+ Bb                        C
+Hoje vai ter festa no colchão
+
+[Estribillo]
+
+     Dm
+Ela roda a cidade inteira
+             Bb
+Pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+        Dm
+Ela dispensa a balada
+                       Bb
+As amigas pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+     Dm
+Ela roda a cidade inteira
+             Bb
+Pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+        Dm
+Ela dispensa a balada
+                       Bb
+As amigas pra ficar comigo
+
+Porque eu sou
+                    F
+O seu esquema preferido
+                         C
+Eu sou seu esquema preferido
+
+[Final] Dm  Bb  F  C
+        Dm  Bb  F  C  Dm`;export{n as default};

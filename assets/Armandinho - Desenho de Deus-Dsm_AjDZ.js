@@ -1,0 +1,159 @@
+const n=`Título: Desenho de Deus
+Artista: Armandinho
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 18:08:40
+============================================================
+
+[Intro] A7M  D7M  A7M  D7M
+
+[Estribillo]
+
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+             C#m7
+Na beira do mar
+             Bm7
+Na beira do mar do amor!
+          C#m7
+Na beira do mar
+             Bm7     E9
+Na beira do mar do amor
+
+( A7M  D7M  A7M  D7M )
+
+[Estribillo]
+
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+             C#m7
+Na beira do mar
+             Bm7
+Na beira do mar do amor!
+          C#m7
+Na beira do mar
+             Bm7     E9
+Na beira do mar do amor
+
+[Primera Parte]
+
+   A7M
+Papai do céu na hora de fazer você
+D7M
+Ele deve ter caprichado pra valer
+   A7M
+Botou muita pureza no seu coração
+     D7M
+E a sua humildade
+
+Fez chamar minha atenção
+
+   A7M
+Tirou a sua voz do própolis e mel
+     D7M
+E o teu sorriso lindo
+
+De algum lugar do céu
+   A7M
+O resto deve ser beleza exterior
+    D7M
+Mas o que tem por dentro
+
+Para mim tem mais valor
+
+[Estribillo]
+
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+             C#m7
+Na beira do mar
+             Bm7
+Na beira do mar do amor!
+          C#m7
+Na beira do mar
+             Bm7     E9
+Na beira do mar do amor
+
+[Segunda Parte]
+
+   A7M
+Papai do céu na hora de fazer você
+D7M
+Ele deve ter caprichado pra valer
+   A7M
+Botou muita pureza no seu coração
+     D7M
+E a sua humildade
+
+Fez chamar minha atenção
+
+       A7M
+Da estrela mais bonita
+
+O brilho desse olhar
+    D7M
+Diamante verdadeiro
+
+Sua palavra foi buscar
+     A7M
+E o resto deve ser beleza exterior
+    D7M
+Mas o que tem por dentro
+
+Para mim tem mais valor
+
+[Estribillo]
+
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+        A7M
+Quando Deus te desenhou
+     D7M
+Ele tava namorando
+             C#m7
+Na beira do mar
+             Bm7
+Na beira do mar do amor!
+          C#m7
+Na beira do mar
+             Bm7     E9
+Na beira do mar do amor
+
+[Final] A7M  D7M  A7M  D7M
+        A7M  D7M  A7M  D7M
+
+[Solo Final]
+
+[Tab - Solo Final]
+
+Parte 1 de 3
+
+
+
+
+Parte 2 de 3
+
+
+
+
+Parte 3 de 3`;export{n as default};

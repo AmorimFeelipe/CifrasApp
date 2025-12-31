@@ -1,0 +1,108 @@
+const a=`Título: Amor Na Praia
+Artista: NATTAN
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:54:55
+============================================================
+
+[Intro] A#  Am  Dm  F
+
+A#               Am                Dm
+O que eu mais quero é te amar na praia
+F
+Aaaa_aa
+
+A#              Am          Dm
+Dizer eu te amo bem na tua cara
+F
+Aaaaaa
+
+A#    Am  Dm
+O meu coração
+               F
+Tá perguntando por você
+A#  Am          Dm
+Ele só volta a bater
+            F
+Quando você aparecer
+A#
+Então volta logo
+Am
+Até meu relógio
+
+Dm                            F         A#
+Ta contando as horas pra te ter aqui comigo
+                        Am
+Traz de volta o meu sorriso
+A#
+O que eu mais quero
+Am           Dm
+É te amar na praia
+ F
+Aaaaa
+A#         Am
+Dizer eu te amo
+         Dm
+Bem na tua cara
+F
+Aaaaaa
+
+A#
+O que eu mais quero
+Am           Dm
+É te amar na praia
+ F
+Aaaaa
+A#         Am
+Dizer eu te amo
+         Dm
+Bem na tua cara
+F
+Aaaaaa
+
+[Solo] A#  Am  Dm  F
+
+A#    Am  Dm
+O meu coração
+               F
+Tá perguntando por você
+A#  Am          Dm
+Ele só volta a bater
+            F
+Quando você aparecer
+A#
+Então volta logo
+Am
+Até meu relógio
+
+Dm                            F         A#
+Ta contando as horas pra te ter aqui comigo
+                        Am
+Traz de volta o meu sorriso
+A#
+O que eu mais quero
+Am           Dm
+É te amar na praia
+ F
+Aaaaa
+A#         Am
+Dizer eu te amo
+         Dm
+Bem na tua cara
+F
+Aaaaaa
+
+A#
+O que eu mais quero
+Am           Dm
+É te amar na praia
+ F
+Aaaaa
+A#         Am
+Dizer eu te amo
+         Dm
+Bem na tua cara
+F
+Aaaaaa
+
+[Final] A#  Am  Dm  F`;export{a as default};

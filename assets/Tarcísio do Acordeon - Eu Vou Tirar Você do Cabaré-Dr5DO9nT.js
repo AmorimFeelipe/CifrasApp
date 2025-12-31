@@ -1,0 +1,86 @@
+const a=`Título: Eu Vou Tirar Você do Cabaré
+Artista: Tarcísio do Acordeon
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:50:32
+============================================================
+
+[Primera Parte]
+
+ Bbm               Db
+Pode arrumar as malas
+                   Fm
+Que a partir de hoje eu
+                   Eb
+Vou tirar voce daqui
+ Bbm             Db
+Pode arrumar as roupas
+                   Fm
+Que a partir de hoje
+               Eb
+Eu vou te assumir
+Bbm      Db
+A minha família
+          Fm
+Vai me deserdar
+       Eb
+Tô nem aí, deixa
+          Bbm
+O povo falar
+
+[Estribillo]
+
+             Db
+A partir de hoje, tu
+               Fm
+Vai ser minha mulher
+        Eb
+Eu vou tirar voce do cabaré
+Bbm          Db
+A partir de hoje, tu
+              Fm
+Não é mais rapariga
+          Eb
+Você vai ser a mulher
+             Bbm
+Da minha vida
+
+[Primera Parte]
+
+ Bbm               Db
+Pode arrumar as malas
+                   Fm
+Que a partir de hoje eu
+                   Eb
+Vou tirar voce daqui
+ Bbm             Db
+Pode arrumar as roupas
+                   Fm
+Que a partir de hoje
+               Eb
+Eu vou te assumir
+Bbm      Db
+A minha família
+          Fm
+Vai me deserdar
+       Eb
+Tô nem aí, deixa
+          Bbm
+O povo falar
+
+[Estribillo]
+
+             Db
+A partir de hoje, tu
+               Fm
+Vai ser minha mulher
+        Eb
+Eu vou tirar voce do cabaré
+Bbm          Db
+A partir de hoje, tu
+              Fm
+Não é mais rapariga
+          Eb
+Você vai ser a mulher
+             Bbm
+Da minha vida`;export{a as default};

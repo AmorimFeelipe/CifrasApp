@@ -1,0 +1,185 @@
+const n=`Título: Presente De Um Beija-Flor
+Artista: Natiruts
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 18:01:58
+============================================================
+
+[Intro] Am  D  Bm  Em
+        Am  D  G  D  Em
+        Am  D  G  D  Em
+
+[Estribillo]
+
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+
+[Primera Parte]
+
+      Am                    D
+Veja só a névoa branca que sai
+                 Bm   Em
+De trás do bambuzal
+         Am             D
+Será que ela me faz bem
+             Bm        Em
+Ou será que me faz mal
+           Am                   D
+Eu vou surfar no céu azul de nuvens doidas
+        Bm             Em
+Da capital do meu país
+               Am                   D
+Pra ver se esqueço da pobreza e violência
+             Bm           E7
+Que deixa o meu povo infeliz
+
+[Estribillo]
+
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+
+[Segunda Parte]
+
+       Am
+E a menina que um dia
+      D              Bm  Em
+Por acaso veio me dizer
+            Am                     D
+Que não gostava de meninos tão largados
+           Bm          Em
+Que tocam reggae e MPB
+            Am
+Mas isso é coisa tão banal
+ D               Bm              Em
+Perto da beleza do Planalto Central
+          Am                   D
+E das pessoas que fazem do Cerrado
+       Bm          E7
+O habitat quase ideal
+
+[Estribillo]
+
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+
+[Tercera Parte]
+
+     Am               D          Bm
+Agradeço por estar aqui, manifestar a
+       Em
+emoção
+       Am                      D
+E colocar minhas ideias, sentimentos
+          Bm       Em
+Em forma de canção
+     Am                D           Bm
+Agradeço por poder cantar e ver você ouvir
+Em
+
+      Am                   D
+E tentar entender essa mensagem
+         Bm          E7
+Que eu quero transmitir
+
+[Estribillo]
+
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+
+[Cuarta Parte]
+
+       Am                    D
+Fim de ano vou embora de Brasília
+              Bm       Em
+Que é pra eu ver o mar
+             Am                      D
+Mas diz pra mãe lá pro final de fevereiro
+          Bm        Em
+É que eu vou voltar
+              Am
+Que é pra surfar no céu azul de nuvens
+ D
+doidas
+        Bm          Em
+Da capital do meu país
+               Am                   D
+Pra ver se esqueço da pobreza e violência
+             Bm           E7
+Que deixa o meu povo infeliz
+
+[Estribillo]
+
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+        Am                  D
+Beija-flor que trouxe meu amor
+  Bm            Em
+Voou e foi embora
+      Am                   D
+Olha só como é lindo meu amor
+   Bm           Em
+Estou feliz agora
+
+[Final] Am  D  Bm  Em`;export{n as default};

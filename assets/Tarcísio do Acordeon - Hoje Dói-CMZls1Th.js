@@ -1,0 +1,138 @@
+const n=`Título: Hoje Dói
+Artista: Tarcísio do Acordeon
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:49:56
+============================================================
+
+[Intro] B9  Abm  Ebm7  Db9
+
+[Primera Parte]
+
+ B9
+Hoje eu me machuquei
+     Abm
+Pra ver se ainda sinto dor
+Ebm7
+A ferida meio aberta
+ Db9
+Fui mexer, e piorou
+ B9
+Coração tava rendido
+ Abm
+Pois sabia que existia amor
+Ebm7
+Alguém disse conte sempre comigo
+   Db9
+Palavras ao vento, e voou, e foi
+
+[Estribillo]
+
+ B9
+Foi amor, eu sei que foi
+ Abm
+Mas você me magoou
+  Ebm7
+Quando abriu aquela porta
+     Db9
+Meu coração, despedaçou
+ B9
+Foi amor, eu sei que foi
+ Abm
+Pedi muito pra você ficar
+ Ebm7
+Mas já tinha outro alguém
+ Db                   Abm
+Já era tarde implorar
+
+                B9
+Cê foi porque quis
+                       Ebm7
+Te dei motivos pra não ir
+                         Db
+E sei que um dia vai passar
+
+Mas hoje dói
+
+( B9  Abm  Ebm7  Db )
+( B9  Abm  Ebm7  Db )
+( B9  Abm  Ebm7  Db )
+( B9  Abm  Ebm7  Db )
+
+[Primera Parte]
+
+ B9
+Hoje eu me machuquei
+     Abm
+Pra ver se ainda sinto dor
+Ebm7
+A ferida meio aberta
+ Db
+Fui mexer, e piorou
+ B9
+Coração tava rendido
+ Abm
+Pois sabia que existia amor
+Ebm7
+Alguém disse conte sempre comigo
+   Db
+Palavras ao vento, e voou, e foi
+
+[Estribillo]
+
+ B9
+Foi amor, eu sei que foi
+ Abm
+Mas você me magoou
+  Ebm7
+Quando bateu aquela porta
+     Db
+Meu coração, despedaçou
+ B9
+Foi amor, eu sei que foi
+ Abm
+Pedi muito pra você ficar
+ Ebm7
+Mas já tinha outro alguém
+ Db                   Abm
+Já era tarde implorar
+
+                B9
+Cê foi porque quis
+                       Ebm7
+Te dei motivos pra não ir
+                         Db
+E sei que um dia vai passar
+
+Mas hoje dói
+
+ B9
+Foi amor, eu sei que foi
+ Abm
+Mas você me magoou
+  Ebm7
+Quando bateu aquela porta
+     Db
+Meu coração, despedaçou
+ B9
+Foi amor, eu sei que foi
+ Abm
+Pedi muito pra você ficar
+ Ebm7
+Mas já tinha outro alguém
+ Db                   Abm
+Já era tarde implorar
+
+                B9
+Cê foi porque quis
+                       Ebm7
+Te dei motivos pra não ir
+                         Db
+E sei que um dia vai passar
+
+Mas hoje dói
+
+[Final] B9  Abm  Ebm7  Db
+        B9  Abm  Ebm7  Db
+        B9  Abm  Ebm7  Db
+        B9  Abm  Ebm7  Db`;export{n as default};

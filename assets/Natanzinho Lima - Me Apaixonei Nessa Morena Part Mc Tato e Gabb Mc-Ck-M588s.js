@@ -1,0 +1,95 @@
+const a=`Título: Me Apaixonei Nessa Morena (Part. Mc Tato e Gabb Mc)
+Artista: Natanzinho Lima
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:56:15
+============================================================
+
+Bm                          Em
+Eu conheci uma menina que roubou meu coração
+               F#.                   Bm
+Ela é a mais top, vestidinho marca o bundão
+                                    Em
+Roupinha de academia mostra sua definição
+             F#                  Bm
+Ainda por cima, se amarra em paredão
+
+              A                   Bm
+Ela sofre no brega, ela dança no funk
+                    A                   Bm
+Especialista em sacanagem, que novinha interessante
+                A                  Bm
+Ela sofre no brega, ela dança no funk
+                    A                   Bm
+Especialista em sacanagem, que novinha interessante
+
+ Bm.  A.           Bm
+Eu me apaixonei nessa morena
+         A                     Bm
+Que faz am– (ai), que rouba a cena
+           A
+Que faz amor, que
+    Bm  A                 Bm
+Eu me apaixonei nessa morena
+            A           Bm
+Que faz amor, que rouba (tome)
+        A          Bm
+Faz amor e rouba a cena
+
+
+Puxa, M10
+
+Cacete, fi do rato
+
+Aí, Tato
+
+Uma liga
+
+É uma liga, Gabb
+
+  Bm                                   Em
+Eu conheci uma menina que roubou meu coração
+             F#                       Bm
+Ela é a mais top, vestidinho marca o bundão
+                                     Em
+Roupinha de academia mostra sua definição
+             F#                  Bm
+Ainda por cima, se amarra em paredão
+
+               A                   Bm
+Ela sofre no brega, ela dança no funk
+                   A                    Bm
+Especialista em sacanagem, que novinha interessante
+                 A                  Bm
+Ela sofre no brega, ela dança no funk
+                   A                    Bm
+Especialista em sacanagem, que novinha interessante
+
+ Bm       A             Bm
+Eu me apaixonei nessa morena
+          A                 Bm
+Que faz amor, que rouba a cena
+        A                 Bm
+Que faz amor, que rouba a cena
+          A                 Bm
+Eu me apaixonei nessa morena
+           A               Bm
+Que faz amor, ela é problema
+            A              Bm
+Ela faz amor e rouba a cena
+
+           A                Bm
+Eu me apaixonei nessa morena
+            A                Bm
+Que faz amor, que rouba a cena
+         A                Bm
+Eu me apaixonei nessa morena
+          A                Bm
+Que faz amor, que rouba a cena
+          A                Bm
+(Ela faz amor) Que rouba a cena
+
+
+É por isso que painho Fiote disse
+
+Mulher bonita e gado Nelore, só tem quem pode`;export{a as default};
