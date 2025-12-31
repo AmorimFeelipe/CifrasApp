@@ -1,0 +1,112 @@
+const n=`Título: Lá Vem o Alemão
+Artista: Mamonas Assassinas
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:13:07
+============================================================
+
+[Intro] D  F#m  G  A
+
+ D                                F#m
+Só de pensar que nós dois éramos dois
+                       G
+Eu o feijão, você o arroz
+                  A
+Temperados com Sazón
+ D                               F#m
+Só de lembrar nós na Kombi no domingo
+                    G
+Nosso amor era tão lindo
+                   A
+Nós descíamos pro Boqueirão
+D                        F#m
+A Kombi quebrada lá na praia
+                G
+E você de mini-saia
+                   A
+Dando bola para um alemão
+  D                      F#m
+O alemão de carro conversível
+                   G
+Eu mexendo nos "fuzível"
+                    A
+Nem vi quando você me deixou
+
+         D
+Subiu a serra
+                    F#m
+Me deixou no Boqueirão
+                  G
+Arrombou meu coração
+                A
+Depois desapareceu
+           D
+Fiquei na merda
+                  F#m
+Nas areias do destino
+                    G
+Me tratou como um suíno
+                       A
+Cuspiu no prato que comeu
+
+[Solo]  D  F#m  G  A
+        D  F#m  G  A
+
+    D                      F#m
+O amor é uma faca de dois legumes
+                      G
+A luz anal de um vagalume
+                      A
+Que ilumina o meu sofrer
+D                        F#m
+Eu ainda sinto o seu perfume
+                    G
+Um cheirinho de estrume
+                   A
+Não tá fácil de te esquecer
+ D                             F#m
+Toda a vez que eu lembro de você
+                    G
+Me dá vontade de bater
+                     A
+Te espancar, ó meu amor
+ D                              F#m
+Só porque ele é lindo, loiro e forte
+                     G
+Tem dinheiro e um Escort
+                   A
+Como Modess, você me trocou
+
+         D
+Subiu a serra
+                    F#m
+Me deixou no Boqueirão
+                  G
+Arrombou meu coração
+                A
+Depois desapareceu
+           D
+Fiquei na merda
+                  F#m
+Nas areias do destino
+                    G
+Me tratou como um suíno
+                       A
+Cuspiu no prato que comeu
+
+         D
+Subiu a serra
+                    F#m
+Me deixou no Boqueirão
+                  G
+Arrombou meu coração
+                A
+Depois desapareceu
+           D
+Fiquei na merda
+                  F#m
+Nas areias do destino
+                    G
+Me tratou como um suíno
+                       A
+Cuspiu no prato que comeu`;export{n as default};

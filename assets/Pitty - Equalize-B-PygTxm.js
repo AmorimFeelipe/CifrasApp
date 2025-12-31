@@ -1,0 +1,134 @@
+const n=`Título: Equalize
+Artista: Pitty
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:15:07
+============================================================
+
+[Intro] Em  D
+
+[Primera Parte]
+
+    D                  Bm
+Às vezes se eu me distraio
+                E
+Se eu não me vigio um instante
+         F#m                D
+Me transporto pra perto de você
+                       Bm
+Já vi que não posso ficar tão solta
+               E
+Me vem logo aquele cheiro
+                F#m
+Que passa de você pra mim
+      G       A
+Num fluxo perfeito
+
+Em
+   Enquanto você conversa
+
+E me beija
+
+Ao mesmo tempo eu vejo
+               D
+As suas cores no seu olho
+
+Tão de perto
+Em
+   Me balanço devagar
+
+Como quando você me embala
+              G
+O ritmo rola fácil
+   A              Bm
+Parece que foi ensaiado
+
+[Pre-Estribillo]
+
+E eu acho que eu gosto
+ A
+Mesmo de você
+G
+  Bem do jeito que você é
+
+[Estribillo]
+
+D     Bm        D     Bm
+  Eu vou equalizar você
+D           Bm         A          G
+  Numa freqüência que só a gente sabe
+D         Bm            D     Bm
+  Eu te transformei nessa canção
+D        Bm        A      G   D
+  Pra poder te gravar em mim
+
+[Segunda Parte]
+
+  D             Bm
+Adoro essa sua cara de sono
+               E
+E o timbre da sua voz
+          F#m
+Que fica me dizendo
+              D
+Coisas tão malucas
+                Bm
+E que quase me mata de rir
+                 E
+Quando tenta me convencer
+              F#m
+Que eu só fiquei aqui
+     G             A
+Porque nós dois somos iguais
+
+Em
+   Até parece que você já tinha
+
+O meu manual de instruções
+               D
+Porque você decifra os meus sonhos
+Em
+   Porque você sabe o que eu gosto
+
+E porque quando você me abraça
+         G        A
+O mundo gira devagar
+
+[Puente]
+
+Em                 D
+   E o tempo é só meu
+                      Em
+E ninguém registra a cena
+                    D
+De repente vira um filme
+                   Bm
+Todo em câmera lenta
+
+[Pre-Estribillo]
+
+E eu acho que eu gosto
+ A
+Mesmo de você
+G
+  Bem do jeito que você é
+
+[Estribillo Final]
+
+D     Bm        D     Bm
+  Eu vou equalizar você
+D           Bm         A          G
+  Numa freqüência que só a gente sabe
+D         Bm            D     Bm
+  Eu te transformei nessa canção
+D        Bm        A      G
+  Pra poder te gravar em mim
+
+D     Bm        D     Bm
+  Eu vou equalizar você
+D           Bm         A          G
+  Numa freqüência que só a gente sabe
+D         Bm            D     Bm
+  Eu te transformei nessa canção
+D        Bm        A      G   D
+  Pra poder te gravar em mim`;export{n as default};

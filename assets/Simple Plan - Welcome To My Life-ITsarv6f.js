@@ -1,0 +1,160 @@
+const n=`Título: Welcome To My Life
+Artista: Simple Plan
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:26:39
+============================================================
+
+C
+Do you ever feel like breaking down?
+       Am
+Do you ever feel out of place?
+      F7M
+Like somehow you just don't belong
+     G
+And no one understands you
+
+       C
+Do you ever wanna run away?
+        Am
+Do you lock yourself in your room?
+          F7M
+With the radio on turned up so loud
+      G
+That no one hears you screaming
+
+[Pre-Estribillo]
+
+         F7M
+No, you don't know what it's like
+      Am
+When nothing feels alright
+     F
+You don't know what it's like
+            G
+To be like me
+
+[Estribillo]
+
+       Am            F
+To be hurt, to feel lost
+       C               G
+To be left out in the dark
+       Am                 F
+To be kicked when you're down
+         C                        G
+To feel like you've been pushed around
+      Am               F
+To be on the edge of breaking down
+     C                 G
+And no one's there to save you
+         Dm
+No, you don't know what it's like
+F                C
+  Welcome to my life
+
+[Segunda Parte]
+
+        C
+Do you wanna be somebody else?
+         Am
+Are you sick of being so left out?
+         F7M
+Are you desperate to find something more
+   G
+Before your life is over?
+
+          C
+Are you stuck inside a world you hate?
+         Am
+Are you sick of everyone around?
+            F7M
+With their big fake smiles and stupid lies
+       G
+While deep inside your bleeding
+
+[Pre-Estribillo]
+
+         F7M
+No, you don't know what it's like
+      Am
+When nothing feels alright
+     F
+You don't know what it's like
+            G
+To be like me
+
+[Estribillo]
+
+       Am            F
+To be hurt, to feel lost
+       C               G
+To be left out in the dark
+       Am                 F
+To be kicked when you're down
+         C                        G
+To feel like you've been pushed around
+      Am               F
+To be on the edge of breaking down
+     C                 G
+And no one's there to save you
+         Dm
+No, you don't know what it's like
+F                C
+  Welcome to my life
+
+[Puente]
+
+ F
+No one ever lies straight to your face
+     Am
+And no one ever stabbed you in the back
+ F
+You might think I'm happy
+         C             G
+But I'm not gonna be okay
+F
+Everybody always gave you what you wanted
+     Am
+You never had to work, it was always there
+     Dm                             F
+You don't know what it's like, what it's
+like
+
+[Estribillo]
+
+       Am            F
+To be hurt, to feel lost
+       C               G
+To be left out in the dark
+       Am                 F
+To be kicked when you're down
+         C                        G
+To feel like you've been pushed around
+      Am               F
+To be on the edge of breaking down
+     C                 G
+And no one's there to save you
+         Dm                       F
+No, you don't know what it's like
+
+       Am            F
+To be hurt, to feel lost
+       C               G
+To be left out in the dark
+       Am                 F
+To be kicked when you're down
+         C                        G
+To feel like you've been pushed around
+      Am               F
+To be on the edge of breaking down
+     C                 G
+And no one's there to save you
+         Dm
+No, you don't know what it's like
+F                C
+  Welcome to my life
+Am                F
+   Welcome to my life
+G                C
+  Welcome to my life`;export{n as default};

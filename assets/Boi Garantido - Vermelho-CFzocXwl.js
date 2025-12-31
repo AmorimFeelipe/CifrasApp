@@ -1,0 +1,88 @@
+const o=`Título: Vermelho
+Artista: Boi Garantido
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:32:06
+============================================================
+
+D                           Bm
+A cor do meu batuque tem o toque
+                     F#m
+E tem o som da minha voz
+G
+Vermelho, vermelhaço
+
+Vermelhusco, vermelhante
+F#m
+Vermelhão (vermelhão)
+G                     A
+O velho comunista se aliançou
+D                         Bm
+Ao rubro do rubor do meu amor
+G                           A
+O brilho do meu canto tem o tom
+                       D
+E a expressão da minha cor
+A
+Vermelho
+D                          Bm
+A cor do meu batuque tem o toque
+                     F#m
+E tem o som da minha voz
+G
+Vermelho, vermelhaço
+
+Vermelhusco, vermelhante
+F#m
+Vermelhão (vermelhão)
+G                     A
+O velho comunista se aliançou
+D                         Bm
+Ao rubro do rubor do meu amor
+G                           A
+O brilho do meu canto tem o tom
+                       D
+E a expressão da minha cor
+A
+(Meu coração)
+
+Bm            F#m
+Meu coração é vermelho
+Hei, hei, hei
+G                      F#m
+De vermelho vive o coração
+Ê, ô, ê, ô
+
+G
+Tudo é Garantido após
+
+A rosa vermelhar
+A
+Tudo é Garantido
+
+Após o sol vermelhecer
+
+D          F#m
+Vermelhou o curral
+G                  A
+A ideologia do folclore
+
+Avermelhou
+D         F#m
+Vermelhou a paixão
+G
+O fogo de artifício
+     A          D
+Da vitória vermelhou
+D         F#m
+Vermelhou o curral
+G                  A
+A ideologia do folclore
+
+Avermelhou
+D         F#m
+Vermelhou a paixão
+G
+O fogo de artifício
+      A          D
+Da vitória vermelhou`;export{o as default};

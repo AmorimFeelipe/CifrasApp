@@ -1,0 +1,122 @@
+const n=`Título: Sutilmente
+Artista: Skank
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 17:02:30
+============================================================
+
+[Intro] G  D  G  D
+
+[Primera Parte]
+
+G
+  E quando eu estiver triste
+                   D
+Simplesmente me abrace
+G
+  Quando eu estiver louco
+                 D
+Subitamente se afaste
+
+[Puente]
+
+C
+  Quando eu estiver fogo
+                  G    D
+ Suavemente se encaixe
+
+( G  D  G  D )
+
+[Primera Parte]
+
+G
+  E quando eu estiver triste
+                   D
+Simplesmente me abrace
+G
+  Quando eu estiver louco
+                 D
+Subitamente se afaste
+
+[Pre-Estribillo]
+
+C
+  E quando eu estiver bobo
+                     Em
+Sutilmente disfarce, é
+
+Mas quando eu estiver morto
+                    C
+Suplico que não me mate não
+
+           Am
+Dentro de ti
+C            Am
+  Dentro de ti
+
+[Estribillo]
+
+ G           C      Am        D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+ G           C      Am        D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+( G  D  G  D )
+
+[Primera Parte]
+
+G
+  E quando eu estiver triste
+                   D
+Simplesmente me abrace
+G
+  Quando eu estiver louco
+                 D
+Subitamente se afaste
+
+[Pre-Estribillo]
+
+G
+  E quando eu estiver bobo
+                     Bm
+Sutilmente disfarce, é
+
+Mas quando eu estiver morto
+                    G
+Suplico que não me mate não
+
+           Am
+Dentro de ti
+C            Am
+  Dentro de ti
+
+[Estribillo]
+
+ G           C      Am        D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+ G           C      Am        D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+ G           C      Am        D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+ G           C     Am         D
+Mesmo que o mundo acabe enfim
+ G         C        Am        D
+Dentro de tudo que cabe em ti
+
+[Final] G  C  Am  D
+        G  C  Am  D
+        G  C  Am  D`;export{n as default};

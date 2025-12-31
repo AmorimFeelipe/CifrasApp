@@ -1,0 +1,106 @@
+const n=`Título: Espero a Minha Vez
+Artista: NX Zero
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:24:04
+============================================================
+
+[Intro] E  B4  C#m7
+        E  B4  C#m7
+
+[Primera Parte]
+
+E       B4          C#m7
+  Se o medo e a cobrança
+E        B4        C#m7
+  Tiram minha esperança
+              A9                 C#m7
+Tento me lembrar, de tudo que vivi
+                 A9                      B4
+E o que tem por dentro, ninguém pode roubar
+
+Descanso agora
+
+[Estribillo]
+
+ A9         E  B4
+Pois os dias ruins
+ C#m7          A9
+Todo mundo tem
+       E      B4
+Já jurei pra mim
+ C#m7         A9
+Não desanimar
+       E         B4
+E não ter mais pressa
+              C#m7        D6(9)
+Eu sei que o mundo vai girar
+               C#m7      C7M          B4
+O mundo vai girar, eu espero a minha vez
+
+( E  B4  C#m7 )
+( E  B4  C#m7 )
+
+[Primera Parte]
+
+E     B4         C#m7
+  O suor e o cansaço
+E        B4             C#m7
+  Fazem parte dos meus passos
+                  A9           C#m7
+O que nunca esqueci é de onde vim
+                 A9                      B4
+E o que tem por dentro, ninguém pode roubar
+
+[Estribillo]
+
+ A9         E  B4
+Pois os dias ruins
+ C#m7          A9
+Todo mundo tem
+       E      B4
+Já jurei pra mim
+ C#m7         A9
+Não desanimar
+       E         B4
+E não ter mais pressa
+              C#m7        D6(9)
+Eu sei que o mundo vai girar
+               C#m7      C7M          B4
+O mundo vai girar, eu espero a minha vez
+
+[Segunda Parte]
+
+  D6(9)
+E eu não to aqui pra dizer
+
+O que é certo e errado
+ C#m7                         B4
+Ninguém tá aqui pra viver em vão
+         D6(9)                      C#m7
+Então é bom valer a pena, então é pra valer
+ a pena
+           B4
+Ou melhor não
+
+[Solo] A9 E B4 C#m7
+       D6(9)  C#m7
+
+[Estribillo]
+
+A9       E  B4
+  Os dias ruins
+ C#m7          A9
+Todo mundo tem
+       E      B4
+Já jurei pra mim
+ C#m7         A9
+Não desanimar
+       E         B4
+E não ter mais pressa
+              C#m7        D6(9)
+Eu sei que o mundo vai girar
+               C#m7      C7M          B4
+O mundo vai girar, eu espero a minha vez
+
+[Final] E  E4  E  E4  E`;export{n as default};

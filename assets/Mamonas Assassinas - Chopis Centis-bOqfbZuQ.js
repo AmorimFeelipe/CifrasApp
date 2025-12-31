@@ -1,0 +1,113 @@
+const n=`Título: Chopis Centis
+Artista: Mamonas Assassinas
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:13:17
+============================================================
+
+Introdução: A5  D5/A  A5  (6x)
+
+
+Primeira Parte:
+
+                  D5  E5
+Eu di um beijo nela
+                     A5  D5/A  A5
+E chamei pra passear
+                      D5  E5
+A gente fomos no shopping
+                         A5  D5/A  A5
+Pra mode a gente lanchar
+
+                      D5  E5
+Comi uns bicho estranho
+                       A5  D5/A  A5
+Com um tal de gergelim
+                   D5  E5
+Até que tava gostoso
+                     A5  D5/A  A5
+Mas eu prefiro aipim
+
+
+Refrão:
+
+        D5   E5
+Quanta gente
+            A5
+Quanta alegria
+               D5
+A minha felicidade
+          E5
+É um crediário
+             A5
+Nas Casas Bahia
+
+        D5   E5
+Quanta gente
+            A5
+Quanta alegria
+               D5
+A minha felicidade
+          E5
+É um crediário
+             A5  D5/A  A5
+Nas Casas Bahia
+
+          A5  D5/A  A5
+P'arriba!
+                                  A5
+Joinha, joinha, chupetão, vamo lá
+  D5/A                   A5
+Chuchuzinho, vamo embora
+                        A5  D5/A  A5
+Onde é que entra, hein?
+
+
+Segunda Parte:
+
+                    D5  E5
+Esse tal Chópis Cêntis
+                   A5  D5/A  A5
+É muito legalzinho
+                    D5  E5
+Pra levar as namorada
+                    A5  D5/A  A5
+E dar uns rolezinho
+
+                          D5
+Quando eu estou no trabalho
+            E5
+Não vejo a hora
+                    A5  D5/A  A5
+De descer dos andaime
+                  D5
+Pra pegar um cinema
+            E5
+Do Schwarzenegger
+                 A5  D5/A  A5
+TAmbém o Van Daime
+
+
+Refrão:
+
+        D5   E5
+Quanta gente
+            A5
+Quanta alegria
+               D5
+A minha felicidade
+          E5
+É um crediário
+             A5
+Nas Casas Bahia
+
+        D5   E5
+Quanta gente
+            A5
+Quanta alegria
+               D5
+A minha felicidade
+          E5
+É um crediário
+             A5  D5/A  A5
+Nas Casas Bahia`;export{n as default};

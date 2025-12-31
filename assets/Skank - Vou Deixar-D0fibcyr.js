@@ -1,0 +1,138 @@
+const n=`Título: Vou Deixar
+Artista: Skank
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 17:02:46
+============================================================
+
+[Intro]
+
+[Primera Parte]
+
+        D  F#
+Vou deixar
+        G       Gm
+A vida me levar
+                 D  F#
+Pra onde ela quiser
+          G        Gm
+Estou no meu lugar
+
+Você já sabe onde é
+
+[Segunda Parte]
+
+D  Bm   G           A            D
+       Não conte o tempo por nós   dois
+ Bm  G           A
+Pois a qualquer hora
+         D      Bm
+Posso estar de volta
+ G            A
+Depois que a noite terminar
+
+[Tercera Parte]
+
+        D  F#
+Vou deixar
+        G       Gm
+A vida me levar
+                 D  F#
+Pra onde ela quiser
+          G     Gm
+Seguir a direção
+
+De uma estrela qualquer
+
+[Cuarta Parte]
+
+D  Bm  G         A        D       Bm
+      Não quero hora pra voltar, não
+ G       A         D       Bm
+Conheço bem a solidão, me solta
+
+G          A
+E deixa a sorte me buscar
+
+[Quinta Parte]
+
+Em                        A   Em
+   Eu já estou na sua estrada
+                     A
+Sozinho não enxergo nada
+
+[Sexta Parte]
+
+Em            F#m
+   Mas vou ficar aqui
+  G                F#m  Em
+Até que o dia amanheça
+          F#m
+Vou esquecer de mim
+     A
+E você se puder não me esqueça
+
+[Séptima Parte]
+
+        D  F#
+Vou deixar
+       G        Gm
+O coração bater
+                  D  F#
+Na madrugada sem fim
+          G         Gm
+Deixar o sol te ver
+
+Ajoelhada por mim, sim
+
+[Octava Parte]
+
+D  Bm  G         A        D       Bm
+      Não tenho hora pra voltar, não
+G       A            D     Bm
+Eu agradeço tanto a sua escolta
+ G           A
+Mas deixa a noite terminar
+
+[Novena Parte]
+
+Em                        A   Em
+   Eu já estou na sua estrada
+                     A
+Sozinho não enxergo nada
+
+[Décima Parte]
+
+Em            F#m
+   Mas vou ficar aqui
+  G                F#m  Em
+Até que o dia amanheça
+          F#m
+Vou esquecer de mim
+     A
+E você se puder não me esqueça
+
+[Solo] D  F#  G  Gm
+       D  F#  G  Gm
+
+[Final] D  Bm  G  A
+
+ D    Bm   G         A
+Não, não, não quero hora
+     D       Bm
+Pra voltar, não
+ G       A         D       Bm
+Conheço bem a solidão, me solta
+G          A
+E deixa a sorte me buscar
+
+ D    Bm   G         A
+Não, não, não tenho hora
+     D       Bm
+Pra voltar, não
+G       A            D     Bm
+Eu agradeço tanto a sua escolta
+ G           A
+Mas deixa a noite terminar
+
+[Instrumental] D  Bm  G  A`;export{n as default};

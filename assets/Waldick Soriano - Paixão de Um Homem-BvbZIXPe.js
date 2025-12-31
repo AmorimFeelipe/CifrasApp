@@ -1,0 +1,48 @@
+const a=`Título: Paixão de Um Homem
+Artista: Waldick Soriano
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:36:34
+============================================================
+
+F
+ Amigo
+ Por favor, leve esta carta
+ E entregue a aquela ingrata
+                Gm
+ E diga como estou
+ C7
+ Com os olhos rasos d'agua
+ E o coração cheio de mágoa
+                     F
+ Estou morrendo de amor
+   F
+ Amigo
+ Eu queria estar presente
+ Para ver o que ela sente
+                            Gm
+ Quando alguém fala em meu nome
+ C7
+ Eu não sei se ela me ama
+ Eu só sei que ela maltrata
+                        F
+ O coração de um pobre homem
+   F
+ Amigo
+  Se esta cartinha falasse
+                        F7
+ Pra dizer a aquela ingrata
+                    A#
+ Como está meu coração
+                    F
+ Vou ficar aqui chorando
+                        C7
+ Pois um homem quando chora
+                      F7  A#
+ Tem no peito uma paixão
+                    F
+ Vou ficar aqui chorando
+                        C7
+ Pois um homem quando chora
+                      F
+ Tem no peito uma paixão.`;export{a as default};

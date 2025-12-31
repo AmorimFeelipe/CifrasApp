@@ -1,0 +1,31 @@
+const o=`Título: Sabão Crá Crá
+Artista: Mamonas Assassinas
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:14:18
+============================================================
+
+C
+Sabão crá-crá, sabão crá-crá
+                        G7
+Não deixa os cabelo do saco enrolar
+
+Sabão cré-cré, sabão cré-cré
+                        C
+Não deixa os cabelo do saco de pé
+
+Sabão cri-cri, sabão cri-cri
+                        G7
+Não deixa os cabelo do saco cair
+
+Sabão crô-crô, sabão crô-crô
+                        C
+Não deixa os cabelo do saco dar nó
+
+Sabão cru-cru, sabão cru-cru
+                        G7
+Não deixa os cabelo do saco
+                                 C
+(Êitah, diacho!) Enrolar com os do
+
+[Riff]`;export{o as default};

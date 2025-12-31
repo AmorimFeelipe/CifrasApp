@@ -1,0 +1,145 @@
+const n=`Título: Mulher de Fases
+Artista: Raimundos
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 17:03:58
+============================================================
+
+[Intro] G  C  D
+
+[Primera Parte]
+
+G                 D
+  Que mulher ruim
+              C          Em
+Jogou minhas coisas fora
+                  Am
+Disse que em sua cama
+           C          G
+Eu não deito mais não
+
+               D
+A casa é minha
+          C        Em
+Você que vá embora
+                    Am
+Já pra saia da sua mãe
+                    C
+E deixa meu colchão
+
+                Am
+Ela é pró na arte
+                  Em
+De pentelhar e aziar
+             G
+É campeã do mundo
+C
+A raiva era tanta
+        G
+Que eu nem reparei
+       D
+Que a Lua diminuía
+
+G         D           C             Em
+  A doida   tá me beijando há horas
+                     Am
+Disse que se for sem eu
+            C           G
+Não quer viver mais não
+
+Me diz, Deus
+D                 C          Em
+  O que é que eu faço agora?
+                     Am
+Se me olhando desse jeito
+                  C
+Ela me tem na mão
+             G
+Meu filho aguenta
+               D
+Quem mandou você gostar
+
+Dessa mulher de fases
+
+[Estribillo]
+
+G        C            G
+  Complicada e perfeitinha
+   D          Em
+Você me apareceu
+     Am             C
+Era tudo que eu queria
+
+Estrela da sorte
+
+G           C            G
+  Quando a noite ela surgia
+     D            Em
+Meu bem você cresceu
+       Am           C
+Meu namoro é na folhinha
+
+Mulher de fases
+
+[Segunda Parte]
+
+ Em
+Põe fermento, põe as bombas
+
+Qualquer coisa que aumente
+     G
+E a deixe bem maior que o Sol
+ Em
+Pouca gente sabe que na noite
+                            Am
+O frio é quente e arde e eu    acendi
+
+C              Am
+  Até sem luz dá pra te enxergar
+      Em                 G
+O lençol fazendo congo-blue
+   C                  G
+É pena, eu sei, a manhã já vai miar
+      D
+Se aguente, que lá vem chumbo quente
+
+[Estribillo]
+
+G        C            G
+  Complicada e perfeitinha
+   D          Em
+Você me apareceu
+     Am             C
+Era tudo que eu queria
+
+Estrela da sorte
+
+G           C            G
+  Quando a noite ela surgia
+     D            Em
+Meu bem você cresceu
+       Am           C
+Meu namoro é na folhinha
+
+Mulher de fases
+
+( G  C  D )
+( G  C  D )
+( G  C  D )
+( G  C  D )
+
+[Final]
+
+Complicada e perfeitinha
+
+Você me apareceu
+
+Era tudo que eu queria
+
+Estrela da sorte
+
+Quando a noite ela surgia
+
+Meu bem você cresceu
+
+Meu namoro é na folhinha`;export{n as default};

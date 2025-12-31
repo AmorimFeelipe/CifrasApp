@@ -1,0 +1,140 @@
+const n=`Título: Lugar Ao Sol
+Artista: Charlie Brown Jr.
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:08:50
+============================================================
+
+[Intro]
+
+[Primera Parte]
+
+Em
+   Que bom viver
+        D9
+Como é bom sonhar
+           C7M
+E o que ficou pra trás passou
+                  Em
+E eu não me importei
+            D9
+Foi até melhor
+             C7M
+Tive que pensar
+
+Em algo novo que fizesse sentido
+
+       Em
+Ainda vejo o mundo
+             D9
+Com os olhos    de criança
+         C7M
+Que só quer brincar
+
+E não tanta responsa
+       Em
+Mas a vida cobra sério
+       D9                 C7M
+E realmente não dá pra fugir
+
+[Estribillo]
+
+ G7M(9)
+Livre pra poder sorrir (sim)
+ E5                 C5
+Livre pra poder buscar
+         G7M(9)    C9  Cm7  Eb7M  Eb5
+O meu lugar ao Sol
+
+ G7M(9)
+Livre pra poder sorrir (sim)
+ E5                 C5
+Livre pra poder buscar
+         G7M(9)    C9  Cm7  Eb7M  Eb5
+O meu lugar ao Sol
+
+[Segunda Parte]
+
+Em                      D9
+   Um dia eu espero te reencontrar
+      C7M
+Numa bem melhor
+
+Cada um tem seu caminho
+    Em             D9
+Eu sei foi até melhor
+           C7M
+Irmãos do mesmo Cristo
+
+Eu quero e não desisto
+      Em
+Caro Pai
+                     D9
+Como é bom ter por que se orgulhar
+        C7M
+A vida pode passar
+
+Não estou sozinho
+    Em
+Eu sei se eu tiver fé
+           D9         C7M
+Eu volto até a sonhar
+
+[Estribillo]
+
+ G7M(9)
+Livre pra poder sorrir (sim)
+ E5                 C5
+Livre pra poder buscar
+         G7M(9)    C9  Cm7  Eb7M  Eb5
+O meu lugar ao Sol
+
+ G7M(9)
+Livre pra poder sorrir (sim)
+ E5                 C5
+Livre pra poder buscar
+         G7M(9)    C9  Cm7  Eb7M  Eb5
+O meu lugar ao Sol
+
+[Tercera Parte]
+
+    Em      D9
+O amor é assim
+     C7M
+É a paz de Deus em sua casa
+    Em      D9
+O amor é assim
+     C7M
+É a paz de Deus que nunca acaba
+    Em      D9
+O amor é assim
+     C7M
+É a paz de Deus em sua casa
+    Em      D9
+O amor é assim
+     C7M
+É a paz de Deus que nunca acaba
+
+[Puente]  A9  C9  A9  C9
+         A9  C9  Em  D9
+         Em  D9
+         C7M  Em  D9  C7M
+
+[Final]
+
+        Em
+Nossas vidas, nossos sonhos
+      D9          C7M
+Têm o    mesmo valor
+        Em
+Nossas vidas, nossos sonhos
+      D9
+Têm o    mesmo valor
+    C7M                           Em
+Eu vou com você pra onde você for
+                    D9
+Eu descobri que é azul
+            C7M                 Em
+A cor da parede da casa de Deus
+               D9                    C7M
+E não há mais ninguém como você e eu`;export{n as default};

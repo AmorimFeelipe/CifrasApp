@@ -1,0 +1,106 @@
+const n=`Título: Só Os Loucos Sabem
+Artista: Charlie Brown Jr.
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:07:53
+============================================================
+
+[Intro] G  Em  C
+        G  Em  C
+
+[Primera Parte]
+
+  Em         C
+Agora eu sei
+  G
+Exatamente o que fazer
+ Em        G             D
+Bom recomeçar, poder contar com você
+                      Em      C
+Pois eu me lembro de tudo, irmão
+           G
+Eu estava lá também
+   Am
+O homem quando está em paz
+           C
+Não quer guerra com ninguém
+
+   Em                 C
+Eu    segurei minhas lágrimas
+             G
+Pois não queria demonstrar a emoção
+ Em                      G
+Já que estava ali só pra observar
+        D
+E aprender um pouco mais
+
+Sobre a percepção
+      Em
+Eles dizem que é impossível
+   C                     G
+Encontrar o amor sem perder a razão
+Am
+   Mas pra quem tem pensamento forte
+        C
+O impossível é só questão de opinião
+
+[Estribillo]
+
+            Em     C    G
+E disso os loucos sabem
+       Em     G    D
+Só os loucos sabem
+          Em     C    G
+Disso os loucos sabem
+       Am          C
+Só os loucos sabem
+
+( G  Em  C )
+( G  Em  C )
+
+[Segunda Parte]
+
+        Em      C         G
+Toda a positividade eu desejo a você
+           Em    G         D
+Pois precisamos disso nos dias de luta
+   Em           C
+O medo cega os nossos sonhos
+   G
+O medo cega os nossos sonhos
+ Am                       C
+Menina linda, eu quero morar na sua rua
+
+     Em     C      G
+Você    deixou saudade
+     Em     G      D
+Você    deixou saudade
+          Em           C
+Quero te ver outra vez
+          G
+Quero te ver outra vez
+   Am           C
+Você deixou saudade
+
+( G  Em  C )
+( G  Em  C )
+
+[Primera Parte]
+
+  Em         C
+Agora eu sei
+  G
+Exatamente o que fazer
+ Em        G             D
+Bom recomeçar, poder contar com você
+                      Em      C
+Pois eu me lembro de tudo, irmão
+           G
+Eu estava lá também
+   Am
+O homem quando está em paz
+           C
+Não quer guerra com ninguém
+
+[Final] G  Em  C
+        G  Em  C  G`;export{n as default};

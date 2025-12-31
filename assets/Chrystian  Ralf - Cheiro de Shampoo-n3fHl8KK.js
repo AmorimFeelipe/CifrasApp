@@ -1,0 +1,142 @@
+const n=`Título: Cheiro de Shampoo
+Artista: Chrystian & Ralf
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:38:05
+============================================================
+
+[Intro] D  Bm  G2  A  A7
+        D  Bm  G2  A  A7
+
+[Primera Parte]
+
+D
+  Você me dá um beijo
+Bm
+   Me pede pra esperar
+G2
+   Entra pro seu banho diz
+    A         A7
+Que   já vem se deitar
+
+D
+  Deixa a porta aberta
+Bm
+   Vai tirando a roupa
+G
+  Eu fico olhando tudo
+    A            A7  A#º
+Com água na boca
+
+[Pre-Estribillo]
+
+    Bm7
+Mas esses minutos parecem
+                  F#m7
+Bem mais que uma hora
+                      G2
+Você não vem, você demora
+                             D    A#º
+E fica alisando seu corpo inteiro
+
+   Bm7
+Então o desejo de amar
+               F#m7
+Incendeia meu peito
+
+Não consigo esperar
+               G2
+Não tem outro jeito
+             A
+Mergulho também
+                D
+Com você no chuveiro
+
+[Estribillo]
+
+              D
+Esse amor molhado
+                A
+Faz tudo acontecer
+                  G2
+Você me deixa atiçado
+                    A7
+Pra te dar mais prazer
+
+                D
+Eu cubro com espumas
+             A
+O seu corpo nu
+     A#º                G2
+Nós dois debaixo do chuveiro
+           A7           D
+Amor com cheiro de shampoo
+
+[Solo] D  Bm7  G  A
+       D  Bm7  G  A  A#º
+
+[Pre-Estribillo]
+
+    Bm7
+Mas esses minutos parecem
+                  F#m7
+Bem mais que uma hora
+                      G2
+Você não vem, você demora
+                             D    A#º
+E fica alisando seu corpo inteiro
+
+   Bm7
+Então o desejo de amar
+               F#m7
+Incendeia meu peito
+
+Não consigo esperar
+               G2
+Não tem outro jeito
+             A
+Mergulho também
+                D
+Com você no chuveiro
+
+[Estribillo]
+
+              D
+Esse amor molhado
+                A
+Faz tudo acontecer
+                  G2
+Você me deixa atiçado
+                    A7
+Pra te dar mais prazer
+
+                D
+Eu cubro com espumas
+             A
+O seu corpo nu
+     A#º                G2
+Nós dois debaixo do chuveiro
+           A7           D
+Amor com cheiro de shampoo
+
+              D
+Esse amor molhado
+                A
+Faz tudo acontecer
+                  G2
+Você me deixa atiçado
+                    A7
+Pra te dar mais prazer
+
+                D
+Eu cubro com espumas
+             A
+O seu corpo nu
+     A#º                G2
+Nós dois debaixo do chuveiro
+           A7           D
+Amor com cheiro de shampoo
+
+Você me dá um beijo
+                    Bm7
+Me pede pra esperar`;export{n as default};

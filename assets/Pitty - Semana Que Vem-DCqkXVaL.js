@@ -1,0 +1,104 @@
+const e=`Título: Semana Que Vem
+Artista: Pitty
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:16:47
+============================================================
+
+D     G       A
+Amanhã eu vou revelar
+ D         G       A
+Depois eu penso em aprender
+ D           G       A
+Daqui a uns dias eu vou dizer
+ D        G     A       D  (G A)
+O que me faz querer gritar
+
+ D          G            A
+No mês que vem tudo vai melhorar
+ D              G              A
+Só mais alguns anos e o mundo vai mudar
+ D           G              A
+Ainda temos tempo até tudo explodir
+ D         G      A     D (G A)
+Quem sabe quanto vai durar
+
+REF:
+           D
+Não deixe nada pra depois, não deixe o
+         A
+tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 D
+Porque semana que vem pode nem chegar
+                       A
+Pra depois, o tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 D
+Porque semana que vem pode nem chegar
+
+                G          A
+A partir de amanhã eu vou discutir
+ D          G           A
+Da próxima vez eu vou questionar
+ D              G        A
+Na segunda eu começo a agir
+ D            G        A      D  (G A)
+Só mais duas horas pra eu decidir
+
+REF:
+           D
+Não deixe nada pra depois, não deixe o
+         A
+tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 D
+Porque semana que vem pode nem chegar
+                       A
+Pra depois, o tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 F# G F# G
+Porque semana que vem pode nem chegar
+
+ F#             G             F#        G
+Esse pode ser o último dia de nossas vidas
+        F#                   G
+última chance de fazer tudo ter valido a
+ F# G
+pena
+F#                G            F#
+Diga sempre tudo que precisa dizer
+                    G
+Arrisque mais, pra não se arrepender
+F#                             G
+Nós não temos todo o tempo do mundo
+        F#           G
+E esse mundo já faz muito tempo
+F#         G                 F#
+O futuro é o presente e o presente já
+     G F#
+passou
+           G                F#
+O futuro é o presente e o presente já
+     G
+passoooou!
+
+REF:
+           D
+Não deixe nada pra depois, não deixe o
+         A
+tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 D
+Porque semana que vem pode nem chegar
+                       A
+Pra depois, o tempo passar
+           C
+Não deixe nada pra semana que vem
+                                 D
+Porque semana que vem pode nem chegar`;export{e as default};

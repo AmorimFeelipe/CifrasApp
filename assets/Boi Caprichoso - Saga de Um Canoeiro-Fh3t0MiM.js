@@ -1,0 +1,64 @@
+const n=`Título: Saga de Um Canoeiro
+Artista: Boi Caprichoso
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:35:28
+============================================================
+
+F
+Vai um canoeiro, nos braços do rio,
+          C9
+Velho canoeiro, vai. já vai canoeiro.
+
+           F
+Vai um canoeiro, no murmúrio do rio,
+               C9
+No silêncio da mata, vai. já vai canoeiro.
+C9  G/B Am9
+
+
+             Em9                        F
+Já vai canoeiro, nas curvas que o remo dá.
+           C9    C9 G/B Am9
+já vai canoeiro
+             Em9                      F
+Já vai canoeiro, no remanso da travessia.
+           C9
+já vai canoeiro.
+G            G#º                   F/A
+Enfrenta o banzeiro nas ondas dos rios,
+            F               C9
+E das correntezas vai o desafio. já vai
+canoeiro.
+
+G        G#º              F/A
+Da tua canoa, o teu pensamento:
+           F             C9
+Apenas chegar, apenas partir. já vai
+          C9 G/B Am9
+canoeiro.
+
+                                Em9
+Teu corpo cansado de grandes viagens.
+Já vai canoeiro.
+
+      F                         C9    C9
+Tuas mãos calejadas do remo a remar.
+G/B Am9
+
+Já vai canoeiro.
+
+                         Em9
+Da tua canoa de tantas remadas.
+Já vai canoeiro.
+
+F
+O porto distante,
+             C9
+O teu descansar....
+Eu sou, eu sou.
+
+G          G#º         F/A  F
+Sou, sou, sou, sou canoeiro. canoeiro, vai!
+C9
+ (2x)`;export{n as default};

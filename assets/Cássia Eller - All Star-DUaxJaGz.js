@@ -1,0 +1,111 @@
+const n=`Título: All Star
+Artista: Cássia Eller
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:58:54
+============================================================
+
+[Intro] E7M  A7M  E7M  A7M
+
+E7M                                    A7M
+    Estranho seria se eu não me apaixonasse por você
+E7M                           A7M
+    O sal viria doce para os novos lábios
+E7M
+    Colombo procurou as Índias
+       A7M
+Mas a Terra avistou em você
+E7M
+    O som que eu ouço são as gírias
+    A7M
+Do seu vocabulário
+
+[Estribillo]
+
+C                D9(11)          E
+  Estranho é gostar tanto do seu All Star azul
+C                D9(11)
+  Estranho é pensar que o bairro das
+G
+  Laranjeiras
+ G/F#  Em7
+Satis_feito, sorri
+         C
+Quando chego ali
+  G4/B   Am7
+E entro no elevador
+                       G
+Aperto o doze que é o teu andar
+            G/F#      Em7
+Não vejo a hora de te encontrar
+               C
+E continuar aquela conversa
+         G4/B  Am7
+Que não termi_namos ontem
+           E7M  A7M  E7M  A7M
+Ficou pra hoje
+
+[Segunda Parte]
+
+E7M
+    Estranho, mas já me sinto
+                A7M
+Como um velho amigo seu
+E7M
+    Seu All Star azul combina com o meu
+      A7M
+Preto,    de cano alto
+E7M
+    Se o homem já pisou na Lua
+                   A7M
+Como eu ainda não tenho o seu endereço?
+E7M
+    O tom que eu canto as minhas músicas
+            A7M
+Pra tua voz     parece exato
+
+[Estribillo]
+
+C                D9(11)          E
+  Estranho é gostar tanto do seu All Star azul
+C                D9(11)
+  Estranho é pensar que o bairro das
+G
+  Laranjeiras
+ G/F#  Em7
+Satis_feito, sorri
+         C
+Quando chego ali
+  G4/B   Am7
+E entro no elevador
+                       G
+Aperto o doze que é o teu andar
+            G/F#      Em7
+Não vejo a hora de te encontrar
+               C
+E continuar aquela conversa
+         G4/B  Am7
+Que não termi_namos ontem
+
+Ficou pra
+
+G
+  Laranjeiras
+ G/F#  Em7
+Satis_feito, sorri
+         C
+Quando chego ali
+  G4/B   Am7
+E entro no elevador
+                       G
+Aperto o doze que é o teu andar
+            G/F#      Em7
+Não vejo a hora de te encontrar
+               C
+E continuar aquela conversa
+         G4/B  Am7
+Que não termi_namos ontem
+           E7M  A7M  E7M  A7M
+Ficou pra hoje
+
+[Final] E7M  A7M  E7M  A7M  E7M`;export{n as default};

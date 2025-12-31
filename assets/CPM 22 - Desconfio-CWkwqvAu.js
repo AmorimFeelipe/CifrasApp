@@ -1,0 +1,106 @@
+const n=`Título: Desconfio
+Artista: CPM 22
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:19:27
+============================================================
+
+[Primera Parte]
+
+                           D5
+Sei como que as coisas são
+             G5                 Bm5
+Mas nunca que vou compreender, ignorância e
+   A5                    G5
+ julgamento, sem porque
+        D5             G5
+Ideias que, foram deixadas para trás
+           Bm5            A5
+Seguir em frente, o que passou não volta
+   G5
+mais
+
+[Pré-refrão]
+
+A5     G5        D5
+Facilmente não existe por aqui
+A5     G5            D5
+Simplesmente não é assim como se diz
+A5                G5
+Posso até estar errado mas nem penso em
+       D5
+desistir
+
+[Estribillo]
+
+      G5     Bm5    A5       D5
+ Desconfio que, foi sempre assim
+      G5      Bm5  A5     D5
+Chega de mentir, e de iludir
+      G5       Bm5        A5         D5
+Encarar de frente, ao que temos a fazer
+       G5        Bm5    A5     D5
+Desconfio que, é bem melhor assim
+
+[Estribillo]
+
+[Segunda Parte]
+
+D5                         G5
+Ouvi dizer, muitos não estão mais nem aí
+           Bm5            A5
+para as palavras de um homem que está bem
+G5
+perto daqui
+D5                        G5
+Melhor Correr, enquanto há tempo para nós
+           Bm5           A5           G5
+Antes que tudo vá pros ares sem ouvir a
+nossa voz
+
+[Pré-refrão]
+
+A5              G5             D5
+Facilmente não existe por aqui
+A5                  G5              D5
+Simplesmente não é assim como se diz
+A5                 G5
+Mesmo assim não vou me arrepender daquilo
+que não fiz
+
+[Estribillo]
+
+D5        G5    Bm5     A5
+Desconfio que, foi sempre assim
+D5         G5    Bm5  A5
+Chega de mentir, e de iludir
+D5         G5       Bm5        A5
+Encarar de frente, ao que temos a fazer
+D5        G5    Bm5          A5
+Desconfio que, é bem melhor assim
+
+( E  G  D )
+( E  G  D )
+( E  G  D )
+( E  G  A )
+
+[Solo]
+
+Refrão:
+D5        G5    Bm5     A5
+Desconfio que, foi sempre assim
+D5         G5    Bm5  A5
+Chega de mentir, e de iludir
+D5         G5       Bm5        A5
+Encarar de frente, ao que temos a fazer
+D5        G5    Bm5          A5
+Desconfio que, é bem melhor assim
+D5        G5    Bm5          A5
+Desconfio que, é bem melhor assim
+D        G    Bm          A
+Desconfio que, é bem melhor assim
+
+[Final] Bm5  A5  D5
+        Bm5  A5  D5
+
+[Final]`;export{n as default};

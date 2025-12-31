@@ -1,0 +1,159 @@
+const m=`Título: Saideira
+Artista: Skank
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 17:03:26
+============================================================
+
+[Intro] Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+        Am  Dm  E
+
+[Primera Parte]
+
+         Am            Dm
+Tem um lugar diferente
+      E          Am   Dm   E
+Lá depois da saideira
+     Am           Dm
+Quem é de beijo, beija
+           E        Am   Dm  E
+Quem é de luta, capoeira
+          Am           Dm
+Tem um lugar diferente
+      E          Am   Dm  E
+Lá depois da saideira
+     Am               Dm
+Tem homem que vira macaco
+      E             Am   Dm  E
+E mulher que vira freira
+
+[Estribillo]
+
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+
+       Am      Dm  E
+Desce mais, é
+       Am        Dm  E
+Desce mais, ê ê
+
+( Am  Dm  E )
+( Am  Dm  E )
+
+[Primera Parte]
+
+          Am           Dm
+Tem um lugar diferente
+      E          Am   Dm  E
+Lá depois da saideira
+        Am          Dm
+Tem bandeira que recolhe
+        E            Am   Dm  E
+Tem bandeira que hasteia
+        Am             Dm
+Tem um lugar diferente
+      E          Am    Dm  E
+Lá depois da saideira
+     Am          Dm
+É tomando uma gelada
+        E        Am          Dm  E
+Que se cura bebedeira, uu... ê ê
+
+[Estribillo]
+
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+
+( Am  Dm  E )
+( Am  Dm  E )
+( Am  Dm  E )
+( Am  Dm  E )
+
+[Primera Parte]
+
+         Am            Dm
+Tem um lugar diferente
+      E          Am   Dm   E
+Lá depois da saideira
+     Am           Dm
+Quem é de beijo, beija
+           E        Am   Dm  E
+Quem é de luta, capoeira
+          Am           Dm
+Tem um lugar diferente
+      E          Am   Dm  E
+Lá depois da saideira
+     Am               Dm
+Tem homem que vira macaco
+      E             Am   Dm  E
+E mulher que vira freira
+
+[Estribillo]
+
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+
+       Am      Dm  E
+Desce mais, é
+       Am        Dm  E
+Desce mais, ê ê
+
+      Am
+Comandante! Capitão
+       Dm          E
+Tio! Brother! Camarada
+    Am
+Chefia! Amigão
+       Dm         E
+Desce mais uma rodada
+
+[Final] Am  Dm  E`;export{m as default};

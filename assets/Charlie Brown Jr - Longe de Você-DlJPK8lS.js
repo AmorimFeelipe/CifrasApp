@@ -1,0 +1,112 @@
+const n=`Título: Longe de Você
+Artista: Charlie Brown Jr.
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:11:05
+============================================================
+
+[Intro] G/B  C9  G  D4
+        Em7  G/B  D4  D11/F#  G
+
+[Primera Parte]
+
+ G/B        C9          G          D4
+Longe de você eu enlouqueço muito mais
+    Em7               G/B
+Eu vivo na espera de poder viver a vida
+ D4      D11/F#  G
+Com você
+
+G/B          C9         G
+    Vejo pessoas sem saberem pra onde
+         D4
+O mundo vai
+   Em7                        G/B
+Eu     conto as horas para estar
+       D4  D11/F#  G
+Com você
+
+ G/B        C9       G            D4
+Longe de você eu preciso de algo mais
+ Em7               G/B
+Eu vivo na espera de poder viver a vida
+ D4      D11/F#  G
+Com você
+G/B          C9         G
+    Vejo pessoas sem saberem pra onde
+         D4
+O mundo vai
+   Em7                     G/B          D4  D11/F#  G
+Eu     conto as horas para estar com você
+
+[Estribillo]
+
+Em7                           C9
+    Que mundo é esse que ninguém entende um sonho?
+Em7                           C9
+    Que mundo é esse que ninguém sabe mais amar?
+Em7                          C9
+    Pra tanta coisa que faz mal eu me disponho
+Em7                         C9
+    Quando eu te vejo eu começo a sorrir
+Em7       C9           Em7  C9
+    Eu começo a sorrir
+
+( Em7  D4  E4 )
+( Em7  D4  C9  A )
+
+[Segunda Parte]
+
+G/B               C9
+    Não quero disperdiçar a
+  G                  D4
+Chance de ter encontrado você
+ Em7
+Hoje o que eu mais quero
+G/B             D4  D11/F#  G
+É fazer você feliz
+
+G/B             C9
+    Vejo as pessoas e sei que
+              G           D4
+Juntos nós podemos muito mais
+    Em7               G/B
+Eu vivo na espera de poder
+              D4  D11/F#  G
+Viver a vida com você
+
+[Estribillo]
+
+Em7                           C9
+    Que mundo é esse que ninguém entende um sonho?
+Em7                           C9
+    Que mundo é esse que ninguém sabe mais amar?
+Em7                          C9
+    Pra tanta coisa que faz mal eu me disponho
+Em7                         C9
+    Quando eu te vejo eu começo a sorrir
+Em7       C9
+    Eu começo a sorrir
+
+( Em7  C9 )
+( Em7  D4  E4 )
+
+    Em7                            D4
+Molduras boas não salvam quadros ruins
+         C9
+Eu procurei a vida inteira sem saber
+           A
+Bem pelo que
+               Em7                    D4
+Mas se pelo menos você estivesse aqui
+             E4
+Eu conto as horas pra estar com você
+           Em7          D4
+Eu estive lá na sua presença
+          C9               A
+Só pra saber o que você diria sobre nós
+
+G/B  C9     G     D4       Em7  G/B  D4  D11/F#  G
+        O que te diz mais?
+G/B  C9     G     D4       Em7  G/B  D4  D11/F#  G
+        O que te diz mais?`;export{n as default};

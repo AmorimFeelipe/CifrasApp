@@ -1,0 +1,122 @@
+const n=`Título: Perfect
+Artista: Simple Plan
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:26:25
+============================================================
+
+[Intro] E  A2  E  A2
+
+[Primera Parte]
+
+E
+  Hey dad look at me
+A2
+   Think back and talk to me
+        E                    A2
+Did I grow up according to plan?
+             E
+And do you think I'm wasting my time
+A2
+   Doing things I wanna do?
+        E
+But it hurts when you disapprove all along
+
+ [Pre-Estribillo]
+
+        F#m7(11)/C#
+And now I try hard to make it
+A2                      E
+I just want to make you   proud
+I'm never gonna be good enough for
+F#m7(11)/C#
+you
+                            A2
+I can't pretend that I'm alright
+
+And you can't change me
+
+[Estribillo]
+
+           E
+'Cause we lost it all
+         B4
+Nothing lasts forever
+     C#m
+I'm sorry
+            A2
+I can't be perfect
+          E
+Now it's just too late and
+    B4
+We can't go back
+     C#m
+I'm sorry
+            A2
+I can't be perfect
+
+( E  A2  E  A2 )
+
+[Segunda Parte]
+
+E
+I try not to think
+A2
+   About the pain I feel inside
+          E                     A2
+Did you know you used to be my hero?
+         E
+All the days you spend with me
+A2
+   Now seem so far away
+        E                            A2
+And it feels like you don't care anymore
+
+[Pre-Estribillo]
+
+        F#m7(11)/C#
+And now I try hard to make it
+A2                      E
+I just want to make you   proud
+I'm never gonna be good enough for
+F#m7(11)/C#
+you
+                       A2
+I can't stand another fight
+
+And nothing's alright
+
+[Estribillo]
+
+           E
+'Cause we lost it all
+         B4
+Nothing lasts forever
+     C#m
+I'm sorry
+            A2
+I can't be perfect
+          E
+Now it's just too late and
+    B4
+We can't go back
+     C#m
+I'm sorry
+            A2
+I can't be perfect
+
+[Final]
+
+ A2               B4         E
+Nothing's gonna change the things that you
+said
+ A2              B4        E
+Nothing's gonna make this right again
+  C#m
+Please don't turn your back
+   B4
+I can't believe it's hard
+         A2
+Just to talk to you
+
+But you don't understand.`;export{n as default};

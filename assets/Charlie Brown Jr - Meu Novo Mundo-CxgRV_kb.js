@@ -1,0 +1,62 @@
+const n=`Título: Meu Novo Mundo
+Artista: Charlie Brown Jr.
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:10:08
+============================================================
+
+Am      C         G            Am
+Como se o silêncio dissesse tudo
+ Dm           F         G            Am
+O sentimento bom que me leva pra outro mundo
+Am           C         G                Am
+A vontade de te ver já é maior que tudo
+Dm           F         G            Am
+Não existe distâncias no meu novo mundo
+Am      C         G      Am
+Tipo coisas da sétima arte
+Dm      F         G         Am
+Aconteceu sem que eu imaginasse
+Am      C         G            Am
+Sonho de consumo cantar na sua festa
+Dm          F
+Vem dançar comigo
+G              Am
+Aproveita e me sequestra
+Am      C         G            Am
+Amor vagabundo, intenso ou muita pressa
+Dm            F         G        Am
+Não sei como termina mas sei como começa
+Am      C         G            Am
+Fiz essa canção pra dizer algumas coisas
+Dm            F
+Cuidado com o destino
+G                Am
+Ele brinca com as pessoas
+Am      C         G            Am
+Tipo uma foto com sorriso inocente
+Dm         F              G          Am
+Mas a vida tinha um plano e separou a gente
+Am      C         G            Am     Dm F G Am
+Mas se quem eu amo tem amor por mim
+Am      C         G        Am
+Se quem eu amo tem amor por mim
+Dm              F         G            Am
+Eu sei que ainda estamos muito longe do fim
+
+      C5             E5    G5          E5
+A vontade de te ver ja é maior que tudo
+       A5
+E não existem distancias no meu novo mundo
+      C5             E5    G5          E5
+A vontade de te ver já é maior que tudo
+       A5
+E não existem limites no meu novo mundo
+      C5             E5    G5          E5
+A vontade de te ver ja é maior que tudo
+       A5
+E não existem distancias no meu novo mundo
+      C5             E5    G5          E5
+A vontade de te ver ja é maior que tudo
+      A5
+E não existem distancias no meu novo mundo`;export{n as default};

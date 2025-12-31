@@ -1,0 +1,114 @@
+const n=`Título: Cartas Pra Você
+Artista: NX Zero
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:22:49
+============================================================
+
+[Intro] E  E7
+
+[Primera Parte]
+
+E                 E7
+Eu tento te esquecer
+                    A
+Mas tudo que eu escrevo
+           Am
+É sobre você
+
+E                    E7
+Eu não posso me enganar
+                  A
+Fingir que estou bem
+              Am
+Porque não estou
+
+[Estribillo]
+
+F#               A
+   Preciso de você
+       F#
+(Uh uh uh)
+              A
+Preciso de você
+      E
+Essa noite
+
+[Segunda Parte]
+
+E7                 A
+   E hoje estou aqui
+              Am
+Só pra te cobrar
+            E
+O que você disse
+       B          C#m
+Que iria ser pra sempre
+ B             F#
+Mas não foi assim
+
+[Estribillo]
+
+                A
+Agora o que me resta
+       F#
+(Uh uh uh)
+                A
+Escrever nessa carta
+         E  E7
+Pra lembrar
+
+[Segunda Parte]
+
+E                 E7
+  Eu passo tanto tempo
+            A
+Só te procurando
+                Am
+Em um outro alguém
+
+ E                    E7
+Mas não posso me enganar
+           A
+Sinto sua falta
+                Am
+E ninguém pode ver
+
+[Estribillo]
+
+F#               A
+   Preciso de você
+       F#
+(Uh uh uh)
+              A
+Preciso de você
+      E
+Essa noite
+
+[Segunda Parte]
+
+E7                 A
+   E hoje estou aqui
+              Am
+Só pra te cobrar
+            E
+O que você disse
+      B           C#m
+Que iria ser pra sempre
+ B             F#
+Mas não foi assim
+
+[Estribillo]
+
+                A
+Agora o que me resta
+       F#
+(Uh uh uh)
+                A
+Escrever nessa carta
+       F#
+(Uh uh uh)
+              A
+Preciso de você
+       F#  A
+(Uh uh uh)`;export{n as default};

@@ -1,0 +1,76 @@
+const e=`Título: Regina Let's Go!
+Artista: CPM 22
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:18:26
+============================================================
+
+[Intro] D5  A5  E5  G5
+
+D5                     A5
+ Em muitas vezes procurei tentar achar
+        E5
+onde eu errei
+                  G5
+Em coisas que nem têm porque
+D5                    A5
+ Naquela vez te perguntei  você não soube
+       E5
+ responder
+               G5          D5
+O que eu tinha feito pra você
+
+    A5                 E5
+Agora como eu vou saber
+        G5                     D5
+Tem hora que é melhor esquecer
+      A5               E5
+Espera o dia amanhecer
+    G5                      D5
+Pra ver o que a gente vai fazer
+
+D5                A5                E5
+ Não me importa mais não ter como voltar
+              G5           D5
+É  eu não vou mais me importar
+                 A5            E5
+Qualquer coisa faz sua idéia mudar
+              G5           D5
+A gente ainda pode se entender
+
+[Solo]
+
+D5                     A5
+ Em muitas vezes eu pensei em tentar falar
+o que eu nem
+E5                       G5
+Sei de coisas que eu já quis saber
+D5                    A5
+ Naquela vez te perguntei  você não soube
+       E5
+ responder
+               G5          D5
+O que eu tinha feito pra você
+
+    A5                 E5
+Agora como eu vou saber
+        G5                     D5
+Tem hora que é melhor esquecer
+      A5               E5
+Espera o dia amanhecer
+    G5                      D5
+Pra ver o que a gente vai fazer
+
+D5                 A5                E5
+ Não me importa mais não ter como voltar
+              G5           D5
+É  eu não vou mais me importar
+                  A5            E5
+Qualquer coisa faz sua idéia mudar
+                 G5                  D5  A5
+Quem sabe a gente pode se entender
+
+E5               G5      D5     A5 E5
+Daqui a pouco é tarde demais
+    G5                  D5
+Mas isso é entre eu e você`;export{e as default};

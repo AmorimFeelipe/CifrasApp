@@ -1,0 +1,82 @@
+const n=`Título: Relicário
+Artista: Cássia Eller
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:58:18
+============================================================
+
+[Primera Parte]
+
+D
+  É uma índia com colar
+ A tarde linda que não quer se pôr
+ Dançam as ilhas sobre o mar
+ Sua cartilha tem o "A" de que cor?
+
+Em                     G
+  O que está acontecendo?
+                      D
+ O mundo está ao contrário e ninguém reparou
+Em                     G
+  O que está acontecendo?
+                            D
+ Eu estava em paz quando você chegou
+
+            D
+E são dois cílios em pleno ar
+Atrás do filho vem o pai e o avô
+Como um gatilho sem disparar
+                                       Em
+Você invade mais um lugar onde eu não vou
+                      G
+O que você está fazendo?
+                         D
+Milhões de vasos sem nenhuma flor
+Em                      G
+  O que você está fazendo?
+                     D
+Um relicário imenso desse amor
+
+[Pasaje] C  G  D/F#  C  G
+
+[Segunda Parte]
+
+         D
+Corre a lua, porque longe vai?
+Sobe o dia tão vertical
+O horizonte anuncia com o seu vitral
+                                          Em
+Que eu trocaria a eternidade por essa noite
+                      G
+Porque está amanhecendo?
+                         D
+Peço o contrário, ver o sol se por
+Em                      G
+  Porque está amanhecendo?
+                                        D
+Se não vou beijar seus lábios quando você se for
+            D
+Quem nesse mundo faz o que há durar
+Pura semente, dura o futuro amor
+Eu sou a chuva prá você secar
+                                     Em
+Pelo zunido das suas asas você me falou
+                      G
+O que você está dizendo?
+                          D
+Milhões de frases sem nenhuma cor
+Em                      G
+  O que você está dizendo?
+                     D
+Um relicário imenso desse amor
+
+[Tercera Parte]
+
+A                       C
+  O que você está dizendo?
+A                       C
+  O que você está fazendo?
+                           D   D/C  G/B  Gm/Bb
+Porque que está fazendo assim?
+                D   D/C  G/B  Gm/Bb  D
+Está fazendo assim!`;export{n as default};

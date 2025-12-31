@@ -1,0 +1,169 @@
+const n=`Título: Senhor do Tempo
+Artista: Charlie Brown Jr.
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:11:19
+============================================================
+
+[Intro]
+
+(Riff Introdução)
+
+[Primera Parte]
+
+        D9(11)
+Eu não sou o senhor do tempo
+
+Mas eu sei que vai chover
+    F5(7M/9)               C
+Me sinto muito bem quando fico com você
+    D9(11)
+Eu tenho habilidade de fazer histórias
+tristes
+   F5(7M/9)            C
+Virarem melodia vou vivendo o dia-a-dia
+    D9(11)
+Na paz, na moral, na humilde busco só
+       F5(7M/9)
+sabedoria
+                 C
+Aprendendo todo dia
+                 D9(11)
+Me espelho em você, corro junto com você
+                  F5(7M/9)            C
+Vivo junto com você, faço tudo por você
+              D9(11)
+Seguindo em frente com fé e atenção
+                F5(7M/9)           C
+Continuo na missão continuo por você e por
+mim
+         D9(11)
+Porque quando a casa cai
+                                  F5(7M/9)
+Não dá pra fraquejar, quem é guerreiro tá
+ligado
+         C
+Que guerreiro é assim
+
+[Estribillo]
+
+         G
+O tempo passa e um dia a gente aprende
+         D9(11)
+Hoje eu sei realmente o que faz a minha
+mente
+         G
+Eu vi o tempo passar vi pouca coisa mudar
+        D9(11)
+Então tomei um caminho diferente
+       G
+Tanta gente equivocada faz mal uso da
+palavra
+        D9(11)
+Falam, falam o tempo todo mas não tem nada
+a dizer
+        G
+Mas eu tenho santo forte é incrível a minha
+ sorte
+     D9(11)
+Agradeço todo tempo por ter encontrado você
+
+[Primeira Parte com Variação]
+
+           D9(11)
+O tempo é rei, e a vida é uma lição
+                   F5(7M/9)
+E um dia a gente cresce
+                   C
+E conhece nossa essência e ganha
+      D9(11)
+experiência
+                   F5(7M/9)
+E aprende o que é raiz então cria
+      C
+consciência
+
+     D9(11)
+Tem gente que reclama da vida o tempo todo
+       F5(7M/9)           C
+Mas a lei da vida é quem dita o fim do jogo
+          D9(11)
+Eu vi de perto o que neguinho é capaz por
+dinheiro
+         F5(7M/9)             C
+Eu conheci o próprio lobo na pele de um
+cordeiro
+        D9(11)
+Infelizmente a gente tem que tá ligado o
+tempo inteiro
+              F5(7M/9)    C
+Ligado nos pilantra e também nos bagunceiro
+     D9(11)
+E a gente se pergunta porque a vida é
+assim?
+     F5(7M/9)               C
+É difícil pra você e é difícil pra mim
+
+(Riff Introdução)
+
+        D9(11)
+Eu não sou o senhor do tempo, mas eu sei
+que vai chover
+    F5(7M/9)               C
+Me sinto muito bem quando fico com você
+    D9(11)
+Eu tenho habilidade de fazer histórias
+tristes
+   F5(7M/9)            C
+Virarem melodia vou vivendo o dia-a-dia
+    D9(11)
+Na paz, na moral, na humilde busco só
+       F5(7M/9)
+sabedoria
+                 C
+Aprendendo todo dia
+                 D9(11)
+Me espelho em você, corro junto com você
+                  F5(7M/9)            C
+Vivo junto com você, faço tudo por você
+
+[Segunda Parte]
+
+Vivendo nesse mundo louco hoje só na brisa
+Viver pra ser melhor também
+É um jeito de levar a vida
+
+[Estribillo]
+
+         G
+O tempo passa e um dia a gente aprende
+         D9(11)
+Hoje eu sei realmente o que faz a minha
+mente
+         G
+Eu vi o tempo passar vi pouca coisa mudar
+         D9(11)
+Então tomei um caminho diferente
+       G
+Tanta gente equivocada faz mal uso da
+palavra
+        D9(11)
+Falam, falam o tempo todo mas não tem nada
+a dizer
+        G
+Mas eu tenho santo forte é incrível a minha
+ sorte
+     D9(11)
+Agradeço todo tempo por ter encontrado você
+
+[Segunda Parte com Variação]
+
+Vem que o bom astral vai dominar o mundo!
+Eu já briguei com a vida
+Hoje eu vivo bem com tudo mundo aí
+
+(Riff Introdução)
+
+Vivendo nesse mundo louco hoje só na brisa
+Viver pra ser melhor também é um jeito de
+levar a vida`;export{n as default};

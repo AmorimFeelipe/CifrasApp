@@ -1,0 +1,55 @@
+const n=`Título: Málúù Dúdú - Boi Preto
+Artista: Boi Caprichoso
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:35:55
+============================================================
+
+Dm Dm C G    Dm C A7
+Málúù Dúdú, Málúù Dúdú
+
+Dm                              F
+Couro de veludo, negro como a noite
+                           Am
+Astro fumegante, boi de encantaria
+               G
+Brinquedo que gira na roda, fantasia
+Dm7                            F
+Símbolo do povo, arauto da cultura
+                        Am
+Filho do quilombo que nasceu na rua
+G
+Ginga lê-lê
+
+Dm7
+No batuque do tambor
+                C
+Atabaques e agogô
+          G
+Tambor de couro pele feita no calor
+Dm7
+Rodopia no terreiro Boi de santo brasileiro
+C                        G            Dm  A7
+Trovão se ouve Foi meu preto que urrou
+
+Dm
+Málúù Dúdú, Málúù Dúdú, girou
+         C
+Málúù Dúdú, Málúù Dúdú, girou
+G
+Alabê, tocou tambor
+Dm
+Málúù Dúdú, Málúù Dúdú, girou
+         C
+Málúù Dúdú, Málúù Dúdú, girou
+G
+Na batida do tambor
+
+C9                    Dm
+A ponta do chifre é a lança que avança
+C9                  Dm
+Contra o racismo e a intolerância
+Bb7                           A7
+A porteira de opressões não aguenta
+           A7
+Meu boi é Agbara, ninguém enfrenta!`;export{n as default};

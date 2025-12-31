@@ -1,0 +1,60 @@
+const o=`Título: Boi de Pano
+Artista: Boi Garantido
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:33:40
+============================================================
+
+[Intro] A  A/C#  D  D/F#  E  D/F#  E/G#
+        A  A/C#  D  D/F#  E  D/F#  E/G#
+            A
+Meu boi de pano
+              D9
+É Cultura Popular
+               E
+Atravessou o Oceano
+D       E/D    A    A/G
+Veio de longe pra cá
+          D/F#           E/D
+Bumba meu boi, meu boi bumbá
+           C#m7          F#4
+Meu boi de reis,boi de mamão
+F#7      Bm7           D/E
+Boi de matraca, boi do norte
+          A         A/G
+Boi de orquestra, folião
+
+         D/F#         E/D
+Meu boi bumbá do São José
+      C#m7        F#4
+Boi Garantido Campeão
+F#7     Bm7          D/E
+Boi de Lindolfo Monteverde
+        A
+Boi do amor e da paixão
+
+           A
+Meu boi é raça
+           E
+Meu boi é Sangue
+          Bm
+Meu boi é Lindo
+  E            A     G/A
+E mora no meu coração
+    A7     D   E/D
+Meu boi é tradição
+          C#m7  F#4
+Meu boi é emoção
+    F#7    Bm7
+Meu boi de pano
+      D/E            A
+Sou feliz porque te amo
+
+               E
+De vermelho e branco eu sou raiz
+E     D        A                 A  D/A
+De vermelho e branco eu sou feliz
+A            E            E/D  D/F#  E/G#
+De vermelho vive o coração
+                D     E   A
+De vermelho eu amo o meu País`;export{o as default};

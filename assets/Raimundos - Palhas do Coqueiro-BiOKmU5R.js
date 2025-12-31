@@ -1,0 +1,52 @@
+const n=`Título: Palhas do Coqueiro
+Artista: Raimundos
+Tom: N/A
+URL: https://www.cifraclub.com/raimundos/o-pao-da-minha-prima/
+Extraído em: 31/12/2025 17:07:34
+============================================================
+
+[Intro]  E  C#m  F#m
+
+F#m
+Pa pa pa pa
+C#m
+Pa pa pa  pa
+             E            F#m
+Pa  pa pa  pa    pa pa pa pa
+
+ E             C#m           F#m
+Debaixo lá das palhas do coqueiro
+                           C#m
+É onde eu estou a lhe esperar
+E                           F#m
+Eu fico te esperando ali sozinho
+            E             C#m          F#m
+Sem ter carinho e sem ninguém pra mim amar
+   E                      C#m          F#m
+Eu acho que eu já sei porque você não vem
+                   E                C#m
+Já deve ter encontrado um outro alguém
+            E                          F#m
+Que  me roubou, que me roubou o teu carinho
+         E              C#m           F#m
+Estou sozinho e sem ninguém pra mim amar
+         E               C#m          F#m
+Estou sozinho e sem ninguém pra mim amar
+ E             C#m      F#m
+Debaixo de um teto de espelhos
+                         C#m
+É onde tu estás a me chifrar
+    E                         F#m
+Eu fico aqui coçando os meus córneos
+      E              C#m        F#m
+Imaginando em que motel você está
+                        E            C#m
+Eu acho que o grande motivo agora eu sei
+      F#m                    E                  C#m
+Você deve pensar que eu sou broxa ou que eu sou gay
+          E                 F#m
+Mas pra provar tudo que eu sinto
+         E             C#m          F#m
+Estou sozinho e sem ninguém pra mim amar
+         E             C#m           F#m
+Estou sozinho e sem ninguém pra mim  amar`;export{n as default};
