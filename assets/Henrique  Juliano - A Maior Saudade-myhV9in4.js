@@ -1,0 +1,134 @@
+const n=`Título: A Maior Saudade
+Artista: Henrique & Juliano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:41:18
+============================================================
+
+[Intro] Dm  F
+
+[Primera Parte]
+
+F
+  Tem amores da vida
+                 C
+Que não são pra vida
+ Em
+Nesse caso eu e você
+               Am
+Somos a prova viva
+ F
+Tem começo que o fim
+                C
+Nem passa na cabeça
+Em
+   Até que um belo dia
+           Am
+Esse dia chega
+
+[Pre-Estribillo]
+
+                     F
+Chega chamando pelo nome
+
+Quem chamou de amor
+                      G
+E a boca que falou te amo
+
+Fala que acabou
+               Em
+E o nosso pra sempre
+                 Am
+Infelizmente não    vingou
+
+[Estribillo]
+
+    Dm
+Apesar de não te comover
+                F
+Com o meu sofrimento
+        C
+Mesmo que sair da sua vida
+              G
+Seja um livramento
+    Dm
+Apesar de não valer o álcool
+             F
+Que eu tô bebendo
+        C
+Mesmo que você ligue o foda-se
+          G
+Cê segue sendo
+
+     Dm
+A maior saudade
+ F           C
+De todos os tempos
+     Dm
+A maior saudade
+ F           C
+De todos os tempos
+
+( Dm  F )
+
+[Primera Parte]
+
+F
+  Tem amores da vida
+                 C
+Que não são pra vida
+ Em
+Nesse caso eu e você
+               Am
+Somos a prova viva
+ F
+Tem começo que o fim
+                C
+Nem passa na cabeça
+Em
+   Até que um belo dia
+           Am
+Esse dia chega
+
+[Pre-Estribillo]
+
+                     F
+Chega chamando pelo nome
+
+Quem chamou de amor
+                      G
+E a boca que falou te amo
+
+Fala que acabou
+               Em
+E o nosso pra sempre
+                 Am
+Infelizmente não    vingou
+
+[Estribillo]
+
+    Dm
+Apesar de não te comover
+                F
+Com o meu sofrimento
+        C
+Mesmo que sair da sua vida
+              G
+Seja um livramento
+    Dm
+Apesar de não valer o álcool
+             F
+Que eu tô bebendo
+        C
+Mesmo que você ligue o foda-se
+          G
+Cê segue sendo
+
+     Dm
+A maior saudade
+ F           C
+De todos os tempos
+     Dm
+A maior saudade
+ F           C
+De todos os tempos`;export{n as default};

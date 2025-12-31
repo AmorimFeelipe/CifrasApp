@@ -1,0 +1,140 @@
+const a=`Título: Quarta Cadeira (part. Jorge e Mateus)
+Artista: Matheus & Kauan
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:24:20
+============================================================
+
+[Intro] Em   Bm   C
+
+[Primera Parte]
+
+G
+  Ta viciando outra boca como fez com a
+minha
+                                  Em
+Esse frio na barriga já me pertenceu
+
+Ele só ta te amando desse jeito
+                                C
+Porque ainda não te conheceu direito
+                    Cm
+Mas o fim dessa historia é sempre o mesmo
+
+[Pre-Estribillo]
+
+G
+  Ela vai dar sorrisos durante o beijo
+                C
+Você vai gostar
+
+Vai planejar uma vida deitada em seu peito
+                 Em
+Cê vai acreditar
+                      D
+Vai te amarrar de um jeito
+                             C
+Vai usar o mesmo beijo que usou pra te
+ganhar
+
+Pra se despedir sem se explicar
+
+[Estribillo]
+
+ G
+To numa mesa com quatro cadeiras
+                      D        Em
+Aqui já tem três enganados por ela
+
+Bebendo e esperando a rasteira
+                  C
+Que cê vai levar dela
+                               D
+Fica tranquilo que a quarta cadeira te
+espera
+
+ G
+To numa mesa com quatro cadeiras
+                      D        Em
+Aqui já tem três enganados por ela
+
+Bebendo e esperando a rasteira
+                  C
+Que cê vai levar dela
+                               D
+Fica tranquilo que a quarta cadeira te
+espera
+
+ C
+Não adianta se iludir
+D                                       Em
+   Seu copo já ta cheio aqui pra te acudir
+
+( C   D   Em   D   Em  )
+
+[Primera Parte]
+
+G
+  Ta viciando outra boca como fez com a
+minha
+                                  Em
+Esse frio na barriga já me pertenceu
+
+Ele só ta te amando desse jeito
+                                C
+Porque ainda não te conheceu direito
+
+Mas o fim dessa historia é sempre o mesmo
+
+[Pre-Estribillo]
+
+G
+  Ela vai dar sorrisos durante o beijo
+                C
+Você vai gostar
+
+Vai planejar uma vida deitada em seu peito
+                 Em
+Cê vai acreditar
+                      D
+Vai te amarrar de um jeito
+                             C
+Vai usar o mesmo beijo que usou pra te
+ganhar
+
+Pra se despedir sem se explicar
+
+[Estribillo]
+
+ G
+To numa mesa com quatro cadeiras
+                      D        Em
+Aqui já tem três enganados por ela
+
+Bebendo e esperando a rasteira
+                  C
+Que cê vai levar dela
+                               D
+Fica tranquilo que a quarta cadeira te
+espera
+
+ G
+To numa mesa com quatro cadeiras
+                      D        Em
+Aqui já tem três enganados por ela
+
+Bebendo e esperando a rasteira
+                  C
+Que cê vai levar dela
+                               D
+Fica tranquilo que a quarta cadeira te
+espera
+
+ C
+Não adianta se iludir
+D                                       Em
+   Seu copo já ta cheio aqui pra te acudir
+ C
+Não adianta se iludir
+D                                       Em
+   Seu copo já ta cheio aqui pra te acudir`;export{a as default};

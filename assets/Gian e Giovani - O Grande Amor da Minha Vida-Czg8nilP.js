@@ -1,0 +1,163 @@
+const n=`Título: O Grande Amor da Minha Vida
+Artista: Gian e Giovani
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:38:42
+============================================================
+
+[Intro] C  G/B  Am7  G/B
+        C  G/B  Am7  G/B
+
+[Primera Parte]
+
+   C                 G/B
+A gente morou e cresceu
+          Am7
+Na mesma rua
+         C7              F
+Como se fosse o sol e a lua
+     C/E     Dm    G7
+Dividindo o mesmo céu
+
+C                G/B
+Eu a vi desabrochar
+         Am7
+Ser desejada
+     C7       F
+Uma joia cobiçada
+        Dm7          G7
+O mais lindo dos troféus
+
+[Segunda Parte]
+
+    F
+Eu fui seu guardião
+                  C
+Eu fui seu anjo amigo
+                     D
+Mas não sabia que comigo
+              D7
+Por ela carregava
+  G        G5+
+Uma paixão
+
+[Tercera Parte]
+
+C                  G/B
+Eu a vi se aconchegar
+            Am7
+Em outros braços
+    C7             F
+E sai contando os passos
+       C/E    Dm7        G7
+Me sentindo, tão  sozinho
+
+    C               G/B       Am7
+No corpo, o sabor amargo do ciúme
+          C7             F
+A gente quando não se assume
+                     G7
+Fica chorando sem carinho
+
+[Estribillo]
+
+            C
+O tempo passou e eu sofri calado
+               F
+Não deu pra tirar ela do pensamento
+         Dm                   G7
+Eu ia dizer que estava apaixonado
+             C               G7
+Recebi o convite do seu casamento
+
+               C
+Com letras douradas, num papel bonito
+              F                     Fm6
+Chorei de emoção, quando acabei de ler
+        C
+Num cantinho rabiscado no verso
+     G7
+Ela disse meu amor eu confesso
+         F                   G7
+Estou casando mas o grande amor da minha
+          C  G7
+vida é você
+
+( C  G/B  Am7  G/B )
+( C  G/B  Am7  G/B )
+
+[Tercera Parte]
+
+C                  G/B
+Eu a vi se aconchegar
+            Am7
+Em outros braços
+    C7             F
+E sai contando os passos
+       C/E    Dm7        G7
+Me sentindo, tão  sozinho
+
+    C               G/B       Am7
+No corpo, o sabor amargo do ciúme
+          C7             F
+A gente quando não se assume
+                     G7
+Fica chorando sem carinho
+
+[Estribillo]
+
+            C
+O tempo passou e eu sofri calado
+               F
+Não deu pra tirar ela do pensamento
+         Dm                   G7
+Eu ia dizer que estava apaixonado
+             C               G7
+Recebi o convite do seu casamento
+
+               C
+Com letras douradas, num papel bonito
+              F                     Fm6
+Chorei de emoção, quando acabei de ler
+        C
+Num cantinho rabiscado no verso
+     G7
+Ela disse meu amor eu confesso
+         F                    G7
+Estou casando, mas o grande amor da minha
+          C  G7
+vida é você
+
+            C
+O tempo passou e eu sofri calado
+               F
+Não deu pra tirar ela do pensamento
+         Dm                   G7
+Eu ia dizer que estava apaixonado
+             C               G7
+Recebi o convite do seu casamento
+
+               C
+Com letras douradas, num papel bonito
+              F                     Fm6
+Chorei de emoção, quando acabei de ler
+        C
+Num cantinho rabiscado no verso
+     G7
+Ela disse meu amor eu confesso
+         F                    G7
+Estou casando, mas o grande amor da minha
+          C  Am
+vida é você
+
+         F                    G7
+Estou casando, mas o grande amor da minha
+          C  Am
+vida é você
+
+         F                    G7
+Estou casando, mas o grande amor da minha
+          C
+vida é você
+
+[Final] G/B  Am7  G/B  C`;export{n as default};

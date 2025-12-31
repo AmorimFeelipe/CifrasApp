@@ -1,0 +1,136 @@
+const n=`Título: Que Sorte a Nossa
+Artista: Matheus & Kauan
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:23:22
+============================================================
+
+[Intro] G  C
+
+[Primera Parte]
+
+G
+  Diz que pensa tanto em mim
+
+Que tá querendo me ver
+C
+  Diz que tá me lembrando bastante
+
+Acredito em você
+G
+  Tô sabendo de tudo
+
+Tô lendo seus recados
+C
+  Minhas fotos que você curtiu
+
+Tô seguindo você
+
+[Segunda Parte]
+
+  G
+E aí
+                         C
+O que é que a gente vai fazer
+     Em  D
+Diz aí,    se você quer
+                   C
+E eu também tô querendo você
+
+[Estribillo]
+
+G
+  Tantos sorrisos por aí
+
+Você querendo o meu
+C
+  Tantos olhares me olhando
+
+E eu querendo o seu
+Em                    D
+   Eu não duvido, não
+                C
+E não foi por acaso
+
+Se o amor bateu na nossa porta
+
+Que sorte a nossa
+
+G
+  Tantos sorrisos por aí
+
+Você querendo o meu
+C
+  Tantos olhares me olhando
+
+E eu querendo o seu
+Em                    D
+   Eu não duvido, não
+                  C
+Que não foi por acaso
+
+Se o amor bateu na nossa porta
+
+Que sorte a nossa
+
+G           C
+  Ai, ai ai ai
+
+[Segunda Parte]
+
+  G
+E aí
+                         C
+O que é que a gente vai fazer
+     Em  D
+Diz aí,    se você quer
+                   C
+E eu também tô querendo você
+
+[Estribillo]
+
+G
+  Tantos sorrisos por aí
+
+Você querendo o meu
+C
+  Tantos olhares me olhando
+
+E eu querendo o seu
+Em                    D
+   Eu não duvido, não
+                  C
+Que não foi por acaso
+
+Se o amor bateu na nossa porta
+
+Que sorte a nossa
+
+G
+  Tantos sorrisos por aí
+
+Você querendo o meu
+C
+  Tantos olhares me olhando
+
+E eu querendo o seu
+Em                    D
+   Eu não duvido, não
+                  C
+Que não foi por acaso
+
+Se o amor bateu na nossa porta
+
+Que sorte a nossa
+
+G           C
+  Ai, ai ai ai
+
+Que sorte a nossa
+
+( Em  D )
+
+          C
+Ai, ai ai ai
+                  G
+Que sorte a nossa`;export{n as default};

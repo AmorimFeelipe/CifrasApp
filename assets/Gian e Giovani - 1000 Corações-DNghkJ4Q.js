@@ -1,0 +1,97 @@
+const e=`Título: 1000 Corações
+Artista: Gian e Giovani
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:37:51
+============================================================
+
+[Intro] G  C  G/B  D
+        G  C  Em  D4  D
+
+    G                   Bm        Em
+Já faz tanto tempo que saí da sua vida
+  C                G             D
+Sei o quanto eu errei, e foi por isso que
+parti
+     G                       Bm7      Em
+O mundo aqui de fora não me deu outra saída
+          C         G
+Você não sai do pensamento
+   Am                   D
+E hoje sei o tempo que perdi
+
+  G                 D         Em
+Mas confesso que eu tenho tanto medo de
+     C
+voltar
+Em                   D           G
+Medo de encontrar alguém que está tomando
+  C
+ o meu lugar
+     Am                         Em
+Não sei se ainda quer que eu volte
+      C                  D
+É um risco que eu vou correr
+      C                   Em
+Se quer me dar mais uma chance
+      D
+Um pedido eu quero te fazer
+
+            G       C           D
+Se ainda me ama, desenhe um coração
+             G     C          D
+Com o meu nome e deixe no portão
+     C      G   C D
+Se ainda me ama
+            G       C           D
+Se ainda me ama, desenhe um coração
+             G     C          D
+Com o meu nome e deixe no portão
+     C      G   C D
+Se ainda me ama
+
+( G  C  G  D )
+( G  C  Em  D )
+
+       G          Bm              Em
+Hoje sou um prisioneiro do que eu mesmo fiz
+    C                G            D
+A porta da prisão fechada, e eu não via a
+hora de   sair
+   G                  Bm             Em
+Agora está em suas mãos  a chave que eu
+      G
+perdi
+C                 G   Am         D
+É um simples coração desenhado que pedi
+
+   G            Am             Em
+Eu mal podia esperar a hora de chegar
+                 C
+E assim poder te ver
+      Em          D
+Mas quanto mais chegava perto
+               G                 C
+Não sabia ao certo o que ia acontecer
+
+      Am               Em
+De repente, eu vi de longe
+        C                  D
+Alguma coisa que me fez chorar
+      C              Em
+A surpresa foi tão grande
+            D
+Que eu não pude acreditar
+
+         G      C           D
+Mil corações deixados no portão
+            G      C          D
+Com o meu nome escrito com batom
+C        G   C  D
+Mil corações
+         G      C           D
+Mil corações deixados no portão
+            G      C          D
+Com o meu nome escrito com batom
+C        G   C  D
+Mil corações`;export{e as default};

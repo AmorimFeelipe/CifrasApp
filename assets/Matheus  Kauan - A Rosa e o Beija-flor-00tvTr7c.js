@@ -1,0 +1,149 @@
+const n=`Título: A Rosa e o Beija-flor
+Artista: Matheus & Kauan
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:26:37
+============================================================
+
+Intro: C  G  D
+
+Primeira Parte:
+
+  Em                      C
+Quando você fica ao lado de uma pessoa
+                             Em
+E ela mesmo em silêncio lhe faz bem
+
+Quando você fecha os olhos
+C
+E no pensamento está fotografado
+              Em
+O rosto desse alguém
+
+                          C
+E quando estiver no dia triste
+
+Basta o sorriso dela
+                  Em
+Pra você ficar feliz
+                         C
+E quando se sentir realizado
+
+E dizer que encontrou
+                      Em   D
+O bem que você sempre    quis
+
+Pré-refrão:
+
+  Em       C         G    D
+Quando chorar de saudades
+  Em       C       D
+Quando morrer de ciúmes
+    Em        C        G   D
+E quando sua sensibilidade
+Em     C         D
+Identifica o perfume
+
+Refrão:
+
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em     C
+A rosa e o beija flor, oh oh
+    G                      D
+É amor, é o encontro de metades
+
+Primeira Parte:
+
+  Em                      C
+Quando você fica ao lado de uma pessoa
+                             Em
+E ela mesmo em silêncio lhe faz bem
+
+Quando você fecha os olhos
+C
+E no pensamento está fotografado
+              Em
+O rosto desse alguém
+
+                          C
+E quando estiver no dia triste
+
+Basta o sorriso dela
+                  Em
+Pra você ficar feliz
+                         C
+E quando se sentir realizado
+
+E dizer que encontrou
+                      Em   D
+O bem que você sempre    quis
+
+Pré-refrão:
+
+  Em       C         G    D
+Quando chorar de saudades
+  Em       C       D
+Quando morrer de ciúmes
+    Em        C        G   D
+E quando sua sensibilidade
+Em     C         D
+Identifica o perfume
+
+Refrão:
+
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em
+A rosa e o beija flor
+             C                 G
+Isso é amor,   tá rolando amor
+                   D
+É o encontro de metades
+                   Em     C
+A rosa e o beija flor, oh oh
+    G                      D
+É amor, é o encontro de metades
+
+Em    C      G
+Oh oh oh é amor
+                   D
+É o encontro de metades
+               Em
+A rosa e o beija flor`;export{n as default};

@@ -1,0 +1,62 @@
+const e=`Título: Roupa de Lua de Mel
+Artista: Gian e Giovani
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:38:04
+============================================================
+
+[Intro] G
+
+                                D
+Voltei era de madrugada e me assustei
+ Am                  D                     G
+As luzes estavam acesas, não fui eu que deixei
+G            G7                     C
+Entrei e vi suas coisas jogadas no chão
+ Am                  D              G
+Se misturando aos pedaços do meu coração
+ C              D                    Bm
+Fiquei parado na sala escutando o chuveiro
+         Em               Am
+Perdi a fala veio o desespero
+          D                    G  G7
+Era te aceitar ou te mandar embora
+C                       D                 Bm
+Andei fui até nosso quarto, vi tudo arrumado
+           Em                Am
+Fiquei revivendo o nosso passado
+            A7             D
+Enquanto a chuva caía lá fora
+G                                        D
+E ali na penumbra do quarto chorei de emoção
+ Am                   D             G
+Ouvindo o barulho da água caindo no chão
+ G               G7                       C
+Ouvi o spray do perfume o secar dos cabelos
+ Am              D                     G  G7
+E vi minha felicidade me olhando no espelho
+  C                 D                Bm
+Você veio usando uma roupa de lua de mel
+               Em               Am
+Trazendo no rosto o olhar mais fiel
+           D                 G  G7
+E ali no tapete te amei sem pensar
+ C                     D                    Bm
+Quando amanheceu encontrei um bilhete de adeus
+                Em                  Am
+Dizendo fui embora, acredite por Deus
+            D                   G
+Só vim te rever, não prometo voltar
+
+  C                 D                Bm
+Você veio usando uma roupa de lua de mel
+               Em               Am
+Trazendo no rosto o olhar mais fiel
+           D                 G  G7
+E ali no tapete te amei sem pensar
+ C                     D                    Bm
+Quando amanheceu encontrei um bilhete de adeus
+                Em                  Am
+Dizendo fui embora acredite por Deus
+            D                   G
+Só vim te rever, não prometo voltar`;export{e as default};

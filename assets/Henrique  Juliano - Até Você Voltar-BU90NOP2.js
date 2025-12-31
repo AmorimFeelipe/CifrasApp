@@ -1,0 +1,139 @@
+const n=`Título: Até Você Voltar
+Artista: Henrique & Juliano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:40:11
+============================================================
+
+[Intro] A
+
+[Primera Parte]
+
+   A
+Aqui sentado nessa mesa
+                 E
+Só o copo de cerveja é minha companhia
+                       F#m
+E essa casa está tão cheia
+                           D
+E parece vazia sem você comigo
+
+   A
+E hoje está fazendo um ano
+                  E
+Aqui no meu calendário
+
+Ainda está marcando
+               F#m
+O dia e o mês,     foi a primeira vez
+
+E o que me prometeu
+D
+  Será que se esqueceu
+
+[Pre-Estribillo]
+
+    F#m
+De todos nossos planos
+
+Nossos filhos, nosso apartamento
+C#m
+    Da nossa lua de mel
+
+Do nosso casamento
+Bm
+   Como pude acreditar
+               D
+Nesse seu juramento
+                 Dm
+E agora estou sozinho outra vez
+
+[Estribillo]
+
+A
+  De copo sempre cheio, coração vazio
+E
+  Tô me tornando um cara
+                 F#m
+Solitário e frio
+                                    D
+Vai ser difícil eu me apaixonar de novo
+     E
+E a culpa é sua
+
+A                               E
+  Antes embriagado do que iludido
+
+Acreditar no amor
+                    F#m
+Já não faz mais sentido
+                                D
+Eu vou continuar nessa vida bandida
+  E          A  E  Bm  D
+Até você voltar
+
+[Pre-Estribillo]
+
+    F#m
+De todos nossos planos
+
+Nossos filhos, nosso apartamento
+C#m
+    Da nossa lua de mel
+
+Do nosso casamento
+Bm
+   Como pude acreditar
+               D
+Nesse seu juramento
+                 Dm
+E agora estou sozinho outra vez
+
+[Estribillo Final]
+
+A
+  De copo sempre cheio, coração vazio
+E
+  Tô me tornando um cara
+                 F#m
+Solitário e frio
+                                    D
+Vai ser difícil eu me apaixonar de novo
+     E
+E a culpa é sua
+
+A                               E
+  Antes embriagado do que iludido
+
+Acreditar no amor
+                    F#m
+Já não faz mais sentido
+                                D
+Eu vou continuar nessa vida bandida
+  E          A
+Até você voltar
+
+
+De copo sempre cheio, coração vazio
+E
+  Tô me tornando um cara
+                 F#m
+Solitário e frio
+                                    D
+Vai ser difícil eu me apaixonar de novo
+     E
+E a culpa é sua
+
+A                               E
+  Antes embriagado do que iludido
+
+Acreditar no amor
+                    F#m
+Já não faz mais sentido
+                                D
+Eu vou continuar nessa vida bandida
+  E          A  E  Bm  D
+Até você voltar
+
+             A
+Até você voltar`;export{n as default};

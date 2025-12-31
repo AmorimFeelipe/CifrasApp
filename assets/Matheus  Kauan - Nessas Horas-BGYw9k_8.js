@@ -1,0 +1,111 @@
+const n=`Título: Nessas Horas
+Artista: Matheus & Kauan
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:24:58
+============================================================
+
+[Intro] G  D  Bm  A
+
+[Primera Parte]
+
+ G                  D
+Você de lá e eu de cá
+                 A                    G
+Olhando o mesmo céu, que distância cruel
+                    D
+Assisto o tempo passar
+                A                  G
+Tento me dispersar, olhando o celular
+
+[Pre-Estribillo]
+
+   G           D           A
+Metade do meu coração só quer te ver de
+ Bm
+novo
+    G         D           A
+E a outra só pensa em você
+     G            D            A
+Não tem nenhum espaço pra eu amar alguém de
+  Bm
+ novo
+    G       D       A  Bm  A
+Em mim só existe você
+
+[Estribillo]
+
+          G                         D
+E nessas horas, meu sorriso é passageiro
+                Bm
+É aí que eu percebo, a falta que me faz
+ A
+você
+          G                         D
+E nessas horas, eu nem ligo pra dinheiro
+                    Bm
+Pra eu me sentir inteiro, só preciso de
+ A
+você
+      G
+De você
+
+[Solo] G  D  Bm  A
+
+[Primera Parte]
+
+ G                  D
+Você de lá e eu de cá
+                 A                    G
+Olhando o mesmo céu, que distância cruel
+                    D
+Assisto o tempo passar
+                A                  G
+Tento me dispersar, olhando o celular
+
+[Pre-Estribillo]
+
+   G           D           A
+Metade do meu coração só quer te ver de
+ Bm
+novo
+    G         D           A
+E a outra só pensa em você
+     G            D            A
+Não tem nenhum espaço pra eu amar alguém de
+  Bm
+ novo
+    G       D       A  Bm  A
+Em mim só existe você
+
+[Estribillo]
+
+          G                         D
+E nessas horas, meu sorriso é passageiro
+                Bm
+É aí que eu percebo, a falta que me faz
+ A
+você
+          G                         D
+E nessas horas, eu nem ligo pra dinheiro
+                    Bm
+Pra eu me sentir inteiro, só preciso de
+ A
+você
+
+          G                         D
+E nessas horas, meu sorriso é passageiro
+                Bm
+É aí que eu percebo, a falta que me faz
+   A
+você
+          G                         D
+E nessas horas, eu nem ligo pra dinheiro
+                    Bm
+Pra eu me sentir inteiro, só preciso de
+ A
+você
+      G
+De você
+
+[Final] G  D`;export{n as default};

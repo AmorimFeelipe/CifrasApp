@@ -1,0 +1,153 @@
+const e=`Título: Despedida (part. Pacheco)
+Artista: Wesley Safadão
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:29:22
+============================================================
+
+[Intro] A9  E  Bm  D
+
+[Primera Parte]
+
+              A9
+Eu entro no quarto
+                             E
+E vejo sua mala fechada no chão
+                              F#m
+E no guarda roupa um vestido de solidão
+        D9
+Doeu demais meu coração
+          A9
+E na geladeira um bilhete dizendo
+               E
+Que só vai voltar
+                                        F#m
+Pra buscar as coisas que não deu pra levar
+                            D9
+E se for sair, deixa a chave no mesmo lugar
+
+[Estribillo]
+
+           A9
+E na despedida
+
+Como é que eu vou beijar o seu rosto
+                 E
+Se eu já beijei sua boca?
+
+Como é que eu vou te abraçar vestida
+                 F#m
+Se eu já te abracei sem roupa?
+
+Como é que eu vou abrir
+                           D9
+Aquela porta e te deixar sair?
+                       A9
+Como é que eu vou dividir
+
+Um corpo que era inteiro
+            E
+Exclusivo, só pra mim?
+
+           A9
+E na despedida
+
+Como é que eu vou beijar o seu rosto
+                 E
+Se eu já beijei sua boca?
+
+Como é que eu vou te abraçar vestida
+                 F#m
+Se eu já te abracei sem roupa?
+
+Como é que eu vou abrir
+                           D9
+Aquela porta e te deixar sair?
+                       A9
+Como é que eu vou dividir
+
+Um corpo que era inteiro
+            E
+Exclusivo, só pra mim?
+
+Ainda não tô preparado
+
+Pra me despedir
+
+[Solo] F#m  A  Bm  D
+
+[Primera Parte]
+
+              A9
+Eu entro no quarto
+                             E
+E vejo sua mala fechada no chão
+                              F#m
+E no guarda roupa um vestido de solidão
+        D9
+Doeu demais meu coração
+          A9
+E na geladeira um bilhete dizendo
+               E
+Que só vai voltar
+                                        F#m
+Pra buscar as coisas que não deu pra levar
+                            D9
+E se for sair, deixa a chave no mesmo lugar
+
+[Estribillo]
+
+           A9
+E na despedida
+
+Como é que eu vou beijar o seu rosto
+                 E
+Se eu já beijei sua boca?
+
+Como é que eu vou te abraçar vestida
+                 F#m
+Se eu já te agarrei sem roupa?
+
+Como é que eu vou abrir
+                           D9
+Aquela porta e te deixar sair?
+                       A9
+Como é que eu vou dividir
+
+Um corpo que era inteiro
+            E
+Exclusivo, só pra mim?
+
+           A9
+E na despedida
+
+Como é que eu vou beijar o seu rosto
+                 E
+Se eu já beijei sua boca?
+
+Como é que eu vou te abraçar vestida
+                 F#m
+Se eu já te agarrei sem roupa?
+
+Como é que eu vou abrir
+                           D9
+Aquela porta e te deixar sair?
+                       A9
+Como é que eu vou dividir
+
+Um corpo que era inteiro
+            E
+Exclusivo, só pra mim?
+
+Ainda não tô preparado
+
+Pra me despedir
+
+F#m   D9  A9
+  Ôôô ôôô ôôô
+ E                                  F#m
+Ainda não tô preparado pra me despedir
+F#m   D9  A9
+  Ôôô ôôô ôôô
+ E                                  F#m
+Ainda não tô preparado pra me despedir`;export{e as default};

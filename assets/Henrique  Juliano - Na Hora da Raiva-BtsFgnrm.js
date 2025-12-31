@@ -1,0 +1,92 @@
+const a=`Título: Na Hora da Raiva
+Artista: Henrique & Juliano
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:40:29
+============================================================
+
+[Primera Parte]
+
+       C                           G
+Encontrei uma caixinha cheia de relatos
+                            Am
+Um monte de documentos tão falsos
+        F9
+Nossas vidas
+
+           C
+Em minhas mãos agora
+                              G
+Tá cada parte dessa nossa história
+                                  Am
+E eu não sei se eu rasgo ou jogo fora
+                        F9
+E o que é que eu faço agora
+
+[Estribillo]
+
+     C                        G
+Cometi a loucura de nossas fotos rasgar
+                                Am
+E uma por uma eu vou ter que colar
+                    F9
+Mas foi na hora da raiva
+                     C
+Na hora, na hora da raiva
+
+Naquele segundo eu pensei que até
+   G
+Te odiava
+                                Am
+Mas respirei fundo e vi que eu te amava
+                    F9
+Mas foi na hora da raiva
+                     C    G  Am  F9
+Na hora, na hora da raiva
+
+[Segunda Parte]
+
+           C
+Em minhas mãos agora
+                              G
+Tá cada parte dessa nossa história
+                                  Am
+E eu não sei se eu rasgo ou jogo fora
+                        F9
+E o que é que eu faço agora
+
+[Estribillo]
+
+     C                        G
+Cometi a loucura de nossas fotos rasgar
+                                Am
+E uma por uma eu vou ter que colar
+                    F9
+Mas foi na hora da raiva
+                     C
+Na hora, na hora da raiva
+
+Naquele segundo eu pensei que até
+   G
+Te odiava
+                                Am
+Mas respirei fundo e vi que eu te amava
+                    F9
+Mas foi na hora da raiva
+                     C  G  Am
+Na hora, na hora da raiva
+
+                    F9
+Mas foi na hora da raiva
+                     C
+Na hora, na hora da raiva
+
+Naquele segundo eu pensei que até
+   G
+Te odiava
+                                Am
+Mas respirei fundo e vi que eu te amava
+                    F9
+Mas foi na hora da raiva
+                     C
+Na hora, na hora da raiva`;export{a as default};

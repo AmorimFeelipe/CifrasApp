@@ -1,0 +1,75 @@
+const n=`Título: Eu busco uma estrela
+Artista: Gian e Giovani
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:38:29
+============================================================
+
+[Intro] C  G  Am  F  G
+        C  G  Am  F  G
+
+C              G      Am           Em
+No que está pensando, pergunta meu coração
+F           Am            Dm
+Eu estava sonhando e seu pranto me
+   G
+despertou
+C              G      Am           Em
+Estou na tristeza e o silêncio me abraçou
+F           Am              Dm        G
+Esse sonho não faz parar,todo pranto que já
+ rolou
+
+F              Em       F             C
+Não consigo me perdoar e me culpo por essa
+dor
+F        C                  Dm         G
+Se eu te amo tanto, por que sofrer sem seu
+amor
+
+C              G      Am           Em
+Eu busco uma estrela que um dia deixei
+fugir
+F           Am             Dm        G
+Ela levou pro céu a razão do meu existir
+
+C              G      Am           Em
+Eu busco uma estrela que uma noite me
+abandonou
+F           Am              Dm
+Uma estrela tão bela ,a mulher que me
+  G
+conquistou
+
+( C  G  Am  F  G )
+( C  G  Am  F  G )
+
+C              G      Am           Em
+Estou na tristeza e o silêncio me abraçou
+F           Am              Dm        G
+Esse sonho não faz parar,todo pranto que já
+ rolou
+
+F              Em       F             C
+Não consigo me perdoar e me culpo por essa
+dor
+F        C                  Dm         G
+Se eu te amo tanto, por que sofrer sem seu
+amor
+
+C              G      Am           Em
+Eu busco uma estrela que um dia deixei
+fugir
+F           Am             Dm        G
+Ela levou pro céu a razão do meu existir
+
+C              G      Am           Em
+Eu busco uma estrela que uma noite me
+abandonou
+F           Am              Dm
+Uma estrela tão bela ,a mulher que me
+  G
+conquistou
+
+C              G
+Eu busco uma estrela`;export{n as default};

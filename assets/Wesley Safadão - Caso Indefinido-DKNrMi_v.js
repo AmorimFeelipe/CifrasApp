@@ -1,0 +1,117 @@
+const n=`Título: Caso Indefinido
+Artista: Wesley Safadão
+Tom: N/A
+URL: https://www.cifraclub.com/
+Extraído em: 31/12/2025 16:34:17
+============================================================
+
+Introdução:
+ C#m A5(9) B5(9) C#m
+ C#m A5(9) B5(9) C#m B5(9)
+
+Primeira Parte:
+
+   E
+Será que alguém explica a nossa relação
+    C#m
+Um caso indefinido, mas rola paixão
+  F#m                 A5(9)
+Adoro esse perigo, mexe demais comigo
+     F#m                        B5(9)
+Mas não te tenho em minhas mãos
+               E
+Se você quiser
+   C#m
+Podemos ser um caso indefinido ou nada mais
+  G#m                    A5(9)
+Apenas bons amigos, namorar, casar ter filhos
+    F#m                A5(9)  B5(9)
+Passar a vida inteira juntos
+
+
+Segunda Parte:
+
+         F#m               C#m
+E vai saber se um dia seremos nós
+        F#m                     C#m
+Nenhum beijo, para calar nossa voz
+      F#m                   E/G#
+Um minuto, uma hora, não importa o tempo
+   A5(9)    B5(9)
+Se estamos sós
+
+
+Refrão:
+
+               A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m
+O que eu mais quero é que você me queira
+              A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m   B5(9) A5(9)
+O que eu mais quero é que você me queira
+          B5(9)               C#m
+Por um momento ou pra vida inteira
+
+
+Repete Intro:
+
+
+Repete Segunda Parte:
+
+
+         F#m               C#m
+E vai saber se um dia seremos nós
+        F#m                     C#m
+Nenhum beijo, para calar nossa voz
+      F#m                   E/G#
+Um minuto, uma hora, não importa o tempo
+   A5(9)    B5(9)
+Se estamos sós
+
+
+Refrão Final:
+
+              A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m
+O que eu mais quero é que você me queira
+              A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m
+O que eu mais quero é que você me queira
+              A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m
+O que eu mais quero é que você me queira
+              A5(9)
+Se você quiser
+   B5(9)           C#m
+A gente casa ou namora
+                   A5(9)
+A gente fica ou enrola
+                B5(9)               C#m   B5(9) A5(9)
+O que eu mais quero é que você me queira
+          B5(9)               C#m
+Por um momento ou pra vida inteira`;export{n as default};
